@@ -3,10 +3,13 @@
 	<header>
 		<smile version="1.0" namespace="std, isee" uses_arrays="1" uses_submodels=""/>
 		<name>Land Use and Agriculture</name>
-		<uuid>fe807591-4e3d-4e2c-b464-70ec4fb12094</uuid>
+		<uuid>2beacd03-c514-49e0-89b1-b600f2778497</uuid>
 		<vendor>isee systems, inc.</vendor>
-		<product version="3.8.1" isee:build_number="development" isee:saved_by_v1="true" lang="en">Stella Architect</product>
+		<product version="4.0" isee:build_number="3710" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
+	<ai_information>
+		<status verified="false"/>
+	</ai_information>
 	<sim_specs isee:sim_duration="0" isee:run_prefix="Run" isee:simulation_delay="0" isee:restore_on_start="false" isee:save_interval="1" method="RK4" time_units="Year" isee:instantaneous_flows="false" isee:ignore_module_errors="false" isee:strict_units="false" isee:loop_scores="false" isee:loop_exhaustive_allowed="1000">
 		<start>1980</start>
 		<stop>2100</stop>
@@ -16,7 +19,7 @@
 		<dim name="CropImpactsCase" size="11"/>
 		<dim name="Run" size="1"/>
 	</dimensions>
-	<isee:prefs saved_runs="5" keep="false" show_module_prefix="true" live_update_on_drag="true" show_restore_buttons="false" layer="model" isee:design="Deluxe Prev-Next Blue Green Pastel" isee:design_custom="false" interface_secure_mode="true" interface_scale_ui="true" interface_max_page_width="10000" interface_max_page_height="10000" interface_min_page_width="0" interface_min_page_height="0" rerun_on_structure_change="false" rifp="true">
+	<isee:prefs saved_runs="5" keep="false" show_module_prefix="true" live_update_on_drag="true" show_restore_buttons="false" layer="model" isee:design="Deluxe Prev-Next Blue Green Pastel" isee:design_custom="false" interface_secure_mode="true" interface_scale_ui="true" interface_max_page_width="10000" interface_max_page_height="10000" interface_min_page_width="0" interface_min_page_height="0" rifp="true">
 		<isee:ignored_words>
 			<isee:ignored_word>WolrdTrans</isee:ignored_word>
 			<isee:ignored_word>WorldTrans</isee:ignored_word>
@@ -328,16 +331,28 @@ This isn&apos;t in the uncertainty analysis b/c it needs to be integrated with t
 				<connect2 to="Animal_Products.livestock_demand" from="Food_Demand.animal_products_demand"/>
 				<connect to="Inflation.animal_products_demand" from="Food_Demand.animal_products_demand"/>
 				<connect2 to="Inflation.animal_products_demand" from="Food_Demand.animal_products_demand"/>
-				<connect to="bio_fuel_energy.crop_demand" from="Food_Demand.crop_demand"/>
-				<connect2 to="bio_fuel_energy.crop_demand" from="Food_Demand.crop_demand"/>
+				<connect to="Bio_fuel_energy_1.crop_demand" from="Food_Demand.crop_demand"/>
+				<connect2 to="Bio_fuel_energy_1.crop_demand" from="Food_Demand.crop_demand"/>
+				<connect to="Bio_fuel_energy_conversion_1.crop_demand" from="Food_Demand.crop_demand"/>
+				<connect2 to="Bio_fuel_energy_conversion_1.crop_demand" from="Food_Demand.crop_demand"/>
+				<connect to="Bio_fuel_energy.crop_demand" from="Food_Demand.crop_demand"/>
+				<connect2 to="Bio_fuel_energy.crop_demand" from="Food_Demand.crop_demand"/>
+				<connect to="Bio_fuel_to_electricity_conversion_1.crop_demand" from="Food_Demand.crop_demand"/>
+				<connect2 to="Bio_fuel_to_electricity_conversion_1.crop_demand" from="Food_Demand.crop_demand"/>
 				<connect to="Crop.crop_demand_1" from="Food_Demand.crop_demand"/>
 				<connect2 to="Crop.crop_demand_1" from="Food_Demand.crop_demand"/>
 				<connect to="Inflation.crop_demand" from="Food_Demand.crop_demand"/>
 				<connect2 to="Inflation.crop_demand" from="Food_Demand.crop_demand"/>
 				<connect to="Total_Food_Demand.crop_supply_for_vegetal_products_1" from="Food_Demand.crop_supply_for_vegetal_products"/>
 				<connect2 to="Total_Food_Demand.crop_supply_for_vegetal_products_1" from="Food_Demand.crop_supply_for_vegetal_products"/>
-				<connect to="bio_fuel_energy.crops_for_energy" from="Food_Demand.crops_for_energy"/>
-				<connect2 to="bio_fuel_energy.crops_for_energy" from="Food_Demand.crops_for_energy"/>
+				<connect to="Bio_fuel_energy_1.crops_for_energy" from="Food_Demand.crops_for_energy"/>
+				<connect2 to="Bio_fuel_energy_1.crops_for_energy" from="Food_Demand.crops_for_energy"/>
+				<connect to="Bio_fuel_energy_conversion_1.crops_for_energy" from="Food_Demand.crops_for_energy"/>
+				<connect2 to="Bio_fuel_energy_conversion_1.crops_for_energy" from="Food_Demand.crops_for_energy"/>
+				<connect to="Bio_fuel_energy.crops_for_energy" from="Food_Demand.crops_for_energy"/>
+				<connect2 to="Bio_fuel_energy.crops_for_energy" from="Food_Demand.crops_for_energy"/>
+				<connect to="Bio_fuel_to_electricity_conversion_1.crops_for_energy" from="Food_Demand.crops_for_energy"/>
+				<connect2 to="Bio_fuel_to_electricity_conversion_1.crops_for_energy" from="Food_Demand.crops_for_energy"/>
 				<connect to="Crop.crops_for_energy" from="Food_Demand.crops_for_energy"/>
 				<connect2 to="Crop.crops_for_energy" from="Food_Demand.crops_for_energy"/>
 				<connect to="Animal_Products_Demand.Average_Daily_Demand_Per_Capita_1" from="Food_Demand.direct_food_demand_per_person_per_day"/>
@@ -368,8 +383,8 @@ This isn&apos;t in the uncertainty analysis b/c it needs to be integrated with t
 				<connect2 to="Food_Demand.average_yearly_demand_per_capita" from="Animal_Products_Demand.average_yearly_demand_per_capita"/>
 				<connect to="Food_Demand.crop_production" from="Crop.crop_production"/>
 				<connect2 to="Food_Demand.crop_production" from="Crop.crop_production"/>
-				<connect to="Food_Demand.crops_needed_for_bio_fuel" from="bio_fuel_energy.crops_demanded_for_bio_fuel"/>
-				<connect2 to="Food_Demand.crops_needed_for_bio_fuel" from="bio_fuel_energy.crops_demanded_for_bio_fuel"/>
+				<connect to="Food_Demand.crops_needed_for_bio_fuel" from="Bio_fuel_energy.crops_demanded_for_bio_fuel"/>
+				<connect2 to="Food_Demand.crops_needed_for_bio_fuel" from="Bio_fuel_energy.crops_demanded_for_bio_fuel"/>
 				<connect to="Food_Demand.food_demand_policy" from="Behavioral_Choices.food_demand_policy"/>
 				<connect2 to="Food_Demand.food_demand_policy" from="Behavioral_Choices.food_demand_policy"/>
 				<connect to="Food_Demand.grazing_land" from="Land_Use.grazing_land"/>
@@ -928,7 +943,7 @@ This isn&apos;t in the uncertainty analysis b/c it needs to be integrated with t
 				<connect to="Forest.young_forest_share" from="Land_Use.young_forest_share"/>
 				<connect2 to="Forest.young_forest_share" from="Land_Use.young_forest_share"/>
 			</module>
-			<module name="Biosphere\nIndicators" isee:label="" url="/Users/bschoenberg/code/WorldTrans/Frida/FRIDA_Modules/Biosphere Indicators.itmx">
+			<module name="Biosphere\nIndicators" isee:label="" url="C:/Users/Utilizador/OneDrive/Documents/GitHub/WorldTransFRIDA/FRIDA_Modules/Biosphere Indicators.itmx">
 				<doc>This module contains quantifications of planetary boundaries (PBs). The PB framework emphasises the many different components of the Earth system that are strongly influenced by human activities. To quantify each PB, one or more control variables are selected, for which a safe operating space, a zone of increasing risk and a high risk zone are defined, delimited by the boundary value (transition from safe operating space to zone of increasing risk) and the high risk value (transition from zone of increasing risk to high risk zone), as defined in the module. Each PB is quantified in a separate sector within the module. For more details, consult the documentation of variables within the module.
 
 Reference: Eriksson, A. (n.d.). Using the FRIDA systems dynamics model to simulate planetary boundary interactions. In Prep.

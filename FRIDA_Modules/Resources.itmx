@@ -3,10 +3,13 @@
 	<header>
 		<smile version="1.0" namespace="std, isee" uses_arrays="2" uses_submodels=""/>
 		<name>Resources</name>
-		<uuid>e9e3d587-974f-4869-83a8-55d5b762307b</uuid>
+		<uuid>6a66da83-295b-4875-9603-43cd0bfc1e83</uuid>
 		<vendor>isee systems, inc.</vendor>
-		<product version="3.8" isee:build_number="3578" isee:saved_by_v1="true" lang="en">Stella Architect</product>
+		<product version="4.0" isee:build_number="3710" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
+	<ai_information>
+		<status verified="false"/>
+	</ai_information>
 	<sim_specs isee:sim_duration="0" isee:run_prefix="Run" isee:simulation_delay="0" isee:restore_on_start="false" isee:save_interval="1" method="RK4" time_units="Year" isee:instantaneous_flows="false" isee:ignore_module_errors="true" isee:strict_units="false" isee:loop_scores="false" isee:loop_exhaustive_allowed="1000">
 		<start>1980</start>
 		<stop>2100</stop>
@@ -19,7 +22,7 @@
 		</dim>
 		<dim name="Run" size="1"/>
 	</dimensions>
-	<isee:prefs saved_runs="100" keep="false" show_module_prefix="true" live_update_on_drag="true" show_restore_buttons="false" layer="model" isee:design="Deluxe Prev-Next Blue Green Pastel" isee:design_custom="false" interface_secure_mode="true" interface_scale_ui="true" interface_max_page_width="10000" interface_max_page_height="10000" interface_min_page_width="0" interface_min_page_height="0" rerun_on_structure_change="false" rifp="true">
+	<isee:prefs saved_runs="5" keep="false" show_module_prefix="true" live_update_on_drag="true" show_restore_buttons="false" layer="model" isee:design="Deluxe Prev-Next Blue Green Pastel" isee:design_custom="false" interface_secure_mode="true" interface_scale_ui="true" interface_max_page_width="10000" interface_max_page_height="10000" interface_min_page_width="0" interface_min_page_height="0" rifp="true">
 		<isee:ignored_words>
 			<isee:ignored_word>WolrdTrans</isee:ignored_word>
 			<isee:ignored_word>WorldTrans</isee:ignored_word>
@@ -261,14 +264,44 @@
 				<format scale_by="auto"/>
 				<connect to="Emissions.Leakage" from="CCS.CO2_Emissions_from_Leakage"/>
 				<connect2 to="Emissions.Leakage" from="CCS.CO2_Emissions_from_Leakage"/>
-				<connect to="bio_fuel_energy.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="bio_fuel_energy.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect to="fossil_energy_coal.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="fossil_energy_coal.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect to="fossil_energy_gas.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="fossil_energy_gas.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect to="fossil_energy_oil.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="fossil_energy_oil.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Bio_fuel_energy_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Bio_fuel_energy_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Bio_fuel_energy_conversion_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Bio_fuel_energy_conversion_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Bio_fuel_energy.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Bio_fuel_energy.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Bio_fuel_to_electricity_conversion_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Bio_fuel_to_electricity_conversion_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Coal_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Coal_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Coal_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Coal_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Fossil_energy_coal_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Fossil_energy_coal_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Fossil_energy_coal_4.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Fossil_energy_coal_4.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Fossil_energy_coal.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Fossil_energy_coal.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Fossil_energy_gas_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Fossil_energy_gas_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Fossil_energy_gas_3.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Fossil_energy_gas_3.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Fossil_energy_gas.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Fossil_energy_gas.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Fossil_energy_oil_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Fossil_energy_oil_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Fossil_energy_oil_2.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Fossil_energy_oil_2.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Fossil_energy_oil.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Fossil_energy_oil.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Gas_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Gas_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Gas_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Gas_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Oil_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Oil_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Oil_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Oil_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="CCS.CO2_emissions_from_biofuels" from="Emissions.CO2_emissions_from_biofuels"/>
 				<connect2 to="CCS.CO2_emissions_from_biofuels" from="Emissions.CO2_emissions_from_biofuels"/>
 				<connect to="CCS.CO2_emissions_from_coal" from="Emissions.CO2_emissions_from_coal"/>
@@ -568,7 +601,7 @@ middle of power generation storing cost</doc>
 				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 				<button color="black" background="#E0E0E0" font_size="12pt" border_width="thin" border_style="solid" transparent="false" corner_radius="0" isee:flat="false" icon_side="top" isee:highlight_on_hover="false" isee:highlight_color="#959595"/>
 				<isee:annotation color="black" background="#E0E0E0" font_size="12pt" border_width="thin" border_style="solid" transparent="false" corner_radius="0" isee:flat="false" icon_side="top" isee:highlight_on_hover="false" isee:highlight_color="#959595" popup_corner_radius="0" popup_background_color="#FFFECF"/>
-				<slider color="#66CC66" background="#E0E0E0" font_size="12pt" num_ticks="3" label_side="top" wrap_title="true" vertical="false" isee:fancy_appearance="false" isee:show_hover_tip="when_deciding" input_expands="true" input_width="100"/>
+				<slider color="#0075FF" background="#E0E0E0" font_size="12pt" num_ticks="3" label_side="top" wrap_title="true" vertical="false" isee:fancy_appearance="false" isee:show_hover_tip="when_deciding" input_expands="true" input_width="100"/>
 				<isee:stacked_container color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" padding="6 8" border_color="#999999" border_width="thin" border_style="solid" item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				<isee:dual_slider color="#66CC66" background="silver" font_size="12pt" num_ticks="3" label_side="top" wrap_title="true" isee:show_hover_tip="when_deciding" input_expands="true" input_width="100"/>
 				<isee:sim_speed_slider color="black" background="white"/>
@@ -1707,7 +1740,7 @@ Structure are considered old when they have passed half of their estimated avera
 				<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 				<button color="black" background="#E0E0E0" font_size="12pt" border_width="thin" border_style="solid" transparent="false" corner_radius="0" isee:flat="false" icon_side="top" isee:highlight_on_hover="false" isee:highlight_color="#959595"/>
 				<isee:annotation color="black" background="#E0E0E0" font_size="12pt" border_width="thin" border_style="solid" transparent="false" corner_radius="0" isee:flat="false" icon_side="top" isee:highlight_on_hover="false" isee:highlight_color="#959595" popup_corner_radius="0" popup_background_color="#FFFECF"/>
-				<slider color="#66CC66" background="#E0E0E0" font_size="12pt" num_ticks="3" label_side="top" wrap_title="true" vertical="false" isee:fancy_appearance="false" isee:show_hover_tip="when_deciding" input_expands="true" input_width="100"/>
+				<slider color="#0075FF" background="#E0E0E0" font_size="12pt" num_ticks="3" label_side="top" wrap_title="true" vertical="false" isee:fancy_appearance="false" isee:show_hover_tip="when_deciding" input_expands="true" input_width="100"/>
 				<isee:stacked_container color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" padding="6 8" border_color="#999999" border_width="thin" border_style="solid" item_spacing="0" corner_radius="4" selected_item_color="black" selected_item_background="white" item_background="#DDDDDD" transparent_bg="false"/>
 				<isee:dual_slider color="#66CC66" background="silver" font_size="12pt" num_ticks="3" label_side="top" wrap_title="true" isee:show_hover_tip="when_deciding" input_expands="true" input_width="100"/>
 				<isee:sim_speed_slider color="black" background="white"/>

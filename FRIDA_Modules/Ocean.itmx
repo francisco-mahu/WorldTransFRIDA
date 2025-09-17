@@ -3,7 +3,7 @@
 	<header>
 		<smile version="1.0" namespace="std, isee" uses_arrays="1"/>
 		<name>Ocean</name>
-		<uuid>222e8c11-f0e3-40d4-88e3-27152ee6a9d1</uuid>
+		<uuid>b0b8922d-7be5-461b-96a5-b9eca0365d7f</uuid>
 		<vendor>isee systems, inc.</vendor>
 		<product version="4.0" isee:build_number="3710" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>

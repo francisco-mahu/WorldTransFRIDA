@@ -3,7 +3,7 @@
 	<header>
 		<smile version="1.0" namespace="std, isee" uses_arrays="2" uses_submodels=""/>
 		<name>Resources</name>
-		<uuid>6a66da83-295b-4875-9603-43cd0bfc1e83</uuid>
+		<uuid>90ea827f-3b52-4351-8768-b003111da8d8</uuid>
 		<vendor>isee systems, inc.</vendor>
 		<product version="4.0" isee:build_number="3710" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
@@ -264,42 +264,36 @@
 				<format scale_by="auto"/>
 				<connect to="Emissions.Leakage" from="CCS.CO2_Emissions_from_Leakage"/>
 				<connect2 to="Emissions.Leakage" from="CCS.CO2_Emissions_from_Leakage"/>
-				<connect to="Bio_fuel_energy_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="Bio_fuel_energy_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Bio_fuel_energy_conversion_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Bio_fuel_energy_conversion_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Bio_fuel_energy.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Bio_fuel_energy.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Bio_fuel_to_electricity_conversion_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Bio_fuel_to_electricity_conversion_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Bio_fuel.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Bio_fuel.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Coal_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Coal_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Coal_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Coal_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect to="Fossil_energy_coal_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="Fossil_energy_coal_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect to="Fossil_energy_coal_4.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="Fossil_energy_coal_4.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Coal_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Coal_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Fossil_energy_coal.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Fossil_energy_coal.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect to="Fossil_energy_gas_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="Fossil_energy_gas_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect to="Fossil_energy_gas_3.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="Fossil_energy_gas_3.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Fossil_energy_gas.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Fossil_energy_gas.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect to="Fossil_energy_oil_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="Fossil_energy_oil_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect to="Fossil_energy_oil_2.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="Fossil_energy_oil_2.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Fossil_energy_oil.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Fossil_energy_oil.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Gas_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Gas_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Gas_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Gas_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Gas_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Gas_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Oil_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Oil_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect to="Oil_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
+				<connect2 to="Oil_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Oil_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Oil_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="CCS.CO2_emissions_from_biofuels" from="Emissions.CO2_emissions_from_biofuels"/>

@@ -3,7 +3,7 @@
 	<header>
 		<smile version="1.0" namespace="std, isee" uses_arrays="1"/>
 		<name>Government Regulations</name>
-		<uuid>b772600f-dec8-484d-8f36-e9d427beb929</uuid>
+		<uuid>b8a27f40-3946-4074-aa5d-b0215bab8eef</uuid>
 		<vendor>isee systems, inc.</vendor>
 		<product version="4.0" isee:build_number="3710" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>

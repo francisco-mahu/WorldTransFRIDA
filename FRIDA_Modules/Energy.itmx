@@ -3,7 +3,7 @@
 	<header>
 		<smile version="1.0" namespace="std, isee" uses_arrays="3" uses_conveyor="" uses_submodels=""/>
 		<name>Energy</name>
-		<uuid>d17208dd-db07-4c0b-bf20-e9a7fbae2f0e</uuid>
+		<uuid>ffc6f356-3bd7-4e28-bfcc-af7bfd4ba9ad</uuid>
 		<vendor>isee systems, inc.</vendor>
 		<product version="4.0" isee:build_number="3710" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>

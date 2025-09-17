@@ -3,7 +3,7 @@
 	<header>
 		<smile version="1.0" namespace="std, isee" uses_arrays="1"/>
 		<name>Biosphere Indicators</name>
-		<uuid>9ef0d0f4-270c-44c3-b632-dbc28a964564</uuid>
+		<uuid>8d70bfc8-d88d-4c1b-ae13-32495eafc5ba</uuid>
 		<vendor>isee systems, inc.</vendor>
 		<product version="4.0" isee:build_number="3710" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>

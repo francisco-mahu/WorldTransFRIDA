@@ -3,7 +3,7 @@
 	<header>
 		<smile version="1.0" namespace="std, isee" uses_arrays="2" uses_submodels=""/>
 		<name>Behavioral Change</name>
-		<uuid>2c354899-45e8-4535-954a-39abe59edeaa</uuid>
+		<uuid>ec2f7cd1-7eae-4c23-ab79-aa21c3bbe11b</uuid>
 		<vendor>isee systems, inc.</vendor>
 		<product version="4.0" isee:build_number="3710" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>

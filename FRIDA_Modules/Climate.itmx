@@ -3,7 +3,7 @@
 	<header>
 		<smile version="1.0" namespace="std, isee" uses_arrays="2" uses_submodels=""/>
 		<name>Climate</name>
-		<uuid>9748ee46-6cf2-48dd-aeb4-ab694be44d9e</uuid>
+		<uuid>3bc4c11e-975d-4b84-a9db-4279203a46a2</uuid>
 		<vendor>isee systems, inc.</vendor>
 		<product version="4.0" isee:build_number="3710" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
@@ -405,42 +405,36 @@ Carbon" url="C:/Users/Utilizador/OneDrive/Documents/GitHub/WorldTransFRIDA/FRIDA
 				<connect2 to="Minor_GHGs_Forcing.Molecular_Weight_of_Air" from="Climate_Units.Molecular_Weight_of_Air"/>
 				<connect to="N2O_Forcing.Molecular_Weight_of_Air_1" from="Climate_Units.Molecular_Weight_of_Air"/>
 				<connect2 to="N2O_Forcing.Molecular_Weight_of_Air_1" from="Climate_Units.Molecular_Weight_of_Air"/>
-				<connect to="Bio_fuel_energy_1.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect2 to="Bio_fuel_energy_1.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Bio_fuel_energy_conversion_1.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Bio_fuel_energy_conversion_1.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Bio_fuel_energy.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Bio_fuel_energy.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Bio_fuel_to_electricity_conversion_1.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Bio_fuel_to_electricity_conversion_1.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
+				<connect to="Bio_fuel.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
+				<connect2 to="Bio_fuel.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Coal_fossil_energy_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Coal_fossil_energy_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Coal_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Coal_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect to="Fossil_energy_coal_1.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect2 to="Fossil_energy_coal_1.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect to="Fossil_energy_coal_4.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect2 to="Fossil_energy_coal_4.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
+				<connect to="Coal_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
+				<connect2 to="Coal_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Fossil_energy_coal.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Fossil_energy_coal.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect to="Fossil_energy_gas_1.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect2 to="Fossil_energy_gas_1.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect to="Fossil_energy_gas_3.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect2 to="Fossil_energy_gas_3.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Fossil_energy_gas.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Fossil_energy_gas.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect to="Fossil_energy_oil_1.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect2 to="Fossil_energy_oil_1.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect to="Fossil_energy_oil_2.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect2 to="Fossil_energy_oil_2.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Fossil_energy_oil.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Fossil_energy_oil.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Gas_fossil_energy_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Gas_fossil_energy_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Gas_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Gas_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
+				<connect to="Gas_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
+				<connect2 to="Gas_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Oil_fossil_energy_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Oil_fossil_energy_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
+				<connect to="Oil_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
+				<connect2 to="Oil_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Oil_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Oil_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Aerosol_Forcing.selected_climate_case" from="Climate_Units.selected_climate_case"/>
@@ -489,14 +483,14 @@ Carbon" url="C:/Users/Utilizador/OneDrive/Documents/GitHub/WorldTransFRIDA/FRIDA
 				<connect2 to="Crop.selected_crops_damages_case" from="Climate_Units.selected_crops_damages_case"/>
 				<connect to="Efficiency_reduction_in_power_plants_1.selected_energy_supply_hydroelectric_damages_case" from="Climate_Units.selected_energy_supply_hydroelectric_damages_case"/>
 				<connect2 to="Efficiency_reduction_in_power_plants_1.selected_energy_supply_hydroelectric_damages_case" from="Climate_Units.selected_energy_supply_hydroelectric_damages_case"/>
-				<connect to="Efficiency_reduction_in_power_plants_5.selected_energy_supply_hydroelectric_damages_case" from="Climate_Units.selected_energy_supply_hydroelectric_damages_case"/>
-				<connect2 to="Efficiency_reduction_in_power_plants_5.selected_energy_supply_hydroelectric_damages_case" from="Climate_Units.selected_energy_supply_hydroelectric_damages_case"/>
+				<connect to="Efficiency_reduction_in_power_plants_1.selected_energy_supply_hydroelectric_damages_case" from="Climate_Units.selected_energy_supply_hydroelectric_damages_case"/>
+				<connect2 to="Efficiency_reduction_in_power_plants_1.selected_energy_supply_hydroelectric_damages_case" from="Climate_Units.selected_energy_supply_hydroelectric_damages_case"/>
 				<connect to="Efficiency_reduction_in_power_plants.selected_energy_supply_hydroelectric_damages_case" from="Climate_Units.selected_energy_supply_hydroelectric_damages_case"/>
 				<connect2 to="Efficiency_reduction_in_power_plants.selected_energy_supply_hydroelectric_damages_case" from="Climate_Units.selected_energy_supply_hydroelectric_damages_case"/>
 				<connect to="Efficiency_reduction_in_power_plants_1.selected_energy_supply_damages_case" from="Climate_Units.selected_energy_supply_thermoelectric_damages_case"/>
 				<connect2 to="Efficiency_reduction_in_power_plants_1.selected_energy_supply_damages_case" from="Climate_Units.selected_energy_supply_thermoelectric_damages_case"/>
-				<connect to="Efficiency_reduction_in_power_plants_5.selected_energy_supply_damages_case" from="Climate_Units.selected_energy_supply_thermoelectric_damages_case"/>
-				<connect2 to="Efficiency_reduction_in_power_plants_5.selected_energy_supply_damages_case" from="Climate_Units.selected_energy_supply_thermoelectric_damages_case"/>
+				<connect to="Efficiency_reduction_in_power_plants_1.selected_energy_supply_damages_case" from="Climate_Units.selected_energy_supply_thermoelectric_damages_case"/>
+				<connect2 to="Efficiency_reduction_in_power_plants_1.selected_energy_supply_damages_case" from="Climate_Units.selected_energy_supply_thermoelectric_damages_case"/>
 				<connect to="Efficiency_reduction_in_power_plants.selected_energy_supply_damages_case" from="Climate_Units.selected_energy_supply_thermoelectric_damages_case"/>
 				<connect2 to="Efficiency_reduction_in_power_plants.selected_energy_supply_damages_case" from="Climate_Units.selected_energy_supply_thermoelectric_damages_case"/>
 				<connect to="Energy_Balance_Model.selected_extremes_exposure_damages_case" from="Climate_Units.selected_extremes_exposure_damages_case"/>
@@ -529,122 +523,104 @@ Carbon" url="C:/Users/Utilizador/OneDrive/Documents/GitHub/WorldTransFRIDA/FRIDA
 				<connect2 to="Emissions.UNIT_ktN2O_to_MtN2O_1" from="Climate_Units.UNIT_ktN2O_to_MtN2O"/>
 				<connect to="N2O_Forcing.UNIT_ktN2O_to_MtN2O" from="Climate_Units.UNIT_ktN2O_to_MtN2O"/>
 				<connect2 to="N2O_Forcing.UNIT_ktN2O_to_MtN2O" from="Climate_Units.UNIT_ktN2O_to_MtN2O"/>
-				<connect to="Bio_fuel_energy_1.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect2 to="Bio_fuel_energy_1.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Bio_fuel_energy_conversion_1.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Bio_fuel_energy_conversion_1.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Bio_fuel_energy.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Bio_fuel_energy.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Bio_fuel_to_electricity_conversion_1.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Bio_fuel_to_electricity_conversion_1.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
+				<connect to="Bio_fuel.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
+				<connect2 to="Bio_fuel.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Coal_fossil_energy_conversion.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Coal_fossil_energy_conversion.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Coal_to_electricity_conversion.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Coal_to_electricity_conversion.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect to="Fossil_energy_coal_1.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect2 to="Fossil_energy_coal_1.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect to="Fossil_energy_coal_4.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect2 to="Fossil_energy_coal_4.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
+				<connect to="Coal_to_electricity_conversion.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
+				<connect2 to="Coal_to_electricity_conversion.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Fossil_energy_coal.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Fossil_energy_coal.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect to="Fossil_energy_gas_1.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect2 to="Fossil_energy_gas_1.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect to="Fossil_energy_gas_3.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect2 to="Fossil_energy_gas_3.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Fossil_energy_gas.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Fossil_energy_gas.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect to="Fossil_energy_oil_1.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect2 to="Fossil_energy_oil_1.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect to="Fossil_energy_oil_2.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect2 to="Fossil_energy_oil_2.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Fossil_energy_oil.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Fossil_energy_oil.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Gas_fossil_energy_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Gas_fossil_energy_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Gas_to_electricity_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Gas_to_electricity_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
+				<connect to="Gas_to_electricity_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
+				<connect2 to="Gas_to_electricity_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Oil_fossil_energy_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Oil_fossil_energy_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Oil_to_electricity_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Oil_to_electricity_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect to="Bio_fuel_energy_1.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect2 to="Bio_fuel_energy_1.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
+				<connect to="Oil_to_electricity_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
+				<connect2 to="Oil_to_electricity_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Bio_fuel_energy_conversion_1.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Bio_fuel_energy_conversion_1.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Bio_fuel_energy.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Bio_fuel_energy.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Bio_fuel_to_electricity_conversion_1.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Bio_fuel_to_electricity_conversion_1.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
+				<connect to="Bio_fuel.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
+				<connect2 to="Bio_fuel.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Coal_fossil_energy_conversion.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Coal_fossil_energy_conversion.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Coal_to_electricity_conversion.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Coal_to_electricity_conversion.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect to="Fossil_energy_coal_1.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect2 to="Fossil_energy_coal_1.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect to="Fossil_energy_coal_4.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect2 to="Fossil_energy_coal_4.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
+				<connect to="Coal_to_electricity_conversion.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
+				<connect2 to="Coal_to_electricity_conversion.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Fossil_energy_coal.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Fossil_energy_coal.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect to="Fossil_energy_gas_1.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect2 to="Fossil_energy_gas_1.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect to="Fossil_energy_gas_3.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect2 to="Fossil_energy_gas_3.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Fossil_energy_gas.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Fossil_energy_gas.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect to="Fossil_energy_oil_1.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect2 to="Fossil_energy_oil_1.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect to="Fossil_energy_oil_2.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect2 to="Fossil_energy_oil_2.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Fossil_energy_oil.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Fossil_energy_oil.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Gas_fossil_energy_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Gas_fossil_energy_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Gas_to_electricity_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Gas_to_electricity_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
+				<connect to="Gas_to_electricity_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
+				<connect2 to="Gas_to_electricity_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Oil_fossil_energy_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Oil_fossil_energy_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
+				<connect to="Oil_to_electricity_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
+				<connect2 to="Oil_to_electricity_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Oil_to_electricity_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Oil_to_electricity_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="BC_on_Snow_Forcing.UNIT_MtCO2_to_GtCO2_1" from="Climate_Units.UNIT_MtCO2_to_GtCO2"/>
 				<connect2 to="BC_on_Snow_Forcing.UNIT_MtCO2_to_GtCO2_1" from="Climate_Units.UNIT_MtCO2_to_GtCO2"/>
 				<connect to="CO2_Forcing.UNIT_MtCO2_to_GtCO2" from="Climate_Units.UNIT_MtCO2_to_GtCO2"/>
 				<connect2 to="CO2_Forcing.UNIT_MtCO2_to_GtCO2" from="Climate_Units.UNIT_MtCO2_to_GtCO2"/>
-				<connect to="Bio_fuel_energy_1.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect2 to="Bio_fuel_energy_1.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Bio_fuel_energy_conversion_1.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Bio_fuel_energy_conversion_1.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Bio_fuel_energy.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Bio_fuel_energy.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Bio_fuel_to_electricity_conversion_1.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Bio_fuel_to_electricity_conversion_1.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
+				<connect to="Bio_fuel.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
+				<connect2 to="Bio_fuel.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Coal_fossil_energy_conversion.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Coal_fossil_energy_conversion.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Coal_to_electricity_conversion.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Coal_to_electricity_conversion.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect to="Fossil_energy_coal_1.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect2 to="Fossil_energy_coal_1.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect to="Fossil_energy_coal_4.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect2 to="Fossil_energy_coal_4.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
+				<connect to="Coal_to_electricity_conversion.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
+				<connect2 to="Coal_to_electricity_conversion.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Fossil_energy_coal.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Fossil_energy_coal.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect to="Fossil_energy_gas_1.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect2 to="Fossil_energy_gas_1.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect to="Fossil_energy_gas_3.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect2 to="Fossil_energy_gas_3.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Fossil_energy_gas.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Fossil_energy_gas.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect to="Fossil_energy_oil_1.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect2 to="Fossil_energy_oil_1.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect to="Fossil_energy_oil_2.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect2 to="Fossil_energy_oil_2.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Fossil_energy_oil.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Fossil_energy_oil.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Gas_fossil_energy_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Gas_fossil_energy_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Gas_to_electricity_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Gas_to_electricity_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
+				<connect to="Gas_to_electricity_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
+				<connect2 to="Gas_to_electricity_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Oil_fossil_energy_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Oil_fossil_energy_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
+				<connect to="Oil_to_electricity_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
+				<connect2 to="Oil_to_electricity_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Oil_to_electricity_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Oil_to_electricity_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="CH4_Forcing.UNIT_ppm_to_ppb" from="Climate_Units.UNIT_ppm_to_ppb"/>
@@ -704,8 +680,8 @@ Carbon" url="C:/Users/Utilizador/OneDrive/Documents/GitHub/WorldTransFRIDA/FRIDA
 				<connect2 to="Demographics.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect to="Efficiency_reduction_in_power_plants_1.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect2 to="Efficiency_reduction_in_power_plants_1.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
-				<connect to="Efficiency_reduction_in_power_plants_5.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
-				<connect2 to="Efficiency_reduction_in_power_plants_5.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
+				<connect to="Efficiency_reduction_in_power_plants_1.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
+				<connect2 to="Efficiency_reduction_in_power_plants_1.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect to="Efficiency_reduction_in_power_plants.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect2 to="Efficiency_reduction_in_power_plants.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect to="Employment.Surface_Temperature_Anomaly_1" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
@@ -763,158 +739,134 @@ Carbon" url="C:/Users/Utilizador/OneDrive/Documents/GitHub/WorldTransFRIDA/FRIDA
 				<connect2 to="CCS.CO2_emissions_from_gas" from="Emissions.CO2_emissions_from_gas"/>
 				<connect to="CCS.CO2_emissions_from_oil" from="Emissions.CO2_emissions_from_oil"/>
 				<connect2 to="CCS.CO2_emissions_from_oil" from="Emissions.CO2_emissions_from_oil"/>
-				<connect to="Bio_fuel_energy_1.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect2 to="Bio_fuel_energy_1.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Bio_fuel_energy_conversion_1.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Bio_fuel_energy_conversion_1.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Bio_fuel_energy.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Bio_fuel_energy.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Bio_fuel_to_electricity_conversion_1.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Bio_fuel_to_electricity_conversion_1.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
+				<connect to="Bio_fuel.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
+				<connect2 to="Bio_fuel.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Coal_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Coal_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect to="Fossil_energy_coal_1.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect2 to="Fossil_energy_coal_1.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect to="Fossil_energy_coal_4.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect2 to="Fossil_energy_coal_4.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
+				<connect to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
+				<connect2 to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Fossil_energy_coal.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Fossil_energy_coal.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect to="Fossil_energy_gas_1.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect2 to="Fossil_energy_gas_1.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect to="Fossil_energy_gas_3.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect2 to="Fossil_energy_gas_3.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Fossil_energy_gas.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Fossil_energy_gas.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect to="Fossil_energy_oil_1.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect2 to="Fossil_energy_oil_1.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect to="Fossil_energy_oil_2.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect2 to="Fossil_energy_oil_2.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Fossil_energy_oil.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Fossil_energy_oil.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Gas_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Gas_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
+				<connect to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
+				<connect2 to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Oil_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Oil_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect to="Bio_fuel_energy_1.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect2 to="Bio_fuel_energy_1.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
+				<connect to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
+				<connect2 to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Bio_fuel_energy_conversion_1.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Bio_fuel_energy_conversion_1.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Bio_fuel_energy.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Bio_fuel_energy.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Bio_fuel_to_electricity_conversion_1.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Bio_fuel_to_electricity_conversion_1.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
+				<connect to="Bio_fuel.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
+				<connect2 to="Bio_fuel.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Coal_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Coal_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect to="Fossil_energy_coal_1.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect2 to="Fossil_energy_coal_1.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect to="Fossil_energy_coal_4.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect2 to="Fossil_energy_coal_4.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
+				<connect to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
+				<connect2 to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Fossil_energy_coal.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Fossil_energy_coal.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect to="Fossil_energy_gas_1.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect2 to="Fossil_energy_gas_1.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect to="Fossil_energy_gas_3.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect2 to="Fossil_energy_gas_3.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Fossil_energy_gas.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Fossil_energy_gas.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect to="Fossil_energy_oil_1.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect2 to="Fossil_energy_oil_1.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect to="Fossil_energy_oil_2.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect2 to="Fossil_energy_oil_2.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Fossil_energy_oil.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Fossil_energy_oil.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Gas_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Gas_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
+				<connect to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
+				<connect2 to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Oil_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Oil_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect to="Bio_fuel_energy_1.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect2 to="Bio_fuel_energy_1.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
+				<connect to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
+				<connect2 to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Bio_fuel_energy_conversion_1.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Bio_fuel_energy_conversion_1.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Bio_fuel_energy.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Bio_fuel_energy.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Bio_fuel_to_electricity_conversion_1.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Bio_fuel_to_electricity_conversion_1.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
+				<connect to="Bio_fuel.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
+				<connect2 to="Bio_fuel.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Coal_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Coal_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect to="Fossil_energy_coal_1.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect2 to="Fossil_energy_coal_1.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect to="Fossil_energy_coal_4.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect2 to="Fossil_energy_coal_4.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
+				<connect to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
+				<connect2 to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Fossil_energy_coal.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Fossil_energy_coal.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect to="Fossil_energy_gas_1.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect2 to="Fossil_energy_gas_1.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect to="Fossil_energy_gas_3.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect2 to="Fossil_energy_gas_3.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Fossil_energy_gas.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Fossil_energy_gas.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect to="Fossil_energy_oil_1.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect2 to="Fossil_energy_oil_1.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect to="Fossil_energy_oil_2.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect2 to="Fossil_energy_oil_2.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Fossil_energy_oil.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Fossil_energy_oil.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Gas_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Gas_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
+				<connect to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
+				<connect2 to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Oil_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Oil_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect to="Bio_fuel_energy_1.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect2 to="Bio_fuel_energy_1.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
+				<connect to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
+				<connect2 to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Bio_fuel_energy_conversion_1.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Bio_fuel_energy_conversion_1.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Bio_fuel_energy.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Bio_fuel_energy.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Bio_fuel_to_electricity_conversion_1.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Bio_fuel_to_electricity_conversion_1.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
+				<connect to="Bio_fuel.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
+				<connect2 to="Bio_fuel.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="CCS.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="CCS.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Coal_fossil_energy_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Coal_fossil_energy_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Coal_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Coal_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect to="Fossil_energy_coal_1.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect2 to="Fossil_energy_coal_1.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect to="Fossil_energy_coal_4.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect2 to="Fossil_energy_coal_4.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
+				<connect to="Coal_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
+				<connect2 to="Coal_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Fossil_energy_coal.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Fossil_energy_coal.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect to="Fossil_energy_gas_1.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect2 to="Fossil_energy_gas_1.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect to="Fossil_energy_gas_3.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect2 to="Fossil_energy_gas_3.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Fossil_energy_gas.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Fossil_energy_gas.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect to="Fossil_energy_oil_1.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect2 to="Fossil_energy_oil_1.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect to="Fossil_energy_oil_2.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect2 to="Fossil_energy_oil_2.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Fossil_energy_oil.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Fossil_energy_oil.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Gas_fossil_energy_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Gas_fossil_energy_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Gas_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Gas_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
+				<connect to="Gas_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
+				<connect2 to="Gas_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Oil_fossil_energy_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Oil_fossil_energy_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
+				<connect to="Oil_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
+				<connect2 to="Oil_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Oil_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Oil_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Minor_GHGs_Forcing.HFC134a_emissions" from="Emissions.HFC134a_eq_Emissions"/>

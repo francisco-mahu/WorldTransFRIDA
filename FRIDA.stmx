@@ -1565,22 +1565,19 @@
 			</isee:payoff_element>
 		</isee:payoff_specs>
 		<isee:payoff_specs name="Energy Disaggregation" calibration="true" recompute_weights="true" compare_tolerance="0" compare_type="ls" compare_run="Calibration Data">
-			<isee:payoff_element name="Energy_demand_1.demand_for_energy[1]" weight="4.71920054879366e-8">
-				<isee:time_range type="terminal_value"/>
-			</isee:payoff_element>
 			<isee:payoff_element name="Energy_demand_1.Electricity_demand_for_Transport[1]" weight="8.97501032650842e-16">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_Coal_in_Buildings[1]" weight="28902.3236920277">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Coal_in_Buildings[1]" weight="5571.31303658172">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_Oil_in_Buildings[1]" weight="11747.5789520859">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Oil_in_Buildings[1]" weight="787.588038246561">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_Gas_in_Buildings[1]" weight="12832.9005349091">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Gas_in_Buildings[1]" weight="12626.7018321907">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Buildings[1]" weight="20464.2116254135">
+			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Buildings[1]" weight="1356.69699346955">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 			<isee:payoff_element name="Energy_demand_1.Energy_demand_for_Buildings[1]" weight="1.76810681306514e-19">
@@ -1592,76 +1589,76 @@
 			<isee:payoff_element name="Energy_demand_1.Energy_demand_for_Transport[1]" weight="7.11520504855231e-19">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_Coal_in_Transport[1]" weight="12660530.2800729">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Coal_in_Transport[1]" weight="18139346.0363495">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_Oil_in_Transport[1]" weight="85321.5399012683">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Oil_in_Transport[1]" weight="74093.1324679287">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_Gas_in_Transport[1]" weight="142852.204225058">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Gas_in_Transport[1]" weight="125994.076154869">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Transport[1]" weight="1248452.5481179">
+			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Transport[1]" weight="960417.994553344">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_coal_in_Industry_and_Other[1]" weight="3115.81772581403">
+			<isee:payoff_element name="Energy_demand_1.Share_for_coal_in_Industry_and_Other[1]" weight="2511.07903857607">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_oil_in_Industry_and_Other[1]" weight="4263.31256994941">
+			<isee:payoff_element name="Energy_demand_1.Share_for_oil_in_Industry_and_Other[1]" weight="3821.76648430816">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_gas_in_Industry_and_Other[1]" weight="4571.10199955795">
+			<isee:payoff_element name="Energy_demand_1.Share_for_gas_in_Industry_and_Other[1]" weight="5400.23115827329">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Industry_and_Other[1]" weight="4693.06031628755">
+			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Industry_and_Other[1]" weight="4776.38900060807">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 			<isee:payoff_element name="Global_energy_investments.Gross_Investments_in_Renewables[1]" weight="1">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_Renewables[1]" weight="3.63104484016226e-23">
+			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_Renewables[1]" weight="1.13950700550806e-22">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Electricity_investments.Investments_in_Nuclear_Capacity[1]" weight="5.28518103402443e-21">
+			<isee:payoff_element name="Electricity_investments.Investments_in_Nuclear_Capacity[1]" weight="2.8478596620628e-21">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_Biofuel_Capacity[1]" weight="5.80781516364575e-21">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_Hydropower_Energy_capacity[1]" weight="6.08381078669847e-21">
+			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_Hydropower_Energy_capacity[1]" weight="9.24273538441968e-21">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_wind_Energy_Capacity[1]" weight="1.92766186833609e-22">
+			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_wind_Energy_Capacity[1]" weight="1.28522921051024e-21">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_Solar_Energy_Capacity[1]" weight="3.86910038899805e-22">
+			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_Solar_Energy_Capacity[1]" weight="5.5343404564667e-22">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Solar_energy_1.Solar_Energy_Output[1]" weight="0.00000475995192431042">
+			<isee:payoff_element name="Solar_energy_1.Solar_Energy_Output[1]" weight="0.0000298634523875353">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Solar_energy_1.Solar_Energy_Capacity[1]" weight="0.0000120977675358186">
+			<isee:payoff_element name="Solar_energy_1.Solar_Energy_Capacity[1]" weight="0.0000660722504239677">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Solar_energy_1.Installation_Cost_of_Solar_capacity[1]" weight="0.00000571640274138291">
+			<isee:payoff_element name="Solar_energy_1.Installation_Cost_of_Solar_capacity[1]" weight="0.00000881752601709714">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Wind_energy_1.Wind_Energy_Output[1]" weight="0.0000021803570370707">
+			<isee:payoff_element name="Wind_energy_1.Wind_Energy_Output[1]" weight="0.0000774831939839672">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Wind_energy_1.Wind_Energy_Capacity[1]" weight="0.00000747736705986904">
+			<isee:payoff_element name="Wind_energy_1.Wind_Energy_Capacity[1]" weight="0.000069511584690557">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Wind_energy_1.Installation_Cost_of_Wind_capacity[1]" weight="0.00000590552181127197">
+			<isee:payoff_element name="Wind_energy_1.Installation_Cost_of_Wind_capacity[1]" weight="0.0000145198969505903">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Energy_Capacity[1]" weight="0.000118697733021796">
+			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Energy_Capacity[1]" weight="0.000971720006856292">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Energy_Output[1]" weight="0.00000592450807770941">
+			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Energy_Output[1]" weight="0.0000301035430143606">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Installation_Costs[1]" weight="0.0000122696306770517">
+			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Installation_Costs[1]" weight="0.0000222927420908212">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 			<isee:payoff_element name="Energy_Supply_1.bio_fuel_primary_energy[1]" weight="31351362.0661803">
@@ -1670,85 +1667,85 @@
 			<isee:payoff_element name="Energy_Supply_1.bio_fuel_production[1]" weight="0.0101325757199884">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Renewable_energy_output[1]" weight="1.48609516637224e-7">
+			<isee:payoff_element name="Energy_Supply_1.Renewable_energy_output[1]" weight="0.00000312098613430803">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Nuclear_Energy_share_in_electricity[1]" weight="666.390967034523">
+			<isee:payoff_element name="Energy_Supply_1.Nuclear_Energy_share_in_electricity[1]" weight="2777.65582254193">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Hydropower_Energy_share_in_electricity[1]" weight="1536.8218218057">
+			<isee:payoff_element name="Energy_Supply_1.Hydropower_Energy_share_in_electricity[1]" weight="3874.14047637272">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Bio_Energy_share_in_electricity[1]" weight="15458.7410527065">
+			<isee:payoff_element name="Energy_Supply_1.Bio_Energy_share_in_electricity[1]" weight="13617.8593465224">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Wind_energy_share_in_electricity[1]" weight="1839.91511661455">
+			<isee:payoff_element name="Energy_Supply_1.Wind_energy_share_in_electricity[1]" weight="57490.6270323232">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Solar_energy_share_in_electricity[1]" weight="4140.20368221829">
+			<isee:payoff_element name="Energy_Supply_1.Solar_energy_share_in_electricity[1]" weight="10253.5486872715">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_gas"[1]' weight="3114.82175684194">
+			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_gas"[1]' weight="4580.41587716766">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_oil"[1]' weight="172.01132675045">
+			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_oil"[1]' weight="485.67755259661">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_coal"[1]' weight="983.063879436387">
+			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_coal"[1]' weight="1102.32525725785">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Gas_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="368.337914727865">
+			<isee:payoff_element name="Energy_Supply_1.Gas_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="377.520034271107">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Liquid_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="189.201258542542">
+			<isee:payoff_element name="Energy_Supply_1.Liquid_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="171.74295398756">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Coal_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="545.444192477685">
+			<isee:payoff_element name="Energy_Supply_1.Coal_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="593.716454653817">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Primary_Fossil_Fuel_Energy[1]" weight="1759.20867538818">
+			<isee:payoff_element name="Energy_Supply_1.Primary_Fossil_Energy_FUEL[1]" weight="1569.1640459975">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Total_Renewable_Energy_Capacity[1]" weight="0.0000026547715643777">
+			<isee:payoff_element name="Energy_Supply_1.Total_Renewable_Energy_Capacity[1]" weight="0.000038102245597104">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_solid_fuels.Primary_Fossil_Energy_FUEL[1]" weight="994.324413371382">
+			<isee:payoff_element name="Extraction_of_solid_fuels.Primary_Fossil_Energy_FUEL[1]" weight="3394.477473726">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_liquid_fuels.Primary_Fossil_Energy_FUEL[1]" weight="856.1152404477">
+			<isee:payoff_element name="Extraction_of_liquid_fuels.Primary_Fossil_Energy_FUEL[1]" weight="2153.42849985493">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_gas_fuels.Primary_Fossil_Energy_FUEL[1]" weight="5380.04849915363">
+			<isee:payoff_element name="Extraction_of_gas_fuels.Primary_Fossil_Energy_FUEL[1]" weight="18245.2659552763">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 			<isee:payoff_element name="Extraction_of_fuels.Total_Primary_Fossil_Energy_FUEL[1]" weight="485.069968199009">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Global_energy_investments.share_of_GDP_invested_in_fuel_extraction[1]" weight="195353.030211985">
+			<isee:payoff_element name="Global_energy_investments.share_of_GDP_invested_in_fuel_extraction[1]" weight="166761.631044485">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Global_energy_investments.Gross_Investments_in_Fossil_Energy_Capital[1]" weight="6.29422399992294e-22">
+			<isee:payoff_element name="Global_energy_investments.Gross_Investments_in_Fossil_Energy_Capital[1]" weight="4.70998155032388e-22">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Global_energy_investments.Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="2.56994135619789e-23">
+			<isee:payoff_element name="Global_energy_investments.Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="3.10981830980155e-23">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Global_energy_investments.Gross_Investments_in_Fossil_Energy_Capital_oil_and_gas[1]" weight="2.28172804457829e-21">
+			<isee:payoff_element name="Global_energy_investments.Gross_Investments_in_Fossil_Energy_Capital_oil_and_gas[1]" weight="1.4854171980079e-21">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Global_energy_investments.Oil_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="3.34443687094208e-23">
+			<isee:payoff_element name="Global_energy_investments.Oil_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="3.95587401529808e-23">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Global_energy_investments.Coal_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="1.98814493333331e-22">
+			<isee:payoff_element name="Global_energy_investments.Coal_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="2.83886335181911e-22">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Global_energy_investments.Gas_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="1.40962576167056e-22">
+			<isee:payoff_element name="Global_energy_investments.Gas_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="1.94730308052345e-22">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Global_energy_investments.share_of_GDP_invested_in_Energy_without_fuel[1]" weight="24465969.8593471">
+			<isee:payoff_element name="Global_energy_investments.share_of_GDP_invested_in_Energy_without_fuel[1]" weight="5307419.28327505">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Electricity_demand[1]" weight="1.23361223642306e-7">
+			<isee:payoff_element name="Energy_demand_1.Electricity_demand[1]" weight="7.19271800111668e-7">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 			<isee:payoff_element name="Energy_demand_1.energy_demand_for_Buildings_per_person[1]" weight="5.88148366495851">
@@ -1793,16 +1790,94 @@
 			<isee:payoff_element name="Energy_demand_1.electricity_demand_for_Buildings[1]" weight="2.69900991706648e-18">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Coal_to_electricity_conversion.Secondary_Fossil_Energy_Output_coal[1]" weight="5.37305970530963e-7">
+			<isee:payoff_element name="Coal_to_electricity_conversion.Secondary_Fossil_Energy_Output_coal[1]" weight="0.0000015048876186219">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Gas_to_electricity_conversion.Secondary_Fossil_Energy_Output_gas[1]" weight="0.00000291748956451785">
+			<isee:payoff_element name="Gas_to_electricity_conversion.Secondary_Fossil_Energy_Output_gas[1]" weight="0.00000819676873773515">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Oil_to_electricity_conversion.Secondary_Fossil_Energy_Output_oil[1]" weight="3.34652040614788e-7">
+			<isee:payoff_element name="Oil_to_electricity_conversion.Secondary_Fossil_Energy_Output_oil[1]" weight="6.63889743186671e-7">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Energy_output_electricity[1]" weight="9.90295739617103e-8">
+			<isee:payoff_element name="Energy_Supply_1.Energy_output_electricity[1]" weight="3.38124451483973e-7">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Hydropower[1]" weight="493607.486921915">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Nuclear[1]" weight="27160.5228611805">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Bio_Energy[1]" weight="3514297.07741308">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Wind[1]" weight="2153896.81262606">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Solar[1]" weight="300589.562135692">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Renewables[1]" weight="85550.761680456">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Gas[1]" weight="956.327034652259">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_Supply_1.Total_ES_per_capita[1]" weight="2.90444226217645e-8">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_Supply_1.Total_Energy_Supply[1]" weight="1.30091440588966e-8">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Oil[1]" weight="371.868189144527">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Coal[1]" weight="989.082209315288">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_Supply_1.Liquid_output_FUEL[1]" weight="1">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_Supply_1.Gas_output_FUEL[1]" weight="1">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_Supply_1.Solid_output_FUEL[1]" weight="1">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Extraction_of_solid_fuels.Primary_Fossil_Energy_FUEL_for_Fuel[1]" weight="66049.3187231774">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Extraction_of_solid_fuels.Primary_Fossil_Energy_FUEL_for_Electricity[1]" weight="7411.68862980027">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Extraction_of_liquid_fuels.Primary_Fossil_Energy_FUEL_for_Fuel[1]" weight="1773.08165082161">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Extraction_of_liquid_fuels.Primary_Fossil_Energy_FUEL_for_Electricity[1]" weight="1095.73147418172">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Extraction_of_gas_fuels.Primary_Fossil_Energy_FUEL_for_Fuel[1]" weight="147464.071434681">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Extraction_of_gas_fuels.Primary_Fossil_Energy_FUEL_for_Electricity[1]" weight="13885.7492831755">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_demand_1.Gas_demand_FUEL[1]" weight="82344.8105834232">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_demand_1.Liquid_fuel_demand_FUEL[1]" weight="1">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_demand_1.Coal_demand_FUEL[1]" weight="10068.4047707127">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_demand_1.Share_of_Energy_for_Industry_and_Other[1]" weight="7005.70783773817">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_demand_1.Share_of_Energy_for_Buildings[1]" weight="4738.9979076186">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_demand_1.Share_of_Energy_for_Transportation[1]" weight="3194.90637803418">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 		</isee:payoff_specs>
@@ -2345,12 +2420,8 @@
 				<connect2 to="Emissions.Population" from="Demographics.Population"/>
 				<connect to="Energy_demand_1.Population" from="Demographics.Population"/>
 				<connect2 to="Energy_demand_1.Population" from="Demographics.Population"/>
-				<connect to="Energy_demand_1.Population" from="Demographics.Population"/>
-				<connect2 to="Energy_demand_1.Population" from="Demographics.Population"/>
 				<connect to="Energy_demand.Population" from="Demographics.Population"/>
 				<connect2 to="Energy_demand.Population" from="Demographics.Population"/>
-				<connect to="Energy_Supply_1.Population" from="Demographics.Population"/>
-				<connect2 to="Energy_Supply_1.Population" from="Demographics.Population"/>
 				<connect to="Energy_Supply_1.Population" from="Demographics.Population"/>
 				<connect2 to="Energy_Supply_1.Population" from="Demographics.Population"/>
 				<connect to="Energy_supply.Population" from="Demographics.Population"/>
@@ -2387,8 +2458,6 @@
 				<connect2 to="Inflation.real_GDP_per_person" from="Demographics.real_GDP_per_person"/>
 				<connect to="Inflation.real_GDP_per_person_1" from="Demographics.real_GDP_per_person"/>
 				<connect2 to="Inflation.real_GDP_per_person_1" from="Demographics.real_GDP_per_person"/>
-				<connect to="Energy_demand_1.Converter_2" from="Demographics.UNIT_p_per_mp"/>
-				<connect2 to="Energy_demand_1.Converter_2" from="Demographics.UNIT_p_per_mp"/>
 				<connect to="Energy_demand_1.Converter_2" from="Demographics.UNIT_p_per_mp"/>
 				<connect2 to="Energy_demand_1.Converter_2" from="Demographics.UNIT_p_per_mp"/>
 				<connect to="Energy_demand.Converter_2" from="Demographics.UNIT_p_per_mp"/>
@@ -2428,22 +2497,16 @@
 				<connect2 to="Crop.today" from="Climate.climate_impact_stoptime"/>
 				<connect to="Damages_for_energy.today" from="Climate.climate_impact_stoptime"/>
 				<connect2 to="Damages_for_energy.today" from="Climate.climate_impact_stoptime"/>
-				<connect to="Damages_for_energy.today" from="Climate.climate_impact_stoptime"/>
-				<connect2 to="Damages_for_energy.today" from="Climate.climate_impact_stoptime"/>
 				<connect to="Damages.today" from="Climate.climate_impact_stoptime"/>
 				<connect2 to="Damages.today" from="Climate.climate_impact_stoptime"/>
 				<connect to="Demographics.today" from="Climate.climate_impact_stoptime"/>
 				<connect2 to="Demographics.today" from="Climate.climate_impact_stoptime"/>
 				<connect to="Efficiency_reduction_in_power_plants_1.today" from="Climate.climate_impact_stoptime"/>
 				<connect2 to="Efficiency_reduction_in_power_plants_1.today" from="Climate.climate_impact_stoptime"/>
-				<connect to="Efficiency_reduction_in_power_plants_1.today" from="Climate.climate_impact_stoptime"/>
-				<connect2 to="Efficiency_reduction_in_power_plants_1.today" from="Climate.climate_impact_stoptime"/>
 				<connect to="Efficiency_reduction_in_power_plants.today" from="Climate.climate_impact_stoptime"/>
 				<connect2 to="Efficiency_reduction_in_power_plants.today" from="Climate.climate_impact_stoptime"/>
 				<connect to="Employment.today" from="Climate.climate_impact_stoptime"/>
 				<connect2 to="Employment.today" from="Climate.climate_impact_stoptime"/>
-				<connect to="Energy_demand_1.today" from="Climate.climate_impact_stoptime"/>
-				<connect2 to="Energy_demand_1.today" from="Climate.climate_impact_stoptime"/>
 				<connect to="Energy_demand_1.today" from="Climate.climate_impact_stoptime"/>
 				<connect2 to="Energy_demand_1.today" from="Climate.climate_impact_stoptime"/>
 				<connect to="Energy_demand.today" from="Climate.climate_impact_stoptime"/>
@@ -2474,18 +2537,12 @@
 				<connect2 to="Demographics.switch_demography_damage" from="Climate.switch_demography_damage"/>
 				<connect to="Damages_for_energy.switch_energy_damage" from="Climate.switch_energy_damage"/>
 				<connect2 to="Damages_for_energy.switch_energy_damage" from="Climate.switch_energy_damage"/>
-				<connect to="Damages_for_energy.switch_energy_damage" from="Climate.switch_energy_damage"/>
-				<connect2 to="Damages_for_energy.switch_energy_damage" from="Climate.switch_energy_damage"/>
 				<connect to="Damages.switch_energy_damage" from="Climate.switch_energy_damage"/>
 				<connect2 to="Damages.switch_energy_damage" from="Climate.switch_energy_damage"/>
 				<connect to="Efficiency_reduction_in_power_plants_1.switch_energy_damage" from="Climate.switch_energy_damage"/>
 				<connect2 to="Efficiency_reduction_in_power_plants_1.switch_energy_damage" from="Climate.switch_energy_damage"/>
-				<connect to="Efficiency_reduction_in_power_plants_1.switch_energy_damage" from="Climate.switch_energy_damage"/>
-				<connect2 to="Efficiency_reduction_in_power_plants_1.switch_energy_damage" from="Climate.switch_energy_damage"/>
 				<connect to="Efficiency_reduction_in_power_plants.switch_energy_damage" from="Climate.switch_energy_damage"/>
 				<connect2 to="Efficiency_reduction_in_power_plants.switch_energy_damage" from="Climate.switch_energy_damage"/>
-				<connect to="Energy_demand_1.switch_energy_damage" from="Climate.switch_energy_damage"/>
-				<connect2 to="Energy_demand_1.switch_energy_damage" from="Climate.switch_energy_damage"/>
 				<connect to="Energy_demand_1.switch_energy_damage" from="Climate.switch_energy_damage"/>
 				<connect2 to="Energy_demand_1.switch_energy_damage" from="Climate.switch_energy_damage"/>
 				<connect to="Energy_demand.switch_energy_damage" from="Climate.switch_energy_damage"/>
@@ -2522,18 +2579,10 @@
 				<connect2 to="Sea_level_rise_costs_and_impacts.switch_sea_level_rise_relocation_damage" from="Climate.switch_sea_level_rise_relocation_cost_damage"/>
 				<connect to="Coastal_sea_level_rise.switch_sea_level_impact" from="Climate.switch_sea_level_rise_damage"/>
 				<connect2 to="Coastal_sea_level_rise.switch_sea_level_impact" from="Climate.switch_sea_level_rise_damage"/>
-				<connect to="Bio_fuel_energy_conversion_1.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Bio_fuel_energy.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Bio_fuel_energy.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Bio_fuel.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Bio_fuel.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect to="Coal_fossil_energy_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect2 to="Coal_fossil_energy_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect to="Coal_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect2 to="Coal_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Coal_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Coal_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Fossil_energy_coal.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
@@ -2542,16 +2591,8 @@
 				<connect2 to="Fossil_energy_gas.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Fossil_energy_oil.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Fossil_energy_oil.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect to="Gas_fossil_energy_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect2 to="Gas_fossil_energy_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Gas_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Gas_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect to="Gas_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect2 to="Gas_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect to="Oil_fossil_energy_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect2 to="Oil_fossil_energy_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect to="Oil_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
-				<connect2 to="Oil_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Oil_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect2 to="Oil_to_electricity_conversion.MtSO2_to_tSO2" from="Climate_Units.MtSO2_to_tSO2"/>
 				<connect to="Demographics.selected_cold_mortality_impact_case" from="Climate_Units.selected_cold_mortality_impact_case"/>
@@ -2560,30 +2601,18 @@
 				<connect2 to="Crop.selected_crops_damages_case" from="Climate_Units.selected_crops_damages_case"/>
 				<connect to="Efficiency_reduction_in_power_plants_1.selected_energy_supply_hydroelectric_damages_case" from="Climate_Units.selected_energy_supply_hydroelectric_damages_case"/>
 				<connect2 to="Efficiency_reduction_in_power_plants_1.selected_energy_supply_hydroelectric_damages_case" from="Climate_Units.selected_energy_supply_hydroelectric_damages_case"/>
-				<connect to="Efficiency_reduction_in_power_plants_1.selected_energy_supply_hydroelectric_damages_case" from="Climate_Units.selected_energy_supply_hydroelectric_damages_case"/>
-				<connect2 to="Efficiency_reduction_in_power_plants_1.selected_energy_supply_hydroelectric_damages_case" from="Climate_Units.selected_energy_supply_hydroelectric_damages_case"/>
 				<connect to="Efficiency_reduction_in_power_plants.selected_energy_supply_hydroelectric_damages_case" from="Climate_Units.selected_energy_supply_hydroelectric_damages_case"/>
 				<connect2 to="Efficiency_reduction_in_power_plants.selected_energy_supply_hydroelectric_damages_case" from="Climate_Units.selected_energy_supply_hydroelectric_damages_case"/>
-				<connect to="Efficiency_reduction_in_power_plants_1.selected_energy_supply_damages_case" from="Climate_Units.selected_energy_supply_thermoelectric_damages_case"/>
-				<connect2 to="Efficiency_reduction_in_power_plants_1.selected_energy_supply_damages_case" from="Climate_Units.selected_energy_supply_thermoelectric_damages_case"/>
 				<connect to="Efficiency_reduction_in_power_plants_1.selected_energy_supply_damages_case" from="Climate_Units.selected_energy_supply_thermoelectric_damages_case"/>
 				<connect2 to="Efficiency_reduction_in_power_plants_1.selected_energy_supply_damages_case" from="Climate_Units.selected_energy_supply_thermoelectric_damages_case"/>
 				<connect to="Efficiency_reduction_in_power_plants.selected_energy_supply_damages_case" from="Climate_Units.selected_energy_supply_thermoelectric_damages_case"/>
 				<connect2 to="Efficiency_reduction_in_power_plants.selected_energy_supply_damages_case" from="Climate_Units.selected_energy_supply_thermoelectric_damages_case"/>
 				<connect to="Demographics.selected_hot_mortality_impact_case" from="Climate_Units.selected_hot_mortality_impact_case"/>
 				<connect2 to="Demographics.selected_hot_mortality_impact_case" from="Climate_Units.selected_hot_mortality_impact_case"/>
-				<connect to="Bio_fuel_energy_conversion_1.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Bio_fuel_energy.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Bio_fuel_energy.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Bio_fuel.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Bio_fuel.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect to="Coal_fossil_energy_conversion.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect2 to="Coal_fossil_energy_conversion.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect to="Coal_to_electricity_conversion.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect2 to="Coal_to_electricity_conversion.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Coal_to_electricity_conversion.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Coal_to_electricity_conversion.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Fossil_energy_coal.UNIT_ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
@@ -2592,30 +2621,14 @@
 				<connect2 to="Fossil_energy_gas.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Fossil_energy_oil.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Fossil_energy_oil.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect to="Gas_fossil_energy_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect2 to="Gas_fossil_energy_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Gas_to_electricity_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Gas_to_electricity_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect to="Gas_to_electricity_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect2 to="Gas_to_electricity_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect to="Oil_fossil_energy_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect2 to="Oil_fossil_energy_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect to="Oil_to_electricity_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
 				<connect2 to="Oil_to_electricity_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect to="Oil_to_electricity_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect2 to="Oil_to_electricity_conversion.ktN2O_to_tCO2e" from="Climate_Units.UNIT_ktN2O_to_tCO2e"/>
-				<connect to="Bio_fuel_energy_conversion_1.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Bio_fuel_energy.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Bio_fuel_energy.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Bio_fuel.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Bio_fuel.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect to="Coal_fossil_energy_conversion.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect2 to="Coal_fossil_energy_conversion.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect to="Coal_to_electricity_conversion.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect2 to="Coal_to_electricity_conversion.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Coal_to_electricity_conversion.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Coal_to_electricity_conversion.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Fossil_energy_coal.UNIT_MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
@@ -2624,30 +2637,14 @@
 				<connect2 to="Fossil_energy_gas.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Fossil_energy_oil.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Fossil_energy_oil.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect to="Gas_fossil_energy_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect2 to="Gas_fossil_energy_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Gas_to_electricity_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Gas_to_electricity_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect to="Gas_to_electricity_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect2 to="Gas_to_electricity_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect to="Oil_fossil_energy_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect2 to="Oil_fossil_energy_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect to="Oil_to_electricity_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
 				<connect2 to="Oil_to_electricity_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect to="Oil_to_electricity_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect2 to="Oil_to_electricity_conversion.MtCH4_to_tCO2e" from="Climate_Units.UNIT_MtCH4_to_tCO2e"/>
-				<connect to="Bio_fuel_energy_conversion_1.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Bio_fuel_energy.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Bio_fuel_energy.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Bio_fuel.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Bio_fuel.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect to="Coal_fossil_energy_conversion.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect2 to="Coal_fossil_energy_conversion.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect to="Coal_to_electricity_conversion.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect2 to="Coal_to_electricity_conversion.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Coal_to_electricity_conversion.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Coal_to_electricity_conversion.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Fossil_energy_coal.UNIT_MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
@@ -2656,16 +2653,8 @@
 				<connect2 to="Fossil_energy_gas.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Fossil_energy_oil.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Fossil_energy_oil.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect to="Gas_fossil_energy_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect2 to="Gas_fossil_energy_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Gas_to_electricity_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Gas_to_electricity_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect to="Gas_to_electricity_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect2 to="Gas_to_electricity_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect to="Oil_fossil_energy_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect2 to="Oil_fossil_energy_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect to="Oil_to_electricity_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
-				<connect2 to="Oil_to_electricity_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="Oil_to_electricity_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect2 to="Oil_to_electricity_conversion.MtCO2_to_tCO2e" from="Climate_Units.UNIT_MtCO2_to_tCO2e"/>
 				<connect to="CCS.CO2_emissions_from_biofuels" from="Emissions.CO2_emissions_from_biofuels"/>
@@ -2676,18 +2665,10 @@
 				<connect2 to="CCS.CO2_emissions_from_gas" from="Emissions.CO2_emissions_from_gas"/>
 				<connect to="CCS.CO2_emissions_from_oil" from="Emissions.CO2_emissions_from_oil"/>
 				<connect2 to="CCS.CO2_emissions_from_oil" from="Emissions.CO2_emissions_from_oil"/>
-				<connect to="Bio_fuel_energy_conversion_1.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Bio_fuel_energy.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Bio_fuel_energy.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Bio_fuel.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Bio_fuel.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect to="Coal_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect2 to="Coal_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect2 to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Fossil_energy_coal.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
@@ -2696,30 +2677,14 @@
 				<connect2 to="Fossil_energy_gas.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Fossil_energy_oil.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Fossil_energy_oil.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect to="Gas_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect2 to="Gas_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect2 to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect to="Oil_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect2 to="Oil_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
 				<connect2 to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect2 to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_CH4_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_CH4_emissions"/>
-				<connect to="Bio_fuel_energy_conversion_1.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Bio_fuel_energy.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Bio_fuel_energy.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Bio_fuel.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Bio_fuel.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect to="Coal_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect2 to="Coal_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect2 to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Fossil_energy_coal.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
@@ -2728,30 +2693,14 @@
 				<connect2 to="Fossil_energy_gas.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Fossil_energy_oil.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Fossil_energy_oil.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect to="Gas_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect2 to="Gas_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect2 to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect to="Oil_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect2 to="Oil_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
 				<connect2 to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect2 to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_N2O_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_N2O_emissions"/>
-				<connect to="Bio_fuel_energy_conversion_1.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Bio_fuel_energy.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Bio_fuel_energy.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Bio_fuel.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Bio_fuel.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect to="Coal_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect2 to="Coal_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect2 to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Coal_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Fossil_energy_coal.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
@@ -2760,32 +2709,16 @@
 				<connect2 to="Fossil_energy_gas.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Fossil_energy_oil.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Fossil_energy_oil.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect to="Gas_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect2 to="Gas_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect2 to="Gas_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect to="Oil_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect2 to="Oil_fossil_energy_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
 				<connect2 to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect2 to="Oil_to_electricity_conversion.coupling_factor_of_fossil_fuels_and_SO2_emissions" from="Emissions.coupling_factor_of_fossil_fuels_and_SO2_emissions"/>
-				<connect to="Bio_fuel_energy_conversion_1.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Bio_fuel_energy.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Bio_fuel_energy.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Bio_fuel.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Bio_fuel.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="CCS.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="CCS.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect to="Coal_fossil_energy_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect2 to="Coal_fossil_energy_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect to="Coal_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect2 to="Coal_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Coal_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Coal_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Fossil_energy_coal.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
@@ -2794,16 +2727,8 @@
 				<connect2 to="Fossil_energy_gas.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Fossil_energy_oil.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Fossil_energy_oil.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect to="Gas_fossil_energy_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect2 to="Gas_fossil_energy_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Gas_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Gas_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect to="Gas_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect2 to="Gas_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect to="Oil_fossil_energy_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect2 to="Oil_fossil_energy_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect to="Oil_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
-				<connect2 to="Oil_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Oil_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect2 to="Oil_to_electricity_conversion.GtC_to_MtCO2" from="Emissions.GtC_to_MtCO2"/>
 				<connect to="Employment.Population_1" from="Emissions.Population"/>
@@ -2864,22 +2789,16 @@
 				<connect2 to="Coastal_sea_level_rise.Surface_Temperature_Anomaly_1" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect to="Damages_for_energy.Surface_Temperature_Anomaly_1" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect2 to="Damages_for_energy.Surface_Temperature_Anomaly_1" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
-				<connect to="Damages_for_energy.Surface_Temperature_Anomaly_1" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
-				<connect2 to="Damages_for_energy.Surface_Temperature_Anomaly_1" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect to="Damages.Surface_Temperature_Anomaly_1" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect2 to="Damages.Surface_Temperature_Anomaly_1" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect to="Demographics.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect2 to="Demographics.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect to="Efficiency_reduction_in_power_plants_1.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect2 to="Efficiency_reduction_in_power_plants_1.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
-				<connect to="Efficiency_reduction_in_power_plants_1.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
-				<connect2 to="Efficiency_reduction_in_power_plants_1.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect to="Efficiency_reduction_in_power_plants.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect2 to="Efficiency_reduction_in_power_plants.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect to="Employment.Surface_Temperature_Anomaly_1" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect2 to="Employment.Surface_Temperature_Anomaly_1" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
-				<connect to="Energy_demand_1.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
-				<connect2 to="Energy_demand_1.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect to="Energy_demand_1.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect2 to="Energy_demand_1.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect to="Energy_demand.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
@@ -3177,24 +3096,16 @@
 				<connect2 to="Crop.today" from="Climate.climate_impact_stoptime"/>
 				<connect to="Inflation.animal_products_demand" from="Food_Demand.animal_products_demand"/>
 				<connect2 to="Inflation.animal_products_demand" from="Food_Demand.animal_products_demand"/>
-				<connect to="Bio_fuel_energy_conversion_1.crop_demand" from="Food_Demand.crop_demand"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.crop_demand" from="Food_Demand.crop_demand"/>
 				<connect to="Bio_fuel_energy.crop_demand" from="Food_Demand.crop_demand"/>
 				<connect2 to="Bio_fuel_energy.crop_demand" from="Food_Demand.crop_demand"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.crop_demand" from="Food_Demand.crop_demand"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.crop_demand" from="Food_Demand.crop_demand"/>
 				<connect to="Bio_fuel.crop_demand" from="Food_Demand.crop_demand"/>
 				<connect2 to="Bio_fuel.crop_demand" from="Food_Demand.crop_demand"/>
 				<connect to="Inflation.crop_demand" from="Food_Demand.crop_demand"/>
 				<connect2 to="Inflation.crop_demand" from="Food_Demand.crop_demand"/>
 				<connect to="Total_Food_Demand.crop_supply_for_vegetal_products_1" from="Food_Demand.crop_supply_for_vegetal_products"/>
 				<connect2 to="Total_Food_Demand.crop_supply_for_vegetal_products_1" from="Food_Demand.crop_supply_for_vegetal_products"/>
-				<connect to="Bio_fuel_energy_conversion_1.crops_for_energy" from="Food_Demand.crops_for_energy"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.crops_for_energy" from="Food_Demand.crops_for_energy"/>
 				<connect to="Bio_fuel_energy.crops_for_energy" from="Food_Demand.crops_for_energy"/>
 				<connect2 to="Bio_fuel_energy.crops_for_energy" from="Food_Demand.crops_for_energy"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.crops_for_energy" from="Food_Demand.crops_for_energy"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.crops_for_energy" from="Food_Demand.crops_for_energy"/>
 				<connect to="Bio_fuel.crops_for_energy" from="Food_Demand.crops_for_energy"/>
 				<connect2 to="Bio_fuel.crops_for_energy" from="Food_Demand.crops_for_energy"/>
 				<connect to="Animal_Products_Demand.Average_Daily_Demand_Per_Capita_1" from="Food_Demand.direct_food_demand_per_person_per_day"/>
@@ -3468,16 +3379,12 @@
 				<connect2 to="Food_Demand.food_demand_policy" from="Behavioral_Choices.food_demand_policy"/>
 				<connect to="Energy_demand_1.per_person_use_of_energy_policy" from="Behavioral_Choices.per_person_use_of_energy_policy"/>
 				<connect2 to="Energy_demand_1.per_person_use_of_energy_policy" from="Behavioral_Choices.per_person_use_of_energy_policy"/>
-				<connect to="Energy_demand_1.per_person_use_of_energy_policy" from="Behavioral_Choices.per_person_use_of_energy_policy"/>
-				<connect2 to="Energy_demand_1.per_person_use_of_energy_policy" from="Behavioral_Choices.per_person_use_of_energy_policy"/>
 				<connect to="Energy_demand.per_person_use_of_energy_policy" from="Behavioral_Choices.per_person_use_of_energy_policy"/>
 				<connect2 to="Energy_demand.per_person_use_of_energy_policy" from="Behavioral_Choices.per_person_use_of_energy_policy"/>
 				<connect to="Animal_Products.start_year" from="Behavioral_Choices.start_year"/>
 				<connect2 to="Animal_Products.start_year" from="Behavioral_Choices.start_year"/>
 				<connect to="Climate_Risk_Perception.start_year" from="Behavioral_Choices.start_year"/>
 				<connect2 to="Climate_Risk_Perception.start_year" from="Behavioral_Choices.start_year"/>
-				<connect to="Energy_demand_1.Policy_Start_Year" from="Behavioral_Choices.start_year"/>
-				<connect2 to="Energy_demand_1.Policy_Start_Year" from="Behavioral_Choices.start_year"/>
 				<connect to="Energy_demand_1.Policy_Start_Year" from="Behavioral_Choices.start_year"/>
 				<connect2 to="Energy_demand_1.Policy_Start_Year" from="Behavioral_Choices.start_year"/>
 				<connect to="Energy_demand.Policy_Start_Year" from="Behavioral_Choices.start_year"/>
@@ -3490,8 +3397,6 @@
 				<connect2 to="Food_Demand.switch_animal_products_fraction_policy" from="Behavioral_Choices.switch_animal_products_fraction_policy"/>
 				<connect to="Animal_Products.switch_aquatic_animal_products_fraction_policy" from="Behavioral_Choices.switch_aquatic_animal_products_fraction_policy"/>
 				<connect2 to="Animal_Products.switch_aquatic_animal_products_fraction_policy" from="Behavioral_Choices.switch_aquatic_animal_products_fraction_policy"/>
-				<connect to="Energy_demand_1.switch_energy_demand_policy" from="Behavioral_Choices.switch_energy_demand_policy"/>
-				<connect2 to="Energy_demand_1.switch_energy_demand_policy" from="Behavioral_Choices.switch_energy_demand_policy"/>
 				<connect to="Energy_demand_1.switch_energy_demand_policy" from="Behavioral_Choices.switch_energy_demand_policy"/>
 				<connect2 to="Energy_demand_1.switch_energy_demand_policy" from="Behavioral_Choices.switch_energy_demand_policy"/>
 				<connect to="Energy_demand.switch_energy_demand_policy" from="Behavioral_Choices.switch_energy_demand_policy"/>
@@ -3513,20 +3418,12 @@
 				<connect2 to="Government.additional_transfers_policy" from="Government_Regulations.additional_transfers_policy"/>
 				<connect to="Animal_Products.animal_product_efficiency_policy" from="Government_Regulations.animal_product_efficiency_policy"/>
 				<connect2 to="Animal_Products.animal_product_efficiency_policy" from="Government_Regulations.animal_product_efficiency_policy"/>
-				<connect to="Bio_fuel_energy_conversion_1.biofuels_CO2e_emissions_tax_reduction_share" from="Government_Regulations.biofuels_CO2e_emissions_tax_reduction_share"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.biofuels_CO2e_emissions_tax_reduction_share" from="Government_Regulations.biofuels_CO2e_emissions_tax_reduction_share"/>
 				<connect to="Bio_fuel_energy.biofuels_CO2e_emissions_tax_reduction_share" from="Government_Regulations.biofuels_CO2e_emissions_tax_reduction_share"/>
 				<connect2 to="Bio_fuel_energy.biofuels_CO2e_emissions_tax_reduction_share" from="Government_Regulations.biofuels_CO2e_emissions_tax_reduction_share"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.biofuels_CO2e_emissions_tax_reduction_share" from="Government_Regulations.biofuels_CO2e_emissions_tax_reduction_share"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.biofuels_CO2e_emissions_tax_reduction_share" from="Government_Regulations.biofuels_CO2e_emissions_tax_reduction_share"/>
 				<connect to="Bio_fuel.biofuels_CO2e_emissions_tax_reduction_share" from="Government_Regulations.biofuels_CO2e_emissions_tax_reduction_share"/>
 				<connect2 to="Bio_fuel.biofuels_CO2e_emissions_tax_reduction_share" from="Government_Regulations.biofuels_CO2e_emissions_tax_reduction_share"/>
-				<connect to="Bio_fuel_energy_conversion_1.biofuels_SO2_emissions_tax_reduction_share" from="Government_Regulations.biofuels_SO2_emissions_tax_reduction_share"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.biofuels_SO2_emissions_tax_reduction_share" from="Government_Regulations.biofuels_SO2_emissions_tax_reduction_share"/>
 				<connect to="Bio_fuel_energy.biofuels_SO2_emissions_tax_reduction_share" from="Government_Regulations.biofuels_SO2_emissions_tax_reduction_share"/>
 				<connect2 to="Bio_fuel_energy.biofuels_SO2_emissions_tax_reduction_share" from="Government_Regulations.biofuels_SO2_emissions_tax_reduction_share"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.biofuels_SO2_emissions_tax_reduction_share" from="Government_Regulations.biofuels_SO2_emissions_tax_reduction_share"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.biofuels_SO2_emissions_tax_reduction_share" from="Government_Regulations.biofuels_SO2_emissions_tax_reduction_share"/>
 				<connect to="Bio_fuel.biofuels_SO2_emissions_tax_reduction_share" from="Government_Regulations.biofuels_SO2_emissions_tax_reduction_share"/>
 				<connect2 to="Bio_fuel.biofuels_SO2_emissions_tax_reduction_share" from="Government_Regulations.biofuels_SO2_emissions_tax_reduction_share"/>
 				<connect to="Government.computed_government_debt_to_GDP_ratio_target" from="Government_Regulations.computed_government_debt_to_GDP_ratio_target"/>
@@ -3547,20 +3444,12 @@
 				<connect2 to="Government.minimum_percentage_of_taxes_spent_by_government" from="Government_Regulations.minimum_percentage_of_taxes_spent_by_government"/>
 				<connect to="Electricity_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
 				<connect2 to="Electricity_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
-				<connect to="Electricity_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
-				<connect2 to="Electricity_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
 				<connect to="Energy_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
 				<connect2 to="Energy_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
 				<connect to="Gas_fuel_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
 				<connect2 to="Gas_fuel_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
-				<connect to="Gas_fuel_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
-				<connect2 to="Gas_fuel_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
 				<connect to="Liquid_fuel_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
 				<connect2 to="Liquid_fuel_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
-				<connect to="Liquid_fuel_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
-				<connect2 to="Liquid_fuel_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
-				<connect to="Solid_fuel_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
-				<connect2 to="Solid_fuel_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
 				<connect to="Solid_fuel_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
 				<connect2 to="Solid_fuel_investments.Moratorium_on_fossil_energy_year" from="Government_Regulations.Moratorium_on_fossil_energy_year"/>
 				<connect to="Sea_level_rise_Impacts_and_Adaptation.No_SLR_adaptation_strategy" from="Government_Regulations.No_SLR_adaptation_strategy"/>
@@ -3575,18 +3464,12 @@
 				<connect2 to="Sea_level_rise_Impacts_and_Adaptation.Protection_as_SLR_adaptation_strategy" from="Government_Regulations.Protection_as_SLR_adaptation_strategy"/>
 				<connect to="Extraction_of_solid_fuels.rate_of_decommissioning_fossil_fuel_extraction_capital" from="Government_Regulations.rate_of_decommissioning_coal_fossil_fuel_extraction_capital"/>
 				<connect2 to="Extraction_of_solid_fuels.rate_of_decommissioning_fossil_fuel_extraction_capital" from="Government_Regulations.rate_of_decommissioning_coal_fossil_fuel_extraction_capital"/>
-				<connect to="Extraction_of_solid_fuels.rate_of_decommissioning_fossil_fuel_extraction_capital" from="Government_Regulations.rate_of_decommissioning_coal_fossil_fuel_extraction_capital"/>
-				<connect2 to="Extraction_of_solid_fuels.rate_of_decommissioning_fossil_fuel_extraction_capital" from="Government_Regulations.rate_of_decommissioning_coal_fossil_fuel_extraction_capital"/>
 				<connect to="Fossil_energy_coal.rate_of_decommissioning_fossil_fuel_extraction_capital" from="Government_Regulations.rate_of_decommissioning_coal_fossil_fuel_extraction_capital"/>
 				<connect2 to="Fossil_energy_coal.rate_of_decommissioning_fossil_fuel_extraction_capital" from="Government_Regulations.rate_of_decommissioning_coal_fossil_fuel_extraction_capital"/>
 				<connect to="Extraction_of_gas_fuels.rate_of_decommissioning_fossil_fuel_extraction_capital" from="Government_Regulations.rate_of_decommissioning_gas_fossil_fuel_extraction_capital"/>
 				<connect2 to="Extraction_of_gas_fuels.rate_of_decommissioning_fossil_fuel_extraction_capital" from="Government_Regulations.rate_of_decommissioning_gas_fossil_fuel_extraction_capital"/>
-				<connect to="Extraction_of_gas_fuels.rate_of_decommissioning_fossil_fuel_extraction_capital" from="Government_Regulations.rate_of_decommissioning_gas_fossil_fuel_extraction_capital"/>
-				<connect2 to="Extraction_of_gas_fuels.rate_of_decommissioning_fossil_fuel_extraction_capital" from="Government_Regulations.rate_of_decommissioning_gas_fossil_fuel_extraction_capital"/>
 				<connect to="Fossil_energy_gas.rate_of_decommissioning_fossil_fuel_extraction_capital" from="Government_Regulations.rate_of_decommissioning_gas_fossil_fuel_extraction_capital"/>
 				<connect2 to="Fossil_energy_gas.rate_of_decommissioning_fossil_fuel_extraction_capital" from="Government_Regulations.rate_of_decommissioning_gas_fossil_fuel_extraction_capital"/>
-				<connect to="Extraction_of_liquid_fuels.rate_of_decommissioning_fossil_fuel_extraction_capital" from="Government_Regulations.rate_of_decommissioning_oil_fossil_fuel_extraction_capital"/>
-				<connect2 to="Extraction_of_liquid_fuels.rate_of_decommissioning_fossil_fuel_extraction_capital" from="Government_Regulations.rate_of_decommissioning_oil_fossil_fuel_extraction_capital"/>
 				<connect to="Extraction_of_liquid_fuels.rate_of_decommissioning_fossil_fuel_extraction_capital" from="Government_Regulations.rate_of_decommissioning_oil_fossil_fuel_extraction_capital"/>
 				<connect2 to="Extraction_of_liquid_fuels.rate_of_decommissioning_fossil_fuel_extraction_capital" from="Government_Regulations.rate_of_decommissioning_oil_fossil_fuel_extraction_capital"/>
 				<connect to="Fossil_energy_oil.rate_of_decommissioning_fossil_fuel_extraction_capital" from="Government_Regulations.rate_of_decommissioning_oil_fossil_fuel_extraction_capital"/>
@@ -3595,12 +3478,8 @@
 				<connect2 to="Concrete.Residential_and_Service_buildings_longevity_policy" from="Government_Regulations.Residential_and_Service_buildings_longevity_policy"/>
 				<connect to="Sea_level_rise_Impacts_and_Adaptation.Retreat_as_SLR_adaptation_strategy" from="Government_Regulations.Retreat_as_SLR_adaptation_strategy"/>
 				<connect2 to="Sea_level_rise_Impacts_and_Adaptation.Retreat_as_SLR_adaptation_strategy" from="Government_Regulations.Retreat_as_SLR_adaptation_strategy"/>
-				<connect to="Bio_fuel_energy_conversion_1.share_of_biofuel_emissions_stored" from="Government_Regulations.share_of_biofuel_emissions_stored"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.share_of_biofuel_emissions_stored" from="Government_Regulations.share_of_biofuel_emissions_stored"/>
 				<connect to="Bio_fuel_energy.share_of_biofuel_emissions_stored" from="Government_Regulations.share_of_biofuel_emissions_stored"/>
 				<connect2 to="Bio_fuel_energy.share_of_biofuel_emissions_stored" from="Government_Regulations.share_of_biofuel_emissions_stored"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.share_of_biofuel_emissions_stored" from="Government_Regulations.share_of_biofuel_emissions_stored"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.share_of_biofuel_emissions_stored" from="Government_Regulations.share_of_biofuel_emissions_stored"/>
 				<connect to="Bio_fuel.share_of_biofuel_emissions_stored" from="Government_Regulations.share_of_biofuel_emissions_stored"/>
 				<connect2 to="Bio_fuel.share_of_biofuel_emissions_stored" from="Government_Regulations.share_of_biofuel_emissions_stored"/>
 				<connect to="CCS.share_of_biofuel_emissions_stored" from="Government_Regulations.share_of_biofuel_emissions_stored"/>
@@ -3609,10 +3488,6 @@
 				<connect2 to="Emissions.share_of_biofuel_emissions_stored" from="Government_Regulations.share_of_biofuel_emissions_stored"/>
 				<connect to="CCS.share_of_coal_emissions_stored" from="Government_Regulations.share_of_coal_emissions_stored"/>
 				<connect2 to="CCS.share_of_coal_emissions_stored" from="Government_Regulations.share_of_coal_emissions_stored"/>
-				<connect to="Coal_fossil_energy_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_coal_emissions_stored"/>
-				<connect2 to="Coal_fossil_energy_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_coal_emissions_stored"/>
-				<connect to="Coal_to_electricity_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_coal_emissions_stored"/>
-				<connect2 to="Coal_to_electricity_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_coal_emissions_stored"/>
 				<connect to="Coal_to_electricity_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_coal_emissions_stored"/>
 				<connect2 to="Coal_to_electricity_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_coal_emissions_stored"/>
 				<connect to="Emissions.share_of_coal_emissions_stored" from="Government_Regulations.share_of_coal_emissions_stored"/>
@@ -3625,10 +3500,6 @@
 				<connect2 to="Emissions.share_of_gas_emissions_stored" from="Government_Regulations.share_of_gas_emissions_stored"/>
 				<connect to="Fossil_energy_gas.share_of_coal_emissions_stored" from="Government_Regulations.share_of_gas_emissions_stored"/>
 				<connect2 to="Fossil_energy_gas.share_of_coal_emissions_stored" from="Government_Regulations.share_of_gas_emissions_stored"/>
-				<connect to="Gas_fossil_energy_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_gas_emissions_stored"/>
-				<connect2 to="Gas_fossil_energy_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_gas_emissions_stored"/>
-				<connect to="Gas_to_electricity_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_gas_emissions_stored"/>
-				<connect2 to="Gas_to_electricity_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_gas_emissions_stored"/>
 				<connect to="Gas_to_electricity_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_gas_emissions_stored"/>
 				<connect2 to="Gas_to_electricity_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_gas_emissions_stored"/>
 				<connect to="CCS.share_of_oil_emissions_stored" from="Government_Regulations.share_of_oil_emissions_stored"/>
@@ -3637,40 +3508,24 @@
 				<connect2 to="Emissions.share_of_oil_emissions_stored" from="Government_Regulations.share_of_oil_emissions_stored"/>
 				<connect to="Fossil_energy_oil.share_of_coal_emissions_stored" from="Government_Regulations.share_of_oil_emissions_stored"/>
 				<connect2 to="Fossil_energy_oil.share_of_coal_emissions_stored" from="Government_Regulations.share_of_oil_emissions_stored"/>
-				<connect to="Oil_fossil_energy_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_oil_emissions_stored"/>
-				<connect2 to="Oil_fossil_energy_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_oil_emissions_stored"/>
-				<connect to="Oil_to_electricity_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_oil_emissions_stored"/>
-				<connect2 to="Oil_to_electricity_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_oil_emissions_stored"/>
 				<connect to="Oil_to_electricity_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_oil_emissions_stored"/>
 				<connect2 to="Oil_to_electricity_conversion.share_of_coal_emissions_stored" from="Government_Regulations.share_of_oil_emissions_stored"/>
 				<connect to="Sea_level_rise_Impacts_and_Adaptation.start_year" from="Government_Regulations.SLR_adaptation_start_year"/>
 				<connect2 to="Sea_level_rise_Impacts_and_Adaptation.start_year" from="Government_Regulations.SLR_adaptation_start_year"/>
 				<connect to="Animal_Products.start_year_1" from="Government_Regulations.start_year"/>
 				<connect2 to="Animal_Products.start_year_1" from="Government_Regulations.start_year"/>
-				<connect to="Bio_fuel_energy_conversion_1.Policy_Start_Year" from="Government_Regulations.start_year"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.Policy_Start_Year" from="Government_Regulations.start_year"/>
 				<connect to="Bio_fuel_energy.Policy_Start_Year" from="Government_Regulations.start_year"/>
 				<connect2 to="Bio_fuel_energy.Policy_Start_Year" from="Government_Regulations.start_year"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.Policy_Start_Year" from="Government_Regulations.start_year"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.Policy_Start_Year" from="Government_Regulations.start_year"/>
 				<connect to="Bio_fuel.Policy_Start_Year" from="Government_Regulations.start_year"/>
 				<connect2 to="Bio_fuel.Policy_Start_Year" from="Government_Regulations.start_year"/>
-				<connect to="Coal_fossil_energy_conversion.Policy_Start_Year" from="Government_Regulations.start_year"/>
-				<connect2 to="Coal_fossil_energy_conversion.Policy_Start_Year" from="Government_Regulations.start_year"/>
 				<connect to="Concrete.start_year" from="Government_Regulations.start_year"/>
 				<connect2 to="Concrete.start_year" from="Government_Regulations.start_year"/>
 				<connect to="Emissions.start_year" from="Government_Regulations.start_year"/>
 				<connect2 to="Emissions.start_year" from="Government_Regulations.start_year"/>
 				<connect to="Extraction_of_gas_fuels.Policy_Start_Year" from="Government_Regulations.start_year"/>
 				<connect2 to="Extraction_of_gas_fuels.Policy_Start_Year" from="Government_Regulations.start_year"/>
-				<connect to="Extraction_of_gas_fuels.Policy_Start_Year" from="Government_Regulations.start_year"/>
-				<connect2 to="Extraction_of_gas_fuels.Policy_Start_Year" from="Government_Regulations.start_year"/>
 				<connect to="Extraction_of_liquid_fuels.Policy_Start_Year" from="Government_Regulations.start_year"/>
 				<connect2 to="Extraction_of_liquid_fuels.Policy_Start_Year" from="Government_Regulations.start_year"/>
-				<connect to="Extraction_of_liquid_fuels.Policy_Start_Year" from="Government_Regulations.start_year"/>
-				<connect2 to="Extraction_of_liquid_fuels.Policy_Start_Year" from="Government_Regulations.start_year"/>
-				<connect to="Extraction_of_solid_fuels.Policy_Start_Year" from="Government_Regulations.start_year"/>
-				<connect2 to="Extraction_of_solid_fuels.Policy_Start_Year" from="Government_Regulations.start_year"/>
 				<connect to="Extraction_of_solid_fuels.Policy_Start_Year" from="Government_Regulations.start_year"/>
 				<connect2 to="Extraction_of_solid_fuels.Policy_Start_Year" from="Government_Regulations.start_year"/>
 				<connect to="Fossil_energy_coal.Policy_Start_Year" from="Government_Regulations.start_year"/>
@@ -3681,14 +3536,10 @@
 				<connect2 to="Fossil_energy_oil.Policy_Start_Year" from="Government_Regulations.start_year"/>
 				<connect to="Freshwater.start_year" from="Government_Regulations.start_year"/>
 				<connect2 to="Freshwater.start_year" from="Government_Regulations.start_year"/>
-				<connect to="Gas_fossil_energy_conversion.Policy_Start_Year_1" from="Government_Regulations.start_year"/>
-				<connect2 to="Gas_fossil_energy_conversion.Policy_Start_Year_1" from="Government_Regulations.start_year"/>
 				<connect to="GDP.start_year" from="Government_Regulations.start_year"/>
 				<connect2 to="GDP.start_year" from="Government_Regulations.start_year"/>
 				<connect to="Government.start_year" from="Government_Regulations.start_year"/>
 				<connect2 to="Government.start_year" from="Government_Regulations.start_year"/>
-				<connect to="Hydropower_energy_1.start_year" from="Government_Regulations.start_year"/>
-				<connect2 to="Hydropower_energy_1.start_year" from="Government_Regulations.start_year"/>
 				<connect to="Hydropower_energy_1.start_year" from="Government_Regulations.start_year"/>
 				<connect2 to="Hydropower_energy_1.start_year" from="Government_Regulations.start_year"/>
 				<connect to="Hydropower_energy.start_year" from="Government_Regulations.start_year"/>
@@ -3697,20 +3548,12 @@
 				<connect2 to="Land_Use.Policy_Start_Year" from="Government_Regulations.start_year"/>
 				<connect to="Nuclear_energy_1.start_year" from="Government_Regulations.start_year"/>
 				<connect2 to="Nuclear_energy_1.start_year" from="Government_Regulations.start_year"/>
-				<connect to="Nuclear_energy_1.start_year" from="Government_Regulations.start_year"/>
-				<connect2 to="Nuclear_energy_1.start_year" from="Government_Regulations.start_year"/>
 				<connect to="Nuclear_energy.start_year" from="Government_Regulations.start_year"/>
 				<connect2 to="Nuclear_energy.start_year" from="Government_Regulations.start_year"/>
-				<connect to="Oil_fossil_energy_conversion.Policy_Start_Year" from="Government_Regulations.start_year"/>
-				<connect2 to="Oil_fossil_energy_conversion.Policy_Start_Year" from="Government_Regulations.start_year"/>
-				<connect to="Solar_energy_1.start_year" from="Government_Regulations.start_year"/>
-				<connect2 to="Solar_energy_1.start_year" from="Government_Regulations.start_year"/>
 				<connect to="Solar_energy_1.start_year" from="Government_Regulations.start_year"/>
 				<connect2 to="Solar_energy_1.start_year" from="Government_Regulations.start_year"/>
 				<connect to="Solar_energy.start_year" from="Government_Regulations.start_year"/>
 				<connect2 to="Solar_energy.start_year" from="Government_Regulations.start_year"/>
-				<connect to="Wind_energy_1.start_year" from="Government_Regulations.start_year"/>
-				<connect2 to="Wind_energy_1.start_year" from="Government_Regulations.start_year"/>
 				<connect to="Wind_energy_1.start_year" from="Government_Regulations.start_year"/>
 				<connect2 to="Wind_energy_1.start_year" from="Government_Regulations.start_year"/>
 				<connect to="Wind_energy.start_year" from="Government_Regulations.start_year"/>
@@ -3725,18 +3568,10 @@
 				<connect2 to="Circular_Flow.switch_profit_tax_policy" from="Government_Regulations.switch_profit_tax_policy"/>
 				<connect to="Circular_Flow.switch_tax_policy" from="Government_Regulations.switch_wage_tax_policy"/>
 				<connect2 to="Circular_Flow.switch_tax_policy" from="Government_Regulations.switch_wage_tax_policy"/>
-				<connect to="Bio_fuel_energy_conversion_1.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
 				<connect to="Bio_fuel_energy.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
 				<connect2 to="Bio_fuel_energy.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
 				<connect to="Bio_fuel.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
 				<connect2 to="Bio_fuel.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
-				<connect to="Coal_fossil_energy_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
-				<connect2 to="Coal_fossil_energy_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
-				<connect to="Coal_to_electricity_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
-				<connect2 to="Coal_to_electricity_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
 				<connect to="Coal_to_electricity_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
 				<connect2 to="Coal_to_electricity_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
 				<connect to="Fossil_energy_coal.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
@@ -3745,30 +3580,14 @@
 				<connect2 to="Fossil_energy_gas.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
 				<connect to="Fossil_energy_oil.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
 				<connect2 to="Fossil_energy_oil.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
-				<connect to="Gas_fossil_energy_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
-				<connect2 to="Gas_fossil_energy_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
 				<connect to="Gas_to_electricity_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
 				<connect2 to="Gas_to_electricity_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
-				<connect to="Gas_to_electricity_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
-				<connect2 to="Gas_to_electricity_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
-				<connect to="Oil_fossil_energy_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
-				<connect2 to="Oil_fossil_energy_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
 				<connect to="Oil_to_electricity_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
 				<connect2 to="Oil_to_electricity_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
-				<connect to="Oil_to_electricity_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
-				<connect2 to="Oil_to_electricity_conversion.tax_on_CO2e_emissions" from="Government_Regulations.tax_on_CO2e_emissions"/>
-				<connect to="Bio_fuel_energy_conversion_1.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
 				<connect to="Bio_fuel_energy.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
 				<connect2 to="Bio_fuel_energy.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
 				<connect to="Bio_fuel.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
 				<connect2 to="Bio_fuel.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
-				<connect to="Coal_fossil_energy_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
-				<connect2 to="Coal_fossil_energy_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
-				<connect to="Coal_to_electricity_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
-				<connect2 to="Coal_to_electricity_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
 				<connect to="Coal_to_electricity_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
 				<connect2 to="Coal_to_electricity_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
 				<connect to="Fossil_energy_coal.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
@@ -3777,96 +3596,52 @@
 				<connect2 to="Fossil_energy_gas.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
 				<connect to="Fossil_energy_oil.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
 				<connect2 to="Fossil_energy_oil.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
-				<connect to="Gas_fossil_energy_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
-				<connect2 to="Gas_fossil_energy_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
 				<connect to="Gas_to_electricity_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
 				<connect2 to="Gas_to_electricity_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
-				<connect to="Gas_to_electricity_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
-				<connect2 to="Gas_to_electricity_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
-				<connect to="Oil_fossil_energy_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
-				<connect2 to="Oil_fossil_energy_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
 				<connect to="Oil_to_electricity_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
 				<connect2 to="Oil_to_electricity_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
-				<connect to="Oil_to_electricity_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
-				<connect2 to="Oil_to_electricity_conversion.tax_on_SO2_emissions" from="Government_Regulations.tax_on_SO2_emissions"/>
-				<connect to="Bio_fuel_energy_conversion_1.tax_for_newly_installed_other_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.tax_for_newly_installed_other_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity"/>
 				<connect to="Bio_fuel_energy.tax_for_newly_installed_other_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity"/>
 				<connect2 to="Bio_fuel_energy.tax_for_newly_installed_other_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.tax_for_newly_installed_other_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.tax_for_newly_installed_other_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity"/>
 				<connect to="Bio_fuel.tax_for_newly_installed_other_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity"/>
 				<connect2 to="Bio_fuel.tax_for_newly_installed_other_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_bio_energy_capacity"/>
-				<connect to="Coal_fossil_energy_conversion.tax_for_newly_installed_coal_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity"/>
-				<connect2 to="Coal_fossil_energy_conversion.tax_for_newly_installed_coal_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity"/>
-				<connect to="Coal_to_electricity_conversion.tax_for_newly_installed_coal_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity"/>
-				<connect2 to="Coal_to_electricity_conversion.tax_for_newly_installed_coal_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity"/>
 				<connect to="Coal_to_electricity_conversion.tax_for_newly_installed_coal_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity"/>
 				<connect2 to="Coal_to_electricity_conversion.tax_for_newly_installed_coal_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity"/>
 				<connect to="Fossil_energy_coal.tax_for_newly_installed_coal_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity"/>
 				<connect2 to="Fossil_energy_coal.tax_for_newly_installed_coal_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_coal_energy_production_capacity"/>
-				<connect to="Coal_fossil_energy_conversion.tax_for_newly_installed_coal_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity"/>
-				<connect2 to="Coal_fossil_energy_conversion.tax_for_newly_installed_coal_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity"/>
-				<connect to="Coal_to_electricity_conversion.tax_for_newly_installed_coal_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity"/>
-				<connect2 to="Coal_to_electricity_conversion.tax_for_newly_installed_coal_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity"/>
 				<connect to="Coal_to_electricity_conversion.tax_for_newly_installed_coal_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity"/>
 				<connect2 to="Coal_to_electricity_conversion.tax_for_newly_installed_coal_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity"/>
 				<connect to="Fossil_energy_coal.tax_for_newly_installed_coal_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity"/>
 				<connect2 to="Fossil_energy_coal.tax_for_newly_installed_coal_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_coal_extraction_capacity"/>
 				<connect to="Fossil_energy_gas.tax_for_newly_installed_gas_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity"/>
 				<connect2 to="Fossil_energy_gas.tax_for_newly_installed_gas_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity"/>
-				<connect to="Gas_fossil_energy_conversion.tax_for_newly_installed_gas_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity"/>
-				<connect2 to="Gas_fossil_energy_conversion.tax_for_newly_installed_gas_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity"/>
 				<connect to="Gas_to_electricity_conversion.tax_for_newly_installed_gas_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity"/>
 				<connect2 to="Gas_to_electricity_conversion.tax_for_newly_installed_gas_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity"/>
-				<connect to="Gas_to_electricity_conversion.tax_for_newly_installed_gas_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity"/>
-				<connect2 to="Gas_to_electricity_conversion.tax_for_newly_installed_gas_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_gas_extraction_capacity"/>
-				<connect to="Hydropower_energy_1.tax_for_newly_installed_hydropower_capacity" from="Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity"/>
-				<connect2 to="Hydropower_energy_1.tax_for_newly_installed_hydropower_capacity" from="Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity"/>
 				<connect to="Hydropower_energy_1.tax_for_newly_installed_hydropower_capacity" from="Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity"/>
 				<connect2 to="Hydropower_energy_1.tax_for_newly_installed_hydropower_capacity" from="Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity"/>
 				<connect to="Hydropower_energy.tax_for_newly_installed_hydropower_capacity" from="Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity"/>
 				<connect2 to="Hydropower_energy.tax_for_newly_installed_hydropower_capacity" from="Government_Regulations.tax_rate_on_newly_installed_hydropower_capacity"/>
 				<connect to="Nuclear_energy_1.tax_for_newly_installed_nuclear" from="Government_Regulations.tax_rate_on_newly_installed_nuclear_energy_capacity"/>
 				<connect2 to="Nuclear_energy_1.tax_for_newly_installed_nuclear" from="Government_Regulations.tax_rate_on_newly_installed_nuclear_energy_capacity"/>
-				<connect to="Nuclear_energy_1.tax_for_newly_installed_nuclear" from="Government_Regulations.tax_rate_on_newly_installed_nuclear_energy_capacity"/>
-				<connect2 to="Nuclear_energy_1.tax_for_newly_installed_nuclear" from="Government_Regulations.tax_rate_on_newly_installed_nuclear_energy_capacity"/>
 				<connect to="Nuclear_energy.tax_for_newly_installed_nuclear" from="Government_Regulations.tax_rate_on_newly_installed_nuclear_energy_capacity"/>
 				<connect2 to="Nuclear_energy.tax_for_newly_installed_nuclear" from="Government_Regulations.tax_rate_on_newly_installed_nuclear_energy_capacity"/>
 				<connect to="Fossil_energy_oil.tax_for_newly_installed_oil_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity"/>
 				<connect2 to="Fossil_energy_oil.tax_for_newly_installed_oil_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity"/>
-				<connect to="Oil_fossil_energy_conversion.tax_for_newly_installed_oil_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity"/>
-				<connect2 to="Oil_fossil_energy_conversion.tax_for_newly_installed_oil_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity"/>
 				<connect to="Oil_to_electricity_conversion.tax_for_newly_installed_oil_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity"/>
 				<connect2 to="Oil_to_electricity_conversion.tax_for_newly_installed_oil_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity"/>
-				<connect to="Oil_to_electricity_conversion.tax_for_newly_installed_oil_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity"/>
-				<connect2 to="Oil_to_electricity_conversion.tax_for_newly_installed_oil_extraction_capacity" from="Government_Regulations.tax_rate_on_newly_installed_oil_extraction_capacity"/>
-				<connect to="Solar_energy_1.subsidy_for_newly_installed_solar_and_wind_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity"/>
-				<connect2 to="Solar_energy_1.subsidy_for_newly_installed_solar_and_wind_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity"/>
 				<connect to="Solar_energy_1.subsidy_for_newly_installed_solar_and_wind_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity"/>
 				<connect2 to="Solar_energy_1.subsidy_for_newly_installed_solar_and_wind_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity"/>
 				<connect to="Solar_energy.subsidy_for_newly_installed_solar_and_wind_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity"/>
 				<connect2 to="Solar_energy.subsidy_for_newly_installed_solar_and_wind_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_solar_energy_capacity"/>
 				<connect to="Wind_energy_1.subsidy_for_newly_installed_solar_and_wind_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity"/>
 				<connect2 to="Wind_energy_1.subsidy_for_newly_installed_solar_and_wind_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity"/>
-				<connect to="Wind_energy_1.subsidy_for_newly_installed_solar_and_wind_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity"/>
-				<connect2 to="Wind_energy_1.subsidy_for_newly_installed_solar_and_wind_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity"/>
 				<connect to="Wind_energy.subsidy_for_newly_installed_solar_and_wind_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity"/>
 				<connect2 to="Wind_energy.subsidy_for_newly_installed_solar_and_wind_energy_capacity" from="Government_Regulations.tax_rate_on_newly_installed_wind_energy_capacity"/>
 				<connect to="Fossil_energy_gas.tax_for_newly_installed_gas_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity"/>
 				<connect2 to="Fossil_energy_gas.tax_for_newly_installed_gas_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity"/>
-				<connect to="Gas_fossil_energy_conversion.tax_for_newly_installed_gas_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity"/>
-				<connect2 to="Gas_fossil_energy_conversion.tax_for_newly_installed_gas_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity"/>
-				<connect to="Gas_to_electricity_conversion.tax_for_newly_installed_gas_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity"/>
-				<connect2 to="Gas_to_electricity_conversion.tax_for_newly_installed_gas_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity"/>
 				<connect to="Gas_to_electricity_conversion.tax_for_newly_installed_gas_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity"/>
 				<connect2 to="Gas_to_electricity_conversion.tax_for_newly_installed_gas_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_gas_energy_production_capacity"/>
 				<connect to="Fossil_energy_oil.tax_for_newly_installed_oil_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity"/>
 				<connect2 to="Fossil_energy_oil.tax_for_newly_installed_oil_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity"/>
-				<connect to="Oil_fossil_energy_conversion.tax_for_newly_installed_oil_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity"/>
-				<connect2 to="Oil_fossil_energy_conversion.tax_for_newly_installed_oil_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity"/>
-				<connect to="Oil_to_electricity_conversion.tax_for_newly_installed_oil_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity"/>
-				<connect2 to="Oil_to_electricity_conversion.tax_for_newly_installed_oil_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity"/>
 				<connect to="Oil_to_electricity_conversion.tax_for_newly_installed_oil_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity"/>
 				<connect2 to="Oil_to_electricity_conversion.tax_for_newly_installed_oil_energy_production_capacity" from="Government_Regulations.tax_rate_on_newly_installed_oil_energy_production_capacity"/>
 				<connect to="Circular_Flow.time_to_implement_profit_tax_policy" from="Government_Regulations.time_to_implement_profit_tax_policy"/>
@@ -3935,18 +3710,10 @@
 				<format scale_by="auto"/>
 				<connect to="Emissions.Leakage" from="CCS.CO2_Emissions_from_Leakage"/>
 				<connect2 to="Emissions.Leakage" from="CCS.CO2_Emissions_from_Leakage"/>
-				<connect to="Bio_fuel_energy_conversion_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="Bio_fuel_energy_conversion_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Bio_fuel_energy.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Bio_fuel_energy.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect to="Bio_fuel_to_electricity_conversion_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="Bio_fuel_to_electricity_conversion_1.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Bio_fuel.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Bio_fuel.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect to="Coal_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="Coal_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect to="Coal_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="Coal_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Coal_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Coal_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Fossil_energy_coal.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
@@ -3955,16 +3722,8 @@
 				<connect2 to="Fossil_energy_gas.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Fossil_energy_oil.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Fossil_energy_oil.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect to="Gas_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="Gas_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Gas_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Gas_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect to="Gas_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="Gas_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect to="Oil_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="Oil_fossil_energy_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect to="Oil_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
-				<connect2 to="Oil_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="Oil_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect2 to="Oil_to_electricity_conversion.cost_of_storing_CO2_per_unit" from="CCS.cost_of_storing_CO2_per_unit"/>
 				<connect to="CCS.CO2_emissions_from_biofuels" from="Emissions.CO2_emissions_from_biofuels"/>
@@ -4084,10 +3843,6 @@
 				<connect2 to='Demographics."Real_GDP_in_2021c$"' from='GDP."Real_GDP_in_2021c$"'/>
 				<connect to='Electricity_investments."Real_GDP_in_2021c$"' from='GDP."Real_GDP_in_2021c$"'/>
 				<connect2 to='Electricity_investments."Real_GDP_in_2021c$"' from='GDP."Real_GDP_in_2021c$"'/>
-				<connect to='Electricity_investments."Real_GDP_in_2021c$"' from='GDP."Real_GDP_in_2021c$"'/>
-				<connect2 to='Electricity_investments."Real_GDP_in_2021c$"' from='GDP."Real_GDP_in_2021c$"'/>
-				<connect to="Energy_demand_1.Converter_1" from='GDP."Real_GDP_in_2021c$"'/>
-				<connect2 to="Energy_demand_1.Converter_1" from='GDP."Real_GDP_in_2021c$"'/>
 				<connect to="Energy_demand_1.Converter_1" from='GDP."Real_GDP_in_2021c$"'/>
 				<connect2 to="Energy_demand_1.Converter_1" from='GDP."Real_GDP_in_2021c$"'/>
 				<connect to="Energy_demand.Converter_1" from='GDP."Real_GDP_in_2021c$"'/>
@@ -4096,182 +3851,108 @@
 				<connect2 to='Energy_investments."Real_GDP_in_2021c$"' from='GDP."Real_GDP_in_2021c$"'/>
 				<connect to="Global_energy_investments.Converter_1" from='GDP."Real_GDP_in_2021c$"'/>
 				<connect2 to="Global_energy_investments.Converter_1" from='GDP."Real_GDP_in_2021c$"'/>
-				<connect to="Global_energy_investments.Converter_1" from='GDP."Real_GDP_in_2021c$"'/>
-				<connect2 to="Global_energy_investments.Converter_1" from='GDP."Real_GDP_in_2021c$"'/>
 				<connect to="GDP.start_year" from="Government_Regulations.start_year"/>
 				<connect2 to="GDP.start_year" from="Government_Regulations.start_year"/>
-				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
-				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
 				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
 				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
 				<connect to="Liquid_fuel_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
 				<connect2 to="Liquid_fuel_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
-				<connect to="Liquid_fuel_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
-				<connect2 to="Liquid_fuel_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
-				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_coal_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_coal_energy_conversion"/>
-				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_coal_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_coal_energy_conversion"/>
 				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_coal_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_coal_energy_conversion"/>
 				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_coal_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_coal_energy_conversion"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_coal_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_coal_energy_conversion"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_coal_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_coal_energy_conversion"/>
-				<connect to="Solid_fuel_investments.expenditure_on_subsidies_for_investments_in_coal_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_coal_energy_conversion"/>
-				<connect2 to="Solid_fuel_investments.expenditure_on_subsidies_for_investments_in_coal_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_coal_energy_conversion"/>
-				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
-				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
 				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
 				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
 				<connect to="Solid_fuel_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
 				<connect2 to="Solid_fuel_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
-				<connect to="Solid_fuel_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
-				<connect2 to="Solid_fuel_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
-				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
-				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
 				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
 				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
-				<connect to="Gas_fuel_investments.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
-				<connect2 to="Gas_fuel_investments.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
-				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
-				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
 				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
 				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
 				<connect to="Gas_fuel_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
 				<connect2 to="Gas_fuel_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
-				<connect to="Gas_fuel_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
-				<connect2 to="Gas_fuel_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
-				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity"/>
-				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity"/>
 				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity"/>
 				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity"/>
 				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity"/>
 				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity"/>
-				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity"/>
-				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity"/>
 				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_oil_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_oil_energy_conversion"/>
 				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_oil_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_oil_energy_conversion"/>
-				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_oil_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_oil_energy_conversion"/>
-				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_oil_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_oil_energy_conversion"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_oil_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_oil_energy_conversion"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_oil_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_oil_energy_conversion"/>
-				<connect to="Liquid_fuel_investments.expenditure_on_subsidies_for_investments_in_oil_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_oil_energy_conversion"/>
-				<connect2 to="Liquid_fuel_investments.expenditure_on_subsidies_for_investments_in_oil_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_oil_energy_conversion"/>
-				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
-				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
 				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
 				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
 				<connect to="Liquid_fuel_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
 				<connect2 to="Liquid_fuel_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
-				<connect to="Liquid_fuel_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
-				<connect2 to="Liquid_fuel_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
-				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_Solar_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_solar_energy_capacity"/>
-				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_Solar_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_solar_energy_capacity"/>
 				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_Solar_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_solar_energy_capacity"/>
 				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_Solar_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_solar_energy_capacity"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_Solar_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_solar_energy_capacity"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_Solar_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_solar_energy_capacity"/>
 				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_wind_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_wind_energy_capacity"/>
 				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_wind_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_wind_energy_capacity"/>
-				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_wind_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_wind_energy_capacity"/>
-				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_wind_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_wind_energy_capacity"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_wind_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_wind_energy_capacity"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_wind_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_wind_energy_capacity"/>
-				<connect to="Electricity_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
-				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
 				<connect to="Electricity_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
 				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
 				<connect to="Liquid_fuel_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
 				<connect2 to="Liquid_fuel_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
-				<connect to="Liquid_fuel_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
-				<connect2 to="Liquid_fuel_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
 				<connect to="Electricity_investments.tax_revenue_on_investments_in_gas_energy_conversion" from="Government.tax_revenue_on_investments_in_coal_energy_conversion"/>
 				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_gas_energy_conversion" from="Government.tax_revenue_on_investments_in_coal_energy_conversion"/>
-				<connect to="Electricity_investments.tax_revenue_on_investments_in_gas_energy_conversion" from="Government.tax_revenue_on_investments_in_coal_energy_conversion"/>
-				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_gas_energy_conversion" from="Government.tax_revenue_on_investments_in_coal_energy_conversion"/>
-				<connect to="Electricity_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
-				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
 				<connect to="Electricity_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
 				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
 				<connect to="Solid_fuel_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
 				<connect2 to="Solid_fuel_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
-				<connect to="Solid_fuel_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
-				<connect2 to="Solid_fuel_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
-				<connect to="Electricity_investments.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
-				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
 				<connect to="Electricity_investments.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
 				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_gas_energy_conversion" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_gas_energy_conversion" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
-				<connect to="Gas_fuel_investments.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
-				<connect2 to="Gas_fuel_investments.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
-				<connect to="Solid_fuel_investments.tax_revenue_on_investments_in_gas_energy_conversion" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
-				<connect2 to="Solid_fuel_investments.tax_revenue_on_investments_in_gas_energy_conversion" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
-				<connect to="Electricity_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
-				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
 				<connect to="Electricity_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
 				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
 				<connect to="Gas_fuel_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
 				<connect2 to="Gas_fuel_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
-				<connect to="Gas_fuel_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
-				<connect2 to="Gas_fuel_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
-				<connect to="Electricity_investments.tax_revenue_on_investments_in_hydropower_energy_capacity" from="Government.tax_revenue_on_investments_in_hydropower_energy_capacity"/>
-				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_hydropower_energy_capacity" from="Government.tax_revenue_on_investments_in_hydropower_energy_capacity"/>
 				<connect to="Electricity_investments.tax_revenue_on_investments_in_hydropower_energy_capacity" from="Government.tax_revenue_on_investments_in_hydropower_energy_capacity"/>
 				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_hydropower_energy_capacity" from="Government.tax_revenue_on_investments_in_hydropower_energy_capacity"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_hydropower_energy_capacity" from="Government.tax_revenue_on_investments_in_hydropower_energy_capacity"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_hydropower_energy_capacity" from="Government.tax_revenue_on_investments_in_hydropower_energy_capacity"/>
 				<connect to="Electricity_investments.tax_revenue_on_investments_in_nuclear_energy_capacity" from="Government.tax_revenue_on_investments_in_nuclear_energy_capacity"/>
 				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_nuclear_energy_capacity" from="Government.tax_revenue_on_investments_in_nuclear_energy_capacity"/>
-				<connect to="Electricity_investments.tax_revenue_on_investments_in_nuclear_energy_capacity" from="Government.tax_revenue_on_investments_in_nuclear_energy_capacity"/>
-				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_nuclear_energy_capacity" from="Government.tax_revenue_on_investments_in_nuclear_energy_capacity"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_nuclear_energy_capacity" from="Government.tax_revenue_on_investments_in_nuclear_energy_capacity"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_nuclear_energy_capacity" from="Government.tax_revenue_on_investments_in_nuclear_energy_capacity"/>
 				<connect to="Electricity_investments.tax_revenue_on_investments_in_oil_energy_conversion" from="Government.tax_revenue_on_investments_in_oil_energy_conversion"/>
 				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_oil_energy_conversion" from="Government.tax_revenue_on_investments_in_oil_energy_conversion"/>
-				<connect to="Electricity_investments.tax_revenue_on_investments_in_oil_energy_conversion" from="Government.tax_revenue_on_investments_in_oil_energy_conversion"/>
-				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_oil_energy_conversion" from="Government.tax_revenue_on_investments_in_oil_energy_conversion"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_oil_energy_conversion" from="Government.tax_revenue_on_investments_in_oil_energy_conversion"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_oil_energy_conversion" from="Government.tax_revenue_on_investments_in_oil_energy_conversion"/>
-				<connect to="Liquid_fuel_investments.tax_revenue_on_investments_in_oil_energy_conversion" from="Government.tax_revenue_on_investments_in_oil_energy_conversion"/>
-				<connect2 to="Liquid_fuel_investments.tax_revenue_on_investments_in_oil_energy_conversion" from="Government.tax_revenue_on_investments_in_oil_energy_conversion"/>
-				<connect to="Electricity_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
-				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
 				<connect to="Electricity_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
 				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
 				<connect to="Liquid_fuel_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
 				<connect2 to="Liquid_fuel_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
-				<connect to="Liquid_fuel_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
-				<connect2 to="Liquid_fuel_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
-				<connect to="Electricity_investments.tax_revenue_on_investments_in_Solar_energy_capacity" from="Government.tax_revenue_on_investments_in_solar_energy_capacity"/>
-				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_Solar_energy_capacity" from="Government.tax_revenue_on_investments_in_solar_energy_capacity"/>
 				<connect to="Electricity_investments.tax_revenue_on_investments_in_Solar_energy_capacity" from="Government.tax_revenue_on_investments_in_solar_energy_capacity"/>
 				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_Solar_energy_capacity" from="Government.tax_revenue_on_investments_in_solar_energy_capacity"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_Solar_energy_capacity" from="Government.tax_revenue_on_investments_in_solar_energy_capacity"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_Solar_energy_capacity" from="Government.tax_revenue_on_investments_in_solar_energy_capacity"/>
-				<connect to="Electricity_investments.tax_revenue_on_investments_in_wind_energy_capacity" from="Government.tax_revenue_on_investments_in_wind_energy_capacity"/>
-				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_wind_energy_capacity" from="Government.tax_revenue_on_investments_in_wind_energy_capacity"/>
 				<connect to="Electricity_investments.tax_revenue_on_investments_in_wind_energy_capacity" from="Government.tax_revenue_on_investments_in_wind_energy_capacity"/>
 				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_wind_energy_capacity" from="Government.tax_revenue_on_investments_in_wind_energy_capacity"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_wind_energy_capacity" from="Government.tax_revenue_on_investments_in_wind_energy_capacity"/>
@@ -4749,7 +4430,7 @@ This is what determines when the model stops calculating</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="5" isee:page_rows="8" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="5" isee:page_rows="8" isee:scroll_x="323.462" zoom="260" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -5608,7 +5289,7 @@ This is what determines when the model stops calculating</doc>
 					<from>Climate</from>
 					<to>New_Energy</to>
 				</connector>
-				<connector uid="168" isee:thickness="2" angle="340.63" isee:autocreated="true">
+				<connector uid="168" color="#666666" font_color="#666666" isee:thickness="2" angle="309.536" isee:autocreated="true">
 					<from>Government_Regulations</from>
 					<to>New_Energy</to>
 				</connector>
@@ -5624,7 +5305,7 @@ This is what determines when the model stops calculating</doc>
 					<from>Land_Use_and_Agriculture</from>
 					<to>New_Energy</to>
 				</connector>
-				<connector uid="172" isee:thickness="2" angle="308.087" isee:autocreated="true">
+				<connector uid="172" color="#666666" font_color="#666666" isee:thickness="2" angle="308.087" isee:autocreated="true">
 					<from>Behavioral_Choices</from>
 					<to>New_Energy</to>
 				</connector>

@@ -826,6 +826,10 @@
 			<isee:parameter name="Extraction_of_gas_fuels.maximum_increase_of_capital_coefficient_in_fossil_resource_sector[1]" scaling="0.1"/>
 			<isee:parameter name="Extraction_of_gas_fuels.learning_time_in_resource_sector[1]" scaling="0.1"/>
 			<isee:parameter name="Extraction_of_gas_fuels.learning_elasticity_of_the_resource_sector[1]" scaling="10"/>
+			<isee:parameter name="Extraction_of_gas_fuels.Initial_X" scaling="10"/>
+			<isee:parameter name="Extraction_of_liquid_fuels.Initial_X" scaling="10"/>
+			<isee:parameter name="Extraction_of_solid_fuels.Initial_X" scaling="10"/>
+			<isee:parameter name="Bio_fuel.Initial_X" scaling="10"/>
 			<isee:payoff name="Energy Disaggregation" action="min"/>
 		</isee:optimizer_specs>
 		<isee:optimizer_specs name="Energy Carriers just Investment allocation" method="Powell" use_additional_starts_file="false" additional_starts="0" report_interval="1" confidence_range="0" maxiter="0">
@@ -1504,16 +1508,16 @@
 			<isee:payoff_element name="Energy_demand_1.Electricity_demand_for_Transport[1]" weight="8.97501032650842e-16">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_Coal_in_Buildings[1]" weight="2252.68805086029">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Coal_in_Buildings[1]" weight="1604.71910938351">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_Oil_in_Buildings[1]" weight="3618.74745258883">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Oil_in_Buildings[1]" weight="5976.22539602434">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_Gas_in_Buildings[1]" weight="30433.5964009829">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Gas_in_Buildings[1]" weight="31954.996421831">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Buildings[1]" weight="3703.1568044047">
+			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Buildings[1]" weight="3438.56894260635">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 			<isee:payoff_element name="Energy_demand_1.Energy_demand_for_Buildings[1]" weight="1.76810681306514e-19">
@@ -1525,160 +1529,160 @@
 			<isee:payoff_element name="Energy_demand_1.Energy_demand_for_Transport[1]" weight="7.11520504855231e-19">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_Coal_in_Transport[1]" weight="24677688.5238569">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Coal_in_Transport[1]" weight="23763511.00762">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_Oil_in_Transport[1]" weight="112064.950693778">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Oil_in_Transport[1]" weight="113207.141905341">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_Gas_in_Transport[1]" weight="214476.526382888">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Gas_in_Transport[1]" weight="218354.433893112">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Transport[1]" weight="1101938.21425744">
+			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Transport[1]" weight="1109656.632667">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_coal_in_Industry_and_Other[1]" weight="2210.32476930334">
+			<isee:payoff_element name="Energy_demand_1.Share_for_coal_in_Industry_and_Other[1]" weight="2335.04972118952">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_oil_in_Industry_and_Other[1]" weight="4905.67163810813">
+			<isee:payoff_element name="Energy_demand_1.Share_for_oil_in_Industry_and_Other[1]" weight="3390.03318643815">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_gas_in_Industry_and_Other[1]" weight="16965.2791856659">
+			<isee:payoff_element name="Energy_demand_1.Share_for_gas_in_Industry_and_Other[1]" weight="16750.5585172453">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Industry_and_Other[1]" weight="13259.5071166433">
+			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Industry_and_Other[1]" weight="17269.522803258">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 			<isee:payoff_element name="Global_energy_investments.Gross_Investments_in_Renewables[1]" weight="1">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_Renewables[1]" weight="5.26659182526956e-22">
+			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_Renewables[1]" weight="2.63575097764482e-23">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Electricity_investments.Investments_in_Nuclear_Capacity[1]" weight="9.05285674495261e-20">
+			<isee:payoff_element name="Electricity_investments.Investments_in_Nuclear_Capacity[1]" weight="4.52803645090664e-21">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_Biofuel_Capacity[1]" weight="5.80781516364575e-21">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_Hydropower_Energy_capacity[1]" weight="1.04271165432756e-20">
+			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_Hydropower_Energy_capacity[1]" weight="5.39547222530351e-21">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_wind_Energy_Capacity[1]" weight="1.0433735009714e-21">
+			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_wind_Energy_Capacity[1]" weight="1.16680299043777e-22">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_Solar_Energy_Capacity[1]" weight="3.70898615032111e-21">
+			<isee:payoff_element name="Electricity_investments.Gross_Investments_in_Solar_Energy_Capacity[1]" weight="8.93501167265171e-23">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Solar_energy_1.Solar_Energy_Output[1]" weight="0.0000190256144808568">
+			<isee:payoff_element name="Solar_energy_1.Solar_Energy_Output[1]" weight="2.37806278726681e-7">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Solar_energy_1.Solar_Energy_Capacity[1]" weight="0.000100522649862381">
+			<isee:payoff_element name="Solar_energy_1.Solar_Energy_Capacity[1]" weight="6.17886958471249e-7">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Solar_energy_1.Installation_Cost_of_Solar_capacity[1]" weight="0.00000875281859231413">
+			<isee:payoff_element name="Solar_energy_1.Installation_Cost_of_Solar_capacity[1]" weight="0.00000991094563413142">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Wind_energy_1.Wind_Energy_Output[1]" weight="0.000164548871116501">
+			<isee:payoff_element name="Wind_energy_1.Wind_Energy_Output[1]" weight="4.45979647849957e-7">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Wind_energy_1.Wind_Energy_Capacity[1]" weight="0.0000712195895681476">
+			<isee:payoff_element name="Wind_energy_1.Wind_Energy_Capacity[1]" weight="9.99102532121463e-7">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Wind_energy_1.Installation_Cost_of_Wind_capacity[1]" weight="0.0000137523023312713">
+			<isee:payoff_element name="Wind_energy_1.Installation_Cost_of_Wind_capacity[1]" weight="0.0000148441887821854">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Energy_Capacity[1]" weight="0.00221237712529453">
+			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Energy_Capacity[1]" weight="0.000340655772824459">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Energy_Output[1]" weight="0.0000950902915343456">
+			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Energy_Output[1]" weight="0.00000912147349646489">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Installation_Costs[1]" weight="0.0000205563076953939">
+			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Installation_Costs[1]" weight="0.0000181621032719772">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 			<isee:payoff_element name="Energy_Supply_1.bio_fuel_primary_energy[1]" weight="31351362.0661803">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Renewable_energy_output[1]" weight="0.0000260672309021703">
+			<isee:payoff_element name="Energy_Supply_1.Renewable_energy_output[1]" weight="9.16935613949237e-8">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Nuclear_Energy_share_in_electricity[1]" weight="913.501033160353">
+			<isee:payoff_element name="Energy_Supply_1.Nuclear_Energy_share_in_electricity[1]" weight="645.908107272099">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Hydropower_Energy_share_in_electricity[1]" weight="8935.53001893916">
+			<isee:payoff_element name="Energy_Supply_1.Hydropower_Energy_share_in_electricity[1]" weight="921.18993268801">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Bio_Energy_share_in_electricity[1]" weight="15524.974074514">
+			<isee:payoff_element name="Energy_Supply_1.Bio_Energy_share_in_electricity[1]" weight="15394.4026540002">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Wind_energy_share_in_electricity[1]" weight="335330.280790705">
+			<isee:payoff_element name="Energy_Supply_1.Wind_energy_share_in_electricity[1]" weight="384.260717414311">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Solar_energy_share_in_electricity[1]" weight="16500.569023544">
+			<isee:payoff_element name="Energy_Supply_1.Solar_energy_share_in_electricity[1]" weight="219.72343486413">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_gas"[1]' weight="1745.35584784433">
+			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_gas"[1]' weight="228.946713671233">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_oil"[1]' weight="412.269400606613">
+			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_oil"[1]' weight="134.654022037088">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_coal"[1]' weight="2537.51849431547">
+			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_coal"[1]' weight="99.1552480995493">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Gas_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="339.483858857835">
+			<isee:payoff_element name="Energy_Supply_1.Gas_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="173.805532089765">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Liquid_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="324.112036381054">
+			<isee:payoff_element name="Energy_Supply_1.Liquid_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="355.505284599518">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Coal_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="1774.49545112417">
+			<isee:payoff_element name="Energy_Supply_1.Coal_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="1350.95031408429">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Primary_Fossil_Energy_FUEL[1]" weight="1665.1898352208">
+			<isee:payoff_element name="Energy_Supply_1.Primary_Fossil_Energy_FUEL[1]" weight="275.451965663604">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Total_Renewable_Energy_Capacity[1]" weight="0.000043888500736168">
+			<isee:payoff_element name="Energy_Supply_1.Total_Renewable_Energy_Capacity[1]" weight="2.17168773241995e-7">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_solid_fuels.Primary_Fossil_Energy_FUEL[1]" weight="12012.9549428235">
+			<isee:payoff_element name="Extraction_of_solid_fuels.Primary_Fossil_Energy_FUEL[1]" weight="176.349286240757">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_liquid_fuels.Primary_Fossil_Energy_FUEL[1]" weight="3424.85263938808">
+			<isee:payoff_element name="Extraction_of_liquid_fuels.Primary_Fossil_Energy_FUEL[1]" weight="17679.6832875906">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_gas_fuels.Primary_Fossil_Energy_FUEL[1]" weight="20382.5950640088">
+			<isee:payoff_element name="Extraction_of_gas_fuels.Primary_Fossil_Energy_FUEL[1]" weight="3685.97384292585">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 			<isee:payoff_element name="Extraction_of_fuels.Total_Primary_Fossil_Energy_FUEL[1]" weight="485.069968199009">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Global_energy_investments.share_of_GDP_invested_in_fuel_extraction[1]" weight="134034.389412422">
+			<isee:payoff_element name="Global_energy_investments.share_of_GDP_invested_in_fuel_extraction[1]" weight="286322.250171996">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Global_energy_investments.Gross_Investments_in_Fossil_Energy_Capital[1]" weight="2.34021468367044e-21">
+			<isee:payoff_element name="Global_energy_investments.Gross_Investments_in_Fossil_Energy_Capital[1]" weight="1.86055064634448e-20">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Global_energy_investments.Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="3.27537463213666e-23">
+			<isee:payoff_element name="Global_energy_investments.Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="1.67144716780465e-22">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Global_energy_investments.Gross_Investments_in_Fossil_Energy_Capital_oil_and_gas[1]" weight="3.86887557609949e-21">
+			<isee:payoff_element name="Global_energy_investments.Gross_Investments_in_Fossil_Energy_Capital_oil_and_gas[1]" weight="2.63262830840734e-21">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Global_energy_investments.Oil_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="7.73856918980495e-23">
+			<isee:payoff_element name="Global_energy_investments.Oil_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="1.09269093517468e-22">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Global_energy_investments.Coal_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="5.34398290471104e-21">
+			<isee:payoff_element name="Global_energy_investments.Coal_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="2.37455850756572e-22">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Global_energy_investments.Gas_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="2.11039385839891e-22">
+			<isee:payoff_element name="Global_energy_investments.Gas_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="1.97849990820538e-22">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Global_energy_investments.share_of_GDP_invested_in_Energy_without_fuel[1]" weight="5624502.97188622">
+			<isee:payoff_element name="Global_energy_investments.share_of_GDP_invested_in_Energy_without_fuel[1]" weight="323923.532683209">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Electricity_demand[1]" weight="0.00000237777538267368">
+			<isee:payoff_element name="Energy_demand_1.Electricity_demand[1]" weight="0.0000013883678548169">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 			<isee:payoff_element name="Energy_demand_1.energy_demand_for_Buildings_per_person[1]" weight="5.88148366495851">
@@ -1723,49 +1727,49 @@
 			<isee:payoff_element name="Energy_demand_1.electricity_demand_for_Buildings[1]" weight="2.69900991706648e-18">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Coal_to_electricity_conversion.Secondary_Fossil_Energy_Output_coal[1]" weight="0.00000554298677072716">
+			<isee:payoff_element name="Coal_to_electricity_conversion.Secondary_Fossil_Energy_Output_coal[1]" weight="1.6284993070182e-7">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Gas_to_electricity_conversion.Secondary_Fossil_Energy_Output_gas[1]" weight="0.00000602878462832096">
+			<isee:payoff_element name="Gas_to_electricity_conversion.Secondary_Fossil_Energy_Output_gas[1]" weight="2.5503780278812e-7">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Oil_to_electricity_conversion.Secondary_Fossil_Energy_Output_oil[1]" weight="9.29472943199391e-7">
+			<isee:payoff_element name="Oil_to_electricity_conversion.Secondary_Fossil_Energy_Output_oil[1]" weight="5.6632542142005e-7">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Energy_output_electricity[1]" weight="0.00000384236680797029">
+			<isee:payoff_element name="Energy_Supply_1.Energy_output_electricity[1]" weight="3.61596613605233e-7">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Hydropower[1]" weight="151839.205529743">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Hydropower[1]" weight="52432.6661755395">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Nuclear[1]" weight="56499.8779572625">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Nuclear[1]" weight="66740.4238272626">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Bio_Energy[1]" weight="6924079.28465431">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Bio_Energy[1]" weight="1068587.95621316">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Wind[1]" weight="685873.105668641">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Wind[1]" weight="19136.749718344">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Solar[1]" weight="212293.818508748">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Solar[1]" weight="9308.13909837249">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Renewables[1]" weight="58894.0461980013">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Renewables[1]" weight="5926.05341797086">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Gas[1]" weight="1186.86283542063">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Gas[1]" weight="507.826655345926">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Total_ES_per_capita[1]" weight="0.554147169049813">
+			<isee:payoff_element name="Energy_Supply_1.Total_ES_per_capita[1]" weight="0.182447331340853">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Total_Energy_Supply[1]" weight="1.08337724686388e-8">
+			<isee:payoff_element name="Energy_Supply_1.Total_Energy_Supply[1]" weight="3.22316634873047e-9">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Oil[1]" weight="1346.59509513986">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Oil[1]" weight="791.041421407605">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Coal[1]" weight="3560.16619632781">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Coal[1]" weight="207.389813786834">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 			<isee:payoff_element name="Energy_Supply_1.Liquid_output_FUEL[1]" weight="1">
@@ -1777,52 +1781,52 @@
 			<isee:payoff_element name="Energy_Supply_1.Solid_output_FUEL[1]" weight="1">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_solid_fuels.Primary_Fossil_Energy_FUEL_for_Fuel[1]" weight="21869.7018133106">
+			<isee:payoff_element name="Extraction_of_solid_fuels.Primary_Fossil_Energy_FUEL_for_Fuel[1]" weight="112.640782116976">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_solid_fuels.Primary_Fossil_Energy_FUEL_for_Electricity[1]" weight="21326.7828653618">
+			<isee:payoff_element name="Extraction_of_solid_fuels.Primary_Fossil_Energy_FUEL_for_Electricity[1]" weight="1848.74666724809">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_liquid_fuels.Primary_Fossil_Energy_FUEL_for_Fuel[1]" weight="983.960828411916">
+			<isee:payoff_element name="Extraction_of_liquid_fuels.Primary_Fossil_Energy_FUEL_for_Fuel[1]" weight="1967.92028670279">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_liquid_fuels.Primary_Fossil_Energy_FUEL_for_Electricity[1]" weight="2796.70095559386">
+			<isee:payoff_element name="Extraction_of_liquid_fuels.Primary_Fossil_Energy_FUEL_for_Electricity[1]" weight="1976.60158504519">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_gas_fuels.Primary_Fossil_Energy_FUEL_for_Fuel[1]" weight="55549.2008133425">
+			<isee:payoff_element name="Extraction_of_gas_fuels.Primary_Fossil_Energy_FUEL_for_Fuel[1]" weight="79968.5913713453">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_gas_fuels.Primary_Fossil_Energy_FUEL_for_Electricity[1]" weight="16964.3867232787">
+			<isee:payoff_element name="Extraction_of_gas_fuels.Primary_Fossil_Energy_FUEL_for_Electricity[1]" weight="3165.0951791826">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Gas_demand_FUEL[1]" weight="73385.2402528435">
+			<isee:payoff_element name="Energy_demand_1.Gas_demand_FUEL[1]" weight="51072.657294495">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 			<isee:payoff_element name="Energy_demand_1.Liquid_fuel_demand_FUEL[1]" weight="1">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Coal_demand_FUEL[1]" weight="9528.29163407791">
+			<isee:payoff_element name="Energy_demand_1.Coal_demand_FUEL[1]" weight="8779.83678477548">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_of_Energy_for_Industry_and_Other[1]" weight="9911.038553058">
+			<isee:payoff_element name="Energy_demand_1.Share_of_Energy_for_Industry_and_Other[1]" weight="10480.5850463655">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_of_Energy_for_Buildings[1]" weight="13099.1663159031">
+			<isee:payoff_element name="Energy_demand_1.Share_of_Energy_for_Buildings[1]" weight="12344.8939819054">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_of_Energy_for_Transportation[1]" weight="14254.2653407611">
+			<isee:payoff_element name="Energy_demand_1.Share_of_Energy_for_Transportation[1]" weight="12765.3393798301">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Electricity_share[1]" weight="52157.7925084183">
+			<isee:payoff_element name="Energy_demand_1.Electricity_share[1]" weight="71411.9724444908">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Gas_Share[1]" weight="80065.1949898019">
+			<isee:payoff_element name="Energy_demand_1.Gas_Share[1]" weight="70928.1741592827">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Liquid_fuel_Share[1]" weight="8375.98183609947">
+			<isee:payoff_element name="Energy_demand_1.Liquid_fuel_Share[1]" weight="9194.1434312116">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Coal_Share[1]" weight="6642.35241000504">
+			<isee:payoff_element name="Energy_demand_1.Coal_Share[1]" weight="5441.77832475549">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 		</isee:payoff_specs>

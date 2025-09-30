@@ -670,7 +670,7 @@
 			<isee:parameter name="Liquid_fuel_investments.adaptive_energy_investments_integrating_factor[1]"/>
 			<isee:parameter name="Liquid_fuel_investments.initial_relative_supply_missmatch[1]" scaling="10"/>
 			<isee:parameter name="Liquid_fuel_investments.historical_cost_adjustment_smoothing_time[1]" scaling="100"/>
-			<isee:parameter name="Liquid_fuel_investments.historical_cost_adjustment[1, *, *]" scaling="100"/>
+			<isee:parameter name="Liquid_fuel_investments.historical_cost_adjustment[1, *, *]" scaling="10"/>
 			<isee:parameter name="Liquid_fuel_investments.initial_perceived_marginal_energy_supply_cost[1]" scaling="100"/>
 			<isee:parameter name="Liquid_fuel_investments.sensitivity_of_effect_of_perceived_marginal_energy_supply_cost_on_investment[1]"/>
 			<isee:parameter name="Liquid_fuel_investments.Share_of_baseline_investments[1]" scaling="100"/>
@@ -5295,6 +5295,10 @@ Lorem ipsum dolor sit amet</text_box>
 			<isee:stories/>
 		</views>
 	</model>
+	<isee:controls>
+		<isee:control priority="interactive" name="Gas_fuel_investments.Share_of_investments[1]" value="0.0943803800142014"/>
+		<isee:control priority="interactive" name="Solid_fuel_investments.Share_of_baseline_investments[1]" value="0.012417163507069"/>
+	</isee:controls>
 	<isee:user_controlled>
 		<ent name="Simulation End" preserve="true"/>
 		<ent name="Government Regulations.tax on CO2e emissions" preserve="true"/>
@@ -5315,6 +5319,8 @@ Lorem ipsum dolor sit amet</text_box>
 		<ent name="Climate.switch landuse damage" preserve="true"/>
 		<ent name="Climate.switch behavioral impact" preserve="true"/>
 		<ent name="Climate.climate impact stoptime" preserve="true"/>
+		<ent name="Solid fuel investments.Share of baseline investments[1]" preserve="false"/>
+		<ent name="Gas fuel investments.Share of investments[1]" preserve="false"/>
 	</isee:user_controlled>
 	<macro name="INFLATION_IMPACT_GROWTH_RATE">
 		<eqn>trend in input</eqn>

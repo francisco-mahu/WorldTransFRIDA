@@ -3,7 +3,7 @@
 	<header>
 		<smile version="1.0" namespace="std, isee" uses_arrays="3" uses_conveyor="" uses_submodels=""/>
 		<name>New Energy</name>
-		<uuid>67714ad9-25c8-4682-8c7d-80607b81ead2</uuid>
+		<uuid>b703e65d-5e6b-4b8f-a4de-48ea8097297d</uuid>
 		<vendor>isee systems, inc.</vendor>
 		<product version="4.0" isee:build_number="3710" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
@@ -6340,7 +6340,7 @@ adjusted_cost[Run,Oil_energy_conversion] * Oil_Gross_Investments_in_Fossil_Energ
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="5" isee:page_rows="6" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="5" isee:page_rows="6" isee:scroll_y="300" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -7478,7 +7478,7 @@ adaptive_energy_investments_differntiating_factor * Differentiating_Relative_Ene
 					<dim name="Run"/>
 				</dimensions>
 				<eqn>0.243584041905538</eqn>
-				<range min="0" max="1"/>
+				<range min="0" max="0.3"/>
 				<units>dmnl</units>
 			</aux>
 			<stock name="cumulative squared relative\nenergy supply missmatch">
@@ -7732,7 +7732,7 @@ cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit * Gas_
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="3" isee:page_rows="5" isee:scroll_x="103.75" isee:scroll_y="75" zoom="80" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="3" isee:page_rows="5" isee:scroll_x="890" isee:scroll_y="19.2857" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -8268,7 +8268,7 @@ https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_c
 				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
 				<units>c$/Year</units>
 			</aux>
-			<aux name="Gross Investments in Biofuel Capacity">
+			<aux name="Gross Investments\nin Biofuel Capacity">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
@@ -8324,7 +8324,7 @@ https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_c
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="142.143" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="142.143" isee:scroll_y="42.8571" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -8505,7 +8505,7 @@ https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_c
 				</connector>
 				<aux font_style="italic" font_weight="bold" label_side="bottom" x="842.666" y="491.87" name="Gross Investments in Biofuel Capacity 2"/>
 				<aux font_style="italic" font_weight="bold" x="1015.96" y="506.857" name="Gross Investments in\nBiofuel Capacity 1"/>
-				<aux background="#FFAAFF" x="935.116" y="568.869" name="Gross Investments in Biofuel Capacity"/>
+				<aux background="#FFAAFF" x="935.116" y="568.869" name="Gross Investments\nin Biofuel Capacity"/>
 				<connector uid="29" angle="12.8762">
 					<from>Gross_Investments_in_Biofuel_Capacity_2</from>
 					<to>Gross_Investments_in_Biofuel_Capacity</to>
@@ -9096,7 +9096,7 @@ cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit * Oil_
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="3" isee:page_rows="5" isee:scroll_x="675.833" isee:scroll_y="423.333" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="3" isee:page_rows="5" isee:scroll_x="488.333" isee:scroll_y="322.5" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -9625,7 +9625,7 @@ adaptive_energy_investments_differntiating_factor * Differentiating_Relative_Ene
 					<dim name="Run"/>
 				</dimensions>
 				<eqn>0.0792252427366591</eqn>
-				<range min="0" max="1"/>
+				<range min="0" max="0.08"/>
 				<units>dmnl</units>
 			</aux>
 			<stock name="cumulative squared relative\nenergy supply missmatch">
@@ -9897,7 +9897,7 @@ cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit * Coal
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="4" isee:page_rows="6" isee:scroll_x="135.714" isee:scroll_y="985.714" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="4" isee:page_rows="6" isee:scroll_x="344.286" isee:scroll_y="470.714" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>

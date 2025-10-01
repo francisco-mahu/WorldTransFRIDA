@@ -3,7 +3,7 @@
 	<header>
 		<smile version="1.0" namespace="std, isee" uses_arrays="3" uses_conveyor="" uses_submodels=""/>
 		<name>New Energy</name>
-		<uuid>b703e65d-5e6b-4b8f-a4de-48ea8097297d</uuid>
+		<uuid>b14d9dec-d025-4ecd-a70a-64c92bae648a</uuid>
 		<vendor>isee systems, inc.</vendor>
 		<product version="4.0" isee:build_number="3710" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
@@ -1541,7 +1541,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-7.79685355529773</eqn>
+				<eqn>-7.67461964133794</eqn>
 				<range min="-15" max="5"/>
 				<units>dmnl</units>
 			</aux>
@@ -1563,7 +1563,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>312123470.632691</eqn>
+				<eqn>313400939.424329</eqn>
 				<range min="100000000" max="500000000"/>
 				<units>MWh/year</units>
 			</aux>
@@ -1610,7 +1610,7 @@ per_person_use_of_energy_policy</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.007121543476856</eqn>
+				<eqn>0.00713035986595465</eqn>
 				<range min="0.001" max="0.01"/>
 				<units>dmnl</units>
 			</aux>
@@ -1626,7 +1626,7 @@ per_person_use_of_energy_policy</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>7.70341663327136</eqn>
+				<eqn>7.66261859394965</eqn>
 				<range min="-2" max="9"/>
 				<units>dmnl</units>
 			</aux>
@@ -1634,7 +1634,7 @@ per_person_use_of_energy_policy</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1.69604022160381</eqn>
+				<eqn>1.70989165337992</eqn>
 				<range min="0" max="5"/>
 				<units>dmnl</units>
 			</aux>
@@ -1696,7 +1696,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.0269939071746786</eqn>
+				<eqn>0.0577749527069636</eqn>
 				<range min="0.01" max="0.5"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
@@ -1706,7 +1706,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.00808234250723805</eqn>
+				<eqn>0.00810849448632307</eqn>
 				<range min="0.001" max="0.012"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
@@ -1726,7 +1726,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.130051509626474</eqn>
+				<eqn>0.141709244357057</eqn>
 				<range min="0" max="0.2"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
@@ -1790,7 +1790,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.128012309313078</eqn>
+				<eqn>0.124315277663872</eqn>
 				<range min="0.05" max="0.2"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
@@ -1800,7 +1800,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.00791906228293811</eqn>
+				<eqn>0.00869896927668248</eqn>
 				<range min="0.001" max="0.012"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
@@ -1820,7 +1820,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.0407743926907333</eqn>
+				<eqn>0.0348574331284936</eqn>
 				<range min="0" max="0.2"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
@@ -1884,7 +1884,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.164952934489256</eqn>
+				<eqn>0.163878756958505</eqn>
 				<range min="0.05" max="0.2"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
@@ -1894,7 +1894,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.003073953381598</eqn>
+				<eqn>0.00185831547141688</eqn>
 				<range min="0.001" max="0.012"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
@@ -1914,7 +1914,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.152957925905967</eqn>
+				<eqn>0.149422350232943</eqn>
 				<range min="0" max="0.2"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
@@ -1978,7 +1978,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.132724151785323</eqn>
+				<eqn>0.146669549089919</eqn>
 				<range min="0.05" max="0.2"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
@@ -1988,7 +1988,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.0111675879379076</eqn>
+				<eqn>0.0102661694088016</eqn>
 				<range min="0.001" max="0.012"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
@@ -2008,7 +2008,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.164876266107328</eqn>
+				<eqn>0.150760037302552</eqn>
 				<range min="0" max="0.2"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
@@ -2093,7 +2093,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>770213058.902819</eqn>
+				<eqn>771247931.239886</eqn>
 				<range min="500000000" max="900000000"/>
 				<units>MWh/year</units>
 			</aux>
@@ -2110,7 +2110,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.00728153490515967</eqn>
+				<eqn>0.00727381459149847</eqn>
 				<range min="0.001" max="0.01"/>
 				<units>dmnl</units>
 			</aux>
@@ -2125,7 +2125,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>71191046500.1214</eqn>
+				<eqn>71185151216.3736</eqn>
 				<range min="50000000000" max="90000000000"/>
 				<units>MWh/year</units>
 			</aux>
@@ -2142,7 +2142,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.00647717375197602</eqn>
+				<eqn>0.00659403896141328</eqn>
 				<range min="0.001" max="0.01"/>
 				<units>dmnl</units>
 			</aux>
@@ -2157,7 +2157,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>125969010.155847</eqn>
+				<eqn>125970333.720222</eqn>
 				<range min="80000000" max="200000000"/>
 				<units>MWh/year</units>
 			</aux>
@@ -2174,7 +2174,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.00744170557559794</eqn>
+				<eqn>0.00746943594228851</eqn>
 				<range min="0.001" max="0.01"/>
 				<units>dmnl</units>
 			</aux>
@@ -2196,7 +2196,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>2611331098.84861</eqn>
+				<eqn>2611065031.19042</eqn>
 				<range min="1000000000" max="5000000000"/>
 				<units>MWh/year</units>
 			</aux>
@@ -2220,7 +2220,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.00824895397714868</eqn>
+				<eqn>0.00817009171758779</eqn>
 				<range min="0.001" max="0.01"/>
 				<units>dmnl</units>
 			</aux>
@@ -2235,7 +2235,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>4802105135.62059</eqn>
+				<eqn>4800586368.10717</eqn>
 				<range min="3500000000" max="8000000000"/>
 				<units>MWh/year</units>
 			</aux>
@@ -2252,7 +2252,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.007984852173454</eqn>
+				<eqn>0.00797684984308468</eqn>
 				<range min="0.001" max="0.01"/>
 				<units>dmnl</units>
 			</aux>
@@ -2267,7 +2267,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>4486022088.89861</eqn>
+				<eqn>4488023033.3578</eqn>
 				<range min="1000000000" max="6000000000"/>
 				<units>MWh/year</units>
 			</aux>
@@ -2284,7 +2284,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.00793801725246037</eqn>
+				<eqn>0.00783168385342205</eqn>
 				<range min="0.001" max="0.01"/>
 				<units>dmnl</units>
 			</aux>
@@ -2299,7 +2299,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>8318596701.2822</eqn>
+				<eqn>8316187859.86604</eqn>
 				<range min="6000000000" max="9000000000"/>
 				<units>MWh/year</units>
 			</aux>
@@ -2316,7 +2316,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.00776511608807516</eqn>
+				<eqn>0.00769719605576121</eqn>
 				<range min="0.001" max="0.01"/>
 				<units>dmnl</units>
 			</aux>
@@ -2338,7 +2338,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1666181403.79078</eqn>
+				<eqn>1656799047.39093</eqn>
 				<range min="1000000000" max="2500000000"/>
 				<units>MWh/year</units>
 			</aux>
@@ -2362,7 +2362,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.00767043518741628</eqn>
+				<eqn>0.00771050426292544</eqn>
 				<range min="0.001" max="0.01"/>
 				<units>dmnl</units>
 			</aux>
@@ -2377,7 +2377,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>7361977405.35451</eqn>
+				<eqn>7374399702.11085</eqn>
 				<range min="4000000000" max="8000000000"/>
 				<units>MWh/year</units>
 			</aux>
@@ -2394,7 +2394,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.00812146581189146</eqn>
+				<eqn>0.00805030657822776</eqn>
 				<range min="0.001" max="0.01"/>
 				<units>dmnl</units>
 			</aux>
@@ -2409,7 +2409,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>7515145969.46696</eqn>
+				<eqn>7502199226.70095</eqn>
 				<range min="5000000000" max="8000000000"/>
 				<units>MWh/year</units>
 			</aux>
@@ -2426,7 +2426,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.00763487957307123</eqn>
+				<eqn>0.00767165724178694</eqn>
 				<range min="0.001" max="0.01"/>
 				<units>dmnl</units>
 			</aux>
@@ -2441,7 +2441,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>2470221865.96154</eqn>
+				<eqn>2469877893.7139</eqn>
 				<range min="900000000" max="2900000000"/>
 				<units>MWh/year</units>
 			</aux>
@@ -2458,7 +2458,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.00765435124183927</eqn>
+				<eqn>0.0076451201476045</eqn>
 				<range min="0.001" max="0.01"/>
 				<units>dmnl</units>
 			</aux>
@@ -2577,7 +2577,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.236808285911075</eqn>
+				<eqn>0.234861792379044</eqn>
 				<range min="0" max="2"/>
 				<units>dmnl</units>
 			</aux>
@@ -2592,7 +2592,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.240331625015456</eqn>
+				<eqn>0.242525896401066</eqn>
 				<range min="0" max="2"/>
 				<units>dmnl</units>
 			</aux>
@@ -2600,7 +2600,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1.40113475458347</eqn>
+				<eqn>1.39553020941247</eqn>
 				<range min="0" max="2"/>
 				<units>dmnl</units>
 			</aux>
@@ -2615,7 +2615,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.740447942333371</eqn>
+				<eqn>0.687982094070292</eqn>
 				<range min="0" max="2"/>
 				<units>dmnl</units>
 			</aux>
@@ -2623,7 +2623,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.556613522338839</eqn>
+				<eqn>0.513388142585141</eqn>
 				<range min="0" max="5"/>
 				<units>dmnl</units>
 			</aux>
@@ -2638,7 +2638,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>3.47281670753157</eqn>
+				<eqn>4.03670500285856</eqn>
 				<range min="-12" max="5"/>
 				<units>dmnl</units>
 			</aux>
@@ -2646,7 +2646,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>4.30413875895949</eqn>
+				<eqn>5.04635866301937</eqn>
 				<range min="1.5" max="5.5"/>
 				<units>dmnl</units>
 			</aux>
@@ -2654,7 +2654,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-0.182858468938152</eqn>
+				<eqn>-0.168001764299486</eqn>
 				<range min="-15" max="12"/>
 				<units>dmnl</units>
 			</aux>
@@ -2662,7 +2662,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>2.22411689340177</eqn>
+				<eqn>2.1388100221917</eqn>
 				<range min="-12" max="12"/>
 				<units>dmnl</units>
 			</aux>
@@ -2670,7 +2670,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>2.98097730117051</eqn>
+				<eqn>3.00418162378866</eqn>
 				<range min="0" max="8"/>
 				<units>dmnl</units>
 			</aux>
@@ -2678,7 +2678,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.31035543118156</eqn>
+				<eqn>0.302357641100229</eqn>
 				<range min="0" max="2"/>
 				<units>dmnl</units>
 			</aux>
@@ -2700,7 +2700,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.507041552759498</eqn>
+				<eqn>0.522282965117857</eqn>
 				<range min="0" max="2"/>
 				<units>dmnl</units>
 			</aux>
@@ -2715,7 +2715,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>4.28250532238083</eqn>
+				<eqn>4.03368712790707</eqn>
 				<range min="2.33" max="4.33"/>
 				<units>dmnl</units>
 			</aux>
@@ -2723,7 +2723,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>13.0999186838687</eqn>
+				<eqn>12.2947895029525</eqn>
 				<range min="4" max="25"/>
 				<units>dmnl</units>
 			</aux>
@@ -2731,7 +2731,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-4.2329269653824</eqn>
+				<eqn>-3.73839020688012</eqn>
 				<range min="-12" max="8"/>
 				<units>dmnl</units>
 			</aux>
@@ -2746,7 +2746,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>4.26613095490529</eqn>
+				<eqn>4.04028396536066</eqn>
 				<range min="-2" max="35"/>
 				<units>dmnl</units>
 			</aux>
@@ -2754,7 +2754,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-0.234465729953777</eqn>
+				<eqn>-0.186690576694937</eqn>
 				<range min="-5" max="2"/>
 				<units>dmnl</units>
 			</aux>
@@ -2762,7 +2762,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1.77327996186468</eqn>
+				<eqn>1.48776880191438</eqn>
 				<range min="-5" max="6"/>
 				<units>dmnl</units>
 			</aux>
@@ -2777,7 +2777,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.503974608563915</eqn>
+				<eqn>0.502779334835826</eqn>
 				<range min="0" max="2"/>
 				<units>dmnl</units>
 			</aux>
@@ -2785,7 +2785,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.711334518402085</eqn>
+				<eqn>0.71883787828052</eqn>
 				<range min="0" max="2"/>
 				<units>dmnl</units>
 			</aux>
@@ -2800,7 +2800,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.886021299114626</eqn>
+				<eqn>0.895121512862485</eqn>
 				<range min="0" max="3"/>
 				<units>dmnl</units>
 			</aux>
@@ -2808,7 +2808,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>2.89115021996384</eqn>
+				<eqn>2.85972608488123</eqn>
 				<range min="0" max="5"/>
 				<units>dmnl</units>
 			</aux>
@@ -2852,12 +2852,12 @@ ELSE
 				<units>dmnl</units>
 			</aux>
 			<aux name="Tolerance">
-				<eqn>7.40211433974851</eqn>
+				<eqn>6.96986050629095</eqn>
 				<range min="-25" max="25"/>
 				<units>MWh/year</units>
 			</aux>
 			<aux name="Tolerance 1">
-				<eqn>791006599.781327</eqn>
+				<eqn>791455329.799987</eqn>
 				<range min="700000000" max="900000000"/>
 				<units>MWh/year</units>
 			</aux>
@@ -2865,7 +2865,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.425105380607359</eqn>
+				<eqn>0.397908226960766</eqn>
 				<range min="0" max="2"/>
 				<units>dmnl</units>
 			</aux>
@@ -2873,12 +2873,12 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.90580732541555</eqn>
+				<eqn>0.964629391089943</eqn>
 				<range min="-3" max="3"/>
 				<units>dmnl</units>
 			</aux>
 			<aux name="Tolerance 2">
-				<eqn>6522877651.41977</eqn>
+				<eqn>6515993879.0731</eqn>
 				<range min="5500000000" max="7500000000"/>
 				<units>MWh/year</units>
 			</aux>
@@ -2886,7 +2886,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.414661253617604</eqn>
+				<eqn>0.397310531663284</eqn>
 				<range min="0" max="2"/>
 				<units>dmnl</units>
 			</aux>
@@ -2894,7 +2894,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>3.95539215693631</eqn>
+				<eqn>4.26157548704153</eqn>
 				<range min="-12" max="4.5"/>
 				<units>dmnl</units>
 			</aux>
@@ -2902,7 +2902,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>3.18447284041834</eqn>
+				<eqn>3.37856194695232</eqn>
 				<range min="1.5" max="5.5"/>
 				<units>dmnl</units>
 			</aux>
@@ -4962,7 +4962,7 @@ Negative values of P causes compensation of differences, positive values would c
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-10.3492065803201</eqn>
+				<eqn>-10.1607547534914</eqn>
 				<range min="-50" max="0"/>
 				<units>dmnl</units>
 			</aux>
@@ -5124,7 +5124,7 @@ share_of_GDP_invested_in_bio_power</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-4.19710827022925</eqn>
+				<eqn>-5.27286356874256</eqn>
 				<range min="-7" max="0"/>
 				<units>dmnl</units>
 			</aux>
@@ -5134,7 +5134,7 @@ share_of_GDP_invested_in_bio_power</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-3.52359001612722</eqn>
+				<eqn>-3.50259459699091</eqn>
 				<range min="-15" max="0"/>
 				<units>Year</units>
 			</aux>
@@ -5261,7 +5261,7 @@ ELSE NAN</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>44.0286329549705</eqn>
+				<eqn>44.0753151378311</eqn>
 				<range min="10" max="50"/>
 				<units>kWh/(c$*Years)</units>
 			</aux>
@@ -5379,7 +5379,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.404294897201386</eqn>
+				<eqn>0.41180266052678</eqn>
 				<range min="0" max="2"/>
 				<units>dmnl</units>
 			</aux>
@@ -5421,7 +5421,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-0.0370970341215751</eqn>
+				<eqn>0.106148800828663</eqn>
 				<range min="-0.5" max="0.5"/>
 				<units>dmnl</units>
 			</aux>
@@ -5434,301 +5434,301 @@ ELSE
 					<dim name="Historical_5yr_time_steps"/>
 				</dimensions>
 				<element subscript="1, Coal_fuel_extraction, 1">
-					<eqn>0.748520953168878</eqn>
+					<eqn>0.743087666388337</eqn>
 				</element>
 				<element subscript="1, Coal_fuel_extraction, 2">
-					<eqn>0.854626774089024</eqn>
+					<eqn>0.848646899284489</eqn>
 				</element>
 				<element subscript="1, Coal_fuel_extraction, 3">
-					<eqn>0.565041091027651</eqn>
+					<eqn>0.577193747375589</eqn>
 				</element>
 				<element subscript="1, Coal_fuel_extraction, 4">
-					<eqn>0.48627284478711</eqn>
+					<eqn>0.525246650543741</eqn>
 				</element>
 				<element subscript="1, Coal_fuel_extraction, 5">
-					<eqn>0.488101412781433</eqn>
+					<eqn>0.491172329190373</eqn>
 				</element>
 				<element subscript="1, Coal_fuel_extraction, 6">
-					<eqn>0.297736844453195</eqn>
+					<eqn>0.367206052216953</eqn>
 				</element>
 				<element subscript="1, Coal_fuel_extraction, 7">
-					<eqn>0.507692760284977</eqn>
+					<eqn>0.534863230945945</eqn>
 				</element>
 				<element subscript="1, Coal_fuel_extraction, 8">
-					<eqn>0.71451649254378</eqn>
+					<eqn>0.704279906381546</eqn>
 				</element>
 				<element subscript="1, Coal_fuel_extraction, 9">
-					<eqn>0.755224540178474</eqn>
+					<eqn>0.775659813545668</eqn>
 				</element>
 				<element subscript="1, Coal_energy_conversion, 1">
-					<eqn>0.650710313464835</eqn>
+					<eqn>0.651661177065442</eqn>
 				</element>
 				<element subscript="1, Coal_energy_conversion, 2">
-					<eqn>0.708832327938709</eqn>
+					<eqn>0.702277169486764</eqn>
 				</element>
 				<element subscript="1, Coal_energy_conversion, 3">
-					<eqn>0.658634015861329</eqn>
+					<eqn>0.655891509204613</eqn>
 				</element>
 				<element subscript="1, Coal_energy_conversion, 4">
-					<eqn>0.723430079458107</eqn>
+					<eqn>0.73266580607715</eqn>
 				</element>
 				<element subscript="1, Coal_energy_conversion, 5">
-					<eqn>0.631934168411077</eqn>
+					<eqn>0.608195775699725</eqn>
 				</element>
 				<element subscript="1, Coal_energy_conversion, 6">
-					<eqn>0.438558328994471</eqn>
+					<eqn>0.386963560497293</eqn>
 				</element>
 				<element subscript="1, Coal_energy_conversion, 7">
-					<eqn>0.662813013932329</eqn>
+					<eqn>0.674552499460035</eqn>
 				</element>
 				<element subscript="1, Coal_energy_conversion, 8">
-					<eqn>0.492837869072199</eqn>
+					<eqn>0.495568715784632</eqn>
 				</element>
 				<element subscript="1, Coal_energy_conversion, 9">
-					<eqn>0.403906331521267</eqn>
+					<eqn>0.412103790874426</eqn>
 				</element>
 				<element subscript="1, Oil_fuel_extraction, 1">
-					<eqn>0.12212961313711</eqn>
+					<eqn>0.128196120670953</eqn>
 				</element>
 				<element subscript="1, Oil_fuel_extraction, 2">
-					<eqn>0.05</eqn>
+					<eqn>0.0560493940286194</eqn>
 				</element>
 				<element subscript="1, Oil_fuel_extraction, 3">
-					<eqn>0.0625492192605107</eqn>
+					<eqn>0.066891217567998</eqn>
 				</element>
 				<element subscript="1, Oil_fuel_extraction, 4">
-					<eqn>0.0933964400721824</eqn>
+					<eqn>0.0895491301266153</eqn>
 				</element>
 				<element subscript="1, Oil_fuel_extraction, 5">
-					<eqn>0.0686584443533717</eqn>
+					<eqn>0.0733620053738187</eqn>
 				</element>
 				<element subscript="1, Oil_fuel_extraction, 6">
-					<eqn>0.12560350717582</eqn>
+					<eqn>0.127671529067072</eqn>
 				</element>
 				<element subscript="1, Oil_fuel_extraction, 7">
-					<eqn>0.0718199180772387</eqn>
+					<eqn>0.0829113561695967</eqn>
 				</element>
 				<element subscript="1, Oil_fuel_extraction, 8">
-					<eqn>0.103234958537474</eqn>
+					<eqn>0.108863411223858</eqn>
 				</element>
 				<element subscript="1, Oil_fuel_extraction, 9">
-					<eqn>0.155285860118039</eqn>
+					<eqn>0.149057007719336</eqn>
 				</element>
 				<element subscript="1, Oil_energy_conversion, 1">
-					<eqn>0.133958971228095</eqn>
+					<eqn>0.1498658812547</eqn>
 				</element>
 				<element subscript="1, Oil_energy_conversion, 2">
-					<eqn>0.260199890147304</eqn>
+					<eqn>0.210313981628133</eqn>
 				</element>
 				<element subscript="1, Oil_energy_conversion, 3">
-					<eqn>0.303329418018428</eqn>
+					<eqn>0.251656563076396</eqn>
 				</element>
 				<element subscript="1, Oil_energy_conversion, 4">
-					<eqn>0.246710479526411</eqn>
+					<eqn>0.304373635209124</eqn>
 				</element>
 				<element subscript="1, Oil_energy_conversion, 5">
-					<eqn>0.209749858204179</eqn>
+					<eqn>0.222843144405038</eqn>
 				</element>
 				<element subscript="1, Oil_energy_conversion, 6">
-					<eqn>0.252617322290022</eqn>
+					<eqn>0.234639259024345</eqn>
 				</element>
 				<element subscript="1, Oil_energy_conversion, 7">
-					<eqn>0.228115941757392</eqn>
+					<eqn>0.139168083764651</eqn>
 				</element>
 				<element subscript="1, Oil_energy_conversion, 8">
 					<eqn>0.05</eqn>
 				</element>
 				<element subscript="1, Oil_energy_conversion, 9">
-					<eqn>0.0667276527691267</eqn>
+					<eqn>0.0724238646125063</eqn>
 				</element>
 				<element subscript="1, Gas_fuel_extraction, 1">
-					<eqn>0.23220249564784</eqn>
+					<eqn>0.231455246233449</eqn>
 				</element>
 				<element subscript="1, Gas_fuel_extraction, 2">
-					<eqn>0.364129803399362</eqn>
+					<eqn>0.311845272860817</eqn>
 				</element>
 				<element subscript="1, Gas_fuel_extraction, 3">
-					<eqn>0.326311434191337</eqn>
+					<eqn>0.33764377504537</eqn>
 				</element>
 				<element subscript="1, Gas_fuel_extraction, 4">
-					<eqn>0.442824719088212</eqn>
+					<eqn>0.428944920329341</eqn>
 				</element>
 				<element subscript="1, Gas_fuel_extraction, 5">
-					<eqn>0.271189586921171</eqn>
+					<eqn>0.267306647245514</eqn>
 				</element>
 				<element subscript="1, Gas_fuel_extraction, 6">
-					<eqn>0.339992323444814</eqn>
+					<eqn>0.261044496569054</eqn>
 				</element>
 				<element subscript="1, Gas_fuel_extraction, 7">
-					<eqn>0.276409937035157</eqn>
+					<eqn>0.224964547867882</eqn>
 				</element>
 				<element subscript="1, Gas_fuel_extraction, 8">
-					<eqn>0.184339344924638</eqn>
+					<eqn>0.16880484235108</eqn>
 				</element>
 				<element subscript="1, Gas_fuel_extraction, 9">
-					<eqn>0.274695904285813</eqn>
+					<eqn>0.194136774698678</eqn>
 				</element>
 				<element subscript="1, Gas_energy_conversion, 1">
-					<eqn>0.311333151106451</eqn>
+					<eqn>0.305444257291426</eqn>
 				</element>
 				<element subscript="1, Gas_energy_conversion, 2">
-					<eqn>0.319404039506822</eqn>
+					<eqn>0.329346986516594</eqn>
 				</element>
 				<element subscript="1, Gas_energy_conversion, 3">
-					<eqn>0.293854421427967</eqn>
+					<eqn>0.292772527433259</eqn>
 				</element>
 				<element subscript="1, Gas_energy_conversion, 4">
-					<eqn>0.386579275459145</eqn>
+					<eqn>0.38017136714075</eqn>
 				</element>
 				<element subscript="1, Gas_energy_conversion, 5">
-					<eqn>0.342602856917253</eqn>
+					<eqn>0.327556793009617</eqn>
 				</element>
 				<element subscript="1, Gas_energy_conversion, 6">
-					<eqn>0.327914407769936</eqn>
+					<eqn>0.311181147920359</eqn>
 				</element>
 				<element subscript="1, Gas_energy_conversion, 7">
-					<eqn>0.384037804871689</eqn>
+					<eqn>0.392540748660975</eqn>
 				</element>
 				<element subscript="1, Gas_energy_conversion, 8">
-					<eqn>0.41798971702044</eqn>
+					<eqn>0.411538374285575</eqn>
 				</element>
 				<element subscript="1, Gas_energy_conversion, 9">
-					<eqn>0.475356477765074</eqn>
+					<eqn>0.481033257939654</eqn>
 				</element>
 				<element subscript="1, Hydropower, 1">
-					<eqn>1.17519812793133</eqn>
+					<eqn>1.19408149644402</eqn>
 				</element>
 				<element subscript="1, Hydropower, 2">
-					<eqn>0.989143848684685</eqn>
+					<eqn>1.00135400614468</eqn>
 				</element>
 				<element subscript="1, Hydropower, 3">
-					<eqn>0.950510855485576</eqn>
+					<eqn>0.960199434416426</eqn>
 				</element>
 				<element subscript="1, Hydropower, 4">
-					<eqn>1.27050315287001</eqn>
+					<eqn>1.2788786702731</eqn>
 				</element>
 				<element subscript="1, Hydropower, 5">
-					<eqn>1.11496413332737</eqn>
+					<eqn>1.1499020737882</eqn>
 				</element>
 				<element subscript="1, Hydropower, 6">
-					<eqn>0.538551096418203</eqn>
+					<eqn>0.538545084159552</eqn>
 				</element>
 				<element subscript="1, Hydropower, 7">
-					<eqn>0.352090259984529</eqn>
+					<eqn>0.35020309419922</eqn>
 				</element>
 				<element subscript="1, Hydropower, 8">
-					<eqn>0.268246973039285</eqn>
+					<eqn>0.282090578391829</eqn>
 				</element>
 				<element subscript="1, Hydropower, 9">
-					<eqn>0.480069495019956</eqn>
+					<eqn>0.426126104706404</eqn>
 				</element>
 				<element subscript="1, Nuclear, 1">
-					<eqn>0.155793394092079</eqn>
+					<eqn>0.145593630092641</eqn>
 				</element>
 				<element subscript="1, Nuclear, 2">
-					<eqn>0.219419751166306</eqn>
+					<eqn>0.228055583610646</eqn>
 				</element>
 				<element subscript="1, Nuclear, 3">
-					<eqn>0.386308607898597</eqn>
+					<eqn>0.382995432746037</eqn>
 				</element>
 				<element subscript="1, Nuclear, 4">
-					<eqn>0.514724795552772</eqn>
+					<eqn>0.559433138640825</eqn>
 				</element>
 				<element subscript="1, Nuclear, 5">
-					<eqn>0.60384121682199</eqn>
+					<eqn>0.590824582015238</eqn>
 				</element>
 				<element subscript="1, Nuclear, 6">
-					<eqn>0.679727250752373</eqn>
+					<eqn>0.71017002349011</eqn>
 				</element>
 				<element subscript="1, Nuclear, 7">
-					<eqn>0.662112698544556</eqn>
+					<eqn>0.677663791641162</eqn>
 				</element>
 				<element subscript="1, Nuclear, 8">
-					<eqn>0.471426318203391</eqn>
+					<eqn>0.47989832319579</eqn>
 				</element>
 				<element subscript="1, Nuclear, 9">
-					<eqn>0.608184692055322</eqn>
+					<eqn>0.563089900438655</eqn>
 				</element>
 				<element subscript="1, Bio, 1">
-					<eqn>0.45082704927831</eqn>
+					<eqn>0.444653581520853</eqn>
 				</element>
 				<element subscript="1, Bio, 2">
-					<eqn>0.485545325392725</eqn>
+					<eqn>0.486636008159378</eqn>
 				</element>
 				<element subscript="1, Bio, 3">
-					<eqn>0.682301043312376</eqn>
+					<eqn>0.684348188513922</eqn>
 				</element>
 				<element subscript="1, Bio, 4">
-					<eqn>0.797802617316693</eqn>
+					<eqn>0.794893394291237</eqn>
 				</element>
 				<element subscript="1, Bio, 5">
-					<eqn>0.864224437437542</eqn>
+					<eqn>0.866467704344499</eqn>
 				</element>
 				<element subscript="1, Bio, 6">
-					<eqn>0.33859289089211</eqn>
+					<eqn>0.342798946498288</eqn>
 				</element>
 				<element subscript="1, Bio, 7">
-					<eqn>0.345188744775751</eqn>
+					<eqn>0.350320549799166</eqn>
 				</element>
 				<element subscript="1, Bio, 8">
-					<eqn>0.420850885536984</eqn>
+					<eqn>0.490718302468594</eqn>
 				</element>
 				<element subscript="1, Bio, 9">
-					<eqn>0.434768880404981</eqn>
+					<eqn>0.453515038111668</eqn>
 				</element>
 				<element subscript="1, Solar, 1">
-					<eqn>0.563691876576721</eqn>
+					<eqn>0.557874032437397</eqn>
 				</element>
 				<element subscript="1, Solar, 2">
-					<eqn>0.351927633782478</eqn>
+					<eqn>0.348864575757444</eqn>
 				</element>
 				<element subscript="1, Solar, 3">
-					<eqn>0.525198130208835</eqn>
+					<eqn>0.533406077572205</eqn>
 				</element>
 				<element subscript="1, Solar, 4">
-					<eqn>0.287291266829583</eqn>
+					<eqn>0.288260719523394</eqn>
 				</element>
 				<element subscript="1, Solar, 5">
-					<eqn>0.281305354245335</eqn>
+					<eqn>0.297916960982254</eqn>
 				</element>
 				<element subscript="1, Solar, 6">
-					<eqn>0.286833775557684</eqn>
+					<eqn>0.30304269131154</eqn>
 				</element>
 				<element subscript="1, Solar, 7">
-					<eqn>0.160320350796701</eqn>
+					<eqn>0.139382139756358</eqn>
 				</element>
 				<element subscript="1, Solar, 8">
-					<eqn>0.172013055800981</eqn>
+					<eqn>0.183443809579867</eqn>
 				</element>
 				<element subscript="1, Solar, 9">
-					<eqn>0.14749716352946</eqn>
+					<eqn>0.15172842628643</eqn>
 				</element>
 				<element subscript="1, Wind, 1">
-					<eqn>0.451689946401673</eqn>
+					<eqn>0.468544114387307</eqn>
 				</element>
 				<element subscript="1, Wind, 2">
-					<eqn>0.447459082698573</eqn>
+					<eqn>0.444243364550185</eqn>
 				</element>
 				<element subscript="1, Wind, 3">
-					<eqn>0.387199185924531</eqn>
+					<eqn>0.38217563936039</eqn>
 				</element>
 				<element subscript="1, Wind, 4">
-					<eqn>0.381139784798394</eqn>
+					<eqn>0.33512124581505</eqn>
 				</element>
 				<element subscript="1, Wind, 5">
-					<eqn>0.110152907316788</eqn>
+					<eqn>0.167191355172012</eqn>
 				</element>
 				<element subscript="1, Wind, 6">
-					<eqn>0.240983406221944</eqn>
+					<eqn>0.216529221601107</eqn>
 				</element>
 				<element subscript="1, Wind, 7">
-					<eqn>0.121467770344377</eqn>
+					<eqn>0.127432829140359</eqn>
 				</element>
 				<element subscript="1, Wind, 8">
-					<eqn>0.133500675965435</eqn>
+					<eqn>0.140572156171114</eqn>
 				</element>
 				<element subscript="1, Wind, 9">
-					<eqn>0.126801519566044</eqn>
+					<eqn>0.128807886352402</eqn>
 				</element>
 				<range min="0.05" max="4"/>
 				<units>dmnl</units>
@@ -5760,7 +5760,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.56771198598927</eqn>
+				<eqn>0.590500614201497</eqn>
 				<range min="0.25" max="0.75"/>
 				<units>years</units>
 			</aux>
@@ -6064,7 +6064,7 @@ adjusted_cost[Run,Oil_energy_conversion] * Oil_Gross_Investments_in_Fossil_Energ
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.151416108161312</eqn>
+				<eqn>0.152236889046908</eqn>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
 			</aux>
@@ -6088,7 +6088,7 @@ adjusted_cost[Run,Oil_energy_conversion] * Oil_Gross_Investments_in_Fossil_Energ
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.0200821141559791</eqn>
+				<eqn>0.0178366131982287</eqn>
 				<range min="0.001" max="0.05"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
@@ -6340,7 +6340,7 @@ adjusted_cost[Run,Oil_energy_conversion] * Oil_Gross_Investments_in_Fossil_Energ
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="5" isee:page_rows="6" isee:scroll_y="300" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="5" isee:page_rows="6" isee:scroll_y="60" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -7372,7 +7372,7 @@ Negative values of P causes compensation of differences, positive values would c
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-7.76640110659404</eqn>
+				<eqn>-7.68842890099188</eqn>
 				<range min="-50" max="0"/>
 				<units>dmnl</units>
 			</aux>
@@ -7409,7 +7409,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-0.747409685697245</eqn>
+				<eqn>-2.23350874226759</eqn>
 				<range min="-7" max="0"/>
 				<units>dmnl</units>
 			</aux>
@@ -7419,7 +7419,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-5.33458646979929</eqn>
+				<eqn>-5.33895496222927</eqn>
 				<range min="-15" max="0"/>
 				<units>Year</units>
 			</aux>
@@ -7477,7 +7477,7 @@ adaptive_energy_investments_differntiating_factor * Differentiating_Relative_Ene
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.243584041905538</eqn>
+				<eqn>0.0964186361531867</eqn>
 				<range min="0" max="0.3"/>
 				<units>dmnl</units>
 			</aux>
@@ -7519,7 +7519,7 @@ adaptive_energy_investments_differntiating_factor * Differentiating_Relative_Ene
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.0770126113890388</eqn>
+				<eqn>0.0601308864431501</eqn>
 				<range min="-0.5" max="0.5"/>
 				<units>dmnl</units>
 			</aux>
@@ -7632,7 +7632,7 @@ cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit * Gas_
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.162135113935684</eqn>
+				<eqn>0.16088439058762</eqn>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
 			</aux>
@@ -7656,7 +7656,7 @@ cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit * Gas_
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.0266547560741174</eqn>
+				<eqn>0.0269399135500542</eqn>
 				<range min="0.001" max="0.05"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
@@ -8111,7 +8111,7 @@ https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_c
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>499963313543.532{ + RAMP(2.5e10)}</eqn>
+				<eqn>499952092550.798{ + RAMP(2.5e10)}</eqn>
 				<range min="10000000000" max="500000000000"/>
 				<units>c$/Year</units>
 			</aux>
@@ -8324,7 +8324,7 @@ https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_c
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="142.143" isee:scroll_y="42.8571" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="142.143" isee:scroll_y="42.1429" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -8526,7 +8526,7 @@ Negative values of P causes compensation of differences, positive values would c
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-11.1451870389665</eqn>
+				<eqn>-11.0812120052726</eqn>
 				<range min="-50" max="0"/>
 				<units>dmnl</units>
 			</aux>
@@ -8564,7 +8564,7 @@ Negative values of P causes compensation of differences, positive values would c
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-2.15377722677917</eqn>
+				<eqn>-2.21791308530612</eqn>
 				<range min="-7" max="0"/>
 				<units>dmnl</units>
 			</aux>
@@ -8574,7 +8574,7 @@ Negative values of P causes compensation of differences, positive values would c
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-3.7824996585044</eqn>
+				<eqn>-3.81452830912112</eqn>
 				<range min="-15" max="0"/>
 				<units>Year</units>
 			</aux>
@@ -8651,7 +8651,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>19.9706416308055</eqn>
+				<eqn>20.5365583985367</eqn>
 				<range min="10" max="50"/>
 				<units>kWh/(c$*Years)</units>
 			</aux>
@@ -8701,7 +8701,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.00889222836837087</eqn>
+				<eqn>0.011206423146536</eqn>
 				<range min="0" max="0.1"/>
 				<units>dmnl</units>
 			</aux>
@@ -8743,7 +8743,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.0431458466704066</eqn>
+				<eqn>0.0412032297744901</eqn>
 				<range min="-0.5" max="0.5"/>
 				<units>dmnl</units>
 			</aux>
@@ -8756,58 +8756,58 @@ ELSE
 					<dim name="Historical_5yr_time_steps"/>
 				</dimensions>
 				<element subscript="1, Oil_fuel_extraction, 1">
-					<eqn>0.0549937086291639</eqn>
+					<eqn>0.0757901791674653</eqn>
 				</element>
 				<element subscript="1, Oil_fuel_extraction, 2">
-					<eqn>0.179399400788012</eqn>
+					<eqn>0.194546957362171</eqn>
 				</element>
 				<element subscript="1, Oil_fuel_extraction, 3">
-					<eqn>0.106138019533613</eqn>
+					<eqn>0.133076140659781</eqn>
 				</element>
 				<element subscript="1, Oil_fuel_extraction, 4">
-					<eqn>0.0775682226013033</eqn>
+					<eqn>0.0942987473775295</eqn>
 				</element>
 				<element subscript="1, Oil_fuel_extraction, 5">
-					<eqn>0.176784979971964</eqn>
+					<eqn>0.159220184247554</eqn>
 				</element>
 				<element subscript="1, Oil_fuel_extraction, 6">
-					<eqn>0.242478205268879</eqn>
+					<eqn>0.250334031904336</eqn>
 				</element>
 				<element subscript="1, Oil_fuel_extraction, 7">
-					<eqn>0.392701240353116</eqn>
+					<eqn>0.399287489261476</eqn>
 				</element>
 				<element subscript="1, Oil_fuel_extraction, 8">
-					<eqn>0.230652570199374</eqn>
+					<eqn>0.213711924542037</eqn>
 				</element>
 				<element subscript="1, Oil_fuel_extraction, 9">
-					<eqn>0.222392913698861</eqn>
+					<eqn>0.22612057273478</eqn>
 				</element>
 				<element subscript="1, Bio, 1">
-					<eqn>0.446915571268318</eqn>
+					<eqn>0.4564612720894</eqn>
 				</element>
 				<element subscript="1, Bio, 2">
-					<eqn>0.404589797255544</eqn>
+					<eqn>0.402276361342108</eqn>
 				</element>
 				<element subscript="1, Bio, 3">
-					<eqn>0.623936992574538</eqn>
+					<eqn>0.612381599436958</eqn>
 				</element>
 				<element subscript="1, Bio, 4">
-					<eqn>0.817532671363846</eqn>
+					<eqn>0.827024208310056</eqn>
 				</element>
 				<element subscript="1, Bio, 5">
-					<eqn>0.635865428692554</eqn>
+					<eqn>0.640751265683595</eqn>
 				</element>
 				<element subscript="1, Bio, 6">
-					<eqn>0.231877115060923</eqn>
+					<eqn>0.244713501577924</eqn>
 				</element>
 				<element subscript="1, Bio, 7">
-					<eqn>0.226761321984103</eqn>
+					<eqn>0.230389377085004</eqn>
 				</element>
 				<element subscript="1, Bio, 8">
-					<eqn>0.23400484362435</eqn>
+					<eqn>0.232529734920007</eqn>
 				</element>
 				<element subscript="1, Bio, 9">
-					<eqn>0.294852149516483</eqn>
+					<eqn>0.276186291159323</eqn>
 				</element>
 				<range min="0.05" max="4"/>
 				<units>dmnl</units>
@@ -8839,7 +8839,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.505782896970803</eqn>
+				<eqn>0.505952642638118</eqn>
 				<range min="0.25" max="0.75"/>
 				<units>years</units>
 			</aux>
@@ -8953,7 +8953,7 @@ cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit * Oil_
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.253989490271079</eqn>
+				<eqn>0.413123887678455</eqn>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
 			</aux>
@@ -8977,7 +8977,7 @@ cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit * Oil_
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.0104920647031786</eqn>
+				<eqn>0.00909437629297433</eqn>
 				<range min="0.001" max="0.05"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
@@ -9536,7 +9536,7 @@ Negative values of P causes compensation of differences, positive values would c
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-8.11555107542984</eqn>
+				<eqn>-8.17843294575811</eqn>
 				<range min="-50" max="0"/>
 				<units>dmnl</units>
 			</aux>
@@ -9565,7 +9565,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-0.176781854233404</eqn>
+				<eqn>-0.499470313955172</eqn>
 				<range min="-7" max="0"/>
 				<units>dmnl</units>
 			</aux>
@@ -9575,7 +9575,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-6.53495466302052</eqn>
+				<eqn>-6.56298749219852</eqn>
 				<range min="-15" max="0"/>
 				<units>Year</units>
 			</aux>
@@ -9624,7 +9624,7 @@ adaptive_energy_investments_differntiating_factor * Differentiating_Relative_Ene
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.0792252427366591</eqn>
+				<eqn>0.0403236408142747</eqn>
 				<range min="0" max="0.08"/>
 				<units>dmnl</units>
 			</aux>
@@ -9666,7 +9666,7 @@ adaptive_energy_investments_differntiating_factor * Differentiating_Relative_Ene
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.0427890423325974</eqn>
+				<eqn>0.0548267502243741</eqn>
 				<range min="-0.5" max="0.5"/>
 				<units>dmnl</units>
 			</aux>
@@ -9781,7 +9781,7 @@ cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit * Coal
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.158136272278159</eqn>
+				<eqn>0.158382839683841</eqn>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
 			</aux>
@@ -9805,7 +9805,7 @@ cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit * Coal
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.00470285707958039</eqn>
+				<eqn>0.00245732514311838</eqn>
 				<range min="0.001" max="0.05"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
@@ -9897,7 +9897,7 @@ cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit * Coal
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="4" isee:page_rows="6" isee:scroll_x="344.286" isee:scroll_y="470.714" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1122" page_height="793" isee:page_cols="4" isee:page_rows="6" isee:scroll_x="344.286" isee:scroll_y="727.143" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -13316,7 +13316,7 @@ Based on MIND code 0.18750</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1.5951199138866</eqn>
+				<eqn>1.62669775063068</eqn>
 				<range min="0.1" max="3"/>
 				<units>Year/zJ</units>
 			</aux>
@@ -13339,7 +13339,7 @@ based on MIND Code: 1
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.538442857133616
+				<eqn>0.503385103424976
 {0.103899025073386</eqn>
 				<range min="0.2" max="2"/>
 				<units>1/c$</units>
@@ -13350,7 +13350,7 @@ MIND 2005 paper lists 6 trillion USD as the initial value for 1995</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>606358574390.43</eqn>
+				<eqn>606329970696.785</eqn>
 				<range min="1000000000" max="5000000000000"/>
 				<units>c$</units>
 			</aux>
@@ -13528,7 +13528,7 @@ extra_CO2_storage_cost_burden</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1980.45667126076</eqn>
+				<eqn>1984.98701418266</eqn>
 				<format precision="1"/>
 				<range min="1980" max="2010"/>
 				<units>year</units>
@@ -13550,7 +13550,7 @@ LOGISTICBOUND(TFP_in_1980, TFP_Max, TIME, TFP_Max_Ramp_Year, TFP_Ramp_Speed, TFP
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.165814231726202</eqn>
+				<eqn>0.165918919942293</eqn>
 				<range min="0.12" max="0.4"/>
 				<units>zJ/Year</units>
 			</aux>
@@ -13560,7 +13560,7 @@ LOGISTICBOUND(TFP_in_1980, TFP_Max, TIME, TFP_Max_Ramp_Year, TFP_Ramp_Speed, TFP
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.212440692773655</eqn>
+				<eqn>0.207335156911465</eqn>
 				<range min="0.1" max="0.4"/>
 				<units>zJ/Year</units>
 			</aux>
@@ -13570,7 +13570,7 @@ LOGISTICBOUND(TFP_in_1980, TFP_Max, TIME, TFP_Max_Ramp_Year, TFP_Ramp_Speed, TFP
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.000407418727416297</eqn>
+				<eqn>0.0098582581906198</eqn>
 				<range min="0" max="1"/>
 				<units>1/Year</units>
 			</aux>
@@ -13580,7 +13580,7 @@ LOGISTICBOUND(TFP_in_1980, TFP_Max, TIME, TFP_Max_Ramp_Year, TFP_Ramp_Speed, TFP
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>2008.01029411136</eqn>
+				<eqn>2009.30161577555</eqn>
 				<format precision="1"/>
 				<range min="2000" max="2200"/>
 				<units>year</units>
@@ -13937,7 +13937,7 @@ Unify with the remaining</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>49.7404489561433</eqn>
+				<eqn>49.9981028533712</eqn>
 				<range min="15" max="100"/>
 				<units>years</units>
 			</aux>
@@ -13969,7 +13969,7 @@ BE CAREFUL WITH THIS ONE</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1.2013019744048</eqn>
+				<eqn>1.18640924479965</eqn>
 				<range min="0.5" max="5"/>
 				<units>dmnl</units>
 			</aux>
@@ -15018,7 +15018,7 @@ MIND code 0.18750</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1.10739576814982</eqn>
+				<eqn>1.10656490313079</eqn>
 				<range min="0.001" max="2"/>
 				<units>Year/zJ</units>
 			</aux>
@@ -15039,7 +15039,7 @@ MIND Code: 1</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.597591012469919
+				<eqn>0.600244489438491
 {0.103899025073386</eqn>
 				<range min="0.001" max="2"/>
 				<units>1/c$</units>
@@ -15050,7 +15050,7 @@ MIND 2005 paper lists 6 trillion USD as the initial value for 1995</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>316104642391.696</eqn>
+				<eqn>316103328273.305</eqn>
 				<range min="1000000000" max="5000000000000"/>
 				<units>c$</units>
 			</aux>
@@ -15229,7 +15229,7 @@ extra_CO2_storage_cost_burden</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1987.91972355062</eqn>
+				<eqn>1988.32051394369</eqn>
 				<format precision="1"/>
 				<range min="1980" max="2010"/>
 				<units>year</units>
@@ -15251,7 +15251,7 @@ LOGISTICBOUND(TFP_in_1980, TFP_Max, TIME, TFP_Max_Ramp_Year, TFP_Ramp_Speed, TFP
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.239595503322852</eqn>
+				<eqn>0.240148715516851</eqn>
 				<range min="0.12" max="0.4"/>
 				<units>zJ/Year</units>
 			</aux>
@@ -15271,7 +15271,7 @@ LOGISTICBOUND(TFP_in_1980, TFP_Max, TIME, TFP_Max_Ramp_Year, TFP_Ramp_Speed, TFP
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.171063729409469</eqn>
+				<eqn>0.178214141084542</eqn>
 				<range min="0" max="1"/>
 				<units>1/year</units>
 			</aux>
@@ -15281,7 +15281,7 @@ LOGISTICBOUND(TFP_in_1980, TFP_Max, TIME, TFP_Max_Ramp_Year, TFP_Ramp_Speed, TFP
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>2015.13203082029</eqn>
+				<eqn>2015.29676493252</eqn>
 				<format precision="1"/>
 				<range min="2000" max="2200"/>
 				<units>year</units>
@@ -15639,7 +15639,7 @@ We apply this independent of fuel for now.</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>56.5491550459593</eqn>
+				<eqn>56.7203657625319</eqn>
 				<range min="15" max="100"/>
 				<units>years</units>
 			</aux>
@@ -15671,7 +15671,7 @@ We apply this independent of fuel for now.</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1.54395418477903</eqn>
+				<eqn>1.55539804961359</eqn>
 				<range min="0.5" max="5"/>
 				<units>dmnl</units>
 			</aux>
@@ -16724,7 +16724,7 @@ MIND code 0.18750</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1.98423883940306</eqn>
+				<eqn>1.98489100810115</eqn>
 				<range min="0.001" max="2.99999958734975"/>
 				<units>Year/zJ</units>
 			</aux>
@@ -16745,7 +16745,7 @@ MIND Code: 1</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.35657050132036
+				<eqn>0.353350728617838
 {0.103899025073386</eqn>
 				<range min="0.001" max="2"/>
 				<units>1/c$</units>
@@ -16756,7 +16756,7 @@ MIND 2005 paper lists 6 trillion USD as the initial value for 1995</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>154048417397.892</eqn>
+				<eqn>154050312776.146</eqn>
 				<range min="1000000000" max="5000000000000"/>
 				<units>c$</units>
 			</aux>
@@ -16927,7 +16927,7 @@ extra_CO2_storage_cost_burden</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1980.00595763861</eqn>
+				<eqn>1980.01420177641</eqn>
 				<format precision="1"/>
 				<range min="1980" max="2010"/>
 				<units>year</units>
@@ -16949,7 +16949,7 @@ LOGISTICBOUND(TFP_in_1980, TFP_Max, TIME, TFP_Max_Ramp_Year, TFP_Ramp_Speed, TFP
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.144980478588817</eqn>
+				<eqn>0.145334145479515</eqn>
 				<range min="0.12" max="0.4"/>
 				<units>zJ/Year</units>
 			</aux>
@@ -16959,7 +16959,7 @@ LOGISTICBOUND(TFP_in_1980, TFP_Max, TIME, TFP_Max_Ramp_Year, TFP_Ramp_Speed, TFP
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.165512628813262</eqn>
+				<eqn>0.162921166829849</eqn>
 				<range min="0.1" max="0.4"/>
 				<units>zJ/Year</units>
 			</aux>
@@ -16969,7 +16969,7 @@ LOGISTICBOUND(TFP_in_1980, TFP_Max, TIME, TFP_Max_Ramp_Year, TFP_Ramp_Speed, TFP
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.135064209216142</eqn>
+				<eqn>0.171237916797782</eqn>
 				<range min="0" max="1"/>
 				<units>1/year</units>
 			</aux>
@@ -16979,7 +16979,7 @@ LOGISTICBOUND(TFP_in_1980, TFP_Max, TIME, TFP_Max_Ramp_Year, TFP_Ramp_Speed, TFP
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>2009.82081955865</eqn>
+				<eqn>2008.98099112178</eqn>
 				<format precision="1"/>
 				<range min="2000" max="2200"/>
 				<units>year</units>
@@ -17352,7 +17352,7 @@ We apply this independent of fuel for now.</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>53.0177735894912</eqn>
+				<eqn>56.5084242933144</eqn>
 				<range min="15" max="100"/>
 				<units>years</units>
 			</aux>
@@ -17384,7 +17384,7 @@ We apply this independent of fuel for now.</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.896897853888715</eqn>
+				<eqn>0.960798529940399</eqn>
 				<range min="0.5" max="5"/>
 				<units>dmnl</units>
 			</aux>
@@ -20030,7 +20030,7 @@ ELSE NAN</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.400389760754174</eqn>
+				<eqn>0.371092175419727</eqn>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
 			</aux>
@@ -20038,7 +20038,7 @@ ELSE NAN</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-0.0268083771904099</eqn>
+				<eqn>-0.0286714857524277</eqn>
 				<range min="-0.05" max="0.05"/>
 				<units>1/year</units>
 			</aux>
@@ -21218,7 +21218,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1689.93621954123</eqn>
+				<eqn>1689.17300945275</eqn>
 				<range min="1200" max="1850"/>
 				<units>hours/year</units>
 			</aux>
@@ -21340,7 +21340,7 @@ from MIND</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>50.7416963726926</eqn>
+				<eqn>50.7480834631136</eqn>
 				<range min="1" max="500"/>
 				<units>c$/kW</units>
 			</aux>
@@ -21350,7 +21350,7 @@ Calibrate to the initial value of the time series on renewable reducible install
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>4355.48413702343</eqn>
+				<eqn>4355.60167379181</eqn>
 				<range min="100" max="100000"/>
 				<units>c$/kW</units>
 			</aux>
@@ -21582,7 +21582,7 @@ These parameters are set so that the effect of having to build grid energy stora
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>3.89657136859248</eqn>
+				<eqn>2.95249100159382</eqn>
 				<range min="2" max="10"/>
 				<units>dmnl</units>
 			</aux>
@@ -21602,7 +21602,7 @@ These parameters are set so that the effect of having to build grid energy stora
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-5.38424826619939</eqn>
+				<eqn>-5.25144880435957</eqn>
 				<range min="-46" max="-3"/>
 				<units>dmnl</units>
 			</aux>
@@ -22045,7 +22045,7 @@ from MIND</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1827.38771099961</eqn>
+				<eqn>1831.47132769931</eqn>
 				<range min="1650" max="1850"/>
 				<units>hours/year</units>
 			</aux>
@@ -22167,7 +22167,7 @@ from MIND</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>6.29680958454381</eqn>
+				<eqn>4.82996679968649</eqn>
 				<range min="1" max="500"/>
 				<units>c$/kW</units>
 			</aux>
@@ -22177,7 +22177,7 @@ Calibrate to the initial value of the time series on renewable reducible install
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>4544.90484133024</eqn>
+				<eqn>4543.93888240308</eqn>
 				<range min="100" max="100000"/>
 				<units>c$/kW</units>
 			</aux>
@@ -22403,7 +22403,7 @@ These parameters are set so that the effect of having to build grid energy stora
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>4.08670821503827</eqn>
+				<eqn>3.58098237743884</eqn>
 				<range min="2" max="10"/>
 				<units>dmnl</units>
 			</aux>
@@ -22424,7 +22424,7 @@ These parameters are set so that the effect of having to build grid energy stora
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-5.45662648875866</eqn>
+				<eqn>-5.46863180022713</eqn>
 				<range min="-46" max="-3"/>
 				<units>dmnl</units>
 			</aux>
@@ -23433,7 +23433,7 @@ value from MIND</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>253.830987628761</eqn>
+				<eqn>252.270411517607</eqn>
 				<range min="200" max="300"/>
 				<units>extractionknowledge</units>
 			</aux>
@@ -23475,7 +23475,7 @@ maximum_increase_of_capital_coefficient_in_fossil_resource_sector
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>27.800765362784</eqn>
+				<eqn>34.9183426952186</eqn>
 				<range min="20" max="40"/>
 				<units>Year</units>
 			</aux>
@@ -23492,7 +23492,7 @@ Cumulative CO2 emissions in 1980 divided by 3.67
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.362275824538489</eqn>
+				<eqn>0.300330520286185</eqn>
 				<range min="0.2" max="0.6"/>
 				<units>Dimensionless</units>
 			</aux>
@@ -23521,7 +23521,7 @@ MIND 2005 Paper lists 5 trillion USD for 1995
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1787786295037.62</eqn>
+				<eqn>1787794643243.34</eqn>
 				<range min="1000000000" max="50000000000000"/>
 				<units>c$</units>
 			</aux>
@@ -23531,7 +23531,7 @@ value from MIND</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>110.319036638031</eqn>
+				<eqn>116.431777990855</eqn>
 				<range min="90" max="160"/>
 				<units>extractionknowledge</units>
 			</aux>
@@ -23798,7 +23798,7 @@ ELSE NAN</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.774919855746786</eqn>
+				<eqn>0.777004299041412</eqn>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
 			</aux>
@@ -24310,7 +24310,7 @@ value from MIND</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>251.480342851173</eqn>
+				<eqn>250.311783942468</eqn>
 				<range min="200" max="300"/>
 				<units>extractionknowledge</units>
 			</aux>
@@ -24352,7 +24352,7 @@ maximum_increase_of_capital_coefficient_in_fossil_resource_sector
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>25.7068385948798</eqn>
+				<eqn>29.3476360686945</eqn>
 				<range min="20" max="40"/>
 				<units>Year</units>
 			</aux>
@@ -24369,7 +24369,7 @@ Cumulative CO2 emissions in 1980 divided by 3.67
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.246359250154433</eqn>
+				<eqn>0.227110504853926</eqn>
 				<range min="0.2" max="0.6"/>
 				<units>Dimensionless</units>
 			</aux>
@@ -24398,7 +24398,7 @@ MIND 2005 Paper lists 5 trillion USD for 1995
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>6040452288755.73</eqn>
+				<eqn>6040458114474.97</eqn>
 				<range min="1000000000" max="50000000000000"/>
 				<units>c$</units>
 			</aux>
@@ -24408,7 +24408,7 @@ value from MIND</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>159.672509557654</eqn>
+				<eqn>160</eqn>
 				<range min="90" max="160"/>
 				<units>extractionknowledge</units>
 			</aux>
@@ -24684,7 +24684,7 @@ ELSE NAN</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.887249130077922</eqn>
+				<eqn>0.886085845785594</eqn>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
 			</aux>
@@ -24692,7 +24692,7 @@ ELSE NAN</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.00179056293607806</eqn>
+				<eqn>0.00185559041937722</eqn>
 				<range min="-0.005" max="0.005"/>
 				<units>1/year</units>
 			</aux>
@@ -25207,7 +25207,7 @@ value from MIND</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>256.427532909261</eqn>
+				<eqn>258.09361271419</eqn>
 				<range min="200" max="300"/>
 				<units>extractionknowledge</units>
 			</aux>
@@ -25249,7 +25249,7 @@ maximum_increase_of_capital_coefficient_in_fossil_resource_sector
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>30.2319607481559</eqn>
+				<eqn>30.077936913459</eqn>
 				<range min="20" max="40"/>
 				<units>Year</units>
 			</aux>
@@ -25266,7 +25266,7 @@ Cumulative CO2 emissions in 1980 divided by 3.67
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.376240707985851</eqn>
+				<eqn>0.506885124896742</eqn>
 				<range min="0.2" max="0.6"/>
 				<units>Dimensionless</units>
 			</aux>
@@ -25295,7 +25295,7 @@ MIND 2005 Paper lists 5 trillion USD for 1995
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1605592714899.41</eqn>
+				<eqn>1605586435253.15</eqn>
 				<range min="1000000000" max="50000000000000"/>
 				<units>c$</units>
 			</aux>
@@ -25305,7 +25305,7 @@ value from MIND</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>90.0271316735859</eqn>
+				<eqn>92.6673401362691</eqn>
 				<range min="90" max="160"/>
 				<units>extractionknowledge</units>
 			</aux>
@@ -25572,7 +25572,7 @@ ELSE NAN</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.518886905184191</eqn>
+				<eqn>0.518011028089956</eqn>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
 			</aux>
@@ -25580,7 +25580,7 @@ ELSE NAN</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>-0.0023643633136196</eqn>
+				<eqn>-0.00219461728971525</eqn>
 				<range min="-0.005" max="0.005"/>
 				<units>1/year</units>
 			</aux>

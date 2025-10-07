@@ -5,10 +5,13 @@
 		<name>FRIDA</name>
 		<uuid>fe807591-4e3d-4e2c-b464-70ec4fb12094</uuid>
 		<vendor>isee systems, inc.</vendor>
-		<product version="4.0" isee:build_number="3710" isee:saved_by_v1="true" lang="en">Stella Architect</product>
+		<product version="4.1" isee:build_number="3751" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
 	<ai_information>
-		<status verified="false"/>
+		<status verified="false" trusted="true" tampered="false" uses="false" analyzed="false" log_truncated="true" timestamp="1759855583" algorithm="ed25519" keyurl="https://iseesystems.com/keys/stella01.txt" want_var_info="true" want_var_status="false" want_log="false" sampling="10" signature="+KzOs4o+Dzj1ekW9SYWeyAP3JUKRvLHThvLLKotcd8nADruy0iPQWBBVbO6Yfx9Hvpb7ocCFgck5jIB5u27ZBA=="/>
+		<settings>
+			<isee:setting key="ltm-narrative/underlyingModel" value="gemini-2.5-flash-preview-09-2025"/>
+		</settings>
 	</ai_information>
 	<sim_specs isee:sim_duration="0" isee:run_prefix="Run" isee:simulation_delay="0" isee:restore_on_start="false" isee:save_interval="1" method="RK4" time_units="Year" isee:instantaneous_flows="false" isee:ignore_module_errors="false" isee:strict_units="false" isee:loop_scores="false" isee:loop_exhaustive_allowed="1000">
 		<start>1980</start>
@@ -109,7 +112,7 @@
 			<isee:variable starting_value="1" ending_value="100" type="incremental" min="1" max="100" seed="12345" name="Climate_Units.selected_climate_case[1]" num_samples="100"/>
 		</isee:sensi_specs>
 	</isee:sensi_specs_list>
-	<isee:optimizer_specs_list active_index="14">
+	<isee:optimizer_specs_list active_index="17">
 		<isee:optimizer_specs name="Demographics Calibration" method="Powell" use_additional_starts_file="false" additional_starts="0" report_interval="1" confidence_range="0" maxiter="0">
 			<isee:parameter name="Demographics.infant_mortality_alpha[1]" scaling="100000"/>
 			<isee:parameter name="Demographics.infant_mortality_gamma[1]" scaling="100000"/>
@@ -647,7 +650,7 @@
 			<isee:parameter name="Circular_Flow.time_for_bottom_40_to_be_affected[1]"/>
 			<isee:payoff name="SDG 10.1.1" action="min"/>
 		</isee:optimizer_specs>
-		<isee:optimizer_specs name="Energy Carriers with aggregate investments" method="Powell" use_additional_starts_file="false" additional_starts="0" report_interval="1" confidence_range="0" maxiter="0">
+		<isee:optimizer_specs name="Energy Carriers" method="Powell" use_additional_starts_file="false" additional_starts="0" report_interval="1" confidence_range="0" maxiter="0">
 			<isee:parameter name="Energy_demand_1.reference_change_in_energy_prices_Solid[1]" scaling="100"/>
 			<isee:parameter name="Energy_demand_1.initial_reference_aggregate_per_unit_energy_prices_Solid[1]" scaling="10"/>
 			<isee:parameter name="Energy_demand_1.initial_aggregate_per_unit_energy_prices_Solid[1]" scaling="10"/>
@@ -685,29 +688,190 @@
 			<isee:parameter name="Energy_demand_1.normal_gas_demand_for_Buildings[1]" scaling="1e-8"/>
 			<isee:parameter name="Energy_demand_1.normal_electricity_demand_for_Buildings[1]" scaling="1e-8"/>
 			<isee:parameter name="Coal_to_electricity_conversion.initial_fossil_energy_capital[1]" scaling="1e-8"/>
-			<isee:parameter name="Coal_to_electricity_conversion.TFP_Ramp_Speed[1]" scaling="10"/>
-			<isee:parameter name="Coal_to_electricity_conversion.TFP_Slope_Start[1]" scaling="0.1"/>
-			<isee:parameter name="Coal_to_electricity_conversion.TFP_Max_Ramp_Year[1]" scaling="0.1"/>
-			<isee:parameter name="Coal_to_electricity_conversion.TFP_in_1980[1]" scaling="10"/>
-			<isee:parameter name="Coal_to_electricity_conversion.TFP_Max[1]" scaling="10"/>
-			<isee:parameter name="Coal_to_electricity_conversion.Fossil_Energy_Capital_Scaling_Parameter[1]" scaling="10"/>
-			<isee:parameter name="Coal_to_electricity_conversion.Primary_Fossil_Energy_Scaling_Parameter[1]" scaling="10"/>
-			<isee:parameter name="Oil_to_electricity_conversion.TFP_in_1980[1]" scaling="10"/>
 			<isee:parameter name="Oil_to_electricity_conversion.initial_fossil_energy_capital[1]" scaling="1e-8"/>
-			<isee:parameter name="Oil_to_electricity_conversion.TFP_Slope_Start[1]" scaling="10"/>
-			<isee:parameter name="Oil_to_electricity_conversion.TFP_Ramp_Speed[1]" scaling="10"/>
-			<isee:parameter name="Oil_to_electricity_conversion.TFP_Max_Ramp_Year[1]" scaling="0.1"/>
-			<isee:parameter name="Oil_to_electricity_conversion.TFP_Max[1]" scaling="10"/>
-			<isee:parameter name="Oil_to_electricity_conversion.Fossil_Energy_Capital_Scaling_Parameter[1]" scaling="100"/>
-			<isee:parameter name="Oil_to_electricity_conversion.Primary_Fossil_Energy_Scaling_Parameter[1]" scaling="100"/>
-			<isee:parameter name="Gas_to_electricity_conversion.Fossil_Energy_Capital_Scaling_Parameter[1]" scaling="100"/>
-			<isee:parameter name="Gas_to_electricity_conversion.Primary_Fossil_Energy_Scaling_Parameter[1]" scaling="100"/>
-			<isee:parameter name="Gas_to_electricity_conversion.TFP_Ramp_Speed[1]" scaling="10"/>
-			<isee:parameter name="Gas_to_electricity_conversion.TFP_Max_Ramp_Year[1]" scaling="0.1"/>
-			<isee:parameter name="Gas_to_electricity_conversion.TFP_Max[1]" scaling="10"/>
-			<isee:parameter name="Gas_to_electricity_conversion.TFP_in_1980[1]" scaling="10"/>
-			<isee:parameter name="Gas_to_electricity_conversion.TFP_Slope_Start[1]" scaling="0.1"/>
 			<isee:parameter name="Gas_to_electricity_conversion.initial_fossil_energy_capital[1]" scaling="1e-8"/>
+			<isee:parameter name="Wind_energy_1.Wind_Energy_Full_Load_Hours[1]" scaling="0.1"/>
+			<isee:parameter name="Solar_energy_1.Solar_Energy_Full_Load_Hours[1]" scaling="0.1"/>
+			<isee:parameter name="Energy_demand_1.normal_coal_demand_for_Transportation[1]" scaling="0.000001"/>
+			<isee:parameter name="Energy_demand_1.normal_liquid_fuel_demand_for_Transportation[1]" scaling="1e-8"/>
+			<isee:parameter name="Energy_demand_1.normal_gas_demand_for_Transportation[1]" scaling="1e-7"/>
+			<isee:parameter name="Energy_demand_1.normal_electricity_demand_for_Transportation[1]" scaling="1e-7"/>
+			<isee:parameter name="Energy_demand_1.normal_coal_demand_for_Industry_and_Other[1]" scaling="1e-7"/>
+			<isee:parameter name="Energy_demand_1.normal_liquid_fuel_demand_for_Industry_and_Other[1]" scaling="1e-7"/>
+			<isee:parameter name="Energy_demand_1.normal_gas_demand_for_Industry_and_Other[1]" scaling="1e-7"/>
+			<isee:parameter name="Energy_demand_1.normal_electricity_demand_for_Industry_and_Other[1]" scaling="1e-7"/>
+			<isee:parameter name="Energy_demand_1.normal_coal_demand_for_Buildings[1]" scaling="1e-7"/>
+			<isee:parameter name="Energy_demand_1.normal_liquid_fuel_demand_for_Buildings[1]" scaling="1e-8"/>
+			<isee:parameter name="Energy_demand_1.normal_gas_demand_for_Buildings[1]" scaling="1e-8"/>
+			<isee:parameter name="Energy_demand_1.normal_electricity_demand_for_Buildings[1]" scaling="1e-8"/>
+			<isee:parameter name="Energy_demand_1.D_effect_of_GDP_on_Transport_energy_demand_beta[1]"/>
+			<isee:parameter name="Energy_demand_1.C_effect_of_GDP_on_Transport_energy_demand_alpha[1]"/>
+			<isee:parameter name="Energy_demand_1.effect_of_GDP_on_Industry_and_Other_energy_demand_alpha[1]"/>
+			<isee:parameter name="Energy_demand_1.effect_of_GDP_on_Buildings_energy_demand_alpha[1]"/>
+			<isee:parameter name="Energy_demand_1.effect_of_GDP_on_Buildings_energy_demand_beta[1]"/>
+			<isee:parameter name="Energy_demand_1.A_effect_of_GDP_on_Transport_energy_demand_alpha_3[1]"/>
+			<isee:parameter name="Energy_demand_1.B_effect_of_GDP_on_Transport_energy_demand_alpha_4[1]"/>
+			<isee:parameter name="Energy_demand_1.effect_of_GDP_on_Transport_energy_demand_alpha_1[1]"/>
+			<isee:parameter name="Energy_demand_1.effect_of_GDP_on_Transport_energy_demand_beta_1[1]"/>
+			<isee:parameter name="Energy_demand_1.effect_of_GDP_on_Transport_energy_demand_alpha_2[1]"/>
+			<isee:parameter name="Energy_demand_1.effect_of_GDP_on_Transport_energy_demand_beta_2[1]"/>
+			<isee:parameter name="Energy_demand_1.K_effect_of_GDP_on_Transport_energy_demand_alpha_3[1]"/>
+			<isee:parameter name="Energy_demand_1.X0_effect_of_GDP_on_Transport_energy_demand_beta_3[1]"/>
+			<isee:parameter name="Energy_demand_1.effect_of_GDP_on_Industry_and_Other_energy_demand_beta[1]"/>
+			<isee:parameter name="Energy_demand_1.L_Maximum_value_1[1]"/>
+			<isee:parameter name="Energy_demand_1.K_effect_of_GDP_on_Transport_energy_demand_alpha_4[1]"/>
+			<isee:parameter name="Energy_demand_1.X0_effect_of_GDP_on_Transport_energy_demand_beta_4[1]"/>
+			<isee:parameter name="Energy_demand_1.A_effect_of_GDP_on_Transport_energy_demand_alpha_4[1]"/>
+			<isee:parameter name="Energy_demand_1.B_effect_of_GDP_on_Transport_energy_demand_alpha_5[1]"/>
+			<isee:parameter name="Energy_demand_1.C_effect_of_GDP_on_Transport_energy_demand_alpha_1[1]"/>
+			<isee:parameter name="Energy_demand_1.D_effect_of_GDP_on_Transport_energy_demand_beta_1[1]"/>
+			<isee:parameter name="Energy_demand_1.effect_of_GDP_on_Buildings_energy_demand_alpha_1[1]"/>
+			<isee:parameter name="Energy_demand_1.effect_of_GDP_on_Buildings_energy_demand_beta_1[1]"/>
+			<isee:parameter name="Energy_demand_1.effect_of_GDP_on_Buildings_energy_demand_alpha_2[1]"/>
+			<isee:parameter name="Energy_demand_1.effect_of_GDP_on_Buildings_energy_demand_beta_2[1]"/>
+			<isee:parameter name="Energy_demand_1.Tolerance" scaling="0.1"/>
+			<isee:parameter name="Energy_demand_1.Tolerance_1" scaling="1e-7"/>
+			<isee:parameter name="Energy_demand_1.Tolerance_2" scaling="1e-8"/>
+			<isee:parameter name="Energy_demand_1.L_Maximum_value_3[1]"/>
+			<isee:parameter name="Energy_demand_1.K_effect_of_GDP_on_Transport_energy_demand_alpha_6[1]"/>
+			<isee:parameter name="Energy_demand_1.X0_effect_of_GDP_on_Transport_energy_demand_beta_6[1]"/>
+			<isee:parameter name="Energy_demand_1.L_Maximum_value[1]"/>
+			<isee:parameter name="Energy_demand_1.K_effect_of_GDP_on_Transport_energy_demand_alpha_5[1]"/>
+			<isee:parameter name="Energy_demand_1.X0_effect_of_GDP_on_Transport_energy_demand_beta_5[1]"/>
+			<isee:parameter name="Solar_energy_1.Initial_Solar_Energy_Installation_Costs[1]"/>
+			<isee:parameter name="Solar_energy_1.sensitivity_of_renewable_floor_costs_to_grid_storage_needs[1]"/>
+			<isee:parameter name="Solar_energy_1.sensitivity_of_renewable_floor_costs_to_grid_storage_needs_non_linear_part[1]"/>
+			<isee:parameter name="Solar_energy_1.Renewable_Energy_Floor_Costs[1]"/>
+			<isee:parameter name="Wind_energy_1.sensitivity_of_renewable_floor_costs_to_grid_storage_needs[1]"/>
+			<isee:parameter name="Wind_energy_1.sensitivity_of_renewable_floor_costs_to_grid_storage_needs_non_linear_part[1]"/>
+			<isee:parameter name="Wind_energy_1.Renewable_Energy_Floor_Costs[1]" scaling="0.1"/>
+			<isee:parameter name="Wind_energy_1.Initial_Wind_Energy_Installation_Costs[1]" scaling="0.1"/>
+			<isee:parameter name="Extraction_of_liquid_fuels.initial_fossil_fuel_extraction_capital[1]" scaling="1e-8"/>
+			<isee:parameter name="Extraction_of_liquid_fuels.initial_fossil_extraction_knowledge[1]" scaling="0.1"/>
+			<isee:parameter name="Extraction_of_solid_fuels.initial_fossil_fuel_extraction_capital[1]" scaling="1e-8"/>
+			<isee:parameter name="Extraction_of_solid_fuels.initial_fossil_extraction_knowledge[1]" scaling="0.1"/>
+			<isee:parameter name="Extraction_of_gas_fuels.initial_fossil_fuel_extraction_capital[1]" scaling="1e-8"/>
+			<isee:parameter name="Extraction_of_gas_fuels.initial_fossil_extraction_knowledge[1]" scaling="0.1"/>
+			<isee:parameter name="Extraction_of_solid_fuels.maximum_increase_of_capital_coefficient_in_fossil_resource_sector[1]" scaling="0.1"/>
+			<isee:parameter name="Extraction_of_solid_fuels.learning_time_in_resource_sector[1]"/>
+			<isee:parameter name="Extraction_of_solid_fuels.learning_elasticity_of_the_resource_sector[1]" scaling="10"/>
+			<isee:parameter name="Extraction_of_liquid_fuels.maximum_increase_of_capital_coefficient_in_fossil_resource_sector[1]" scaling="0.1"/>
+			<isee:parameter name="Extraction_of_liquid_fuels.learning_time_in_resource_sector[1]" scaling="0.1"/>
+			<isee:parameter name="Extraction_of_liquid_fuels.learning_elasticity_of_the_resource_sector[1]" scaling="10"/>
+			<isee:parameter name="Extraction_of_gas_fuels.maximum_increase_of_capital_coefficient_in_fossil_resource_sector[1]" scaling="0.1"/>
+			<isee:parameter name="Extraction_of_gas_fuels.learning_time_in_resource_sector[1]" scaling="0.1"/>
+			<isee:parameter name="Extraction_of_gas_fuels.learning_elasticity_of_the_resource_sector[1]" scaling="10"/>
+			<isee:parameter name="Gas_to_electricity_conversion.reference_formation_time[1]" scaling="0.1"/>
+			<isee:parameter name="Oil_to_electricity_conversion.reference_formation_time[1]" scaling="0.1"/>
+			<isee:parameter name="Coal_to_electricity_conversion.reference_formation_time[1]" scaling="0.1"/>
+			<isee:parameter name="Coal_to_electricity_conversion.sensitivity_of_effect_of_capital_to_fuel_ratio_on_stranded_capital[1]" scaling="10"/>
+			<isee:parameter name="Oil_to_electricity_conversion.sensitivity_of_effect_of_capital_to_fuel_ratio_on_stranded_capital[1]" scaling="10"/>
+			<isee:parameter name="Gas_to_electricity_conversion.sensitivity_of_effect_of_capital_to_fuel_ratio_on_stranded_capital[1]" scaling="10"/>
+			<isee:parameter name="Bio_fuel.Initial_X[1]" scaling="10"/>
+			<isee:parameter name="Extraction_of_solid_fuels.Initial_X[1]" scaling="10"/>
+			<isee:parameter name="Extraction_of_solid_fuels.Ramp_X[1]" scaling="100"/>
+			<isee:parameter name="Extraction_of_liquid_fuels.Initial_X[1]" scaling="10"/>
+			<isee:parameter name="Extraction_of_liquid_fuels.Ramp_X[1]" scaling="100"/>
+			<isee:parameter name="Extraction_of_gas_fuels.Initial_X[1]" scaling="10"/>
+			<isee:parameter name="Extraction_of_gas_fuels.Ramp_X[1]" scaling="100"/>
+			<isee:parameter name="Bio_fuel.Ramp_X[1]" scaling="100"/>
+			<isee:parameter name="Energy_demand_1.reference_change_in_energy_prices_electricity_1[1]" scaling="100"/>
+			<isee:parameter name="Energy_demand_1.initial_reference_aggregate_per_unit_energy_prices_electricity_1[1]" scaling="10"/>
+			<isee:parameter name="Energy_demand_1.initial_aggregate_per_unit_energy_prices_electricity_1[1]" scaling="10"/>
+			<isee:parameter name="Energy_investments_2.adaptive_energy_investments_proportional_factor[1]"/>
+			<isee:parameter name="Energy_investments_2.adaptive_energy_investments_differntiating_factor[1]"/>
+			<isee:parameter name="Energy_investments_2.time_to_perceive_energy_supply_missmatch[1]"/>
+			<isee:parameter name="Energy_investments_2.adaptive_energy_investments_integrating_factor[1]"/>
+			<isee:parameter name="Energy_investments_2.initial_relative_supply_missmatch[1]" scaling="10"/>
+			<isee:parameter name="Energy_investments_2.Relative_Energy_Supply_Mismatch_Buffer[1]" scaling="10"/>
+			<isee:parameter name="Energy_investments_2.cost_perception_time[1]"/>
+			<isee:parameter name="Energy_investments_2.initial_perceived_marginal_energy_supply_cost[1]" scaling="100"/>
+			<isee:parameter name="Energy_investments_2.historical_cost_adjustment[1, *, *]" scaling="10"/>
+			<isee:parameter name="Energy_investments_2.historical_cost_adjustment_smoothing_time[1]"/>
+			<isee:parameter name="Energy_investments_2.priority_spread[1]" scaling="0.1"/>
+			<isee:parameter name="Energy_investments_2.sensitivity_of_effect_of_perceived_marginal_energy_supply_cost_on_investment[1]"/>
+			<isee:parameter name="Energy_investments_2.baseline_energy_investments[1]" scaling="1e-10"/>
+			<isee:parameter name="Bio_fuel.Floor_Costs[1]" scaling="1e-8"/>
+			<isee:parameter name="Bio_fuel.Initial_Installation_Costs[1]" scaling="1e-10"/>
+			<isee:parameter name="Bio_fuel.Initial_biofuel_production_Capacity[1]" scaling="10"/>
+			<isee:parameter name="Bio_fuel.stepping_on_toes_parameter[1]" scaling="10"/>
+			<isee:parameter name="Bio_fuel.Learning_Rate[1]" scaling="10"/>
+			<isee:payoff name="Energy Disaggregation" action="min"/>
+			<isee:payoff name="Energy Disaggregation just investments" action="min" inactive="true"/>
+		</isee:optimizer_specs>
+		<isee:optimizer_specs name="Energy Carriers just investments" method="Powell" use_additional_starts_file="false" additional_starts="0" report_interval="1" confidence_range="0" maxiter="0">
+			<isee:parameter name="Oil_to_electricity_conversion.initial_fossil_energy_capital[1]" scaling="1e-9"/>
+			<isee:parameter name="Energy_investments_2.adaptive_energy_investments_proportional_factor[1]"/>
+			<isee:parameter name="Energy_investments_2.adaptive_energy_investments_differntiating_factor[1]"/>
+			<isee:parameter name="Energy_investments_2.time_to_perceive_energy_supply_missmatch[1]"/>
+			<isee:parameter name="Energy_investments_2.adaptive_energy_investments_integrating_factor[1]"/>
+			<isee:parameter name="Energy_investments_2.initial_relative_supply_missmatch[1]" scaling="10"/>
+			<isee:parameter name="Energy_investments_2.Relative_Energy_Supply_Mismatch_Buffer[1]" scaling="10"/>
+			<isee:parameter name="Energy_investments_2.cost_perception_time[1]"/>
+			<isee:parameter name="Energy_investments_2.initial_perceived_marginal_energy_supply_cost[1]" scaling="100"/>
+			<isee:parameter name="Energy_investments_2.historical_cost_adjustment[1, *, *]" scaling="10"/>
+			<isee:parameter name="Energy_investments_2.historical_cost_adjustment_smoothing_time[1]" scaling="10"/>
+			<isee:parameter name="Energy_investments_2.priority_spread[1]" scaling="0.1"/>
+			<isee:parameter name="Energy_investments_2.sensitivity_of_effect_of_perceived_marginal_energy_supply_cost_on_investment[1]"/>
+			<isee:parameter name="Energy_investments_2.baseline_energy_investments[1]" scaling="1e-11"/>
+			<isee:parameter name="Gas_to_electricity_conversion.initial_fossil_energy_capital[1]" scaling="1e-10"/>
+			<isee:parameter name="Coal_to_electricity_conversion.initial_fossil_energy_capital[1]" scaling="1e-10"/>
+			<isee:payoff name="Energy Disaggregation just investments" action="min"/>
+			<isee:payoff name="Energy Disaggregation" action="min" inactive="true"/>
+		</isee:optimizer_specs>
+		<isee:optimizer_specs name="Energy Carriers investments" method="Powell" use_additional_starts_file="false" additional_starts="0" report_interval="1" confidence_range="0" maxiter="0">
+			<isee:parameter name="Energy_investments_2.historical_cost_adjustment[1, *, *]" scaling="10"/>
+			<isee:parameter name="Energy_investments_2.priority_spread[1]" scaling="0.1"/>
+			<isee:parameter name="Energy_investments_2.baseline_energy_investments[1]" scaling="1e-10"/>
+			<isee:parameter name="Energy_investments_2.historical_cost_adjustment_smoothing_time[1]" scaling="10"/>
+			<isee:parameter name="Energy_investments_2.adaptive_energy_investments_integrating_factor[1]"/>
+			<isee:parameter name="Energy_investments_2.time_to_perceive_energy_supply_missmatch[1]"/>
+			<isee:parameter name="Energy_investments_2.initial_relative_supply_missmatch[1]" scaling="10"/>
+			<isee:parameter name="Energy_investments_2.adaptive_energy_investments_differntiating_factor[1]"/>
+			<isee:parameter name="Energy_investments_2.adaptive_energy_investments_proportional_factor[1]"/>
+			<isee:payoff name="Energy Disaggregation just investments" action="min"/>
+			<isee:payoff name="Energy Disaggregation" action="min" inactive="true"/>
+		</isee:optimizer_specs>
+		<isee:optimizer_specs name="Energy Carriers that works on another computer" method="Powell" use_additional_starts_file="false" additional_starts="0" report_interval="1" confidence_range="0" maxiter="0">
+			<isee:parameter name="Energy_demand_1.reference_change_in_energy_prices_Solid[1]" scaling="100"/>
+			<isee:parameter name="Energy_demand_1.initial_reference_aggregate_per_unit_energy_prices_Solid[1]" scaling="10"/>
+			<isee:parameter name="Energy_demand_1.initial_aggregate_per_unit_energy_prices_Solid[1]" scaling="10"/>
+			<isee:parameter name="Energy_demand_1.reference_change_in_energy_prices_Liquid[1]" scaling="100"/>
+			<isee:parameter name="Energy_demand_1.initial_reference_aggregate_per_unit_energy_prices_Liquid[1]" scaling="10"/>
+			<isee:parameter name="Energy_demand_1.initial_aggregate_per_unit_energy_prices_Liquid[1]" scaling="10"/>
+			<isee:parameter name="Energy_demand_1.initial_reference_aggregate_per_unit_energy_prices_Gas[1]" scaling="10"/>
+			<isee:parameter name="Energy_demand_1.reference_change_in_energy_prices_Gas[1]" scaling="100"/>
+			<isee:parameter name="Energy_demand_1.initial_aggregate_per_unit_energy_prices_Gas[1]" scaling="10"/>
+			<isee:parameter name="Energy_demand_1.initial_reference_aggregate_per_unit_energy_prices_electricity[1]" scaling="10"/>
+			<isee:parameter name="Energy_demand_1.reference_change_in_energy_prices_electricity[1]" scaling="100"/>
+			<isee:parameter name="Energy_demand_1.initial_aggregate_per_unit_energy_prices_electricity[1]" scaling="10"/>
+			<isee:parameter name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Transport_3[1]" scaling="1000"/>
+			<isee:parameter name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Transport_2[1]" scaling="1000"/>
+			<isee:parameter name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Transport_1[1]" scaling="1000"/>
+			<isee:parameter name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Transport[1]" scaling="1000"/>
+			<isee:parameter name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Industry_and_Other_3[1]" scaling="1000"/>
+			<isee:parameter name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Industry_and_Other_2[1]" scaling="1000"/>
+			<isee:parameter name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Industry_and_Other_1[1]" scaling="1000"/>
+			<isee:parameter name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Industry_and_Other[1]" scaling="1000"/>
+			<isee:parameter name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Buildings_3[1]" scaling="1000"/>
+			<isee:parameter name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Buildings_2[1]" scaling="1000"/>
+			<isee:parameter name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Buildings_1[1]" scaling="1000"/>
+			<isee:parameter name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Buildings[1]" scaling="1000"/>
+			<isee:parameter name="Energy_demand_1.normal_coal_demand_for_Transportation[1]" scaling="0.000001"/>
+			<isee:parameter name="Energy_demand_1.normal_liquid_fuel_demand_for_Transportation[1]" scaling="1e-8"/>
+			<isee:parameter name="Energy_demand_1.normal_gas_demand_for_Transportation[1]" scaling="1e-7"/>
+			<isee:parameter name="Energy_demand_1.normal_electricity_demand_for_Transportation[1]" scaling="1e-7"/>
+			<isee:parameter name="Energy_demand_1.normal_coal_demand_for_Industry_and_Other[1]" scaling="1e-7"/>
+			<isee:parameter name="Energy_demand_1.normal_liquid_fuel_demand_for_Industry_and_Other[1]" scaling="1e-7"/>
+			<isee:parameter name="Energy_demand_1.normal_gas_demand_for_Industry_and_Other[1]" scaling="1e-7"/>
+			<isee:parameter name="Energy_demand_1.normal_electricity_demand_for_Industry_and_Other[1]" scaling="1e-7"/>
+			<isee:parameter name="Energy_demand_1.normal_coal_demand_for_Buildings[1]" scaling="1e-7"/>
+			<isee:parameter name="Energy_demand_1.normal_liquid_fuel_demand_for_Buildings[1]" scaling="1e-8"/>
+			<isee:parameter name="Energy_demand_1.normal_gas_demand_for_Buildings[1]" scaling="1e-8"/>
+			<isee:parameter name="Energy_demand_1.normal_electricity_demand_for_Buildings[1]" scaling="1e-8"/>
+			<isee:parameter name="Coal_to_electricity_conversion.initial_fossil_energy_capital[1]" scaling="1e-9"/>
+			<isee:parameter name="Oil_to_electricity_conversion.initial_fossil_energy_capital[1]" scaling="1e-8"/>
+			<isee:parameter name="Gas_to_electricity_conversion.initial_fossil_energy_capital[1]" scaling="1e-7"/>
 			<isee:parameter name="Wind_energy_1.Wind_Energy_Full_Load_Hours[1]" scaling="0.1"/>
 			<isee:parameter name="Solar_energy_1.Solar_Energy_Full_Load_Hours[1]" scaling="0.1"/>
 			<isee:parameter name="Energy_demand_1.normal_coal_demand_for_Transportation[1]" scaling="0.000001"/>
@@ -1473,286 +1637,318 @@
 			</isee:payoff_element>
 		</isee:payoff_specs>
 		<isee:payoff_specs name="Energy Disaggregation" calibration="true" recompute_weights="true" compare_tolerance="0" compare_type="ls" compare_run="Calibration Data">
-			<isee:payoff_element name="Energy_demand_1.Share_for_Coal_in_Buildings[1]" weight="5348.67209869031">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Coal_in_Buildings[1]" weight="4904.66434850324">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_Oil_in_Buildings[1]" weight="42081.3518280381">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Oil_in_Buildings[1]" weight="42922.3073130129">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_Gas_in_Buildings[1]" weight="43597.1318431582">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Gas_in_Buildings[1]" weight="40935.6480401911">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Buildings[1]" weight="34363.0591208915">
+			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Buildings[1]" weight="34942.5664232341">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_Coal_in_Transport[1]" weight="25299468.8823184">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Coal_in_Transport[1]" weight="23928796.4907053">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_Oil_in_Transport[1]" weight="122829.1393914">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Oil_in_Transport[1]" weight="144920.110546643">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_Gas_in_Transport[1]" weight="236978.623411539">
+			<isee:payoff_element name="Energy_demand_1.Share_for_Gas_in_Transport[1]" weight="273535.506054458">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Transport[1]" weight="1088693.76010893">
+			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Transport[1]" weight="1249435.67448932">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_coal_in_Industry_and_Other[1]" weight="1723.56719264792">
+			<isee:payoff_element name="Energy_demand_1.Share_for_coal_in_Industry_and_Other[1]" weight="2068.64573304513">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_oil_in_Industry_and_Other[1]" weight="4313.48104395162">
+			<isee:payoff_element name="Energy_demand_1.Share_for_oil_in_Industry_and_Other[1]" weight="7172.6315581405">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_gas_in_Industry_and_Other[1]" weight="12516.5749130573">
+			<isee:payoff_element name="Energy_demand_1.Share_for_gas_in_Industry_and_Other[1]" weight="9510.87791052873">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Industry_and_Other[1]" weight="16083.1418997921">
+			<isee:payoff_element name="Energy_demand_1.Share_for_electricity_in_Industry_and_Other[1]" weight="14564.033876344">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Solar_energy_1.Solar_Energy_Output[1]" weight="0.00000199523473965833">
+			<isee:payoff_element name="Solar_energy_1.Solar_Energy_Output[1]" weight="0.0000380954666686457">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Solar_energy_1.Solar_Energy_Capacity[1]" weight="0.0000051121665420739">
+			<isee:payoff_element name="Solar_energy_1.Solar_Energy_Capacity[1]" weight="0.0000451403631368248">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Solar_energy_1.Installation_Cost_of_Solar_capacity[1]" weight="0.0000105939078978761">
+			<isee:payoff_element name="Solar_energy_1.Installation_Cost_of_Solar_capacity[1]" weight="0.00000718076904327336">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Wind_energy_1.Wind_Energy_Output[1]" weight="0.00000390296339962943">
+			<isee:payoff_element name="Wind_energy_1.Wind_Energy_Output[1]" weight="0.000148552426828749">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Wind_energy_1.Wind_Energy_Capacity[1]" weight="0.00000580807576230372">
+			<isee:payoff_element name="Wind_energy_1.Wind_Energy_Capacity[1]" weight="0.0000556665938841283">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Wind_energy_1.Installation_Cost_of_Wind_capacity[1]" weight="0.0000155173004221157">
+			<isee:payoff_element name="Wind_energy_1.Installation_Cost_of_Wind_capacity[1]" weight="0.0000178434843756556">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Energy_Capacity[1]" weight="0.00123258776950483">
+			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Energy_Capacity[1]" weight="0.000110726289649737">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Energy_Output[1]" weight="0.000145931661117807">
+			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Energy_Output[1]" weight="0.0000134587644708855">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Installation_Costs[1]" weight="0.0000210959530397938">
+			<isee:payoff_element name="Hydropower_energy_1.Hydropower_Installation_Costs[1]" weight="0.0000167358987059957">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.bio_fuel_primary_energy[1]" weight="31351362.0661803">
+			<isee:payoff_element name="Energy_Supply_1.Renewable_energy_output[1]" weight="0.00000365025932911472">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Renewable_energy_output[1]" weight="8.26550598564697e-7">
+			<isee:payoff_element name="Energy_Supply_1.Nuclear_Energy_share_in_electricity[1]" weight="2793.28353051571">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Nuclear_Energy_share_in_electricity[1]" weight="10827.5220386674">
+			<isee:payoff_element name="Energy_Supply_1.Hydropower_Energy_share_in_electricity[1]" weight="6558.52562882657">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Hydropower_Energy_share_in_electricity[1]" weight="10374.4411640764">
+			<isee:payoff_element name="Energy_Supply_1.Bio_Energy_share_in_electricity[1]" weight="104805.935106294">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Bio_Energy_share_in_electricity[1]" weight="101359.428218522">
+			<isee:payoff_element name="Energy_Supply_1.Wind_energy_share_in_electricity[1]" weight="94478.1750306752">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Wind_energy_share_in_electricity[1]" weight="3004.63125136003">
+			<isee:payoff_element name="Energy_Supply_1.Solar_energy_share_in_electricity[1]" weight="15034.5889931643">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Solar_energy_share_in_electricity[1]" weight="1822.17146340293">
+			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_gas"[1]' weight="4399.3398673679">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_gas"[1]' weight="1921.24884368976">
+			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_oil"[1]' weight="48419.023604625">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_oil"[1]' weight="51831.4247243476">
+			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_coal"[1]' weight="2700.96909053908">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name='Energy_Supply_1."Fossil_Energy_Output_Share,_coal"[1]' weight="2437.25361295277">
+			<isee:payoff_element name="Energy_Supply_1.Gas_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="26174.2347705482">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Gas_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="7204.06813946906">
+			<isee:payoff_element name="Energy_Supply_1.Liquid_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="36470.2506352764">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Liquid_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="37974.1151102287">
+			<isee:payoff_element name="Energy_Supply_1.Coal_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="9024.0056714945">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Coal_conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy[1]" weight="9434.72774555325">
+			<isee:payoff_element name="Energy_Supply_1.Primary_Fossil_Energy_FUEL[1]" weight="6593.84325273423">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Primary_Fossil_Energy_FUEL[1]" weight="9744.02049340206">
+			<isee:payoff_element name="Energy_Supply_1.Total_Renewable_Energy_Capacity[1]" weight="0.0000420054648471428">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Total_Renewable_Energy_Capacity[1]" weight="0.00000167618959342253">
+			<isee:payoff_element name="Extraction_of_solid_fuels.Primary_Fossil_Energy_FUEL[1]" weight="7637.6896219684">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_solid_fuels.Primary_Fossil_Energy_FUEL[1]" weight="43494.0341798345">
+			<isee:payoff_element name="Extraction_of_liquid_fuels.Primary_Fossil_Energy_FUEL[1]" weight="31618.9866057869">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_liquid_fuels.Primary_Fossil_Energy_FUEL[1]" weight="23457.8834446302">
+			<isee:payoff_element name="Extraction_of_gas_fuels.Primary_Fossil_Energy_FUEL[1]" weight="35889.0856270735">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_gas_fuels.Primary_Fossil_Energy_FUEL[1]" weight="10012.0198040251">
+			<isee:payoff_element name="Energy_demand_1.Electricity_demand[1]" weight="0.00000124139323172852">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_fuels.Total_Primary_Fossil_Energy_FUEL[1]" weight="485.069968199009">
+			<isee:payoff_element name="Coal_to_electricity_conversion.Secondary_Fossil_Energy_Output_coal[1]" weight="0.00000433102908086597">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Electricity_demand[1]" weight="0.00000247725785944771">
+			<isee:payoff_element name="Gas_to_electricity_conversion.Secondary_Fossil_Energy_Output_gas[1]" weight="0.00000519328623725599">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Coal_to_electricity_conversion.Secondary_Fossil_Energy_Output_coal[1]" weight="0.0000118390050166886">
+			<isee:payoff_element name="Oil_to_electricity_conversion.Secondary_Fossil_Energy_Output_oil[1]" weight="0.00011633865875806">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Gas_to_electricity_conversion.Secondary_Fossil_Energy_Output_gas[1]" weight="0.00000730562335245937">
+			<isee:payoff_element name="Energy_Supply_1.Energy_output_electricity[1]" weight="0.00000372669267982835">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Oil_to_electricity_conversion.Secondary_Fossil_Energy_Output_oil[1]" weight="0.000139407782589611">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Hydropower[1]" weight="211279.872446947">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Energy_output_electricity[1]" weight="3.98423551590145e-7">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Nuclear[1]" weight="67272.7634544485">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Hydropower[1]" weight="886078.738310706">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Bio_Energy[1]" weight="5885929.06778181">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Nuclear[1]" weight="171965.51262916">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Wind[1]" weight="1372650.70921485">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Bio_Energy[1]" weight="5536886.02928862">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Solar[1]" weight="528411.915172031">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Wind[1]" weight="50429.54102842">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Renewables[1]" weight="72380.7295761655">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Solar[1]" weight="32220.3068498741">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Gas[1]" weight="7017.12578094632">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Renewables[1]" weight="14632.1367107531">
+			<isee:payoff_element name="Energy_Supply_1.Total_ES_per_capita[1]" weight="1.89130111196679">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Gas[1]" weight="2422.35348439534">
+			<isee:payoff_element name="Energy_Supply_1.Total_Energy_Supply[1]" weight="4.13778343542989e-8">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Total_ES_per_capita[1]" weight="4.0571656212274">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Oil[1]" weight="16132.2849818528">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Total_Energy_Supply[1]" weight="7.63373838722614e-8">
+			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Coal[1]" weight="3296.32455238266">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Oil[1]" weight="9518.12094178594">
+			<isee:payoff_element name="Extraction_of_solid_fuels.Primary_Fossil_Energy_FUEL_for_Fuel[1]" weight="15161.8788076018">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.DPE_Share_Coal[1]" weight="17126.508895841">
+			<isee:payoff_element name="Extraction_of_solid_fuels.Primary_Fossil_Energy_FUEL_for_Electricity[1]" weight="41074.3792961558">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Liquid_output_FUEL[1]" weight="1">
+			<isee:payoff_element name="Extraction_of_liquid_fuels.Primary_Fossil_Energy_FUEL_for_Fuel[1]" weight="41950.3009833563">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Gas_output_FUEL[1]" weight="1">
+			<isee:payoff_element name="Extraction_of_liquid_fuels.Primary_Fossil_Energy_FUEL_for_Electricity[1]" weight="1283119.90613833">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_Supply_1.Solid_output_FUEL[1]" weight="1">
+			<isee:payoff_element name="Extraction_of_gas_fuels.Primary_Fossil_Energy_FUEL_for_Fuel[1]" weight="61507.3725361499">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_solid_fuels.Primary_Fossil_Energy_FUEL_for_Fuel[1]" weight="38687.2888541113">
+			<isee:payoff_element name="Extraction_of_gas_fuels.Primary_Fossil_Energy_FUEL_for_Electricity[1]" weight="130975.173375978">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_solid_fuels.Primary_Fossil_Energy_FUEL_for_Electricity[1]" weight="86389.0277455589">
+			<isee:payoff_element name="Energy_demand_1.Gas_demand_FUEL[1]" weight="115313.555040205">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_liquid_fuels.Primary_Fossil_Energy_FUEL_for_Fuel[1]" weight="27779.2173981873">
+			<isee:payoff_element name="Energy_demand_1.Coal_demand_FUEL[1]" weight="13933.3153493929">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_liquid_fuels.Primary_Fossil_Energy_FUEL_for_Electricity[1]" weight="1525596.65804031">
+			<isee:payoff_element name="Energy_demand_1.Share_of_Energy_for_Industry_and_Other[1]" weight="8454.58283237497">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_gas_fuels.Primary_Fossil_Energy_FUEL_for_Fuel[1]" weight="26190.5240416521">
+			<isee:payoff_element name="Energy_demand_1.Share_of_Energy_for_Buildings[1]" weight="7744.70513504477">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_gas_fuels.Primary_Fossil_Energy_FUEL_for_Electricity[1]" weight="46220.5669791131">
+			<isee:payoff_element name="Energy_demand_1.Share_of_Energy_for_Transportation[1]" weight="11942.2217045811">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Gas_demand_FUEL[1]" weight="209475.187403124">
+			<isee:payoff_element name="Energy_demand_1.Electricity_share[1]" weight="121600.607412118">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Liquid_fuel_demand_FUEL[1]" weight="1">
+			<isee:payoff_element name="Energy_demand_1.Gas_Share[1]" weight="38635.4694069431">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Coal_demand_FUEL[1]" weight="13780.6467697859">
+			<isee:payoff_element name="Energy_demand_1.Liquid_fuel_Share[1]" weight="11812.842391352">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_of_Energy_for_Industry_and_Other[1]" weight="7592.3383884493">
+			<isee:payoff_element name="Energy_demand_1.Coal_Share[1]" weight="5140.02067176245">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_of_Energy_for_Buildings[1]" weight="8627.93027719878">
+			<isee:payoff_element name="Extraction_of_solid_fuels.Share_to_fuel[1]" weight="790.095870805398">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Share_of_Energy_for_Transportation[1]" weight="15759.0839834369">
+			<isee:payoff_element name="Extraction_of_liquid_fuels.Share_to_fuel[1]" weight="39271.2624096308">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Electricity_share[1]" weight="124672.306738967">
+			<isee:payoff_element name="Extraction_of_gas_fuels.Share_to_fuel[1]" weight="2461.53174124021">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Gas_Share[1]" weight="43346.1066606434">
+			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Renewables[1]" weight="3.33619652383514e-22">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Liquid_fuel_Share[1]" weight="13640.6244854404">
+			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Fossil_Energy_Capital[1]" weight="5.41185605967048e-22">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_demand_1.Coal_Share[1]" weight="5094.14475772404">
+			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="8.12801635700885e-23">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_solid_fuels.Share_to_fuel[1]" weight="814.317732306535">
+			<isee:payoff_element name="Energy_investments_2.share_of_GDP_invested_in_fuel_extraction[1]" weight="203446.288557246">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_liquid_fuels.Share_to_fuel[1]" weight="42570.3124797429">
+			<isee:payoff_element name="Energy_investments_2.Gas_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="8.97763205217285e-22">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Extraction_of_gas_fuels.Share_to_fuel[1]" weight="2460.41583910187">
+			<isee:payoff_element name="Energy_investments_2.Oil_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="1.53542320754371e-22">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Renewables[1]" weight="1.94073330756024e-22">
+			<isee:payoff_element name="Energy_investments_2.Coal_Gross_Investments_in_Fossil_Energy_Capital[1]" weight="1.08676080595732e-21">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Fossil_Energy_Capital_oil_and_gas[1]" weight="2.47090227505671e-21">
+			<isee:payoff_element name="Energy_investments_2.Coal_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="5.67794974176817e-21">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Fossil_Energy_Capital[1]" weight="7.8259353361163e-22">
+			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Solar_Energy_Capacity[1]" weight="1.23659963672967e-21">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="8.77368909534827e-23">
+			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_wind_Energy_Capacity[1]" weight="5.92976058232105e-22">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_investments_2.share_of_GDP_invested_in_fuel_extraction[1]" weight="179041.720593371">
+			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Hydropower_Energy_capacity[1]" weight="5.74300296153124e-21">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_investments_2.Gas_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="4.88691008367538e-22">
+			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Biofuel_Capacity[1]" weight="1.11892804034214e-20">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Energy_investments_2.Oil_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="2.22440105795441e-22">
-				<isee:time_range type="terminal_value"/>
-			</isee:payoff_element>
-			<isee:payoff_element name="Energy_investments_2.Coal_Gross_Investments_in_Fossil_Energy_Capital[1]" weight="3.02096874338396e-21">
-				<isee:time_range type="terminal_value"/>
-			</isee:payoff_element>
-			<isee:payoff_element name="Energy_investments_2.Coal_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="2.72313632940494e-21">
-				<isee:time_range type="terminal_value"/>
-			</isee:payoff_element>
-			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Solar_Energy_Capacity[1]" weight="4.3922334135635e-22">
-				<isee:time_range type="terminal_value"/>
-			</isee:payoff_element>
-			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_wind_Energy_Capacity[1]" weight="4.28894445388533e-22">
-				<isee:time_range type="terminal_value"/>
-			</isee:payoff_element>
-			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Hydropower_Energy_capacity[1]" weight="7.08185488905073e-21">
-				<isee:time_range type="terminal_value"/>
-			</isee:payoff_element>
-			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Biofuel_Capacity[1]" weight="6.31109960587961e-21">
-				<isee:time_range type="terminal_value"/>
-			</isee:payoff_element>
-			<isee:payoff_element name="Energy_investments_2.Investments_in_Nuclear_Capacity[1]" weight="1.15025011260117e-20">
+			<isee:payoff_element name="Energy_investments_2.Investments_in_Nuclear_Capacity[1]" weight="1.79463019864568e-20">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 			<isee:payoff_element name="Bio_fuel.bio_fuel_production[1]" weight="0.0101325757199884">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 			<isee:payoff_element name="Bio_fuel.Bio_fuel_primary_Energy_FUEL[1]" weight="31351362.6063358">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_investments_2.Gas_Gross_Investments_in_Fossil_Energy_Capital[1]" weight="2.11825266284882e-21">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_investments_2.Oil_Gross_Investments_in_Fossil_Energy_Capital[1]" weight="6.58285253506321e-21">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+		</isee:payoff_specs>
+		<isee:payoff_specs name="Energy Disaggregation just investments" calibration="true" recompute_weights="true" compare_tolerance="0" compare_type="ls" compare_run="Calibration Data">
+			<isee:payoff_element name="Energy_investments_2.Gas_Gross_Investments_in_Fossil_Energy_Capital[1]" weight="2.78977993022424e-20">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_investments_2.Coal_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="2.23433083336645e-21">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_investments_2.Coal_Gross_Investments_in_Fossil_Energy_Capital[1]" weight="5.25341602301668e-21">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_investments_2.Oil_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="7.47706846553406e-23">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_investments_2.Oil_Gross_Investments_in_Fossil_Energy_Capital[1]" weight="1.31379144019866e-20">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_investments_2.Gas_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="2.38158733385075e-21">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Solar_Energy_Capacity[1]" weight="3.4332544978743e-21">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_wind_Energy_Capacity[1]" weight="1.08876644271444e-21">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Hydropower_Energy_capacity[1]" weight="9.11176184910524e-21">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Biofuel_Capacity[1]" weight="4.21029388206192e-21">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_investments_2.Investments_in_Nuclear_Capacity[1]" weight="1.13155362017526e-20">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Renewables[1]" weight="8.94753026785915e-22">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Fossil_Energy_Capital[1]" weight="2.36857973893258e-21">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_investments_2.Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]" weight="5.77048657391577e-23">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Energy_investments_2.share_of_GDP_invested_in_fuel_extraction[1]" weight="165353.463670075">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 		</isee:payoff_specs>
@@ -5166,26 +5362,252 @@ Lorem ipsum dolor sit amet</text_box>
 			<isee:stories/>
 		</views>
 	</model>
+	<isee:controls>
+		<isee:control priority="interactive" name="Bio_fuel.Initial_X[1]" value="0.459418382063766"/>
+		<isee:control priority="interactive" name="Bio_fuel.Ramp_X[1]" value="-0.023983703166372"/>
+		<isee:control priority="interactive" name="Coal_to_electricity_conversion.initial_fossil_energy_capital[1]" value="606231421023.429"/>
+		<isee:control priority="interactive" name="Coal_to_electricity_conversion.reference_formation_time[1]" value="49.0262154711049"/>
+		<isee:control priority="interactive" name="Coal_to_electricity_conversion.sensitivity_of_effect_of_capital_to_fuel_ratio_on_stranded_capital[1]" value="1.16379094434145"/>
+		<isee:control priority="interactive" name="Energy_demand_1.A_effect_of_GDP_on_Transport_energy_demand_alpha_3[1]" value="-0.206887069553229"/>
+		<isee:control priority="interactive" name="Energy_demand_1.A_effect_of_GDP_on_Transport_energy_demand_alpha_4[1]" value="-0.180825748372478"/>
+		<isee:control priority="interactive" name="Energy_demand_1.B_effect_of_GDP_on_Transport_energy_demand_alpha_4[1]" value="2.29107762275357"/>
+		<isee:control priority="interactive" name="Energy_demand_1.B_effect_of_GDP_on_Transport_energy_demand_alpha_5[1]" value="1.40776205473904"/>
+		<isee:control priority="interactive" name="Energy_demand_1.C_effect_of_GDP_on_Transport_energy_demand_alpha[1]" value="-7.58277483899301"/>
+		<isee:control priority="interactive" name="Energy_demand_1.C_effect_of_GDP_on_Transport_energy_demand_alpha_1[1]" value="-3.40163230705103"/>
+		<isee:control priority="interactive" name="Energy_demand_1.D_effect_of_GDP_on_Transport_energy_demand_beta[1]" value="7.29931937826877"/>
+		<isee:control priority="interactive" name="Energy_demand_1.D_effect_of_GDP_on_Transport_energy_demand_beta_1[1]" value="3.63993364300164"/>
+		<isee:control priority="interactive" name="Energy_demand_1.K_effect_of_GDP_on_Transport_energy_demand_alpha_3[1]" value="0.543735640061149"/>
+		<isee:control priority="interactive" name="Energy_demand_1.K_effect_of_GDP_on_Transport_energy_demand_alpha_4[1]" value="0.577395354643507"/>
+		<isee:control priority="interactive" name="Energy_demand_1.K_effect_of_GDP_on_Transport_energy_demand_alpha_5[1]" value="0.461628535951784"/>
+		<isee:control priority="interactive" name="Energy_demand_1.K_effect_of_GDP_on_Transport_energy_demand_alpha_6[1]" value="0.434423233974441"/>
+		<isee:control priority="interactive" name="Energy_demand_1.L_Maximum_value[1]" value="5.45780082330067"/>
+		<isee:control priority="interactive" name="Energy_demand_1.L_Maximum_value_1[1]" value="12.030820583416"/>
+		<isee:control priority="interactive" name="Energy_demand_1.L_Maximum_value_3[1]" value="3.6433167786254"/>
+		<isee:control priority="interactive" name="Energy_demand_1.Tolerance" value="4.31281418332589"/>
+		<isee:control priority="interactive" name="Energy_demand_1.Tolerance_1" value="789227302.704857"/>
+		<isee:control priority="interactive" name="Energy_demand_1.Tolerance_2" value="6518258925.11225"/>
+		<isee:control priority="interactive" name="Energy_demand_1.X0_effect_of_GDP_on_Transport_energy_demand_beta_3[1]" value="4.16398611885455"/>
+		<isee:control priority="interactive" name="Energy_demand_1.X0_effect_of_GDP_on_Transport_energy_demand_beta_4[1]" value="3.83056913343553"/>
+		<isee:control priority="interactive" name="Energy_demand_1.X0_effect_of_GDP_on_Transport_energy_demand_beta_5[1]" value="0.796975574413861"/>
+		<isee:control priority="interactive" name="Energy_demand_1.X0_effect_of_GDP_on_Transport_energy_demand_beta_6[1]" value="4.38400443919822"/>
+		<isee:control priority="interactive" name="Energy_demand_1.effect_of_GDP_on_Buildings_energy_demand_alpha[1]" value="1.57753924877667"/>
+		<isee:control priority="interactive" name="Energy_demand_1.effect_of_GDP_on_Buildings_energy_demand_alpha_1[1]" value="0.665714831570357"/>
+		<isee:control priority="interactive" name="Energy_demand_1.effect_of_GDP_on_Buildings_energy_demand_alpha_2[1]" value="2.67096702733523"/>
+		<isee:control priority="interactive" name="Energy_demand_1.effect_of_GDP_on_Buildings_energy_demand_beta[1]" value="0.07834512496365"/>
+		<isee:control priority="interactive" name="Energy_demand_1.effect_of_GDP_on_Buildings_energy_demand_beta_1[1]" value="0.579924204632535"/>
+		<isee:control priority="interactive" name="Energy_demand_1.effect_of_GDP_on_Buildings_energy_demand_beta_2[1]" value="0.969194398484463"/>
+		<isee:control priority="interactive" name="Energy_demand_1.effect_of_GDP_on_Industry_and_Other_energy_demand_alpha[1]" value="2.60398538290289"/>
+		<isee:control priority="interactive" name="Energy_demand_1.effect_of_GDP_on_Industry_and_Other_energy_demand_beta[1]" value="0.452306653061143"/>
+		<isee:control priority="interactive" name="Energy_demand_1.effect_of_GDP_on_Transport_energy_demand_alpha_1[1]" value="0.266416379771047"/>
+		<isee:control priority="interactive" name="Energy_demand_1.effect_of_GDP_on_Transport_energy_demand_alpha_2[1]" value="1.05247416580828"/>
+		<isee:control priority="interactive" name="Energy_demand_1.effect_of_GDP_on_Transport_energy_demand_beta_1[1]" value="0.214261904908534"/>
+		<isee:control priority="interactive" name="Energy_demand_1.effect_of_GDP_on_Transport_energy_demand_beta_2[1]" value="0.900336808392052"/>
+		<isee:control priority="interactive" name="Energy_demand_1.initial_aggregate_per_unit_energy_prices_Gas[1]" value="0.159253691536962"/>
+		<isee:control priority="interactive" name="Energy_demand_1.initial_aggregate_per_unit_energy_prices_Liquid[1]" value="0.138287838642632"/>
+		<isee:control priority="interactive" name="Energy_demand_1.initial_aggregate_per_unit_energy_prices_Solid[1]" value="0.13085757784373"/>
+		<isee:control priority="interactive" name="Energy_demand_1.initial_aggregate_per_unit_energy_prices_electricity[1]" value="0.021549273996946"/>
+		<isee:control priority="interactive" name="Energy_demand_1.initial_aggregate_per_unit_energy_prices_electricity_1[1]" value="0.0904068410654652"/>
+		<isee:control priority="interactive" name="Energy_demand_1.initial_reference_aggregate_per_unit_energy_prices_Gas[1]" value="0.158413003064549"/>
+		<isee:control priority="interactive" name="Energy_demand_1.initial_reference_aggregate_per_unit_energy_prices_Liquid[1]" value="0.0499668112903632"/>
+		<isee:control priority="interactive" name="Energy_demand_1.initial_reference_aggregate_per_unit_energy_prices_Solid[1]" value="0.172471516248189"/>
+		<isee:control priority="interactive" name="Energy_demand_1.initial_reference_aggregate_per_unit_energy_prices_electricity[1]" value="0.128317956064405"/>
+		<isee:control priority="interactive" name="Energy_demand_1.initial_reference_aggregate_per_unit_energy_prices_electricity_1[1]" value="0.135489215051994"/>
+		<isee:control priority="interactive" name="Energy_demand_1.normal_coal_demand_for_Buildings[1]" value="2471784932.40323"/>
+		<isee:control priority="interactive" name="Energy_demand_1.normal_coal_demand_for_Industry_and_Other[1]" value="8311887348.0263"/>
+		<isee:control priority="interactive" name="Energy_demand_1.normal_coal_demand_for_Transportation[1]" value="125693985.023346"/>
+		<isee:control priority="interactive" name="Energy_demand_1.normal_electricity_demand_for_Buildings[1]" value="1632374872.23495"/>
+		<isee:control priority="interactive" name="Energy_demand_1.normal_electricity_demand_for_Industry_and_Other[1]" value="2610336775.28052"/>
+		<isee:control priority="interactive" name="Energy_demand_1.normal_electricity_demand_for_Transportation[1]" value="313763243.623096"/>
+		<isee:control priority="interactive" name="Energy_demand_1.normal_gas_demand_for_Buildings[1]" value="7386124735.54715"/>
+		<isee:control priority="interactive" name="Energy_demand_1.normal_gas_demand_for_Industry_and_Other[1]" value="4802869521.40115"/>
+		<isee:control priority="interactive" name="Energy_demand_1.normal_gas_demand_for_Transportation[1]" value="769192813.88513"/>
+		<isee:control priority="interactive" name="Energy_demand_1.normal_liquid_fuel_demand_for_Buildings[1]" value="7503932729.95965"/>
+		<isee:control priority="interactive" name="Energy_demand_1.normal_liquid_fuel_demand_for_Industry_and_Other[1]" value="4491244935.40606"/>
+		<isee:control priority="interactive" name="Energy_demand_1.normal_liquid_fuel_demand_for_Transportation[1]" value="71169457689.1349"/>
+		<isee:control priority="interactive" name="Energy_demand_1.reference_change_in_energy_prices_Gas[1]" value="0.00297370630095592"/>
+		<isee:control priority="interactive" name="Energy_demand_1.reference_change_in_energy_prices_Liquid[1]" value="0.0093380154894029"/>
+		<isee:control priority="interactive" name="Energy_demand_1.reference_change_in_energy_prices_Solid[1]" value="0.00985845361698035"/>
+		<isee:control priority="interactive" name="Energy_demand_1.reference_change_in_energy_prices_electricity[1]" value="0.00986273905282551"/>
+		<isee:control priority="interactive" name="Energy_demand_1.reference_change_in_energy_prices_electricity_1[1]" value="0.0507646429083698"/>
+		<isee:control priority="interactive" name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Buildings[1]" value="0.00765841583632316"/>
+		<isee:control priority="interactive" name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Buildings_1[1]" value="0.00810507698113291"/>
+		<isee:control priority="interactive" name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Buildings_2[1]" value="0.00737976197638254"/>
+		<isee:control priority="interactive" name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Buildings_3[1]" value="0.00739569647033589"/>
+		<isee:control priority="interactive" name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Industry_and_Other[1]" value="0.00840443578152866"/>
+		<isee:control priority="interactive" name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Industry_and_Other_1[1]" value="0.00773185665292"/>
+		<isee:control priority="interactive" name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Industry_and_Other_2[1]" value="0.00794691234196304"/>
+		<isee:control priority="interactive" name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Industry_and_Other_3[1]" value="0.00757451802587415"/>
+		<isee:control priority="interactive" name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Transport[1]" value="0.00724886528032142"/>
+		<isee:control priority="interactive" name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Transport_1[1]" value="0.00740564021624131"/>
+		<isee:control priority="interactive" name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Transport_2[1]" value="0.00687019052505607"/>
+		<isee:control priority="interactive" name="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_energy_demand_for_Transport_3[1]" value="0.00736231140967083"/>
+		<isee:control priority="interactive" name="Energy_investments_2.adaptive_energy_investments_differntiating_factor[1]" value="-3.84893196251258"/>
+		<isee:control priority="interactive" name="Energy_investments_2.adaptive_energy_investments_integrating_factor[1]" value="-0.694792380183509"/>
+		<isee:control priority="interactive" name="Energy_investments_2.adaptive_energy_investments_proportional_factor[1]" value="-8.93503311573356"/>
+		<isee:control priority="interactive" name="Energy_investments_2.baseline_energy_investments[1]" value="377125503973.664"/>
+		<isee:control priority="interactive" name="Energy_investments_2.cost_perception_time[1]" value="0.616154718025959"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Bio, 1]" value="0.842994675118863"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Bio, 2]" value="0.553168948228846"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Bio, 3]" value="0.897372751700577"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Bio, 4]" value="1.22957763292634"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Bio, 5]" value="1.08772165345254"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Bio, 6]" value="0.408533198351908"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Bio, 7]" value="0.441732178391168"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Bio, 8]" value="0.250025237885123"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Bio, 9]" value="0.825175588080345"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_energy_conversion, 1]" value="0.660801507591409"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_energy_conversion, 2]" value="0.659975800797333"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_energy_conversion, 3]" value="0.721344686642015"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_energy_conversion, 4]" value="0.727866688184244"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_energy_conversion, 5]" value="0.569258273435153"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_energy_conversion, 6]" value="0.427055977385245"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_energy_conversion, 7]" value="0.646387779332598"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_energy_conversion, 8]" value="0.529890996634972"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_energy_conversion, 9]" value="0.440747206800407"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_fuel_extraction, 1]" value="0.824930917799583"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_fuel_extraction, 2]" value="0.630661927039499"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_fuel_extraction, 3]" value="0.689409906802056"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_fuel_extraction, 4]" value="0.790273528231474"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_fuel_extraction, 5]" value="0.539515871314879"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_fuel_extraction, 6]" value="0.553605707194683"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_fuel_extraction, 7]" value="0.607342503488839"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_fuel_extraction, 8]" value="0.479631489673237"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Coal_fuel_extraction, 9]" value="1.02398711539459"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_energy_conversion, 1]" value="0.101432631889568"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_energy_conversion, 2]" value="0.0688127119628264"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_energy_conversion, 3]" value="0.314609301172591"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_energy_conversion, 4]" value="0.367750687219462"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_energy_conversion, 5]" value="0.300404960751098"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_energy_conversion, 6]" value="0.351418346617212"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_energy_conversion, 7]" value="0.227450316086588"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_energy_conversion, 8]" value="0.158081375216039"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_energy_conversion, 9]" value="0.0688535922348161"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_fuel_extraction, 1]" value="0.289347750784284"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_fuel_extraction, 2]" value="0.280620168109543"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_fuel_extraction, 3]" value="0.264345329589842"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_fuel_extraction, 4]" value="0.294901854070078"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_fuel_extraction, 5]" value="0.264199250388507"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_fuel_extraction, 6]" value="0.29598954528046"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_fuel_extraction, 7]" value="0.247123572007729"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_fuel_extraction, 8]" value="0.196153119984681"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Gas_fuel_extraction, 9]" value="0.425190104108523"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Hydropower, 1]" value="1.84190150812542"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Hydropower, 2]" value="1.03594900848397"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Hydropower, 3]" value="0.982663534354081"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Hydropower, 4]" value="1.20086858734911"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Hydropower, 5]" value="0.965518813487541"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Hydropower, 6]" value="0.533205579666076"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Hydropower, 7]" value="0.372735508288048"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Hydropower, 8]" value="0.184303927220011"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Hydropower, 9]" value="0.503089319101556"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Nuclear, 1]" value="0.339310536936753"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Nuclear, 2]" value="0.345492297860978"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Nuclear, 3]" value="0.512858450332274"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Nuclear, 4]" value="0.680672657128498"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Nuclear, 5]" value="0.68039243485196"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Nuclear, 6]" value="0.578615820624413"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Nuclear, 7]" value="0.605621808082944"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Nuclear, 8]" value="0.23895867580001"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Nuclear, 9]" value="0.618408767723146"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_energy_conversion, 1]" value="0.134792507521244"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_energy_conversion, 2]" value="0.179906452403312"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_energy_conversion, 3]" value="0.141396329432734"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_energy_conversion, 4]" value="0.247666245398849"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_energy_conversion, 5]" value="0.184406583165639"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_energy_conversion, 6]" value="0.203659489728821"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_energy_conversion, 7]" value="0.157103986314135"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_energy_conversion, 8]" value="0.075653846942309"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_energy_conversion, 9]" value="0.0503662234543297"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_fuel_extraction, 1]" value="0.148284991334349"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_fuel_extraction, 2]" value="0.101182775541303"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_fuel_extraction, 3]" value="0.100222017767248"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_fuel_extraction, 4]" value="0.109547594902634"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_fuel_extraction, 5]" value="0.111509798307881"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_fuel_extraction, 6]" value="0.161369700349525"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_fuel_extraction, 7]" value="0.0961231039856308"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_fuel_extraction, 8]" value="0.110808465133604"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Oil_fuel_extraction, 9]" value="0.170566167233108"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Solar, 1]" value="0.494736886706697"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Solar, 2]" value="0.461073705089157"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Solar, 3]" value="0.470835987044318"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Solar, 4]" value="0.303678792379529"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Solar, 5]" value="0.0633142536161743"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Solar, 6]" value="0.286016524297976"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Solar, 7]" value="0.19529323285561"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Solar, 8]" value="0.110501602576408"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Solar, 9]" value="0.211089100731308"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Wind, 1]" value="0.487568665394209"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Wind, 2]" value="0.481602524482271"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Wind, 3]" value="0.442324188601836"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Wind, 4]" value="0.399895904658929"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Wind, 5]" value="0.0500097288095468"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Wind, 6]" value="0.187302674569033"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Wind, 7]" value="0.137482340705186"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Wind, 8]" value="0.119960953069617"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment[1, Wind, 9]" value="0.158358777100777"/>
+		<isee:control priority="interactive" name="Energy_investments_2.historical_cost_adjustment_smoothing_time[1]" value="1.75338677754057"/>
+		<isee:control priority="interactive" name="Energy_investments_2.initial_perceived_marginal_energy_supply_cost[1]" value="0.0208959502189937"/>
+		<isee:control priority="interactive" name="Energy_investments_2.initial_relative_supply_missmatch[1]" value="0.102458543763231"/>
+		<isee:control priority="interactive" name="Energy_investments_2.priority_spread[1]" value="31.115725435375"/>
+		<isee:control priority="interactive" name="Energy_investments_2.sensitivity_of_effect_of_perceived_marginal_energy_supply_cost_on_investment[1]" value="0.840814457781063"/>
+		<isee:control priority="interactive" name="Energy_investments_2.time_to_perceive_energy_supply_missmatch[1]" value="3.14086502972432"/>
+		<isee:control priority="interactive" name="Extraction_of_gas_fuels.Initial_X[1]" value="0.780323184956909"/>
+		<isee:control priority="interactive" name="Extraction_of_gas_fuels.initial_fossil_extraction_knowledge[1]" value="115.564659299582"/>
+		<isee:control priority="interactive" name="Extraction_of_gas_fuels.initial_fossil_fuel_extraction_capital[1]" value="1787770645915.34"/>
+		<isee:control priority="interactive" name="Extraction_of_gas_fuels.learning_elasticity_of_the_resource_sector[1]" value="0.254460912269122"/>
+		<isee:control priority="interactive" name="Extraction_of_gas_fuels.learning_time_in_resource_sector[1]" value="35.8561803948088"/>
+		<isee:control priority="interactive" name="Extraction_of_gas_fuels.maximum_increase_of_capital_coefficient_in_fossil_resource_sector[1]" value="258.311204009356"/>
+		<isee:control priority="interactive" name="Extraction_of_liquid_fuels.Initial_X[1]" value="0.88813020985311"/>
+		<isee:control priority="interactive" name="Extraction_of_liquid_fuels.Ramp_X[1]" value="0.00176948235812283"/>
+		<isee:control priority="interactive" name="Extraction_of_liquid_fuels.initial_fossil_extraction_knowledge[1]" value="156.178642033306"/>
+		<isee:control priority="interactive" name="Extraction_of_liquid_fuels.initial_fossil_fuel_extraction_capital[1]" value="6040441386775.98"/>
+		<isee:control priority="interactive" name="Extraction_of_liquid_fuels.learning_elasticity_of_the_resource_sector[1]" value="0.220556662313584"/>
+		<isee:control priority="interactive" name="Extraction_of_liquid_fuels.learning_time_in_resource_sector[1]" value="31.4738313962532"/>
+		<isee:control priority="interactive" name="Extraction_of_liquid_fuels.maximum_increase_of_capital_coefficient_in_fossil_resource_sector[1]" value="251.33655821988"/>
+		<isee:control priority="interactive" name="Extraction_of_solid_fuels.Initial_X[1]" value="0.530685943864676"/>
+		<isee:control priority="interactive" name="Extraction_of_solid_fuels.Ramp_X[1]" value="-0.00259599153044771"/>
+		<isee:control priority="interactive" name="Extraction_of_solid_fuels.initial_fossil_extraction_knowledge[1]" value="91.1459290736513"/>
+		<isee:control priority="interactive" name="Extraction_of_solid_fuels.initial_fossil_fuel_extraction_capital[1]" value="1605587532214.9"/>
+		<isee:control priority="interactive" name="Extraction_of_solid_fuels.learning_elasticity_of_the_resource_sector[1]" value="0.6"/>
+		<isee:control priority="interactive" name="Extraction_of_solid_fuels.learning_time_in_resource_sector[1]" value="30.0601566902163"/>
+		<isee:control priority="interactive" name="Extraction_of_solid_fuels.maximum_increase_of_capital_coefficient_in_fossil_resource_sector[1]" value="256.207133085722"/>
+		<isee:control priority="interactive" name="Gas_to_electricity_conversion.initial_fossil_energy_capital[1]" value="126094336803.042"/>
+		<isee:control priority="interactive" name="Gas_to_electricity_conversion.reference_formation_time[1]" value="59.3234923245077"/>
+		<isee:control priority="interactive" name="Gas_to_electricity_conversion.sensitivity_of_effect_of_capital_to_fuel_ratio_on_stranded_capital[1]" value="1.56398447373639"/>
+		<isee:control priority="interactive" name="Oil_to_electricity_conversion.initial_fossil_energy_capital[1]" value="284073944578.268"/>
+		<isee:control priority="interactive" name="Oil_to_electricity_conversion.reference_formation_time[1]" value="60.0811505645206"/>
+		<isee:control priority="interactive" name="Oil_to_electricity_conversion.sensitivity_of_effect_of_capital_to_fuel_ratio_on_stranded_capital[1]" value="0.964947746821901"/>
+		<isee:control priority="interactive" name="Solar_energy_1.Initial_Solar_Energy_Installation_Costs[1]" value="4355.90817342723"/>
+		<isee:control priority="interactive" name="Solar_energy_1.Renewable_Energy_Floor_Costs[1]" value="50.4967540479166"/>
+		<isee:control priority="interactive" name="Solar_energy_1.Solar_Energy_Full_Load_Hours[1]" value="1686.92629995882"/>
+		<isee:control priority="interactive" name="Solar_energy_1.sensitivity_of_renewable_floor_costs_to_grid_storage_needs[1]" value="3.1816057397485"/>
+		<isee:control priority="interactive" name="Solar_energy_1.sensitivity_of_renewable_floor_costs_to_grid_storage_needs_non_linear_part[1]" value="-5.06290895505976"/>
+		<isee:control priority="interactive" name="Wind_energy_1.Initial_Wind_Energy_Installation_Costs[1]" value="4547.68361548914"/>
+		<isee:control priority="interactive" name="Wind_energy_1.Renewable_Energy_Floor_Costs[1]" value="2.12025778867258"/>
+		<isee:control priority="interactive" name="Wind_energy_1.Wind_Energy_Full_Load_Hours[1]" value="1823.81372125936"/>
+		<isee:control priority="interactive" name="Wind_energy_1.sensitivity_of_renewable_floor_costs_to_grid_storage_needs[1]" value="3.23191597207369"/>
+		<isee:control priority="interactive" name="Wind_energy_1.sensitivity_of_renewable_floor_costs_to_grid_storage_needs_non_linear_part[1]" value="-5.69191717811709"/>
+	</isee:controls>
 	<isee:user_controlled>
-		<ent name="Simulation End" preserve="true"/>
-		<ent name="Government Regulations.tax on CO2e emissions" preserve="true"/>
-		<ent name="Government Regulations.tax rate on newly installed solar energy capacity" preserve="true"/>
-		<ent name="Government Regulations.tax rate on newly installed wind energy capacity" preserve="true"/>
-		<ent name="Climate.switch sea level rise protection cost damage" preserve="true"/>
-		<ent name="Climate.switch sea level rise fatalities damage" preserve="true"/>
-		<ent name="Climate.switch sea level rise relocation cost damage" preserve="true"/>
-		<ent name="Climate.switch sea level rise productivity reduction damage" preserve="true"/>
-		<ent name="Climate.switch sea level rise finance damage" preserve="true"/>
-		<ent name="Climate.switch sea level rise damage" preserve="true"/>
-		<ent name="Climate.switch government damage" preserve="true"/>
-		<ent name="Climate.switch demography damage" preserve="true"/>
-		<ent name="Climate.switch finance damage" preserve="true"/>
-		<ent name="Climate.switch labor damage" preserve="true"/>
-		<ent name="Climate.switch energy damage" preserve="true"/>
-		<ent name="Climate.switch concrete impact" preserve="true"/>
-		<ent name="Climate.switch landuse damage" preserve="true"/>
-		<ent name="Climate.switch behavioral impact" preserve="true"/>
-		<ent name="Climate.climate impact stoptime" preserve="true"/>
+		<ent name="Simulation End" preserve="true" lock="false"/>
+		<ent name="Government Regulations.tax on CO2e emissions" preserve="true" lock="false"/>
+		<ent name="Government Regulations.tax rate on newly installed solar energy capacity" preserve="true" lock="false"/>
+		<ent name="Government Regulations.tax rate on newly installed wind energy capacity" preserve="true" lock="false"/>
+		<ent name="Climate.switch sea level rise protection cost damage" preserve="true" lock="false"/>
+		<ent name="Climate.switch sea level rise fatalities damage" preserve="true" lock="false"/>
+		<ent name="Climate.switch sea level rise relocation cost damage" preserve="true" lock="false"/>
+		<ent name="Climate.switch sea level rise productivity reduction damage" preserve="true" lock="false"/>
+		<ent name="Climate.switch sea level rise finance damage" preserve="true" lock="false"/>
+		<ent name="Climate.switch sea level rise damage" preserve="true" lock="false"/>
+		<ent name="Climate.switch government damage" preserve="true" lock="false"/>
+		<ent name="Climate.switch demography damage" preserve="true" lock="false"/>
+		<ent name="Climate.switch finance damage" preserve="true" lock="false"/>
+		<ent name="Climate.switch labor damage" preserve="true" lock="false"/>
+		<ent name="Climate.switch energy damage" preserve="true" lock="false"/>
+		<ent name="Climate.switch concrete impact" preserve="true" lock="false"/>
+		<ent name="Climate.switch landuse damage" preserve="true" lock="false"/>
+		<ent name="Climate.switch behavioral impact" preserve="true" lock="false"/>
+		<ent name="Climate.climate impact stoptime" preserve="true" lock="false"/>
 	</isee:user_controlled>
 	<macro name="INFLATION_IMPACT_GROWTH_RATE">
 		<eqn>trend in input</eqn>

@@ -3,7 +3,7 @@
 	<header>
 		<smile version="1.0" namespace="std, isee" uses_arrays="3" uses_conveyor="" uses_submodels=""/>
 		<name>New Energy</name>
-		<uuid>38cb0157-36bc-46d3-929c-ebd0218b1e49</uuid>
+		<uuid>768a1405-6ae6-4063-8f62-d285d87f26e2</uuid>
 		<vendor>isee systems, inc.</vendor>
 		<product version="4.1" isee:build_number="3751" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
@@ -915,7 +915,7 @@
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1123" page_height="793" isee:page_cols="12" isee:page_rows="10" isee:scroll_x="34.5455" zoom="220" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1123" page_height="793" isee:page_cols="12" isee:page_rows="10" isee:scroll_x="103.636" isee:scroll_y="27.2727" zoom="220" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="9pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -1648,7 +1648,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 					<dim name="Run"/>
 				</dimensions>
 				<eqn>0.00849887086251713</eqn>
-				<range min="0.001" max="0.012"/>
+				<range min="0.001" max="0.25"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
 			<aux name="time for competition\nto change prices">
@@ -1735,7 +1735,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 					<dim name="Run"/>
 				</dimensions>
 				<eqn>0.0101896654966444</eqn>
-				<range min="0.001" max="0.012"/>
+				<range min="0.001" max="0.5"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
 			<aux name="time for competition\nto change prices 1">
@@ -1822,7 +1822,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 					<dim name="Run"/>
 				</dimensions>
 				<eqn>0.00565909256977968</eqn>
-				<range min="0.001" max="0.012"/>
+				<range min="0.001" max="0.25"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
 			<aux name="time for competition\nto change prices 2">
@@ -1909,7 +1909,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 					<dim name="Run"/>
 				</dimensions>
 				<eqn>0.00901458766780317</eqn>
-				<range min="0.001" max="0.012"/>
+				<range min="0.001" max="0.25"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
 			<aux name="time for competition\nto change prices 3">
@@ -3075,7 +3075,7 @@ ELSE
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1123" page_height="793" isee:page_cols="6" isee:page_rows="5" isee:scroll_x="937.5" isee:scroll_y="946.25" zoom="80" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1123" page_height="793" isee:page_cols="6" isee:page_rows="5" isee:scroll_x="581.25" isee:scroll_y="1743.75" zoom="80" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -4589,30 +4589,30 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 					<from>ELECTRICITY_average_marginal_net_cost_of_energy_with_historical_cost_adjustment</from>
 					<to>aggregate_per_unit_energy_prices</to>
 				</connector>
-				<aux x="2070.93" y="3092.17" name="aggregate per unit energy prices 4"/>
-				<aux background="#55AA00" label_side="right" x="2070.93" y="3015.42" name="initial aggregate per\nunit energy prices electricity 1"/>
+				<aux x="1850.93" y="2940.5" name="aggregate per unit energy prices 4"/>
+				<aux background="#55AA00" label_side="right" x="1850.93" y="2863.75" name="initial aggregate per\nunit energy prices electricity 1"/>
 				<connector uid="312" angle="270">
 					<from>initial_aggregate_per_unit_energy_prices_electricity_1</from>
 					<to>aggregate_per_unit_energy_prices_4</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="1936.61" y="3012.33" name="average marginal\nnet cost of energy with historical cost adjustment 5"/>
+				<aux font_style="italic" font_weight="bold" x="1716.61" y="2860.66" name="average marginal\nnet cost of energy with historical cost adjustment 5"/>
 				<connector uid="313" angle="329.273">
 					<from>average_marginal_net_cost_of_energy_with_historical_cost_adjustment_5</from>
 					<to>aggregate_per_unit_energy_prices_4</to>
 				</connector>
-				<aux x="2183.07" y="3092.17" name="time for competition\nto change prices 4"/>
+				<aux x="1963.07" y="2940.5" name="time for competition\nto change prices 4"/>
 				<connector uid="314" angle="180">
 					<from>time_for_competition_to_change_prices_4</from>
 					<to>aggregate_per_unit_energy_prices_4</to>
 				</connector>
-				<aux background="#55AA00" x="1792.32" y="3176.55" name="initial reference aggregate\nper unit energy prices electricity 1"/>
-				<aux x="2073.43" y="3176" name="change\nin energy prices 4"/>
+				<aux background="#55AA00" x="1572.32" y="3024.88" name="initial reference aggregate\nper unit energy prices electricity 1"/>
+				<aux x="1853.43" y="3024.33" name="change\nin energy prices 4"/>
 				<connector uid="315" angle="271.708">
 					<from>aggregate_per_unit_energy_prices_4</from>
 					<to>change_in_energy_prices_4</to>
 				</connector>
-				<aux background="#55AA00" x="2214.56" y="3271.53" name="reference change\nin energy prices electricity 1"/>
-				<aux x="1935.09" y="3092.17" name="average energy margins 4"/>
+				<aux background="#55AA00" x="1994.56" y="3119.86" name="reference change\nin energy prices electricity 1"/>
+				<aux x="1715.09" y="2940.5" name="average energy margins 4"/>
 				<connector uid="316" angle="268.909">
 					<from>average_marginal_net_cost_of_energy_with_historical_cost_adjustment_5</from>
 					<to>average_energy_margins_4</to>
@@ -4621,7 +4621,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 					<from>aggregate_per_unit_energy_prices_4</from>
 					<to>average_energy_margins_4</to>
 				</connector>
-				<aux x="1954.61" y="3176" name="reference aggregate\nper unit energy prices 4"/>
+				<aux x="1734.61" y="3024.33" name="reference aggregate\nper unit energy prices 4"/>
 				<connector uid="318" angle="215.78">
 					<from>aggregate_per_unit_energy_prices_4</from>
 					<to>reference_aggregate_per_unit_energy_prices_4</to>
@@ -4634,7 +4634,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 					<from>initial_reference_aggregate_per_unit_energy_prices_electricity_1</from>
 					<to>reference_aggregate_per_unit_energy_prices_4</to>
 				</connector>
-				<aux x="2073.43" y="3271.53" name="relative change in energy prices 1"/>
+				<aux x="1853.43" y="3119.86" name="relative change in energy prices 1"/>
 				<connector uid="321" angle="270">
 					<from>change_in_energy_prices_4</from>
 					<to>relative_change_in_energy_prices_1</to>
@@ -4643,7 +4643,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 					<from>reference_change_in_energy_prices_electricity_1</from>
 					<to>relative_change_in_energy_prices_1</to>
 				</connector>
-				<aux x="1792.32" y="3128.8" name="reference formation\ntime 5"/>
+				<aux x="1572.32" y="2977.13" name="reference formation\ntime 5"/>
 				<connector uid="323" angle="343.783">
 					<from>reference_formation_time_5</from>
 					<to>reference_aggregate_per_unit_energy_prices_4</to>
@@ -4813,7 +4813,7 @@ share_of_GDP_invested_in_bio_power</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>MAX(baseline_energy_investments[Run]*adaptive_change_in_investments, 1)</eqn>
+				<eqn>MAX(baseline_energy_investments[Run]*adaptive_change_in_investments*effect_of_margins_on_investment,  1)</eqn>
 				<units>c$/Year</units>
 			</aux>
 			<aux name="Gross Investments in Renewables" access="output" isee:autocreated="true">
@@ -5787,7 +5787,7 @@ adjusted_cost[Run,Coal_fuel_extraction] * Coal_Gross_Investments_in_Fossil_Fuel_
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>Just_to_null*(1+(EXP(relative_margins-1) - 1)*sensitivity_of_effect_of_perceived_marginal_energy_supply_cost_on_investment)</eqn>
+				<eqn>1+(EXP(relative_margins-1) - 1)*sensitivity_of_effect_of_perceived_marginal_energy_supply_cost_on_investment</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="sensitivity of effect of perceived marginal\nenergy supply cost\non investment">
@@ -5804,7 +5804,7 @@ adjusted_cost[Run,Coal_fuel_extraction] * Coal_Gross_Investments_in_Fossil_Fuel_
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>(perceived_energy_supply_margins/initial_perceived_marginal_energy_supply_cost)*Just_to_null</eqn>
+				<eqn>(perceived_energy_supply_margins/initial_perceived_marginal_energy_supply_cost)</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="initial perceived marginal energy supply cost">
@@ -5814,7 +5814,7 @@ adjusted_cost[Run,Coal_fuel_extraction] * Coal_Gross_Investments_in_Fossil_Fuel_
 					<dim name="Run"/>
 				</dimensions>
 				<eqn>0.0186595133241227</eqn>
-				<range min="0.001" max="0.05"/>
+				<range min="0.001" max="0.1"/>
 				<units>c$/(kWh/Years)</units>
 			</aux>
 			<aux name="Gross Investments in\nSolar\nEnergy Capacity" access="output" isee:autocreated="true">
@@ -6126,12 +6126,6 @@ adjusted_cost[Run,Coal_fuel_extraction] * Gross_investments_in_coal_for_electric
 				<eqn>1000000000</eqn>
 				<units>c$/bc$</units>
 			</aux>
-			<aux name="Just to null">
-				<eqn>0</eqn>
-				<format precision="1"/>
-				<range min="0" max="1"/>
-				<units>dmnl</units>
-			</aux>
 			<aux name="initial fossil energy capital" access="input">
 				<dimensions>
 					<dim name="Run"/>
@@ -6202,7 +6196,7 @@ adjusted_cost[Run,Coal_fuel_extraction] * Gross_investments_in_coal_for_electric
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1123" page_height="793" isee:page_cols="8" isee:page_rows="6" isee:scroll_y="1995.63" zoom="160" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1123" page_height="793" isee:page_cols="8" isee:page_rows="6" isee:scroll_x="663.125" isee:scroll_y="1583.13" zoom="160" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -7524,18 +7518,13 @@ https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_c
 						</plot>
 					</graph>
 				</stacked_container>
-				<aux x="872.857" y="1847.48" name="Just to null"/>
-				<connector uid="291" angle="195.348">
-					<from>Just_to_null</from>
-					<to>relative_margins</to>
-				</connector>
-				<connector uid="290" angle="137.185">
-					<from>Just_to_null</from>
-					<to>effect_of_margins_on_investment</to>
-				</connector>
 				<aux font_style="italic" font_weight="bold" x="1600" y="1142.5" name="initial fossil energy capital"/>
 				<aux font_style="italic" font_weight="bold" x="6026.67" y="2306.67" name="initial fossil energy capital 1"/>
 				<aux font_style="italic" font_weight="bold" x="6198.33" y="2305" name="initial fossil energy capital 2"/>
+				<connector uid="302" angle="26.0114">
+					<from>effect_of_margins_on_investment</from>
+					<to>All_Gross_Energy_Investments</to>
+				</connector>
 				<alias font_style="italic" uid="297" x="4964.75" y="1836" width="18" height="18">
 					<of>historical_cost_adjustment</of>
 				</alias>
@@ -8524,7 +8513,7 @@ https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_c
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1123" page_height="793" isee:page_cols="4" isee:page_rows="4" isee:scroll_x="235" isee:scroll_y="240" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1123" page_height="793" isee:page_cols="4" isee:page_rows="4" isee:scroll_x="314" isee:scroll_y="240" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>

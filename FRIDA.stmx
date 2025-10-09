@@ -8,7 +8,7 @@
 		<product version="4.1" isee:build_number="3751" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
 	<ai_information>
-		<status verified="false" trusted="true" tampered="false" uses="false" analyzed="false" log_truncated="true" timestamp="1760003790" algorithm="ed25519" keyurl="https://iseesystems.com/keys/stella01.txt" want_var_info="true" want_var_status="false" want_log="false" sampling="10" signature="SNLfb0pZgiEMevDAjCnSwtdJ+6c9EJ/zRbiLG4ZBX5fFMB8LUqD5RNaGdpIMuvfAdffF8aanoHEOU0uCf+uSDQ=="/>
+		<status verified="false" trusted="true" tampered="false" uses="false" analyzed="false" log_truncated="true" timestamp="1760004124" algorithm="ed25519" keyurl="https://iseesystems.com/keys/stella01.txt" want_var_info="true" want_var_status="false" want_log="false" sampling="10" signature="Lgu2n2S6C8ZnbQU3ujFDJ8L130+28Q3sX3YRwp+4aPmRwHNs7IF+rw6F261WxiFazhsgZ4kf/zgVC1/vuXd8Cw=="/>
 		<settings>
 			<isee:setting key="ltm-narrative/underlyingModel" value="gemini-2.5-flash-preview-09-2025"/>
 		</settings>

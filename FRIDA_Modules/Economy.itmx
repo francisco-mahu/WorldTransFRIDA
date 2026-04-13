@@ -319,50 +319,54 @@
 				<format scale_by="auto"/>
 				<connect to="Inflation.bailouts" from="Government.bailouts"/>
 				<connect2 to="Inflation.bailouts" from="Government.bailouts"/>
-				<connect to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
-				<connect2 to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
-				<connect to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_coal_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_coal_energy_conversion"/>
-				<connect2 to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_coal_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_coal_energy_conversion"/>
+				<connect to="Liquid_fuel_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
+				<connect2 to="Liquid_fuel_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
+				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_coal_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_coal_energy_conversion"/>
+				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_coal_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_coal_energy_conversion"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_coal_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_coal_energy_conversion"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_coal_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_coal_energy_conversion"/>
-				<connect to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
-				<connect2 to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
+				<connect to="Coal_extraction_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
+				<connect2 to="Coal_extraction_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
-				<connect to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
-				<connect2 to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
+				<connect to="Module_1.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
+				<connect2 to="Module_1.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
+				<connect to="Module_1.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
+				<connect2 to="Module_1.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
+				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
+				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
-				<connect to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
-				<connect2 to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
-				<connect to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity"/>
-				<connect2 to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity"/>
+				<connect to="Gas_extraction_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
+				<connect2 to="Gas_extraction_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
+				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity"/>
+				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_hydropower_energy_capacity"/>
-				<connect to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity"/>
-				<connect2 to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity"/>
+				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity"/>
+				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_nuclear_energy_capacity"/>
-				<connect to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_oil_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_oil_energy_conversion"/>
-				<connect2 to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_oil_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_oil_energy_conversion"/>
+				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_oil_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_oil_energy_conversion"/>
+				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_oil_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_oil_energy_conversion"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_oil_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_oil_energy_conversion"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_oil_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_oil_energy_conversion"/>
-				<connect to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
-				<connect2 to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
-				<connect to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_other_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_other_energy_capacity"/>
-				<connect2 to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_other_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_other_energy_capacity"/>
-				<connect to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_Solar_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_solar_energy_capacity"/>
-				<connect2 to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_Solar_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_solar_energy_capacity"/>
+				<connect to="Liquid_fuel_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
+				<connect2 to="Liquid_fuel_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
+				<connect to="Other_Energy_investments.expenditure_on_subsidies_for_investments_in_other_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_other_energy_capacity"/>
+				<connect2 to="Other_Energy_investments.expenditure_on_subsidies_for_investments_in_other_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_other_energy_capacity"/>
+				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_Solar_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_solar_energy_capacity"/>
+				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_Solar_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_solar_energy_capacity"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_Solar_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_solar_energy_capacity"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_Solar_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_solar_energy_capacity"/>
-				<connect to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_wind_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_wind_energy_capacity"/>
-				<connect2 to="Energy_investments_1.expenditure_on_subsidies_for_investments_in_wind_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_wind_energy_capacity"/>
+				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_wind_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_wind_energy_capacity"/>
+				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_wind_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_wind_energy_capacity"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_wind_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_wind_energy_capacity"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_wind_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_wind_energy_capacity"/>
 				<connect to="Circular_Flow.government_consumption" from="Government.government_consumption"/>
@@ -397,50 +401,54 @@
 				<connect2 to="Circular_Flow.sum_of_energy_taxes" from="Government.sum_of_energy_taxes_in_nominal_terms"/>
 				<connect to="Circular_Flow.sum_of_subsidies_spent" from="Government.sum_of_subsidies_spent"/>
 				<connect2 to="Circular_Flow.sum_of_subsidies_spent" from="Government.sum_of_subsidies_spent"/>
-				<connect to="Energy_investments_1.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
-				<connect2 to="Energy_investments_1.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
-				<connect to="Energy_investments_1.tax_revenue_on_investments_in_coal_energy_conversion" from="Government.tax_revenue_on_investments_in_coal_energy_conversion"/>
-				<connect2 to="Energy_investments_1.tax_revenue_on_investments_in_coal_energy_conversion" from="Government.tax_revenue_on_investments_in_coal_energy_conversion"/>
+				<connect to="Liquid_fuel_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
+				<connect2 to="Liquid_fuel_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
+				<connect to="Electricity_investments.tax_revenue_on_investments_in_coal_energy_conversion" from="Government.tax_revenue_on_investments_in_coal_energy_conversion"/>
+				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_coal_energy_conversion" from="Government.tax_revenue_on_investments_in_coal_energy_conversion"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_coal_energy_conversion" from="Government.tax_revenue_on_investments_in_coal_energy_conversion"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_coal_energy_conversion" from="Government.tax_revenue_on_investments_in_coal_energy_conversion"/>
-				<connect to="Energy_investments_1.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
-				<connect2 to="Energy_investments_1.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
+				<connect to="Coal_extraction_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
+				<connect2 to="Coal_extraction_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
-				<connect to="Energy_investments_1.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
-				<connect2 to="Energy_investments_1.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
+				<connect to="Module_1.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
+				<connect2 to="Module_1.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
+				<connect to="Module_1.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
+				<connect2 to="Module_1.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
+				<connect to="Electricity_investments.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
+				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
-				<connect to="Energy_investments_1.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
-				<connect2 to="Energy_investments_1.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
-				<connect to="Energy_investments_1.tax_revenue_on_investments_in_hydropower_energy_capacity" from="Government.tax_revenue_on_investments_in_hydropower_energy_capacity"/>
-				<connect2 to="Energy_investments_1.tax_revenue_on_investments_in_hydropower_energy_capacity" from="Government.tax_revenue_on_investments_in_hydropower_energy_capacity"/>
+				<connect to="Gas_extraction_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
+				<connect2 to="Gas_extraction_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
+				<connect to="Electricity_investments.tax_revenue_on_investments_in_hydropower_energy_capacity" from="Government.tax_revenue_on_investments_in_hydropower_energy_capacity"/>
+				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_hydropower_energy_capacity" from="Government.tax_revenue_on_investments_in_hydropower_energy_capacity"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_hydropower_energy_capacity" from="Government.tax_revenue_on_investments_in_hydropower_energy_capacity"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_hydropower_energy_capacity" from="Government.tax_revenue_on_investments_in_hydropower_energy_capacity"/>
-				<connect to="Energy_investments_1.tax_revenue_on_investments_in_nuclear_energy_capacity" from="Government.tax_revenue_on_investments_in_nuclear_energy_capacity"/>
-				<connect2 to="Energy_investments_1.tax_revenue_on_investments_in_nuclear_energy_capacity" from="Government.tax_revenue_on_investments_in_nuclear_energy_capacity"/>
+				<connect to="Electricity_investments.tax_revenue_on_investments_in_nuclear_energy_capacity" from="Government.tax_revenue_on_investments_in_nuclear_energy_capacity"/>
+				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_nuclear_energy_capacity" from="Government.tax_revenue_on_investments_in_nuclear_energy_capacity"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_nuclear_energy_capacity" from="Government.tax_revenue_on_investments_in_nuclear_energy_capacity"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_nuclear_energy_capacity" from="Government.tax_revenue_on_investments_in_nuclear_energy_capacity"/>
-				<connect to="Energy_investments_1.tax_revenue_on_investments_in_oil_energy_conversion" from="Government.tax_revenue_on_investments_in_oil_energy_conversion"/>
-				<connect2 to="Energy_investments_1.tax_revenue_on_investments_in_oil_energy_conversion" from="Government.tax_revenue_on_investments_in_oil_energy_conversion"/>
+				<connect to="Electricity_investments.tax_revenue_on_investments_in_oil_energy_conversion" from="Government.tax_revenue_on_investments_in_oil_energy_conversion"/>
+				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_oil_energy_conversion" from="Government.tax_revenue_on_investments_in_oil_energy_conversion"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_oil_energy_conversion" from="Government.tax_revenue_on_investments_in_oil_energy_conversion"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_oil_energy_conversion" from="Government.tax_revenue_on_investments_in_oil_energy_conversion"/>
-				<connect to="Energy_investments_1.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
-				<connect2 to="Energy_investments_1.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
-				<connect to="Energy_investments_1.tax_revenue_on_investments_in_other_energy_capacity_1" from="Government.tax_revenue_on_investments_in_other_energy_capacity"/>
-				<connect2 to="Energy_investments_1.tax_revenue_on_investments_in_other_energy_capacity_1" from="Government.tax_revenue_on_investments_in_other_energy_capacity"/>
-				<connect to="Energy_investments_1.tax_revenue_on_investments_in_Solar_energy_capacity" from="Government.tax_revenue_on_investments_in_solar_energy_capacity"/>
-				<connect2 to="Energy_investments_1.tax_revenue_on_investments_in_Solar_energy_capacity" from="Government.tax_revenue_on_investments_in_solar_energy_capacity"/>
+				<connect to="Liquid_fuel_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
+				<connect2 to="Liquid_fuel_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
+				<connect to="Other_Energy_investments.tax_revenue_on_investments_in_other_energy_capacity_1" from="Government.tax_revenue_on_investments_in_other_energy_capacity"/>
+				<connect2 to="Other_Energy_investments.tax_revenue_on_investments_in_other_energy_capacity_1" from="Government.tax_revenue_on_investments_in_other_energy_capacity"/>
+				<connect to="Electricity_investments.tax_revenue_on_investments_in_Solar_energy_capacity" from="Government.tax_revenue_on_investments_in_solar_energy_capacity"/>
+				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_Solar_energy_capacity" from="Government.tax_revenue_on_investments_in_solar_energy_capacity"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_Solar_energy_capacity" from="Government.tax_revenue_on_investments_in_solar_energy_capacity"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_Solar_energy_capacity" from="Government.tax_revenue_on_investments_in_solar_energy_capacity"/>
-				<connect to="Energy_investments_1.tax_revenue_on_investments_in_wind_energy_capacity" from="Government.tax_revenue_on_investments_in_wind_energy_capacity"/>
-				<connect2 to="Energy_investments_1.tax_revenue_on_investments_in_wind_energy_capacity" from="Government.tax_revenue_on_investments_in_wind_energy_capacity"/>
+				<connect to="Electricity_investments.tax_revenue_on_investments_in_wind_energy_capacity" from="Government.tax_revenue_on_investments_in_wind_energy_capacity"/>
+				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_wind_energy_capacity" from="Government.tax_revenue_on_investments_in_wind_energy_capacity"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_wind_energy_capacity" from="Government.tax_revenue_on_investments_in_wind_energy_capacity"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_wind_energy_capacity" from="Government.tax_revenue_on_investments_in_wind_energy_capacity"/>
 				<connect to="Inflation.total_public_tax_income_1" from="Government.total_public_tax_income"/>
@@ -473,8 +481,8 @@
 				<connect2 to="Government.Gas_Investments_in_Fossil_Energy_Capital" from="Energy_investments.Gas_Gross_Investments_in_Fossil_Energy_Capital"/>
 				<connect to="Government.Gas_Investments_in_Fossil_Fuel_Extraction_Capital" from="Energy_investments.Gas_Gross_Investments_in_Fossil_Fuel_Extraction_Capital"/>
 				<connect2 to="Government.Gas_Investments_in_Fossil_Fuel_Extraction_Capital" from="Energy_investments.Gas_Gross_Investments_in_Fossil_Fuel_Extraction_Capital"/>
-				<connect to="Government.Gas_Gross_Investments_in_Fossil_Fuel_Extraction_Capital_1" from="Energy_investments_1.Investments_Allocated_to_Capacity_Construction_in_Other_Capacity"/>
-				<connect2 to="Government.Gas_Gross_Investments_in_Fossil_Fuel_Extraction_Capital_1" from="Energy_investments_1.Investments_Allocated_to_Capacity_Construction_in_Other_Capacity"/>
+				<connect to="Government.Gas_Gross_Investments_in_Fossil_Fuel_Extraction_Capital_1" from="Other_Energy_investments.Investments_Allocated_to_Capacity_Construction_in_Other_Capacity"/>
+				<connect2 to="Government.Gas_Gross_Investments_in_Fossil_Fuel_Extraction_Capital_1" from="Other_Energy_investments.Investments_Allocated_to_Capacity_Construction_in_Other_Capacity"/>
 				<connect to="Government.GDP" from="GDP.Nominal_GDP"/>
 				<connect2 to="Government.GDP" from="GDP.Nominal_GDP"/>
 				<connect to="Government.inflation" from="Inflation.Inflation_Rate"/>
@@ -1114,7 +1122,7 @@
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="2" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="2" isee:scroll_y="22" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="12.51pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -8785,7 +8793,7 @@ To control extreme policy only</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="6" isee:page_rows="9" isee:scroll_x="2127.86" isee:scroll_y="1855" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="6" isee:page_rows="9" isee:scroll_x="754" isee:scroll_y="1385" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -12600,7 +12608,7 @@ ELSE
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="7" isee:page_rows="7" isee:scroll_x="1997.5" isee:scroll_y="1600" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="7" isee:page_rows="7" isee:scroll_x="1755" isee:scroll_y="378.75" zoom="80" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>

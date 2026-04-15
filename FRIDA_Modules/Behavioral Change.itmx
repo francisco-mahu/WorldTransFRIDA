@@ -339,6 +339,10 @@
 				<format scale_by="auto"/>
 				<connect to="Energy_demand.average_yearly_demand_per_capita" from="Transportation_Energy_Demand.average_yearly_demand_per_capita"/>
 				<connect2 to="Energy_demand.average_yearly_demand_per_capita" from="Transportation_Energy_Demand.average_yearly_demand_per_capita"/>
+				<connect to="Energy_demand_1.behaviour_driven_total_yearly_demand" from="Transportation_Energy_Demand.behaviour_driven_total_yearly_demand"/>
+				<connect2 to="Energy_demand_1.behaviour_driven_total_yearly_demand" from="Transportation_Energy_Demand.behaviour_driven_total_yearly_demand"/>
+				<connect to="Transportation_energy_demand_1.Total_yearly_demand_1" from="Transportation_Energy_Demand.behaviour_driven_total_yearly_demand"/>
+				<connect2 to="Transportation_energy_demand_1.Total_yearly_demand_1" from="Transportation_Energy_Demand.behaviour_driven_total_yearly_demand"/>
 				<connect to="Transportation_Energy_Demand.Clean_energy_Output_share" from="Energy_supply.Clean_energy_Output_share"/>
 				<connect2 to="Transportation_Energy_Demand.Clean_energy_Output_share" from="Energy_supply.Clean_energy_Output_share"/>
 				<connect to="Transportation_Energy_Demand.Clean_energy_Output_share_1" from="Energy_supply_1.Clean_energy_Output_share"/>
@@ -355,8 +359,26 @@
 				<connect2 to="Transportation_Energy_Demand.Population_1" from="Demographics.Population"/>
 				<connect to="Transportation_Energy_Demand.real_GDP_per_person_1" from="Food_Demand.real_GDP_per_person"/>
 				<connect2 to="Transportation_Energy_Demand.real_GDP_per_person_1" from="Food_Demand.real_GDP_per_person"/>
+				<connect to="Transportation_Energy_Demand.relative_change_in_energy_prices_in_electricity" from="Energy_margins.relative_change_in_energy_prices_in_electricity"/>
+				<connect2 to="Transportation_Energy_Demand.relative_change_in_energy_prices_in_electricity" from="Energy_margins.relative_change_in_energy_prices_in_electricity"/>
+				<connect to="Transportation_Energy_Demand.relative_change_in_energy_prices_for_Fossil_Coal" from="Energy_margins.relative_change_in_energy_prices_for_Fossil_Coal"/>
+				<connect2 to="Transportation_Energy_Demand.relative_change_in_energy_prices_for_Fossil_Coal" from="Energy_margins.relative_change_in_energy_prices_for_Fossil_Coal"/>
+				<connect to="Transportation_Energy_Demand.relative_change_in_energy_prices_for_Fossil_Gas" from="Energy_margins.relative_change_in_energy_prices_for_Fossil_Gas"/>
+				<connect2 to="Transportation_Energy_Demand.relative_change_in_energy_prices_for_Fossil_Gas" from="Energy_margins.relative_change_in_energy_prices_for_Fossil_Gas"/>
+				<connect to="Transportation_Energy_Demand.relative_change_in_energy_prices_for_Liquid_Fuel_1" from="Energy_margins.relative_change_in_energy_prices_for_Liquid_Fuel"/>
+				<connect2 to="Transportation_Energy_Demand.relative_change_in_energy_prices_for_Liquid_Fuel_1" from="Energy_margins.relative_change_in_energy_prices_for_Liquid_Fuel"/>
+				<connect to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_electricity" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_electricity"/>
+				<connect2 to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_electricity" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_electricity"/>
+				<connect to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_fossil_coal" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_fossil_coal"/>
+				<connect2 to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_fossil_coal" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_fossil_coal"/>
+				<connect to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_fossil_gas" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_fossil_gas"/>
+				<connect2 to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_fossil_gas" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_fossil_gas"/>
+				<connect to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_liquid_fuel" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_liquid_fuel"/>
+				<connect2 to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_liquid_fuel" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_liquid_fuel"/>
 				<connect to="Transportation_Energy_Demand.Switch_to_connect_new_energy" from="New_Energy.Switch_to_connect_new_energy"/>
 				<connect2 to="Transportation_Energy_Demand.Switch_to_connect_new_energy" from="New_Energy.Switch_to_connect_new_energy"/>
+				<connect to="Transportation_Energy_Demand.Switch_to_energy_prices" from="New_Energy.Switch_to_energy_prices"/>
+				<connect2 to="Transportation_Energy_Demand.Switch_to_energy_prices" from="New_Energy.Switch_to_energy_prices"/>
 			</module>
 			<module name="Fertilizer\nDemand" isee:label="">
 				<format scale_by="auto"/>
@@ -449,7 +471,7 @@
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="2" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="2" isee:scroll_y="92.5" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -4146,12 +4168,12 @@ Amount_of_natural_gas_needed_for_fertilizer/Fossil_Fuel_Extraction_Carbon_1</eqn
 					<from>Ratio_of_natural_gas_needed_for_fertilizer_over_natural_gas_production</from>
 					<to>effect_of_natural_gas_scarcity_on_accessibility</to>
 				</connector>
-				<connector uid="148" angle="138.992">
+				<connector uid="148" angle="138.955">
 					<pts>
-						<pt x="362.804" y="1228.95"/>
+						<pt x="362.808" y="1228.95"/>
 						<pt x="215.938" y="1101.25"/>
 						<pt x="222.857" y="926.429"/>
-						<pt x="376.732" y="770.769"/>
+						<pt x="376.752" y="770.792"/>
 					</pts>
 					<from>effect_of_natural_gas_scarcity_on_accessibility</from>
 					<to>indicated_demand_from_accessibility</to>
@@ -5537,7 +5559,7 @@ Calibration Parameter: fertilizer use &amp; crop production</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>total_yearly_demand</eqn>
+				<eqn>behaviour_driven_total_yearly_demand</eqn>
 				<units>MWh/year</units>
 			</aux>
 			<aux name="average daily\nconsumption per capita">
@@ -5850,7 +5872,7 @@ Energy_Balance_1^sensitivity_of_demand_to_scarcity</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>average_daily_demand_per_capita_in_1980*effect_of_energy_scarcity_on_demand*effect_of_GDP_per_capita_on_demand</eqn>
+				<eqn>average_daily_demand_per_capita_in_1980*effect_of_energy_scarcity_on_demand*effect_of_GDP_per_capita_on_demand*effect_of_energy_prices_on_Transportation_demand</eqn>
 				<units>MWh/person/day</units>
 			</aux>
 			<flow name="change in desired\ndemand from accessibility">
@@ -5892,7 +5914,7 @@ Energy_Balance_1^sensitivity_of_demand_to_scarcity</eqn>
 				<eqn>0.5</eqn>
 				<units>dmnl</units>
 			</aux>
-			<aux name="total yearly demand">
+			<aux name="behaviour driven total yearly demand" access="output" isee:autocreated="true">
 				<doc>https://www.iea.org/world/energy-mix</doc>
 				<dimensions>
 					<dim name="Run"/>
@@ -6147,6 +6169,99 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
 				<units>dmnl</units>
 			</aux>
+			<aux name="effect\nof energy prices on\nTransportation demand">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>1+(EXP(Transportation_specific_relative_energy_changes-1)-1)*sensitivity_of_effect_of_energy_prices_on_energy_demand_of_Transportation*Switch_to_energy_prices</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="sensitivity of effect\nof energy prices on\nenergy demand of Transportation">
+				<doc>${Internal Calibration Parameter}
+</doc>
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>0.124405662201714</eqn>
+				<range min="0.001" max="0.2"/>
+				<units>dmnl</units>
+			</aux>
+			<aux name="Transportation specific\nrelative energy changes">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>SMTH1(relative_change_in_energy_prices_for_Fossil_Coal*Share_of_Transportation_energy_demand_for_fossil_coal+relative_change_in_energy_prices_for_Liquid_Fuel_1*Share_of_Transportation_energy_demand_for_liquid_fuel+relative_change_in_energy_prices_for_Fossil_Gas*Share_of_Transportation_energy_demand_for_fossil_gas+relative_change_in_energy_prices_in_electricity*Share_of_Transportation_energy_demand_for_electricity,Time_for_delay, initial_relative_energy_change)</eqn>
+				<isee:delay_aux/>
+				<units>dmnl</units>
+			</aux>
+			<aux name="Time for delay">
+				<eqn>1</eqn>
+				<units>Year</units>
+			</aux>
+			<aux name="initial relative energy change">
+				<eqn>1</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="Share of Transportation\nenergy demand for fossil coal" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="Share of Transportation\nenergy demand for liquid fuel" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="Share of Transportation\nenergy demand for fossil gas" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="Share of Transportation\nenergy demand for electricity" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="relative change in\nenergy prices for Fossil Gas" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="relative change in\nenergy prices for Liquid Fuel 1" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="relative change in\nenergy prices for Fossil Coal" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="Switch to energy prices" access="input">
+				<eqn>0</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="relative change\nin energy prices\nin electricity" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>dmnl</units>
+			</aux>
 		</variables>
 		<views>
 			<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
@@ -6196,7 +6311,7 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="3" isee:page_rows="3" isee:scroll_x="183.333" isee:scroll_y="185" zoom="60" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="3" isee:page_rows="3" isee:scroll_x="661.25" zoom="80" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -6235,19 +6350,19 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					</graph>
 					<table color="black" background="#E0E0E0" text_align="right" font_size="12pt" orientation="vertical" wrap_text="false" isee:auto_fit="true" isee:use_alternate_row_colors="false" isee:unlimited_table_length="false" blank_column_width="80" column_width="160" interval="1" report_balances="beginning" report_flows="instantaneous" header_font_style="normal" header_font_weight="normal" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="12pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 				</style>
-				<flow x="706.286" y="567.929" name="change in desired demand per capita">
+				<flow x="1044.06" y="570.151" name="change in desired demand per capita">
 					<pts>
-						<pt x="706.286" y="651.429"/>
-						<pt x="706.286" y="493.429"/>
+						<pt x="1044.06" y="653.651"/>
+						<pt x="1044.06" y="495.651"/>
 					</pts>
 				</flow>
-				<stock x="706.286" y="475.929" name="Desired Average Daily\nDemand Per Capita"/>
-				<aux x="670.715" y="277.786" name="average yearly\ndemand per capita"/>
-				<aux x="857.167" y="344.714" name="UNIT days per year"/>
-				<aux x="851.524" y="300.572" name="UNIT p per Mp"/>
-				<aux x="811" y="576.179" name="time to adjust\nconsumption pattern"/>
-				<aux label_side="bottom" x="906.048" y="141.429" name="total yearly\nconsumption"/>
-				<aux x="1005.93" y="245.762" name="average daily\nconsumption per capita"/>
+				<stock x="1044.06" y="478.151" name="Desired Average Daily\nDemand Per Capita"/>
+				<aux x="1008.49" y="280.008" name="average yearly\ndemand per capita"/>
+				<aux x="1194.94" y="346.936" name="UNIT days per year"/>
+				<aux x="1189.3" y="302.794" name="UNIT p per Mp"/>
+				<aux x="1148.78" y="578.401" name="time to adjust\nconsumption pattern"/>
+				<aux label_side="bottom" x="1243.83" y="143.651" name="total yearly\nconsumption"/>
+				<aux x="1343.71" y="247.984" name="average daily\nconsumption per capita"/>
 				<connector uid="1" angle="19.5435">
 					<from>UNIT_p_per_Mp</from>
 					<to>average_daily_consumption_per_capita</to>
@@ -6272,18 +6387,18 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>total_yearly_consumption</from>
 					<to>average_daily_consumption_per_capita</to>
 				</connector>
-				<stock x="1299.14" y="305.714" name="Perceived Average\nConsumption"/>
-				<flow label_side="bottom" x="1199.97" y="307.143" name="updating perceived\nconsumption">
+				<stock x="1636.92" y="307.936" name="Perceived Average\nConsumption"/>
+				<flow label_side="bottom" x="1537.74" y="309.365" name="updating perceived\nconsumption">
 					<pts>
-						<pt x="1111.29" y="307.143"/>
-						<pt x="1276.64" y="307.143"/>
+						<pt x="1449.07" y="309.365"/>
+						<pt x="1614.42" y="309.365"/>
 					</pts>
 				</flow>
 				<connector uid="9" angle="12.3303">
 					<from>average_daily_consumption_per_capita</from>
 					<to>updating_perceived_consumption</to>
 				</connector>
-				<aux background="white" label_side="top" x="1223.18" y="236.857" name="time to perceive\naverage consumption"/>
+				<aux background="white" label_side="top" x="1560.96" y="239.079" name="time to perceive\naverage consumption"/>
 				<connector uid="10" angle="251.722">
 					<from>time_to_perceive_average_consumption</from>
 					<to>updating_perceived_consumption</to>
@@ -6292,14 +6407,14 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>Perceived_Average_Consumption</from>
 					<to>updating_perceived_consumption</to>
 				</connector>
-				<stock label_side="bottom" x="1511.99" y="487.787" name="Reference\nShort Term\nConsumption"/>
-				<flow x="1510" y="402.858" name="updating short term\nreference consumption">
+				<stock label_side="bottom" x="1849.77" y="490.009" name="Reference\nShort Term\nConsumption"/>
+				<flow x="1847.78" y="405.08" name="updating short term\nreference consumption">
 					<pts>
-						<pt x="1510" y="326.429"/>
-						<pt x="1510" y="470.287"/>
+						<pt x="1847.78" y="328.651"/>
+						<pt x="1847.78" y="472.509"/>
 					</pts>
 				</flow>
-				<aux background="white" label_side="top" x="1411.43" y="369.143" name="time horizon for\nshort term perception"/>
+				<aux background="white" label_side="top" x="1749.21" y="371.365" name="time horizon for\nshort term perception"/>
 				<connector uid="12" angle="341.117">
 					<from>time_horizon_for_short_term_perception</from>
 					<to>updating_short_term_reference_consumption</to>
@@ -6312,14 +6427,14 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>Reference_Short_Term_Consumption</from>
 					<to>updating_short_term_reference_consumption</to>
 				</connector>
-				<stock label_side="bottom" x="1707.15" y="489.214" name="Reference\nLong Term\nConsumption"/>
-				<flow label_side="bottom" x="1707.15" y="398.143" name="updating long term\nreference consumption">
+				<stock label_side="bottom" x="2044.93" y="491.436" name="Reference\nLong Term\nConsumption"/>
+				<flow label_side="bottom" x="2044.93" y="400.365" name="updating long term\nreference consumption">
 					<pts>
-						<pt x="1707.15" y="315.571"/>
-						<pt x="1707.15" y="471.714"/>
+						<pt x="2044.93" y="317.793"/>
+						<pt x="2044.93" y="473.936"/>
 					</pts>
 				</flow>
-				<aux background="white" label_side="top" x="1635.86" y="362.714" name="time horizon for\nlong term perception"/>
+				<aux background="white" label_side="top" x="1973.64" y="364.936" name="time horizon for\nlong term perception"/>
 				<connector uid="15" angle="333.574">
 					<from>time_horizon_for_long_term_perception</from>
 					<to>updating_long_term_reference_consumption</to>
@@ -6332,7 +6447,7 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>Perceived_Average_Consumption</from>
 					<to>updating_long_term_reference_consumption</to>
 				</connector>
-				<aux x="1324.97" y="449.429" name="indicated short term\ntrend"/>
+				<aux x="1662.75" y="451.651" name="indicated short term\ntrend"/>
 				<connector uid="18" angle="313.031">
 					<from>Perceived_Average_Consumption</from>
 					<to>indicated_short_term_trend</to>
@@ -6345,7 +6460,7 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>time_horizon_for_short_term_perception</from>
 					<to>indicated_short_term_trend</to>
 				</connector>
-				<aux x="1028.78" y="558.179" name="desired demand\nfrom descriptive norm"/>
+				<aux x="1366.56" y="560.401" name="desired demand\nfrom descriptive norm"/>
 				<connector uid="21" angle="36.2542">
 					<from>Desired_Average_Daily_Demand_Per_Capita</from>
 					<to>desired_demand_from_descriptive_norm</to>
@@ -6354,8 +6469,8 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>indicated_short_term_trend</from>
 					<to>desired_demand_from_descriptive_norm</to>
 				</connector>
-				<aux label_side="bottom" x="413.179" y="594.179" name="time to adjust desired\ndemand from accessibility"/>
-				<aux x="1552.38" y="598.571" name="perceived consumption\nrelative to long term average"/>
+				<aux label_side="bottom" x="811.512" y="594.179" name="time to adjust desired\ndemand from accessibility"/>
+				<aux x="1890.16" y="600.793" name="perceived consumption\nrelative to long term average"/>
 				<connector uid="24" angle="31.5924">
 					<from>Perceived_Average_Consumption</from>
 					<to>perceived_consumption_relative_to_long_term_average</to>
@@ -6364,8 +6479,8 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>Reference_Long_Term_Consumption</from>
 					<to>perceived_consumption_relative_to_long_term_average</to>
 				</connector>
-				<aux label_side="bottom" x="850.857" y="995.239" name="desired demand\nfrom personal norm"/>
-				<aux background="white" label_side="bottom" x="824.524" y="1283.92" name="sensitivity of personal norm\nto climate risk"/>
+				<aux label_side="bottom" x="1188.63" y="997.461" name="desired demand\nfrom personal norm"/>
+				<aux background="white" label_side="bottom" x="1209.8" y="1227.81" name="sensitivity of personal norm\nto climate risk"/>
 				<connector uid="26" angle="96.7159">
 					<from>sensitivity_of_personal_norm_to_climate_risk</from>
 					<to>effect_of_climate_risk_on_personal_norm</to>
@@ -6374,24 +6489,24 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>perceived_consumption_relative_to_long_term_average</from>
 					<to>effect_of_relative_long_term_consumption_on_social_value_perception</to>
 				</connector>
-				<aux label_side="bottom" x="1035.73" y="1121.32" name="sensitivity of personal norm\nto social value"/>
+				<aux label_side="bottom" x="1373.51" y="1123.54" name="sensitivity of personal norm\nto social value"/>
 				<connector uid="28" angle="123.889">
 					<from>sensitivity_of_personal_norm_to_social_value</from>
 					<to>effect_of_social_value_on_personal_norm</to>
 				</connector>
-				<aux x="1059.75" y="441.429" name="expectation\ntime horizon"/>
-				<aux x="1138.9" y="831.525" name="perceived\nconsumption risk"/>
-				<aux label_side="bottom" x="1225.39" y="861.223" name="time to observe\nconsequences"/>
+				<aux x="1397.53" y="443.651" name="expectation\ntime horizon"/>
+				<aux x="1476.68" y="833.747" name="perceived\nconsumption risk"/>
+				<aux label_side="bottom" x="1563.17" y="863.445" name="time to observe\nconsequences"/>
 				<connector uid="30" angle="161.048">
 					<from>time_to_observe_consequences</from>
 					<to>perceived_consumption_risk</to>
 				</connector>
-				<aux background="white" label_side="bottom" x="1138.9" y="933.069" name="sensitivity of personal norm\nto consumption risk"/>
+				<aux background="white" label_side="bottom" x="1476.68" y="935.291" name="sensitivity of personal norm\nto consumption risk"/>
 				<connector uid="32" angle="245.578">
 					<from>perceived_consumption_risk</from>
 					<to>effect_of_consumption_risk_on_personal_norm</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="801" y="198.81" name="Population 1"/>
+				<aux font_style="italic" font_weight="bold" x="1138.78" y="201.032" name="Population 1"/>
 				<connector uid="33" angle="8.80296">
 					<from>Population_1</from>
 					<to>average_daily_consumption_per_capita</to>
@@ -6400,14 +6515,14 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>Desired_Average_Daily_Demand_Per_Capita</from>
 					<to>desired_demand_from_personal_norm</to>
 				</connector>
-				<aux x="817.096" y="1220.84" name="effect of climate\nrisk on personal norm"/>
-				<aux label_side="bottom" x="1008.36" y="951.069" name="effect of consumption\nrisk on personal norm"/>
+				<aux x="1202.37" y="1164.73" name="effect of climate\nrisk on personal norm"/>
+				<aux label_side="bottom" x="1346.14" y="953.291" name="effect of consumption\nrisk on personal norm"/>
 				<connector uid="36" angle="187.851">
 					<from>sensitivity_of_personal_norm_to_consumption_risk</from>
 					<to>effect_of_consumption_risk_on_personal_norm</to>
 				</connector>
-				<aux x="986.071" y="1047.39" name="effect of social value\non personal norm"/>
-				<connector uid="37" angle="94.9957">
+				<aux x="1323.85" y="1049.61" name="effect of social value\non personal norm"/>
+				<connector uid="37" angle="108.202">
 					<from>effect_of_climate_risk_on_personal_norm</from>
 					<to>desired_demand_from_personal_norm</to>
 				</connector>
@@ -6415,16 +6530,16 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>effect_of_social_value_on_personal_norm</from>
 					<to>desired_demand_from_personal_norm</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="693.715" y="1400.38" name="perceived climate risk"/>
-				<stock x="1322.14" y="955.857" name="Perceived\nSocial Value"/>
-				<flow label_side="bottom" x="1441.32" y="955.857" name="change in value perception">
+				<aux font_style="italic" font_weight="bold" x="1078.99" y="1344.27" name="perceived climate risk"/>
+				<stock x="1659.92" y="958.079" name="Perceived\nSocial Value"/>
+				<flow label_side="bottom" x="1779.09" y="958.079" name="change in value perception">
 					<pts>
-						<pt x="1549.99" y="955.857"/>
-						<pt x="1344.64" y="955.857"/>
+						<pt x="1887.77" y="958.079"/>
+						<pt x="1682.42" y="958.079"/>
 					</pts>
 				</flow>
-				<aux x="1467.86" y="869.687" name="indicated social value"/>
-				<aux background="white" label_side="bottom" x="1395.63" y="1018" name="time to adjust\nvalue perception"/>
+				<aux x="1805.64" y="871.909" name="indicated social value"/>
+				<aux background="white" label_side="bottom" x="1733.41" y="1020.22" name="time to adjust\nvalue perception"/>
 				<connector uid="41" angle="53.6782">
 					<from>time_to_adjust_value_perception</from>
 					<to>change_in_value_perception</to>
@@ -6437,9 +6552,9 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>Perceived_Social_Value</from>
 					<to>change_in_value_perception</to>
 				</connector>
-				<aux x="284.489" y="930.071" name="UNIT c$ per billion c$"/>
-				<aux background="white" label_side="bottom" x="152.429" y="514.287" name="sensitivity of demand\nto scarcity"/>
-				<aux x="250.833" y="544.465" name="effect of\nenergy scarcity\non demand"/>
+				<aux x="640.6" y="921.46" name="UNIT c$ per billion c$"/>
+				<aux background="white" label_side="bottom" x="550.762" y="514.287" name="sensitivity of demand\nto scarcity"/>
+				<aux x="649.166" y="544.465" name="effect of\nenergy scarcity\non demand"/>
 				<connector uid="45" angle="342.951">
 					<from>sensitivity_of_demand_to_scarcity</from>
 					<to>effect_of_energy_scarcity_on_demand</to>
@@ -6448,12 +6563,12 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>Perceived_Social_Value</from>
 					<to>effect_of_social_value_on_personal_norm</to>
 				</connector>
-				<aux x="1358.49" y="812.287" name="normal perceived\nsocial value"/>
+				<aux x="1696.27" y="814.509" name="normal perceived\nsocial value"/>
 				<connector uid="47" angle="332.309">
 					<from>normal_perceived_social_value</from>
 					<to>indicated_social_value</to>
 				</connector>
-				<stacked_container uid="49" x="1798.99" y="83.857" width="495.714" height="387.857">
+				<stacked_container uid="49" x="2136.77" y="86.0792" width="495.714" height="387.857">
 					<graph width="495.714" height="387.857" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" to="2025" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="desired_demand_from_personal_norm[1]"/>
@@ -6469,7 +6584,7 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 						</plot>
 					</graph>
 				</stacked_container>
-				<aux x="825.429" y="687.857" name="indicated\naverage desired demand per capita"/>
+				<aux x="1163.21" y="690.079" name="indicated\naverage desired demand per capita"/>
 				<connector uid="50" angle="118.967">
 					<from>desired_demand_from_personal_norm</from>
 					<to>indicated_average_desired_demand_per_capita</to>
@@ -6482,11 +6597,11 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>indicated_average_desired_demand_per_capita</from>
 					<to>change_in_desired_demand_per_capita</to>
 				</connector>
-				<aux x="383.477" y="764.81" name="indicated demand\nfrom accessibility"/>
-				<flow x="447.607" y="700" name="change in desired\ndemand from accessibility">
+				<aux x="781.81" y="764.81" name="indicated demand\nfrom accessibility"/>
+				<flow x="845.94" y="700" name="change in desired\ndemand from accessibility">
 					<pts>
-						<pt x="335.714" y="700"/>
-						<pt x="547.5" y="700"/>
+						<pt x="734.047" y="700"/>
+						<pt x="945.833" y="700"/>
 					</pts>
 				</flow>
 				<connector uid="53" angle="288.022">
@@ -6501,9 +6616,9 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>expectation_time_horizon</from>
 					<to>desired_demand_from_descriptive_norm</to>
 				</connector>
-				<aux x="839.167" y="782.858" name="weight of\naccessibility"/>
-				<aux x="926.179" y="761.375" name="weight of\npersonal norm"/>
-				<aux x="957.018" y="691.607" name="weight of\ndescriptive norm"/>
+				<aux x="1176.94" y="785.08" name="weight of\naccessibility"/>
+				<aux x="1263.96" y="763.597" name="weight of\npersonal norm"/>
+				<aux x="1294.8" y="693.829" name="weight of\ndescriptive norm"/>
 				<connector uid="56" angle="98.2284">
 					<from>weight_of_accessibility</from>
 					<to>indicated_average_desired_demand_per_capita</to>
@@ -6516,7 +6631,7 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>weight_of_descriptive_norm</from>
 					<to>indicated_average_desired_demand_per_capita</to>
 				</connector>
-				<aux x="1030.85" y="745.804" name="relative weight\nof personal norm"/>
+				<aux x="1368.63" y="748.026" name="relative weight\nof personal norm"/>
 				<connector uid="59" angle="188.461">
 					<from>relative_weight_of_personal_norm</from>
 					<to>weight_of_personal_norm</to>
@@ -6533,14 +6648,14 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>weight_of_accessibility</from>
 					<to>weight_of_descriptive_norm</to>
 				</connector>
-				<aux background="#FFAAFF" x="652.715" y="193.429" name="total yearly demand"/>
+				<aux background="#FFAAFF" x="990.493" y="195.651" name="behaviour driven total yearly demand"/>
 				<connector uid="65" angle="28.3704">
-					<from>total_yearly_demand</from>
+					<from>behaviour_driven_total_yearly_demand</from>
 					<to>total_yearly_consumption</to>
 				</connector>
 				<connector uid="66" angle="118.301">
 					<from>average_yearly_demand_per_capita</from>
-					<to>total_yearly_demand</to>
+					<to>behaviour_driven_total_yearly_demand</to>
 				</connector>
 				<connector uid="67" angle="160.254">
 					<from>UNIT_days_per_year</from>
@@ -6550,12 +6665,12 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>UNIT_days_per_year</from>
 					<to>average_daily_consumption_per_capita</to>
 				</connector>
-				<aux label_side="bottom" x="614.167" y="374.025" name="average daily\ndemand per capita"/>
+				<aux label_side="bottom" x="951.945" y="376.247" name="average daily\ndemand per capita"/>
 				<connector uid="70" angle="76.9503">
 					<from>average_daily_demand_per_capita</from>
 					<to>average_yearly_demand_per_capita</to>
 				</connector>
-				<stock x="570" y="700" name="Desired Demand\nfrom Accessibility"/>
+				<stock x="968.333" y="700" name="Desired Demand\nfrom Accessibility"/>
 				<connector uid="73" angle="213.037">
 					<from>Desired_Demand_from_Accessibility</from>
 					<to>change_in_desired_demand_from_accessibility</to>
@@ -6564,23 +6679,23 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>effect_of_energy_scarcity_on_demand</from>
 					<to>indicated_demand_from_accessibility</to>
 				</connector>
-				<aux background="white" x="473.107" y="800.858" name="average daily demand\nper capita in 1980"/>
+				<aux background="white" x="871.44" y="800.858" name="average daily demand\nper capita in 1980"/>
 				<connector uid="76" angle="158.091">
 					<from>average_daily_demand_per_capita_in_1980</from>
 					<to>indicated_demand_from_accessibility</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="310.333" y="1084.81" name="real GDP per person 1"/>
-				<aux x="390.834" y="905.687" name="effect of GDP per capita\non demand"/>
-				<aux background="white" x="459.667" y="959.429" name="elasticity of demand\nto GDP"/>
+				<aux font_style="italic" font_weight="bold" x="666.444" y="1076.2" name="real GDP per person 1"/>
+				<aux x="746.945" y="897.076" name="effect of GDP per capita\non demand"/>
+				<aux background="white" x="815.778" y="950.818" name="elasticity of demand\nto GDP"/>
 				<connector uid="77" angle="129.754">
 					<from>elasticity_of_demand_to_GDP</from>
 					<to>effect_of_GDP_per_capita_on_demand</to>
 				</connector>
-				<connector uid="78" angle="130.004">
+				<connector uid="78" angle="140.618">
 					<from>Desired_Demand_from_Accessibility</from>
 					<to>average_daily_demand_per_capita</to>
 				</connector>
-				<connector uid="79" angle="344.697">
+				<connector uid="79" angle="344.89">
 					<from>Desired_Demand_from_Accessibility</from>
 					<to>indicated_average_desired_demand_per_capita</to>
 				</connector>
@@ -6588,11 +6703,11 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>real_GDP_per_person_1</from>
 					<to>real_GDP_per_person</to>
 				</connector>
-				<connector uid="81" angle="79.5157">
+				<connector uid="81" angle="61.759">
 					<from>effect_of_GDP_per_capita_on_demand</from>
 					<to>indicated_demand_from_accessibility</to>
 				</connector>
-				<aux x="369.596" y="1014.14" name="real GDP per person"/>
+				<aux x="725.707" y="1005.53" name="real GDP per person"/>
 				<connector uid="82" angle="53.2555">
 					<from>real_GDP_per_person</from>
 					<to>effect_of_GDP_per_capita_on_demand</to>
@@ -6607,20 +6722,20 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					</from>
 					<to>real_GDP_per_person</to>
 				</connector>
-				<aux x="477.667" y="1122.17" name="reference GDP per person\nfor socioeconomic effect"/>
-				<aux x="523.477" y="1057.69" name="relative GDP per person"/>
+				<aux x="833.778" y="1113.56" name="reference GDP per person\nfor socioeconomic effect"/>
+				<aux x="879.588" y="1049.08" name="relative GDP per person"/>
 				<connector uid="86" angle="54.6083">
 					<from>reference_GDP_per_person_for_socioeconomic_effect</from>
 					<to>relative_GDP_per_person</to>
 				</connector>
-				<aux x="676.357" y="887.687" name="socioeconomic effect\non weight of accessibility"/>
+				<aux x="1032.47" y="879.076" name="socioeconomic effect\non weight of accessibility"/>
 				<connector uid="87" angle="21.6493">
 					<from>relative_GDP_per_person</from>
 					<to>socioeconomic_effect_on_weight_of_accessibility</to>
 				</connector>
-				<aux x="861.714" y="848.001" name="reference weight\nof accessibility"/>
-				<aux label_side="bottom" x="563.571" y="979.428" name="inflection point of\nrelative GDP"/>
-				<aux background="white" label_side="bottom" x="557.762" y="905.687" name="growth rate of\nsocioeconomic effect"/>
+				<aux x="1199.49" y="850.223" name="reference weight\nof accessibility"/>
+				<aux label_side="bottom" x="919.682" y="970.817" name="inflection point of\nrelative GDP"/>
+				<aux background="white" label_side="bottom" x="913.873" y="897.076" name="growth rate of\nsocioeconomic effect"/>
 				<connector uid="88" angle="8.63034">
 					<from>growth_rate_of_socioeconomic_effect</from>
 					<to>socioeconomic_effect_on_weight_of_accessibility</to>
@@ -6633,7 +6748,7 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>real_GDP_per_person</from>
 					<to>relative_GDP_per_person</to>
 				</connector>
-				<connector uid="91" angle="54.5098">
+				<connector uid="91" angle="54.7812">
 					<from>socioeconomic_effect_on_weight_of_accessibility</from>
 					<to>weight_of_accessibility</to>
 				</connector>
@@ -6641,19 +6756,19 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>reference_weight_of_accessibility</from>
 					<to>weight_of_accessibility</to>
 				</connector>
-				<aux x="1459.32" y="727.804" name="effect of relative long term\nconsumption on social\nvalue perception"/>
+				<aux x="1797.1" y="730.026" name="effect of relative long term\nconsumption on social\nvalue perception"/>
 				<connector uid="93" angle="251.45">
 					<from>effect_of_relative_long_term_consumption_on_social_value_perception</from>
 					<to>indicated_social_value</to>
 				</connector>
-				<aux background="white" label_side="bottom" x="1595.38" y="691.607" name="sensitivity of social value perception"/>
+				<aux background="white" label_side="bottom" x="1933.16" y="693.829" name="sensitivity of social value perception"/>
 				<connector uid="94" angle="194.898">
 					<from>sensitivity_of_social_value_perception</from>
 					<to>effect_of_relative_long_term_consumption_on_social_value_perception</to>
 				</connector>
-				<aux label_side="bottom" x="711.715" y="948.071" name="maximum\nsocioeconomic effect"/>
-				<aux x="658.357" y="997.428" name="minimum\nsocioeconomic effect"/>
-				<aux x="701.167" y="1075.69" name="range of\nsocioeconomic effect"/>
+				<aux label_side="bottom" x="1067.83" y="939.46" name="maximum\nsocioeconomic effect"/>
+				<aux x="1014.47" y="988.817" name="minimum\nsocioeconomic effect"/>
+				<aux x="1057.28" y="1067.08" name="range of\nsocioeconomic effect"/>
 				<connector uid="97" angle="85.2753">
 					<from>range_of_socioeconomic_effect</from>
 					<to>maximum_socioeconomic_effect</to>
@@ -6670,28 +6785,28 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>maximum_socioeconomic_effect</from>
 					<to>socioeconomic_effect_on_weight_of_accessibility</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="197.822" y="453.596" name="Energy Balance"/>
+				<aux font_style="italic" font_weight="bold" x="596.155" y="453.596" name="Energy Balance"/>
 				<connector uid="101" angle="19.0491">
 					<from>Energy_Balance</from>
 					<to>effect_of_energy_scarcity_on_demand</to>
 				</connector>
 				<connector uid="63" angle="198.274">
 					<from>Population_1</from>
-					<to>total_yearly_demand</to>
+					<to>behaviour_driven_total_yearly_demand</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" label_side="bottom" x="425.806" y="1361.76" name="Clean energy Output share"/>
-				<aux font_style="italic" font_weight="bold" label_side="right" x="1231.52" y="645.875" name="pm25 emissions"/>
+				<aux font_style="italic" font_weight="bold" label_side="bottom" x="811.084" y="1305.65" name="Clean energy Output share"/>
+				<aux font_style="italic" font_weight="bold" label_side="right" x="1569.3" y="648.097" name="pm25 emissions"/>
 				<connector uid="111" angle="214.293">
 					<from>effect_of_consumption_risk_on_personal_norm</from>
 					<to>desired_demand_from_personal_norm</to>
 				</connector>
-				<aux x="1163.78" y="762.75" name="Health risk from pm25\nemissions exposure"/>
+				<aux x="1501.56" y="764.972" name="Health risk from pm25\nemissions exposure"/>
 				<connector uid="123" angle="205.888">
 					<from>pm25_emissions</from>
 					<to>Health_risk_from_pm25_emissions_exposure</to>
 				</connector>
-				<aux background="white" label_side="right" x="1226.47" y="683.042" name="base of health\nrisk of emissions"/>
-				<aux background="white" label_side="right" x="1226.47" y="720.982" name="start value of Health\nrisk of emissions"/>
+				<aux background="white" label_side="right" x="1564.25" y="685.264" name="base of health\nrisk of emissions"/>
+				<aux background="white" label_side="right" x="1564.25" y="723.204" name="start value of Health\nrisk of emissions"/>
 				<connector uid="125" angle="231.813">
 					<from>base_of_health_risk_of_emissions</from>
 					<to>Health_risk_from_pm25_emissions_exposure</to>
@@ -6704,8 +6819,8 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>Health_risk_from_pm25_emissions_exposure</from>
 					<to>perceived_consumption_risk</to>
 				</connector>
-				<aux x="563.571" y="1361.76" name="perceived clean energy\nshare in transport"/>
-				<aux x="658.357" y="1267.8" name="perceived marginal climate change\nrisk accounting with\nclean energy share"/>
+				<aux x="948.849" y="1305.65" name="perceived clean energy\nshare in transport"/>
+				<aux x="1043.63" y="1211.69" name="perceived marginal climate change\nrisk accounting with\nclean energy share"/>
 				<connector uid="134" angle="72.7627">
 					<from>perceived_climate_risk</from>
 					<to>perceived_marginal_climate_change_risk_accounting_with_clean_energy_share</to>
@@ -6718,7 +6833,7 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>perceived_marginal_climate_change_risk_accounting_with_clean_energy_share</from>
 					<to>effect_of_climate_risk_on_personal_norm</to>
 				</connector>
-				<aux background="white" x="505.477" y="1436.88" name="Delay for clean energy to be perceived in transportation"/>
+				<aux background="white" x="890.755" y="1380.77" name="Delay for clean energy to be perceived in transportation"/>
 				<connector uid="137" angle="4.71731">
 					<from>Delay_for_clean_energy_to_be_perceived_in_transportation</from>
 					<to>perceived_clean_energy_share_in_transport</to>
@@ -6727,8 +6842,8 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>Clean_energy_Output_share</from>
 					<to>perceived_clean_energy_share_in_transport</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="425.806" y="1298.75" name="Clean energy Output share 1"/>
-				<aux font_style="italic" font_weight="bold" x="425.806" y="1234.38" name="Switch to connect new energy"/>
+				<aux font_style="italic" font_weight="bold" x="811.084" y="1242.64" name="Clean energy Output share 1"/>
+				<aux font_style="italic" font_weight="bold" x="811.084" y="1178.27" name="Switch to connect new energy"/>
 				<connector uid="142" angle="325.107">
 					<from>Switch_to_connect_new_energy</from>
 					<to>perceived_clean_energy_share_in_transport</to>
@@ -6737,7 +6852,7 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>Clean_energy_Output_share_1</from>
 					<to>perceived_clean_energy_share_in_transport</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="255.625" y="412.5" name="Energy Balance 1"/>
+				<aux font_style="italic" font_weight="bold" x="653.958" y="412.5" name="Energy Balance 1"/>
 				<connector uid="144" angle="315">
 					<from>Energy_Balance_1</from>
 					<to>effect_of_energy_scarcity_on_demand</to>
@@ -6748,10 +6863,80 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					</from>
 					<to>effect_of_energy_scarcity_on_demand</to>
 				</connector>
-				<alias font_style="italic" uid="85" x="248.322" y="967.096" width="18" height="18">
+				<aux x="453.676" y="832.167" name="effect\nof energy prices on\nTransportation demand"/>
+				<aux background="#00AA00" x="376.676" y="667.158" name="sensitivity of effect\nof energy prices on\nenergy demand of Transportation"/>
+				<connector uid="147" angle="295.016">
+					<from>sensitivity_of_effect_of_energy_prices_on_energy_demand_of_Transportation</from>
+					<to>effect_of_energy_prices_on_Transportation_demand</to>
+				</connector>
+				<aux x="314.056" y="877.542" name="Transportation specific\nrelative energy changes"/>
+				<aux x="245.253" y="831.568" name="Time for delay"/>
+				<connector uid="148" angle="25.3731">
+					<from>Time_for_delay</from>
+					<to>Transportation_specific_relative_energy_changes</to>
+				</connector>
+				<aux x="309.556" y="756.158" name="initial relative energy change"/>
+				<connector uid="149" angle="291.442">
+					<from>initial_relative_energy_change</from>
+					<to>Transportation_specific_relative_energy_changes</to>
+				</connector>
+				<connector uid="150" angle="35.4466">
+					<from>Transportation_specific_relative_energy_changes</from>
+					<to>effect_of_energy_prices_on_Transportation_demand</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" x="402.967" y="916.202" name="Share of Transportation\nenergy demand for fossil coal"/>
+				<connector uid="151" angle="178.37">
+					<from>Share_of_Transportation_energy_demand_for_fossil_coal</from>
+					<to>Transportation_specific_relative_energy_changes</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" x="402.967" y="969.059" name="Share of Transportation\nenergy demand for liquid fuel"/>
+				<connector uid="152" angle="157.821">
+					<from>Share_of_Transportation_energy_demand_for_liquid_fuel</from>
+					<to>Transportation_specific_relative_energy_changes</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" x="402.967" y="1025.13" name="Share of Transportation\nenergy demand for fossil gas"/>
+				<connector uid="153" angle="140.142">
+					<from>Share_of_Transportation_energy_demand_for_fossil_gas</from>
+					<to>Transportation_specific_relative_energy_changes</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" x="402.967" y="1086.83" name="Share of Transportation\nenergy demand for electricity"/>
+				<connector uid="154" angle="133.272">
+					<from>Share_of_Transportation_energy_demand_for_electricity</from>
+					<to>Transportation_specific_relative_energy_changes</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" x="227.253" y="1025.13" name="relative change in\nenergy prices for Fossil Gas"/>
+				<connector uid="156" angle="26.7552">
+					<from>relative_change_in_energy_prices_for_Fossil_Gas</from>
+					<to>Transportation_specific_relative_energy_changes</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" x="223.77" y="969.059" name="relative change in\nenergy prices for Liquid Fuel 1"/>
+				<aux font_style="italic" font_weight="bold" x="223.77" y="911.822" name="relative change in\nenergy prices for Fossil Coal"/>
+				<connector uid="157" angle="14.9502">
+					<from>relative_change_in_energy_prices_for_Liquid_Fuel_1</from>
+					<to>Transportation_specific_relative_energy_changes</to>
+				</connector>
+				<connector uid="158" angle="353.49">
+					<from>relative_change_in_energy_prices_for_Fossil_Coal</from>
+					<to>Transportation_specific_relative_energy_changes</to>
+				</connector>
+				<connector uid="159" angle="12.7025">
+					<from>effect_of_energy_prices_on_Transportation_demand</from>
+					<to>indicated_demand_from_accessibility</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" x="513.148" y="699.63" name="Switch to energy prices"/>
+				<connector uid="160" angle="291.125">
+					<from>Switch_to_energy_prices</from>
+					<to>effect_of_energy_prices_on_Transportation_demand</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" x="219.074" y="1085.08" name="relative change\nin energy prices\nin electricity"/>
+				<connector uid="161" angle="31.6266">
+					<from>relative_change_in_energy_prices_in_electricity</from>
+					<to>Transportation_specific_relative_energy_changes</to>
+				</connector>
+				<alias font_style="italic" uid="85" x="604.433" y="958.485" width="18" height="18">
 					<of>UNIT_p_per_Mp</of>
 				</alias>
-				<alias font_style="italic" font_weight="bold" uid="146" x="365.063" y="412.25" width="18" height="18">
+				<alias font_style="italic" font_weight="bold" uid="146" x="763.396" y="412.25" width="18" height="18">
 					<of>Switch_to_connect_new_energy</of>
 				</alias>
 			</view>

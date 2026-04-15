@@ -486,6 +486,8 @@
 				<connect2 to="Fossil_energy.UNIT_zJ_to_TWh" from="Energy_Units.UNIT_zJ_to_TWh"/>
 				<connect to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit" from="Fossil_energy_coal.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect2 to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit" from="Fossil_energy_coal.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
+				<connect to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect2 to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Emissions.Emissions_from_fossil_energy_coal" from="Fossil_energy_coal.Emissions_from_fossil_energy_coal"/>
@@ -550,6 +552,8 @@
 				<connect2 to="Fossil_energy_coal.zJ_to_TWh" from="Energy_Units.UNIT_zJ_to_TWh"/>
 				<connect to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_1" from="Fossil_energy_gas.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect2 to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_1" from="Fossil_energy_gas.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
+				<connect to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect2 to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Emissions.Emissions_from_fossil_energy_coal_1" from="Fossil_energy_gas.Emissions_from_fossil_energy_coal"/>
@@ -618,6 +622,8 @@
 				<connect2 to="Fossil_energy_gas.zJ_to_TWh" from="Energy_Units.UNIT_zJ_to_TWh"/>
 				<connect to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_2" from="Fossil_energy_oil.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect2 to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_2" from="Fossil_energy_oil.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
+				<connect to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_2" from="Fossil_energy_oil.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect2 to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_2" from="Fossil_energy_oil.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_2" from="Fossil_energy_oil.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_2" from="Fossil_energy_oil.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Emissions.Emissions_from_fossil_energy_oil" from="Fossil_energy_oil.Emissions_from_fossil_energy_oil"/>
@@ -632,6 +638,8 @@
 				<connect2 to="Government.fuel_extraction_tax_rate_1" from="Fossil_energy_oil.fuel_extraction_effective_tax_rate"/>
 				<connect to="Emissions.PM_per_fuel_extracted_1" from="Fossil_energy_oil.PM_per_fuel_extracted"/>
 				<connect2 to="Emissions.PM_per_fuel_extracted_1" from="Fossil_energy_oil.PM_per_fuel_extracted"/>
+				<connect to="Energy_demand_1.Primary_Fossil_Energy_FUEL" from="Fossil_energy_oil.Primary_Fossil_Energy_FUEL"/>
+				<connect2 to="Energy_demand_1.Primary_Fossil_Energy_FUEL" from="Fossil_energy_oil.Primary_Fossil_Energy_FUEL"/>
 				<connect to="Energy_investments.stranded_capital_2" from="Fossil_energy_oil.stranded_capital"/>
 				<connect2 to="Energy_investments.stranded_capital_2" from="Fossil_energy_oil.stranded_capital"/>
 				<connect to="Fossil_energy_oil.cost_of_capturing_CO2_per_unit_with_end_of_pipe_carbon_capture" from="CCS.cost_of_capturing_CO2_per_unit_with_end_of_pipe_carbon_capture"/>
@@ -698,8 +706,12 @@
 				<connect2 to="Nuclear_energy.UNIT_GW_to_TW" from="Energy_Units.UNIT_GW_to_TW"/>
 				<connect to="Nuclear_energy.UNIT_kW_to_TW" from="Energy_Units.UNIT_kW_to_TW"/>
 				<connect2 to="Nuclear_energy.UNIT_kW_to_TW" from="Energy_Units.UNIT_kW_to_TW"/>
+				<connect to="Energy_demand_1.bio_fuel_primary_energy" from="Bio_fuel_energy.bio_fuel_primary_energy"/>
+				<connect2 to="Energy_demand_1.bio_fuel_primary_energy" from="Bio_fuel_energy.bio_fuel_primary_energy"/>
 				<connect to="Emissions.Carbon_content_of_crops_going_into_biofuel_production" from="Bio_fuel_energy.Carbon_content_of_crops_going_into_biofuel_production"/>
 				<connect2 to="Emissions.Carbon_content_of_crops_going_into_biofuel_production" from="Bio_fuel_energy.Carbon_content_of_crops_going_into_biofuel_production"/>
+				<connect to='Energy_demand_1."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"' from='Bio_fuel_energy."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
+				<connect2 to='Energy_demand_1."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"' from='Bio_fuel_energy."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
 				<connect to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_7" from='Bio_fuel_energy."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
 				<connect2 to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_7" from='Bio_fuel_energy."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
 				<connect to="Food_Demand.crops_needed_for_bio_fuel" from="Bio_fuel_energy.crops_demanded_for_bio_fuel"/>
@@ -5412,12 +5424,16 @@ https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_c
 				<connect2 to="Renewable_Energy_Output" from="Renewable_energy.Renewable_Energy_Output"/>
 				<connect to="Energy_supply.Wind_and_Solar_Energy_Output" from="Renewable_energy.Total_Solar_and_Wind_Energy_Output"/>
 				<connect2 to="Wind_and_Solar_Energy_Output" from="Renewable_energy.Total_Solar_and_Wind_Energy_Output"/>
+				<connect to="Energy_demand_1.bio_fuel_primary_energy" from="Bio_fuel_energy.bio_fuel_primary_energy"/>
+				<connect2 to="Energy_demand_1.bio_fuel_primary_energy" from="Bio_fuel_energy.bio_fuel_primary_energy"/>
 				<connect to="Fossil_energy_oil.bio_fuel_energy_output" from="Bio_fuel_energy.bio_fuel_primary_energy"/>
 				<connect2 to="Fossil_energy_oil.bio_fuel_energy_output" from="Bio_fuel_energy.bio_fuel_primary_energy"/>
 				<connect to="Energy_supply.bio_fuel_secondary_energy_output" from="Bio_fuel_energy.bio_fuel_secondary_energy_output"/>
 				<connect2 to="bio_fuel_secondary_energy_output" from="Bio_fuel_energy.bio_fuel_secondary_energy_output"/>
 				<connect to="Emissions.Carbon_content_of_crops_going_into_biofuel_production" from="Bio_fuel_energy.Carbon_content_of_crops_going_into_biofuel_production"/>
 				<connect2 to="Emissions.Carbon_content_of_crops_going_into_biofuel_production" from="Bio_fuel_energy.Carbon_content_of_crops_going_into_biofuel_production"/>
+				<connect to='Energy_demand_1."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"' from='Bio_fuel_energy."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
+				<connect2 to='Energy_demand_1."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"' from='Bio_fuel_energy."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
 				<connect to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_7" from='Bio_fuel_energy."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
 				<connect2 to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_7" from='Bio_fuel_energy."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
 				<connect to="Food_Demand.crops_needed_for_bio_fuel" from="Bio_fuel_energy.crops_demanded_for_bio_fuel"/>
@@ -5626,6 +5642,8 @@ https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_c
 				<connect2 to="Fossil_energy.UNIT_zJ_to_TWh" from="Energy_Units.UNIT_zJ_to_TWh"/>
 				<connect to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit" from="Fossil_energy_coal.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect2 to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit" from="Fossil_energy_coal.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
+				<connect to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect2 to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Emissions.Emissions_from_fossil_energy_coal" from="Fossil_energy_coal.Emissions_from_fossil_energy_coal"/>
@@ -5698,6 +5716,8 @@ https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_c
 				<connect2 to="Fossil_energy_coal.zJ_to_TWh" from="Energy_Units.UNIT_zJ_to_TWh"/>
 				<connect to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_1" from="Fossil_energy_gas.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect2 to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_1" from="Fossil_energy_gas.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
+				<connect to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect2 to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Emissions.Emissions_from_fossil_energy_coal_1" from="Fossil_energy_gas.Emissions_from_fossil_energy_coal"/>
@@ -5774,6 +5794,8 @@ https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_c
 				<connect2 to="Fossil_energy_gas.zJ_to_TWh" from="Energy_Units.UNIT_zJ_to_TWh"/>
 				<connect to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_2" from="Fossil_energy_oil.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect2 to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_2" from="Fossil_energy_oil.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
+				<connect to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_2" from="Fossil_energy_oil.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect2 to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_2" from="Fossil_energy_oil.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_2" from="Fossil_energy_oil.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_2" from="Fossil_energy_oil.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Emissions.Emissions_from_fossil_energy_oil" from="Fossil_energy_oil.Emissions_from_fossil_energy_oil"/>
@@ -5790,6 +5812,8 @@ https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_c
 				<connect2 to="Government.fuel_extraction_tax_rate_1" from="Fossil_energy_oil.fuel_extraction_effective_tax_rate"/>
 				<connect to="Emissions.PM_per_fuel_extracted_1" from="Fossil_energy_oil.PM_per_fuel_extracted"/>
 				<connect2 to="Emissions.PM_per_fuel_extracted_1" from="Fossil_energy_oil.PM_per_fuel_extracted"/>
+				<connect to="Energy_demand_1.Primary_Fossil_Energy_FUEL" from="Fossil_energy_oil.Primary_Fossil_Energy_FUEL"/>
+				<connect2 to="Energy_demand_1.Primary_Fossil_Energy_FUEL" from="Fossil_energy_oil.Primary_Fossil_Energy_FUEL"/>
 				<connect to="Bio_fuel_energy.secondary_energy_output_from_liquid_fuels" from="Fossil_energy_oil.secondary_energy_output_from_liquid_fuels"/>
 				<connect2 to="Bio_fuel_energy.secondary_energy_output_from_liquid_fuels" from="Fossil_energy_oil.secondary_energy_output_from_liquid_fuels"/>
 				<connect to="Energy_supply.Secondary_Fossil_Energy_Output_2" from="Fossil_energy_oil.Secondary_Fossil_Energy_Output"/>
@@ -7033,6 +7057,8 @@ ELSE
 				<connect2 to="conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_3" from="Fossil_energy_coal.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy"/>
 				<connect to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit" from="Fossil_energy_coal.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect2 to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit" from="Fossil_energy_coal.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
+				<connect to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect2 to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Emissions.Emissions_from_fossil_energy_coal" from="Fossil_energy_coal.Emissions_from_fossil_energy_coal"/>
@@ -7116,6 +7142,8 @@ ELSE
 				<connect2 to="conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_1" from="Fossil_energy_oil.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy"/>
 				<connect to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_2" from="Fossil_energy_oil.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect2 to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_2" from="Fossil_energy_oil.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
+				<connect to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_2" from="Fossil_energy_oil.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect2 to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_2" from="Fossil_energy_oil.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_2" from="Fossil_energy_oil.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_2" from="Fossil_energy_oil.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Emissions.Emissions_from_fossil_energy_oil" from="Fossil_energy_oil.Emissions_from_fossil_energy_oil"/>
@@ -7132,6 +7160,8 @@ ELSE
 				<connect2 to="Government.fuel_extraction_tax_rate_1" from="Fossil_energy_oil.fuel_extraction_effective_tax_rate"/>
 				<connect to="Emissions.PM_per_fuel_extracted_1" from="Fossil_energy_oil.PM_per_fuel_extracted"/>
 				<connect2 to="Emissions.PM_per_fuel_extracted_1" from="Fossil_energy_oil.PM_per_fuel_extracted"/>
+				<connect to="Energy_demand_1.Primary_Fossil_Energy_FUEL" from="Fossil_energy_oil.Primary_Fossil_Energy_FUEL"/>
+				<connect2 to="Energy_demand_1.Primary_Fossil_Energy_FUEL" from="Fossil_energy_oil.Primary_Fossil_Energy_FUEL"/>
 				<connect to="Fossil_energy.Primary_Fossil_Energy_FUEL_1" from="Fossil_energy_oil.Primary_Fossil_Energy_FUEL"/>
 				<connect2 to="Primary_Fossil_Energy_FUEL_1" from="Fossil_energy_oil.Primary_Fossil_Energy_FUEL"/>
 				<connect to="Bio_fuel_energy.secondary_energy_output_from_liquid_fuels" from="Fossil_energy_oil.secondary_energy_output_from_liquid_fuels"/>
@@ -7207,6 +7237,8 @@ ELSE
 				<connect2 to="conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_2" from="Fossil_energy_gas.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy"/>
 				<connect to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_1" from="Fossil_energy_gas.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect2 to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_1" from="Fossil_energy_gas.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
+				<connect to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect2 to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Emissions.Emissions_from_fossil_energy_coal_1" from="Fossil_energy_gas.Emissions_from_fossil_energy_coal"/>
@@ -14758,6 +14790,8 @@ Wind_Energy_Output+
 			</aux>
 			<module name="Bio fuel energy" isee:label="">
 				<format scale_by="auto"/>
+				<connect to="Energy_demand_1.bio_fuel_primary_energy" from="Bio_fuel_energy.bio_fuel_primary_energy"/>
+				<connect2 to="Energy_demand_1.bio_fuel_primary_energy" from="Bio_fuel_energy.bio_fuel_primary_energy"/>
 				<connect to="Fossil_energy_oil.bio_fuel_energy_output" from="Bio_fuel_energy.bio_fuel_primary_energy"/>
 				<connect2 to="Fossil_energy_oil.bio_fuel_energy_output" from="Bio_fuel_energy.bio_fuel_primary_energy"/>
 				<connect to="Energy_supply.bio_fuel_secondary_energy_output" from="Bio_fuel_energy.bio_fuel_secondary_energy_output"/>
@@ -14766,6 +14800,8 @@ Wind_Energy_Output+
 				<connect2 to="bio_fuel_secondary_energy_output" from="Bio_fuel_energy.bio_fuel_secondary_energy_output"/>
 				<connect to="Emissions.Carbon_content_of_crops_going_into_biofuel_production" from="Bio_fuel_energy.Carbon_content_of_crops_going_into_biofuel_production"/>
 				<connect2 to="Emissions.Carbon_content_of_crops_going_into_biofuel_production" from="Bio_fuel_energy.Carbon_content_of_crops_going_into_biofuel_production"/>
+				<connect to='Energy_demand_1."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"' from='Bio_fuel_energy."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
+				<connect2 to='Energy_demand_1."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"' from='Bio_fuel_energy."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
 				<connect to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_7" from='Bio_fuel_energy."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
 				<connect2 to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_7" from='Bio_fuel_energy."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
 				<connect to="Food_Demand.crops_needed_for_bio_fuel" from="Bio_fuel_energy.crops_demanded_for_bio_fuel"/>

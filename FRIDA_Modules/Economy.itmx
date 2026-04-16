@@ -319,6 +319,8 @@
 				<format scale_by="auto"/>
 				<connect to="Inflation.bailouts" from="Government.bailouts"/>
 				<connect2 to="Inflation.bailouts" from="Government.bailouts"/>
+				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
+				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
 				<connect to="Liquid_fuel_investments.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity" from="Government.expenditure_on_subsidies_for_investments_in_bio_fuel_energy_capacity"/>
@@ -329,12 +331,16 @@
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_coal_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_coal_energy_conversion"/>
 				<connect to="Coal_extraction_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
 				<connect2 to="Coal_extraction_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
+				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
+				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_coal_extraction" from="Government.expenditure_on_subsidies_for_investments_in_coal_extraction"/>
 				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
 				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_gas_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_gas_energy_conversion"/>
+				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
+				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
 				<connect to="Gas_extraction_investments.expenditure_on_subsidies_for_investments_in_gas_extraction" from="Government.expenditure_on_subsidies_for_investments_in_gas_extraction"/>
@@ -351,6 +357,8 @@
 				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_oil_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_oil_energy_conversion"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_oil_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_oil_energy_conversion"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_oil_energy_conversion" from="Government.expenditure_on_subsidies_for_investments_in_oil_energy_conversion"/>
+				<connect to="Electricity_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
+				<connect2 to="Electricity_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
 				<connect to="Energy_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
 				<connect2 to="Energy_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
 				<connect to="Liquid_fuel_investments.expenditure_on_subsidies_for_investments_in_oil_extraction" from="Government.expenditure_on_subsidies_for_investments_in_oil_extraction"/>
@@ -395,6 +403,8 @@
 				<connect2 to="Circular_Flow.sum_of_energy_taxes" from="Government.sum_of_energy_taxes_in_nominal_terms"/>
 				<connect to="Circular_Flow.sum_of_subsidies_spent" from="Government.sum_of_subsidies_spent"/>
 				<connect2 to="Circular_Flow.sum_of_subsidies_spent" from="Government.sum_of_subsidies_spent"/>
+				<connect to="Electricity_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
+				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
 				<connect to="Liquid_fuel_investments.tax_revenue_on_investments_in_bio_fuel_energy_capacity" from="Government.tax_revenue_on_investments_in_bio_fuel_energy_capacity"/>
@@ -405,12 +415,16 @@
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_coal_energy_conversion" from="Government.tax_revenue_on_investments_in_coal_energy_conversion"/>
 				<connect to="Coal_extraction_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
 				<connect2 to="Coal_extraction_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
+				<connect to="Electricity_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
+				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_coal_extraction" from="Government.tax_revenue_on_investments_in_coal_extraction"/>
 				<connect to="Electricity_investments.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
 				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_gas_energy_conversion_1" from="Government.tax_revenue_on_investments_in_gas_energy_conversion"/>
+				<connect to="Electricity_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
+				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
 				<connect to="Gas_extraction_investments.tax_revenue_on_investments_in_gas_extraction" from="Government.tax_revenue_on_investments_in_gas_extraction"/>
@@ -427,6 +441,8 @@
 				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_oil_energy_conversion" from="Government.tax_revenue_on_investments_in_oil_energy_conversion"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_oil_energy_conversion" from="Government.tax_revenue_on_investments_in_oil_energy_conversion"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_oil_energy_conversion" from="Government.tax_revenue_on_investments_in_oil_energy_conversion"/>
+				<connect to="Electricity_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
+				<connect2 to="Electricity_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
 				<connect to="Energy_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
 				<connect2 to="Energy_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>
 				<connect to="Liquid_fuel_investments.tax_revenue_on_investments_in_oil_extraction" from="Government.tax_revenue_on_investments_in_oil_extraction"/>

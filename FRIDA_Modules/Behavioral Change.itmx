@@ -349,8 +349,8 @@
 				<connect2 to="Transportation_Energy_Demand.Clean_energy_Output_share_1" from="Energy_supply_1.Clean_energy_Output_share"/>
 				<connect to="Transportation_Energy_Demand.Energy_Balance" from="Energy_supply_vs_demand.Energy_Balance"/>
 				<connect2 to="Transportation_Energy_Demand.Energy_Balance" from="Energy_supply_vs_demand.Energy_Balance"/>
-				<connect to="Transportation_Energy_Demand.Energy_Balance_1" from="Energy_supply_vs_demand_1.Energy_Balance"/>
-				<connect2 to="Transportation_Energy_Demand.Energy_Balance_1" from="Energy_supply_vs_demand_1.Energy_Balance"/>
+				<connect to="Transportation_Energy_Demand.Energy_Balance_1" from="Total_energy_supply_vs_demand.Energy_Balance"/>
+				<connect2 to="Transportation_Energy_Demand.Energy_Balance_1" from="Total_energy_supply_vs_demand.Energy_Balance"/>
 				<connect to="Transportation_Energy_Demand.perceived_climate_risk" from="Climate_Risk_Perception.perceived_climate_change_risk"/>
 				<connect2 to="Transportation_Energy_Demand.perceived_climate_risk" from="Climate_Risk_Perception.perceived_climate_change_risk"/>
 				<connect to="Transportation_Energy_Demand.pm25_emissions" from="Emissions.pm25_emissions"/>
@@ -375,8 +375,8 @@
 				<connect2 to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_fossil_gas" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_fossil_gas"/>
 				<connect to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_liquid_fuel" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_liquid_fuel"/>
 				<connect2 to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_liquid_fuel" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_liquid_fuel"/>
-				<connect to="Transportation_Energy_Demand.Switch_to_connect_new_energy" from="New_Energy.Switch_to_connect_new_energy"/>
-				<connect2 to="Transportation_Energy_Demand.Switch_to_connect_new_energy" from="New_Energy.Switch_to_connect_new_energy"/>
+				<connect to="Transportation_Energy_Demand.Switch_to_connect_new_energy" from="New_Energy.Switch_to_connect_model_to_new_energy"/>
+				<connect2 to="Transportation_Energy_Demand.Switch_to_connect_new_energy" from="New_Energy.Switch_to_connect_model_to_new_energy"/>
 				<connect to="Transportation_Energy_Demand.Switch_to_energy_prices" from="New_Energy.Switch_to_energy_prices"/>
 				<connect2 to="Transportation_Energy_Demand.Switch_to_energy_prices" from="New_Energy.Switch_to_energy_prices"/>
 			</module>
@@ -398,8 +398,8 @@
 				<connect2 to="Fertilizer_Demand.real_GDP_per_person_1" from="Food_Demand.real_GDP_per_person"/>
 				<connect to="Fertilizer_Demand.share_of_man_made_fertilizer" from="Land_Nutrients.share_of_man_made_fertilizer"/>
 				<connect2 to="Fertilizer_Demand.share_of_man_made_fertilizer" from="Land_Nutrients.share_of_man_made_fertilizer"/>
-				<connect to="Fertilizer_Demand.Switch_to_connect_new_energy" from="New_Energy.Switch_to_connect_new_energy"/>
-				<connect2 to="Fertilizer_Demand.Switch_to_connect_new_energy" from="New_Energy.Switch_to_connect_new_energy"/>
+				<connect to="Fertilizer_Demand.Switch_to_connect_new_energy" from="New_Energy.Switch_to_connect_model_to_new_energy"/>
+				<connect2 to="Fertilizer_Demand.Switch_to_connect_new_energy" from="New_Energy.Switch_to_connect_model_to_new_energy"/>
 			</module>
 			<module name="Behavior Change\nPolicy" isee:label="" url="C:/Users/xicom/Documents/GitHub/MyWorldTransFRIDA/FRIDA_Modules/Behavior Change Policy.itmx">
 				<format scale_by="auto"/>
@@ -6311,7 +6311,7 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="3" isee:page_rows="3" isee:scroll_x="661.25" zoom="80" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="3" isee:page_rows="3" isee:scroll_x="241.667" isee:scroll_y="100.833" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -6863,19 +6863,19 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					</from>
 					<to>effect_of_energy_scarcity_on_demand</to>
 				</connector>
-				<aux x="453.676" y="832.167" name="effect\nof energy prices on\nTransportation demand"/>
-				<aux background="#00AA00" x="376.676" y="667.158" name="sensitivity of effect\nof energy prices on\nenergy demand of Transportation"/>
+				<aux x="442.009" y="772.167" name="effect\nof energy prices on\nTransportation demand"/>
+				<aux background="#00AA00" x="365.009" y="607.158" name="sensitivity of effect\nof energy prices on\nenergy demand of Transportation"/>
 				<connector uid="147" angle="295.016">
 					<from>sensitivity_of_effect_of_energy_prices_on_energy_demand_of_Transportation</from>
 					<to>effect_of_energy_prices_on_Transportation_demand</to>
 				</connector>
-				<aux x="314.056" y="877.542" name="Transportation specific\nrelative energy changes"/>
-				<aux x="245.253" y="831.568" name="Time for delay"/>
+				<aux x="302.389" y="817.542" name="Transportation specific\nrelative energy changes"/>
+				<aux x="233.586" y="771.568" name="Time for delay"/>
 				<connector uid="148" angle="25.3731">
 					<from>Time_for_delay</from>
 					<to>Transportation_specific_relative_energy_changes</to>
 				</connector>
-				<aux x="309.556" y="756.158" name="initial relative energy change"/>
+				<aux x="297.889" y="696.158" name="initial relative energy change"/>
 				<connector uid="149" angle="291.442">
 					<from>initial_relative_energy_change</from>
 					<to>Transportation_specific_relative_energy_changes</to>
@@ -6884,33 +6884,33 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>Transportation_specific_relative_energy_changes</from>
 					<to>effect_of_energy_prices_on_Transportation_demand</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="402.967" y="916.202" name="Share of Transportation\nenergy demand for fossil coal"/>
+				<aux font_style="italic" font_weight="bold" x="391.3" y="856.202" name="Share of Transportation\nenergy demand for fossil coal"/>
 				<connector uid="151" angle="178.37">
 					<from>Share_of_Transportation_energy_demand_for_fossil_coal</from>
 					<to>Transportation_specific_relative_energy_changes</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="402.967" y="969.059" name="Share of Transportation\nenergy demand for liquid fuel"/>
+				<aux font_style="italic" font_weight="bold" x="391.3" y="909.059" name="Share of Transportation\nenergy demand for liquid fuel"/>
 				<connector uid="152" angle="157.821">
 					<from>Share_of_Transportation_energy_demand_for_liquid_fuel</from>
 					<to>Transportation_specific_relative_energy_changes</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="402.967" y="1025.13" name="Share of Transportation\nenergy demand for fossil gas"/>
+				<aux font_style="italic" font_weight="bold" x="391.3" y="965.13" name="Share of Transportation\nenergy demand for fossil gas"/>
 				<connector uid="153" angle="140.142">
 					<from>Share_of_Transportation_energy_demand_for_fossil_gas</from>
 					<to>Transportation_specific_relative_energy_changes</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="402.967" y="1086.83" name="Share of Transportation\nenergy demand for electricity"/>
+				<aux font_style="italic" font_weight="bold" x="391.3" y="1026.83" name="Share of Transportation\nenergy demand for electricity"/>
 				<connector uid="154" angle="133.272">
 					<from>Share_of_Transportation_energy_demand_for_electricity</from>
 					<to>Transportation_specific_relative_energy_changes</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="227.253" y="1025.13" name="relative change in\nenergy prices for Fossil Gas"/>
+				<aux font_style="italic" font_weight="bold" x="215.586" y="965.13" name="relative change in\nenergy prices for Fossil Gas"/>
 				<connector uid="156" angle="26.7552">
 					<from>relative_change_in_energy_prices_for_Fossil_Gas</from>
 					<to>Transportation_specific_relative_energy_changes</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="223.77" y="969.059" name="relative change in\nenergy prices for Liquid Fuel 1"/>
-				<aux font_style="italic" font_weight="bold" x="223.77" y="911.822" name="relative change in\nenergy prices for Fossil Coal"/>
+				<aux font_style="italic" font_weight="bold" x="212.103" y="909.059" name="relative change in\nenergy prices for Liquid Fuel 1"/>
+				<aux font_style="italic" font_weight="bold" x="212.103" y="851.822" name="relative change in\nenergy prices for Fossil Coal"/>
 				<connector uid="157" angle="14.9502">
 					<from>relative_change_in_energy_prices_for_Liquid_Fuel_1</from>
 					<to>Transportation_specific_relative_energy_changes</to>
@@ -6919,16 +6919,16 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>relative_change_in_energy_prices_for_Fossil_Coal</from>
 					<to>Transportation_specific_relative_energy_changes</to>
 				</connector>
-				<connector uid="159" angle="12.7025">
+				<connector uid="159" angle="1.24031">
 					<from>effect_of_energy_prices_on_Transportation_demand</from>
 					<to>indicated_demand_from_accessibility</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="513.148" y="699.63" name="Switch to energy prices"/>
+				<aux font_style="italic" font_weight="bold" x="501.481" y="639.63" name="Switch to energy prices"/>
 				<connector uid="160" angle="291.125">
 					<from>Switch_to_energy_prices</from>
 					<to>effect_of_energy_prices_on_Transportation_demand</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="219.074" y="1085.08" name="relative change\nin energy prices\nin electricity"/>
+				<aux font_style="italic" font_weight="bold" x="207.407" y="1025.08" name="relative change\nin energy prices\nin electricity"/>
 				<connector uid="161" angle="31.6266">
 					<from>relative_change_in_energy_prices_in_electricity</from>
 					<to>Transportation_specific_relative_energy_changes</to>

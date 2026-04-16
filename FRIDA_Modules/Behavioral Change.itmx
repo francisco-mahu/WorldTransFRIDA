@@ -379,6 +379,8 @@
 				<connect2 to="Transportation_Energy_Demand.Switch_to_connect_new_energy" from="New_Energy.Switch_to_connect_model_to_new_energy"/>
 				<connect to="Transportation_Energy_Demand.Switch_to_energy_prices" from="New_Energy.Switch_to_energy_prices"/>
 				<connect2 to="Transportation_Energy_Demand.Switch_to_energy_prices" from="New_Energy.Switch_to_energy_prices"/>
+				<connect to="Transportation_Energy_Demand.UNIT_TWh_to_MWh" from="Energy_Units_1.UNIT_TWh_to_MWh"/>
+				<connect2 to="Transportation_Energy_Demand.UNIT_TWh_to_MWh" from="Energy_Units_1.UNIT_TWh_to_MWh"/>
 			</module>
 			<module name="Fertilizer\nDemand" isee:label="">
 				<format scale_by="auto"/>
@@ -5559,7 +5561,7 @@ Calibration Parameter: fertilizer use &amp; crop production</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>behaviour_driven_total_yearly_demand</eqn>
+				<eqn>behaviour_driven_total_yearly_demand_in_MWh</eqn>
 				<units>MWh/year</units>
 			</aux>
 			<aux name="average daily\nconsumption per capita">
@@ -5919,8 +5921,8 @@ Energy_Balance_1^sensitivity_of_demand_to_scarcity</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>average_yearly_demand_per_capita*Population_1</eqn>
-				<units>MWh/year</units>
+				<eqn>behaviour_driven_total_yearly_demand_in_MWh/UNIT_TWh_to_MWh</eqn>
+				<units>TWh/Year</units>
 			</aux>
 			<aux name="average daily\ndemand per capita" access="output" isee:autocreated="true">
 				<doc>${Calibrated Output,Explanatory Variable}
@@ -5947,7 +5949,7 @@ Energy_Balance_1^sensitivity_of_demand_to_scarcity</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.00466538048848213</eqn>
+				<eqn>0.0112056292955619</eqn>
 				<range min="0.00005" max="1"/>
 				<units>MWh/person/day</units>
 			</aux>
@@ -6262,6 +6264,18 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
 				<units>dmnl</units>
 			</aux>
+			<aux name="behaviour driven\ntotal yearly demand in MWh" access="output" isee:autocreated="true">
+				<doc>https://www.iea.org/world/energy-mix</doc>
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>average_yearly_demand_per_capita*Population_1</eqn>
+				<units>MWh/year</units>
+			</aux>
+			<aux name="UNIT TWh to MWh" access="input">
+				<eqn>1000000</eqn>
+				<units>MWh/TWh</units>
+			</aux>
 		</variables>
 		<views>
 			<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
@@ -6311,7 +6325,7 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="3" isee:page_rows="3" isee:scroll_x="241.667" isee:scroll_y="100.833" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="3" isee:page_rows="3" isee:scroll_x="105" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -6648,15 +6662,7 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 					<from>weight_of_accessibility</from>
 					<to>weight_of_descriptive_norm</to>
 				</connector>
-				<aux background="#FFAAFF" x="990.493" y="195.651" name="behaviour driven total yearly demand"/>
-				<connector uid="65" angle="28.3704">
-					<from>behaviour_driven_total_yearly_demand</from>
-					<to>total_yearly_consumption</to>
-				</connector>
-				<connector uid="66" angle="118.301">
-					<from>average_yearly_demand_per_capita</from>
-					<to>behaviour_driven_total_yearly_demand</to>
-				</connector>
+				<aux background="#FFAAFF" x="894.826" y="104.984" name="behaviour driven total yearly demand"/>
 				<connector uid="67" angle="160.254">
 					<from>UNIT_days_per_year</from>
 					<to>average_yearly_demand_per_capita</to>
@@ -6789,10 +6795,6 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 				<connector uid="101" angle="19.0491">
 					<from>Energy_Balance</from>
 					<to>effect_of_energy_scarcity_on_demand</to>
-				</connector>
-				<connector uid="63" angle="198.274">
-					<from>Population_1</from>
-					<to>behaviour_driven_total_yearly_demand</to>
 				</connector>
 				<aux font_style="italic" font_weight="bold" label_side="bottom" x="811.084" y="1305.65" name="Clean energy Output share"/>
 				<aux font_style="italic" font_weight="bold" label_side="right" x="1569.3" y="648.097" name="pm25 emissions"/>
@@ -6932,6 +6934,28 @@ SMTH1(Clean_energy_Output_share_1, Delay_for_clean_energy_to_be_perceived_in_tra
 				<connector uid="161" angle="31.6266">
 					<from>relative_change_in_energy_prices_in_electricity</from>
 					<to>Transportation_specific_relative_energy_changes</to>
+				</connector>
+				<aux background="#FFAAFF" x="999.833" y="183.032" name="behaviour driven\ntotal yearly demand in MWh"/>
+				<connector uid="162" angle="120.101">
+					<from>average_yearly_demand_per_capita</from>
+					<to>behaviour_driven_total_yearly_demand_in_MWh</to>
+				</connector>
+				<connector uid="163" angle="197.619">
+					<from>Population_1</from>
+					<to>behaviour_driven_total_yearly_demand_in_MWh</to>
+				</connector>
+				<connector uid="164" angle="26.2565">
+					<from>behaviour_driven_total_yearly_demand_in_MWh</from>
+					<to>total_yearly_consumption</to>
+				</connector>
+				<connector uid="165" angle="142.037">
+					<from>behaviour_driven_total_yearly_demand_in_MWh</from>
+					<to>behaviour_driven_total_yearly_demand</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" x="811.512" y="183.032" name="UNIT TWh to MWh"/>
+				<connector uid="166" angle="53.702">
+					<from>UNIT_TWh_to_MWh</from>
+					<to>behaviour_driven_total_yearly_demand</to>
 				</connector>
 				<alias font_style="italic" uid="85" x="604.433" y="958.485" width="18" height="18">
 					<of>UNIT_p_per_Mp</of>

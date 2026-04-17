@@ -510,14 +510,14 @@
 				<connect2 to="Electricity_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit" from="Fossil_energy_coal.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit" from="Fossil_energy_coal.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect2 to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit" from="Fossil_energy_coal.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
-				<connect to="Coal_extraction_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
-				<connect2 to="Coal_extraction_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Electricity_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Electricity_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect to="Energy_margins.COAL_average_marginal_net_cost_of_energy_without_historical_cost_adjustment_1" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect2 to="Energy_margins.COAL_average_marginal_net_cost_of_energy_without_historical_cost_adjustment_1" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Emissions.Emissions_from_fossil_energy_coal" from="Fossil_energy_coal.Emissions_from_fossil_energy_coal"/>
 				<connect2 to="Emissions.Emissions_from_fossil_energy_coal" from="Fossil_energy_coal.Emissions_from_fossil_energy_coal"/>
 				<connect to="Government.energy_conversion_tax_rate" from="Fossil_energy_coal.energy_conversion_effective_tax_rate"/>
@@ -588,8 +588,8 @@
 				<connect2 to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
-				<connect to="Gas_extraction_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
-				<connect2 to="Gas_extraction_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect to="Energy_margins.GAS_average_marginal_net_cost_of_energy_without_historical_cost_adjustment" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect2 to="Energy_margins.GAS_average_marginal_net_cost_of_energy_without_historical_cost_adjustment" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Emissions.Emissions_from_fossil_energy_coal_1" from="Fossil_energy_gas.Emissions_from_fossil_energy_coal"/>
 				<connect2 to="Emissions.Emissions_from_fossil_energy_coal_1" from="Fossil_energy_gas.Emissions_from_fossil_energy_coal"/>
 				<connect to="Government.energy_conversion_tax_rate_2" from="Fossil_energy_gas.energy_conversion_effective_tax_rate"/>
@@ -5714,14 +5714,14 @@ https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_c
 				<connect2 to="Electricity_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit" from="Fossil_energy_coal.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit" from="Fossil_energy_coal.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect2 to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit" from="Fossil_energy_coal.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
-				<connect to="Coal_extraction_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
-				<connect2 to="Coal_extraction_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Electricity_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Electricity_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect to="Energy_margins.COAL_average_marginal_net_cost_of_energy_without_historical_cost_adjustment_1" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect2 to="Energy_margins.COAL_average_marginal_net_cost_of_energy_without_historical_cost_adjustment_1" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Emissions.Emissions_from_fossil_energy_coal" from="Fossil_energy_coal.Emissions_from_fossil_energy_coal"/>
 				<connect2 to="Emissions.Emissions_from_fossil_energy_coal" from="Fossil_energy_coal.Emissions_from_fossil_energy_coal"/>
 				<connect to="Government.energy_conversion_tax_rate" from="Fossil_energy_coal.energy_conversion_effective_tax_rate"/>
@@ -5800,8 +5800,8 @@ https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_c
 				<connect2 to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
-				<connect to="Gas_extraction_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
-				<connect2 to="Gas_extraction_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect to="Energy_margins.GAS_average_marginal_net_cost_of_energy_without_historical_cost_adjustment" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect2 to="Energy_margins.GAS_average_marginal_net_cost_of_energy_without_historical_cost_adjustment" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Emissions.Emissions_from_fossil_energy_coal_1" from="Fossil_energy_gas.Emissions_from_fossil_energy_coal"/>
 				<connect2 to="Emissions.Emissions_from_fossil_energy_coal_1" from="Fossil_energy_gas.Emissions_from_fossil_energy_coal"/>
 				<connect to="Government.energy_conversion_tax_rate_2" from="Fossil_energy_gas.energy_conversion_effective_tax_rate"/>
@@ -7149,14 +7149,14 @@ ELSE
 				<connect2 to="Electricity_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit" from="Fossil_energy_coal.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit" from="Fossil_energy_coal.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect2 to="Energy_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit" from="Fossil_energy_coal.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
-				<connect to="Coal_extraction_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
-				<connect2 to="Coal_extraction_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Electricity_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Electricity_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect to="Energy_margins.COAL_average_marginal_net_cost_of_energy_without_historical_cost_adjustment_1" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect2 to="Energy_margins.COAL_average_marginal_net_cost_of_energy_without_historical_cost_adjustment_1" from="Fossil_energy_coal.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Emissions.Emissions_from_fossil_energy_coal" from="Fossil_energy_coal.Emissions_from_fossil_energy_coal"/>
 				<connect2 to="Emissions.Emissions_from_fossil_energy_coal" from="Fossil_energy_coal.Emissions_from_fossil_energy_coal"/>
 				<connect to="Government.energy_conversion_tax_rate" from="Fossil_energy_coal.energy_conversion_effective_tax_rate"/>
@@ -7347,8 +7347,8 @@ ELSE
 				<connect2 to="Energy_demand_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect2 to="Energy_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
-				<connect to="Gas_extraction_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
-				<connect2 to="Gas_extraction_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_1" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect to="Energy_margins.GAS_average_marginal_net_cost_of_energy_without_historical_cost_adjustment" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
+				<connect2 to="Energy_margins.GAS_average_marginal_net_cost_of_energy_without_historical_cost_adjustment" from="Fossil_energy_gas.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
 				<connect to="Emissions.Emissions_from_fossil_energy_coal_1" from="Fossil_energy_gas.Emissions_from_fossil_energy_coal"/>
 				<connect2 to="Emissions.Emissions_from_fossil_energy_coal_1" from="Fossil_energy_gas.Emissions_from_fossil_energy_coal"/>
 				<connect to="Government.energy_conversion_tax_rate_2" from="Fossil_energy_gas.energy_conversion_effective_tax_rate"/>

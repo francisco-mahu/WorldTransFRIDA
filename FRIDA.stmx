@@ -5,12 +5,12 @@
 		<name>FRIDA</name>
 		<uuid>fe807591-4e3d-4e2c-b464-70ec4fb12094</uuid>
 		<vendor>isee systems, inc.</vendor>
-		<product version="4.2.1" isee:build_number="3895" isee:saved_by_v1="true" lang="en">Stella Architect</product>
+		<product version="4.2.1" isee:build_number="3906" isee:saved_by_v1="true" lang="en">Stella Architect</product>
 	</header>
 	<ai_information>
 		<status verified="false"/>
 	</ai_information>
-	<sim_specs isee:sim_duration="0" isee:run_prefix="Run" isee:simulation_delay="0" isee:restore_on_start="false" method="RK4" time_units="Year" isee:instantaneous_flows="false" isee:ignore_module_errors="false" isee:strict_units="false" isee:loop_scores="false" isee:loop_exhaustive_allowed="1000">
+	<sim_specs isee:sim_duration="0" isee:run_prefix="Run" isee:simulation_delay="0" isee:restore_on_start="false" isee:save_interval="1" method="RK4" time_units="Year" isee:instantaneous_flows="false" isee:ignore_module_errors="false" isee:strict_units="false" isee:loop_scores="false" isee:loop_exhaustive_allowed="1000">
 		<start>1980</start>
 		<stop>Simulation_End</stop>
 		<dt reciprocal="true">8</dt>
@@ -100,6 +100,7 @@
 			<elem name="Oil"/>
 			<elem name="Gas"/>
 			<elem name="Other"/>
+			<elem name="Biofuel"/>
 		</dim>
 		<dim name="PCTILE">
 			<elem name="Low"/>
@@ -835,10 +836,7 @@
 			<isee:parameter name="Buildings_energy_demand_1.normal_per_sector_energy_demand_for_Buildings[1]" scaling="0.01"/>
 			<isee:parameter name="Transportation_energy_demand_1.priority_spread[1]" scaling="0.1"/>
 			<isee:parameter name="Industry_and_Other_energy_demand_1.priority_spread[1]" scaling="0.1"/>
-			<isee:parameter name="Industry_and_Other_energy_demand_1.suitability_cost_adjustment[1, *]" scaling="0.1"/>
-			<isee:parameter name="Transportation_energy_demand_1.suitability_cost_adjustment[1, *]" scaling="0.1"/>
 			<isee:parameter name="Buildings_energy_demand_1.priority_spread[1]" scaling="0.1"/>
-			<isee:parameter name="Buildings_energy_demand_1.suitability_cost_adjustment[1, *]" scaling="0.1"/>
 			<isee:payoff name="Energy per sector demand" action="min"/>
 		</isee:optimizer_specs>
 		<isee:optimizer_specs name="Direct fuel use coal" method="Powell" use_additional_starts_file="false" additional_starts="0" report_interval="1" confidence_range="0" tolerance="1e-7" init_step="0.1" maxiter="0">
@@ -1654,6 +1652,79 @@
 			</isee:payoff_element>
 		</isee:payoff_specs>
 		<isee:payoff_specs name="Energy per sector demand" calibration="true" recompute_weights="true" compare_tolerance="0" compare_type="ls" compare_run="Calibration Data">
+			<isee:payoff_element name="Buildings_energy_demand_1.total_energy_demand_for_Buildings[1]" weight="0.00000274059776159707">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Buildings_energy_demand_1.Electricity_demand_for_Buildings[1]" weight="0.00000924351052990986">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Buildings_energy_demand_1.Gas[1]" weight="0.00000698587278291073">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Buildings_energy_demand_1.Oil[1]" weight="0.0000157954940989041">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Buildings_energy_demand_1.Coal[1]" weight="0.00000348475435949739">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Industry_and_Other_energy_demand_1.total_energy_demand_for_Industry_and_Other[1]" weight="5.17386072100946e-7">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Industry_and_Other_energy_demand_1.Electricity_demand_for_industry_and_other[1]" weight="0.0000217052542749371">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Industry_and_Other_energy_demand_1.Gas[1]" weight="0.00000248001398694822">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Industry_and_Other_energy_demand_1.Oil[1]" weight="5.35947893631487e-7">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Industry_and_Other_energy_demand_1.Coal[1]" weight="4.40515076577158e-7">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Transportation_energy_demand_1.total_energy_demand_for_Transportation[1]" weight="4.34847792755354e-8">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Transportation_energy_demand_1.Electricity_demand_for_Transportation[1]" weight="0.00100004670369875">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Transportation_energy_demand_1.Gas[1]" weight="0.0000102508227647964">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Transportation_energy_demand_1.Oil[1]" weight="1.72893931153982e-7">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Transportation_energy_demand_1.Coal[1]" weight="0.0012120298684466">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Transportation_energy_demand_1.Bioenergy_Waste_and_Heat[1]" weight="9.79023802537512e-8">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Industry_and_Other_energy_demand_1.Bioenergy_Waste_and_Heat[1]" weight="0.00000295012889469613">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Buildings_energy_demand_1.Bioenergy_Waste_and_Heat[1]" weight="0.00000630936079086137">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Industry_and_Other_energy_demand_1.total_energy_demand_for_Industry_and_Other[1]" weight="5.17386072100946e-7">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Buildings_energy_demand_1.total_energy_demand_for_Buildings[1]" weight="0.00000274059776159707">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Transportation_energy_demand_1.total_energy_demand_for_Transportation[1]" weight="4.34847792755354e-8">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+			<isee:payoff_element name="Transportation_energy_demand_1.Share_of_biofuels_in_transport_energy_consumption[1]" weight="143.851435666362">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+		</isee:payoff_specs>
+		<isee:payoff_specs name="Direct fuel use coal" calibration="true" recompute_weights="true" compare_tolerance="0" compare_type="ls" compare_run="Calibration Data">
+			<isee:payoff_element name="Fossil_energy_coal_1.Primary_Fossil_Energy_FUEL_for_Fuel[1]" weight="10692.8462299788">
+				<isee:time_range type="terminal_value"/>
+			</isee:payoff_element>
+		</isee:payoff_specs>
+		<isee:payoff_specs name="New Energy" calibration="true" recompute_weights="true" compare_tolerance="0" compare_type="ls" compare_run="Calibration Data">
 			<isee:payoff_element name="Buildings_energy_demand_1.total_energy_demand_for_Buildings[1]" weight="8.84141637980047e-7">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
@@ -1699,13 +1770,13 @@
 			<isee:payoff_element name="Transportation_energy_demand_1.Coal[1]" weight="0.000475853866099911">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Transportation_energy_demand_1.Other[1]" weight="1.11480662672832e-7">
+			<isee:payoff_element name="Transportation_energy_demand_1.Bioenergy_Waste_and_Heat[1]" weight="1.11480662672832e-7">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Industry_and_Other_energy_demand_1.Other[1]" weight="4.02707644373336e-7">
+			<isee:payoff_element name="Industry_and_Other_energy_demand_1.Bioenergy_Waste_and_Heat[1]" weight="4.02707644373336e-7">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-			<isee:payoff_element name="Buildings_energy_demand_1.Other[1]" weight="3.751939281876e-7">
+			<isee:payoff_element name="Buildings_energy_demand_1.Bioenergy_Waste_and_Heat[1]" weight="3.751939281876e-7">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 			<isee:payoff_element name="Industry_and_Other_energy_demand_1.total_energy_demand_for_Industry_and_Other[1]" weight="2.72711225730207e-7">
@@ -1717,9 +1788,7 @@
 			<isee:payoff_element name="Transportation_energy_demand_1.total_energy_demand_for_Transportation[1]" weight="1.5809968530692e-7">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
-		</isee:payoff_specs>
-		<isee:payoff_specs name="Direct fuel use coal" calibration="true" recompute_weights="true" compare_tolerance="0" compare_type="ls" compare_run="Calibration Data">
-			<isee:payoff_element name="Fossil_energy_coal_1.Primary_Fossil_Energy_FUEL_for_Fuel[1]" weight="10692.8462299788">
+			<isee:payoff_element name="Transportation_energy_demand_1.Share_of_biofuels_in_transport_energy_consumption[1]" weight="1">
 				<isee:time_range type="terminal_value"/>
 			</isee:payoff_element>
 		</isee:payoff_specs>
@@ -1924,6 +1993,8 @@
 				<connect2 to="Emissions.CDD" from="Energy_demand.CDD"/>
 				<connect to="Emissions.CDD_preindustrial" from="Energy_demand.CDD_preindustrial"/>
 				<connect2 to="Emissions.CDD_preindustrial" from="Energy_demand.CDD_preindustrial"/>
+				<connect to=".demand_for_energy" from="Energy_demand.demand_for_energy"/>
+				<connect2 to="demand_for_energy" from="Energy_demand.demand_for_energy"/>
 				<connect to="Inflation.demand_for_energy" from="Energy_demand.demand_for_energy"/>
 				<connect2 to="Inflation.demand_for_energy" from="Energy_demand.demand_for_energy"/>
 				<connect to="Energy_demand.average_yearly_demand_per_capita" from="Transportation_Energy_Demand.average_yearly_demand_per_capita"/>
@@ -4324,6 +4395,10 @@ This is what determines when the model stops calculating</doc>
 				<connect2 to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_fossil_gas" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_Gas"/>
 				<connect to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_liquid_fuel" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_liquid_fuel"/>
 				<connect2 to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_liquid_fuel" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_liquid_fuel"/>
+				<connect to=".Total_demand_for_energy" from="Energy_demand_1.Total_demand_for_energy"/>
+				<connect2 to="Total_demand_for_energy" from="Energy_demand_1.Total_demand_for_energy"/>
+				<connect to=".Total_demand_for_energy_in_secondary_energy_units" from="Energy_demand_1.Total_demand_for_energy_in_secondary_energy_units"/>
+				<connect2 to="Total_demand_for_energy_in_secondary_energy_units" from="Energy_demand_1.Total_demand_for_energy_in_secondary_energy_units"/>
 				<connect to="Energy_demand_1.behaviour_driven_total_yearly_demand" from="Transportation_Energy_Demand.behaviour_driven_total_yearly_demand"/>
 				<connect2 to="Energy_demand_1.behaviour_driven_total_yearly_demand" from="Transportation_Energy_Demand.behaviour_driven_total_yearly_demand"/>
 				<connect to="Energy_demand_1.bio_fuel_primary_energy" from="Bio_fuel_energy.bio_fuel_primary_energy"/>
@@ -4703,6 +4778,27 @@ This is what determines when the model stops calculating</doc>
 				<connect to="Transportation_Energy_Demand.UNIT_TWh_to_MWh" from="Energy_Units_1.UNIT_TWh_to_MWh"/>
 				<connect2 to="Transportation_Energy_Demand.UNIT_TWh_to_MWh" from="Energy_Units_1.UNIT_TWh_to_MWh"/>
 			</module>
+			<aux name="Total demand for energy" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>TWh/year</units>
+			</aux>
+			<aux name="demand for energy" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>TWh/year</units>
+			</aux>
+			<aux name="Total demand for energy\nin secondary energy units" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>TWh/Year</units>
+			</aux>
 		</variables>
 		<views>
 			<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
@@ -4752,7 +4848,7 @@ This is what determines when the model stops calculating</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="5" isee:page_rows="9" isee:scroll_x="371.667" isee:scroll_y="13.8889" zoom="180" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="5" isee:page_rows="9" isee:scroll_x="352.5" zoom="160" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -5649,6 +5745,36 @@ This is what determines when the model stops calculating</doc>
 					<from>Energy</from>
 					<to>New_Energy</to>
 				</connector>
+				<stacked_container uid="190" x="1323.13" y="192.75">
+					<graph width="350" height="250" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
+							<entity name="Energy_demand.demand_for_energy[1]"/>
+							<isee:data name="Calibration Data"/>
+						</plot>
+						<plot color="red" isee:keep_zero_visible="true" pen_width="1" index="1" show_y_axis="true">
+							<entity name="Energy_demand_1.Total_demand_for_energy[1]"/>
+							<isee:data name="Calibration Data"/>
+						</plot>
+						<plot color="#008F44" isee:keep_zero_visible="true" pen_width="1" index="2" show_y_axis="true">
+							<entity name="Energy_demand_1.Total_demand_for_energy_in_secondary_energy_units[1]"/>
+						</plot>
+					</graph>
+				</stacked_container>
+				<aux font_style="italic" font_weight="bold" x="936.875" y="388.125" name="Total demand for energy"/>
+				<connector uid="191" angle="5.47244" isee:autocreated="true">
+					<from>New_Energy</from>
+					<to>Total_demand_for_energy</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" x="936.875" y="448.75" name="demand for energy"/>
+				<connector uid="192" angle="352.222" isee:autocreated="true">
+					<from>Energy</from>
+					<to>demand_for_energy</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" label_side="bottom" x="936.875" y="328.75" name="Total demand for energy\nin secondary energy units"/>
+				<connector uid="193" angle="25.2623" isee:autocreated="true">
+					<from>New_Energy</from>
+					<to>Total_demand_for_energy_in_secondary_energy_units</to>
+				</connector>
 			</view>
 			<view isee:template_view="template:1" isee:name="Landing Page without image" isee:original_design="Deluxe Prev-Next Blue Green Pastel" background="white" page_width="1066" page_height="600" home_view="true" type="interface">
 				<style>
@@ -5765,8 +5891,8 @@ Lorem ipsum dolor sit amet</text_box>
 				<connect2 to="Energy_investments_1.Secondary_Fossil_Energy_Output_2" from="Fossil_energy_gas_1.Electricity_Output"/>
 				<connect to="Energy_investments_1.share_of_biofuel_in_other" from="Industry_and_Other_energy_demand_1.share_of_biofuel_in_other"/>
 				<connect2 to="Energy_investments_1.share_of_biofuel_in_other" from="Industry_and_Other_energy_demand_1.share_of_biofuel_in_other"/>
-				<connect to="Energy_investments_1.share_of_biofuel_in_other_1" from="Transportation_energy_demand_1.share_of_biofuel_in_other"/>
-				<connect2 to="Energy_investments_1.share_of_biofuel_in_other_1" from="Transportation_energy_demand_1.share_of_biofuel_in_other"/>
+				<connect to="Energy_investments_1.share_of_biofuel_in_other_1" from="Transportation_energy_demand_1.share_of_biofuel_in_Biofuel_and_Waste"/>
+				<connect2 to="Energy_investments_1.share_of_biofuel_in_other_1" from="Transportation_energy_demand_1.share_of_biofuel_in_Biofuel_and_Waste"/>
 				<connect to="Energy_investments_1.share_of_biofuel_in_other_2" from="Buildings_energy_demand_1.share_of_biofuel_in_other"/>
 				<connect2 to="Energy_investments_1.share_of_biofuel_in_other_2" from="Buildings_energy_demand_1.share_of_biofuel_in_other"/>
 				<connect to="Energy_investments_1.Solar_Energy_Capacity" from="Solar_energy_1.Solar_Energy_Capacity"/>
@@ -5998,6 +6124,8 @@ Lorem ipsum dolor sit amet</text_box>
 				<connect2 to="Electricity_supply_vs_demand.Energy_output_electricity_1" from="Energy_supply_1.Energy_output_electricity"/>
 				<connect to="Total_energy_supply_vs_demand.Total_Energy_Output" from="Energy_supply_1.Total_Energy_Output"/>
 				<connect2 to="Total_energy_supply_vs_demand.Total_Energy_Output" from="Energy_supply_1.Total_Energy_Output"/>
+				<connect to="Energy_supply_1.Non_Biofuel_Other_energy_demand" from="Total_energy_supply_vs_demand.Non_Biofuel_Other_energy_demand"/>
+				<connect2 to="Energy_supply_1.Non_Biofuel_Other_energy_demand" from="Total_energy_supply_vs_demand.Non_Biofuel_Other_energy_demand"/>
 				<connect to="Energy_supply_1.Population" from="Demographics.Population"/>
 				<connect2 to="Energy_supply_1.Population" from="Demographics.Population"/>
 				<connect to="Energy_supply_1.UNIT_TWh_to_zJ" from="Energy_Units_1.UNIT_TWh_to_zJ"/>
@@ -6020,6 +6148,8 @@ Lorem ipsum dolor sit amet</text_box>
 				<connect2 to="Efficiency_reduction_in_power_plants_1.switch_energy_damage" from="Climate.switch_energy_damage"/>
 				<connect to="Efficiency_reduction_in_power_plants_1.today" from="Climate.climate_impact_stoptime"/>
 				<connect2 to="Efficiency_reduction_in_power_plants_1.today" from="Climate.climate_impact_stoptime"/>
+				<connect to="Energy_demand_1.Total_Usable_Secondary_Energy_output_from_direct_use" from="Fossil_energy_1.Total_Usable_Secondary_Energy_output_from_direct_use"/>
+				<connect2 to="Energy_demand_1.Total_Usable_Secondary_Energy_output_from_direct_use" from="Fossil_energy_1.Total_Usable_Secondary_Energy_output_from_direct_use"/>
 				<connect to="Fossil_energy_1.UNIT_zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
 				<connect2 to="Fossil_energy_1.UNIT_zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
 				<connect to="Electricity_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_10" from="Fossil_energy_coal_1.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
@@ -6210,6 +6340,8 @@ Lorem ipsum dolor sit amet</text_box>
 				<connect2 to="initial_fossil_energy_capital_1" from="Fossil_energy_oil_1.initial_fossil_energy_capital"/>
 				<connect to="Energy_investments_1.Initial_share_of_investment_to_direct_use_4" from="Fossil_energy_oil_1.Initial_share_of_investment_to_direct_use"/>
 				<connect2 to="Energy_investments_1.Initial_share_of_investment_to_direct_use_4" from="Fossil_energy_oil_1.Initial_share_of_investment_to_direct_use"/>
+				<connect to="New_Energy.Initial_share_of_investment_to_direct_use" from="Fossil_energy_oil_1.Initial_share_of_investment_to_direct_use"/>
+				<connect2 to="Initial_share_of_investment_to_direct_use" from="Fossil_energy_oil_1.Initial_share_of_investment_to_direct_use"/>
 				<connect to="Energy_investments_1.Primary_Fossil_Energy_FUEL_for_Electricity_1" from="Fossil_energy_oil_1.Primary_Fossil_Energy_FUEL_for_Electricity"/>
 				<connect2 to="Energy_investments_1.Primary_Fossil_Energy_FUEL_for_Electricity_1" from="Fossil_energy_oil_1.Primary_Fossil_Energy_FUEL_for_Electricity"/>
 				<connect to="Energy_investments_1.Primary_Fossil_Energy_FUEL_for_Fuel_1" from="Fossil_energy_oil_1.Primary_Fossil_Energy_FUEL_for_Fuel"/>
@@ -6226,8 +6358,8 @@ Lorem ipsum dolor sit amet</text_box>
 				<connect2 to="Stranded_Capital.stranded_capital_2" from="Fossil_energy_oil_1.stranded_capital"/>
 				<connect to="New_Energy.TFP_in_1980" from="Fossil_energy_oil_1.TFP_in_1980"/>
 				<connect2 to="TFP_in_1980" from="Fossil_energy_oil_1.TFP_in_1980"/>
-				<connect to="New_Energy.TFP_Ramp" from="Fossil_energy_oil_1.TFP_Ramp"/>
-				<connect2 to="TFP_Ramp" from="Fossil_energy_oil_1.TFP_Ramp"/>
+				<connect to="New_Energy.TFP_Max" from="Fossil_energy_oil_1.TFP_Max"/>
+				<connect2 to="TFP_Max" from="Fossil_energy_oil_1.TFP_Max"/>
 				<connect to="Fossil_energy_oil_1.Converter_1" from="Global_Investments.Oil_Investments_Allocated_to_Capacity_Construction_in_Fossil_Fuel_Extraction_Capital"/>
 				<connect2 to="Fossil_energy_oil_1.Converter_1" from="Global_Investments.Oil_Investments_Allocated_to_Capacity_Construction_in_Fossil_Fuel_Extraction_Capital"/>
 				<connect to="Fossil_energy_oil_1.Converter_2" from="Electricity_investments.Oil_Gross_Investments_in_Fossil_Energy_Capital"/>
@@ -6308,16 +6440,18 @@ Lorem ipsum dolor sit amet</text_box>
 				<connect2 to="Nuclear_energy_1.UNIT_kW_to_TW" from="Energy_Units_1.UNIT_kW_to_TW"/>
 				<connect to="Energy_investments_1.bio_fuel_secondary_energy_output" from="Bio_fuel_energy_1.bio_fuel_electricity_output"/>
 				<connect2 to="Energy_investments_1.bio_fuel_secondary_energy_output" from="Bio_fuel_energy_1.bio_fuel_electricity_output"/>
-				<connect to="Energy_investments_1.bio_fuel_primary_energy" from="Bio_fuel_energy_1.bio_fuel_primary_energy"/>
-				<connect2 to="Energy_investments_1.bio_fuel_primary_energy" from="Bio_fuel_energy_1.bio_fuel_primary_energy"/>
 				<connect to="Liquid_fuel_supply_vs_demand.bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
 				<connect2 to="Liquid_fuel_supply_vs_demand.bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
+				<connect to="Energy_investments_1.bio_fuel_primary_energy" from="Bio_fuel_energy_1.bio_fuel_primary_energy"/>
+				<connect2 to="Energy_investments_1.bio_fuel_primary_energy" from="Bio_fuel_energy_1.bio_fuel_primary_energy"/>
 				<connect to="Energy_investments_1.bio_fuel_production" from="Bio_fuel_energy_1.bio_fuel_production"/>
 				<connect2 to="Energy_investments_1.bio_fuel_production" from="Bio_fuel_energy_1.bio_fuel_production"/>
 				<connect to="Electricity_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_15" from='Bio_fuel_energy_1."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
 				<connect2 to="Electricity_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_15" from='Bio_fuel_energy_1."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
 				<connect to="Liquid_fuel_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_8" from='Bio_fuel_energy_1."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
 				<connect2 to="Liquid_fuel_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_8" from='Bio_fuel_energy_1."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
+				<connect to="Energy_demand_1.Usable_Secondary_Energy_output_from_direct_use_of_Gas_1" from="Bio_fuel_energy_1.Usable_Secondary_Energy_output_from_direct_use_of_Biofuel"/>
+				<connect2 to="Energy_demand_1.Usable_Secondary_Energy_output_from_direct_use_of_Gas_1" from="Bio_fuel_energy_1.Usable_Secondary_Energy_output_from_direct_use_of_Biofuel"/>
 				<connect to="Bio_fuel_energy_1.biofuels_CO2e_emissions_tax_reduction_share" from="Government_Regulations.biofuels_CO2e_emissions_tax_reduction_share"/>
 				<connect2 to="Bio_fuel_energy_1.biofuels_CO2e_emissions_tax_reduction_share" from="Government_Regulations.biofuels_CO2e_emissions_tax_reduction_share"/>
 				<connect to="Bio_fuel_energy_1.biofuels_SO2_emissions_tax_reduction_share" from="Government_Regulations.biofuels_SO2_emissions_tax_reduction_share"/>
@@ -6376,6 +6510,8 @@ Lorem ipsum dolor sit amet</text_box>
 				<connect2 to="Bio_fuel_energy_1.TWh_to_kWh" from="Energy_Units_1.UNIT_TWh_to_kWh"/>
 				<connect to="Bio_fuel_energy_1.UNIT_ton_to_Mton" from="CCS.UNIT_ton_to_Mton"/>
 				<connect2 to="Bio_fuel_energy_1.UNIT_ton_to_Mton" from="CCS.UNIT_ton_to_Mton"/>
+				<connect to="Bio_fuel_energy_1.UNIT_zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
+				<connect2 to="Bio_fuel_energy_1.UNIT_zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
 				<connect to="Electricity_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_13" from="Hydropower_energy_1.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect2 to="Electricity_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_13" from="Hydropower_energy_1.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect to="Energy_investments_1.Hydropower_Installation_Costs" from="Hydropower_energy_1.Hydropower_Installation_Costs"/>
@@ -6515,10 +6651,12 @@ Lorem ipsum dolor sit amet</text_box>
 				<connect2 to="Liquid_fuel_supply_vs_demand.UNIT_zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
 				<connect to="Transportation_Energy_Demand.Energy_Balance_1" from="Total_energy_supply_vs_demand.Energy_Balance"/>
 				<connect2 to="Transportation_Energy_Demand.Energy_Balance_1" from="Total_energy_supply_vs_demand.Energy_Balance"/>
+				<connect to="Energy_supply_1.Non_Biofuel_Other_energy_demand" from="Total_energy_supply_vs_demand.Non_Biofuel_Other_energy_demand"/>
+				<connect2 to="Energy_supply_1.Non_Biofuel_Other_energy_demand" from="Total_energy_supply_vs_demand.Non_Biofuel_Other_energy_demand"/>
 				<connect to="Total_energy_supply_vs_demand.Direct_use_Biofuel_demand" from="Energy_demand_1.Direct_use_Biofuel_demand"/>
 				<connect2 to="Total_energy_supply_vs_demand.Direct_use_Biofuel_demand" from="Energy_demand_1.Direct_use_Biofuel_demand"/>
-				<connect to="Total_energy_supply_vs_demand.Direct_use_Other_demand" from="Energy_demand_1.Direct_use_Other_demand"/>
-				<connect2 to="Total_energy_supply_vs_demand.Direct_use_Other_demand" from="Energy_demand_1.Direct_use_Other_demand"/>
+				<connect to="Total_energy_supply_vs_demand.Direct_use_Other_demand" from="Energy_demand_1.Direct_use_Bioenergy_Waste_and_Heat_demand_without_Biofuel"/>
+				<connect2 to="Total_energy_supply_vs_demand.Direct_use_Other_demand" from="Energy_demand_1.Direct_use_Bioenergy_Waste_and_Heat_demand_without_Biofuel"/>
 				<connect to="Total_energy_supply_vs_demand.Total_demand_for_energy" from="Energy_demand_1.Total_demand_for_energy"/>
 				<connect2 to="Total_energy_supply_vs_demand.Total_demand_for_energy" from="Energy_demand_1.Total_demand_for_energy"/>
 				<connect to="Total_energy_supply_vs_demand.Total_Energy_Output" from="Energy_supply_1.Total_Energy_Output"/>
@@ -6586,6 +6724,8 @@ Lorem ipsum dolor sit amet</text_box>
 				<connect2 to="Energy_demand_1.UNIT_TWh_to_zJ_1" from="Energy_Units_1.UNIT_TWh_to_zJ"/>
 				<connect to="Energy_supply_1.UNIT_TWh_to_zJ" from="Energy_Units_1.UNIT_TWh_to_zJ"/>
 				<connect2 to="Energy_supply_1.UNIT_TWh_to_zJ" from="Energy_Units_1.UNIT_TWh_to_zJ"/>
+				<connect to="Bio_fuel_energy_1.UNIT_zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
+				<connect2 to="Bio_fuel_energy_1.UNIT_zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
 				<connect to="Coal_supply_vs_demand.UNIT_zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
 				<connect2 to="Coal_supply_vs_demand.UNIT_zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
 				<connect to="Fossil_energy_1.UNIT_zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
@@ -6603,6 +6743,8 @@ Lorem ipsum dolor sit amet</text_box>
 			</module>
 			<module name="Energy demand 1" isee:label="">
 				<format scale_by="auto"/>
+				<connect to="Total_energy_supply_vs_demand.Direct_use_Other_demand" from="Energy_demand_1.Direct_use_Bioenergy_Waste_and_Heat_demand_without_Biofuel"/>
+				<connect2 to="Total_energy_supply_vs_demand.Direct_use_Other_demand" from="Energy_demand_1.Direct_use_Bioenergy_Waste_and_Heat_demand_without_Biofuel"/>
 				<connect to="Total_energy_supply_vs_demand.Direct_use_Biofuel_demand" from="Energy_demand_1.Direct_use_Biofuel_demand"/>
 				<connect2 to="Total_energy_supply_vs_demand.Direct_use_Biofuel_demand" from="Energy_demand_1.Direct_use_Biofuel_demand"/>
 				<connect to="Energy_investments_1.Direct_use_biofuel_demand_in_zJ" from="Energy_demand_1.Direct_use_Biofuel_demand_in_zJ"/>
@@ -6615,8 +6757,6 @@ Lorem ipsum dolor sit amet</text_box>
 				<connect2 to="Liquid_fuel_supply_vs_demand.Liquid_Fuel_demand_FUEL" from="Energy_demand_1.Direct_use_Liquid_fuel_demand_in_zJ"/>
 				<connect to="Energy_investments_1.Direct_use_oil_demand_in_zJ" from="Energy_demand_1.Direct_use_Oil_demand_in_zJ"/>
 				<connect2 to="Energy_investments_1.Direct_use_oil_demand_in_zJ" from="Energy_demand_1.Direct_use_Oil_demand_in_zJ"/>
-				<connect to="Total_energy_supply_vs_demand.Direct_use_Other_demand" from="Energy_demand_1.Direct_use_Other_demand"/>
-				<connect2 to="Total_energy_supply_vs_demand.Direct_use_Other_demand" from="Energy_demand_1.Direct_use_Other_demand"/>
 				<connect to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_fossil_coal" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_Coal"/>
 				<connect2 to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_fossil_coal" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_Coal"/>
 				<connect to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_electricity" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_electricity"/>
@@ -6625,8 +6765,12 @@ Lorem ipsum dolor sit amet</text_box>
 				<connect2 to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_fossil_gas" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_Gas"/>
 				<connect to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_liquid_fuel" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_liquid_fuel"/>
 				<connect2 to="Transportation_Energy_Demand.Share_of_Transportation_energy_demand_for_liquid_fuel" from="Energy_demand_1.Share_of_Transportation_energy_demand_for_liquid_fuel"/>
+				<connect to=".Total_demand_for_energy" from="Energy_demand_1.Total_demand_for_energy"/>
+				<connect2 to=".Total_demand_for_energy" from="Energy_demand_1.Total_demand_for_energy"/>
 				<connect to="Total_energy_supply_vs_demand.Total_demand_for_energy" from="Energy_demand_1.Total_demand_for_energy"/>
 				<connect2 to="Total_energy_supply_vs_demand.Total_demand_for_energy" from="Energy_demand_1.Total_demand_for_energy"/>
+				<connect to=".Total_demand_for_energy_in_secondary_energy_units" from="Energy_demand_1.Total_demand_for_energy_in_secondary_energy_units"/>
+				<connect2 to=".Total_demand_for_energy_in_secondary_energy_units" from="Energy_demand_1.Total_demand_for_energy_in_secondary_energy_units"/>
 				<connect to="Electricity_supply_vs_demand.Total_electricity_demand" from="Energy_demand_1.Total_Electricity_demand"/>
 				<connect2 to="Electricity_supply_vs_demand.Total_electricity_demand" from="Energy_demand_1.Total_Electricity_demand"/>
 				<connect to="Energy_demand_1.behaviour_driven_total_yearly_demand" from="Transportation_Energy_Demand.behaviour_driven_total_yearly_demand"/>
@@ -6655,8 +6799,12 @@ Lorem ipsum dolor sit amet</text_box>
 				<connect2 to="Energy_demand_1.switch_energy_demand_policy" from="Behavioral_Choices.switch_energy_demand_policy"/>
 				<connect to="Energy_demand_1.Switch_to_couple_investments_supply_and_demand_in_new_energy" from="New_Energy.Switch_to_couple_investments_supply_and_demand_in_new_energy"/>
 				<connect2 to="Energy_demand_1.Switch_to_couple_investments_supply_and_demand_in_new_energy" from="Switch_to_couple_investments_supply_and_demand_in_new_energy"/>
+				<connect to="Energy_demand_1.Total_Usable_Secondary_Energy_output_from_direct_use" from="Fossil_energy_1.Total_Usable_Secondary_Energy_output_from_direct_use"/>
+				<connect2 to="Energy_demand_1.Total_Usable_Secondary_Energy_output_from_direct_use" from="Fossil_energy_1.Total_Usable_Secondary_Energy_output_from_direct_use"/>
 				<connect to="Energy_demand_1.UNIT_TWh_to_zJ_1" from="Energy_Units_1.UNIT_TWh_to_zJ"/>
 				<connect2 to="Energy_demand_1.UNIT_TWh_to_zJ_1" from="Energy_Units_1.UNIT_TWh_to_zJ"/>
+				<connect to="Energy_demand_1.Usable_Secondary_Energy_output_from_direct_use_of_Gas_1" from="Bio_fuel_energy_1.Usable_Secondary_Energy_output_from_direct_use_of_Biofuel"/>
+				<connect2 to="Energy_demand_1.Usable_Secondary_Energy_output_from_direct_use_of_Gas_1" from="Bio_fuel_energy_1.Usable_Secondary_Energy_output_from_direct_use_of_Biofuel"/>
 				<connect to="Energy_investments_1.share_of_biofuel_in_other_2" from="Buildings_energy_demand_1.share_of_biofuel_in_other"/>
 				<connect2 to="Energy_investments_1.share_of_biofuel_in_other_2" from="Buildings_energy_demand_1.share_of_biofuel_in_other"/>
 				<connect to="Buildings_energy_demand_1.Population" from="Demographics.Population"/>
@@ -6701,8 +6849,8 @@ Lorem ipsum dolor sit amet</text_box>
 				<connect2 to="Energy_investments_1.share_of_biofuel_in_other" from="Industry_and_Other_energy_demand_1.share_of_biofuel_in_other"/>
 				<connect to="Industry_and_Other_energy_demand_1.Switch_to_energy_prices" from="New_Energy.Switch_to_energy_prices"/>
 				<connect2 to="Industry_and_Other_energy_demand_1.Switch_to_energy_prices" from="Switch_to_energy_prices"/>
-				<connect to="Energy_investments_1.share_of_biofuel_in_other_1" from="Transportation_energy_demand_1.share_of_biofuel_in_other"/>
-				<connect2 to="Energy_investments_1.share_of_biofuel_in_other_1" from="Transportation_energy_demand_1.share_of_biofuel_in_other"/>
+				<connect to="Energy_investments_1.share_of_biofuel_in_other_1" from="Transportation_energy_demand_1.share_of_biofuel_in_Biofuel_and_Waste"/>
+				<connect2 to="Energy_investments_1.share_of_biofuel_in_other_1" from="Transportation_energy_demand_1.share_of_biofuel_in_Biofuel_and_Waste"/>
 				<connect to="Transportation_energy_demand_1.Switch_to_energy_prices" from="New_Energy.Switch_to_energy_prices"/>
 				<connect2 to="Transportation_energy_demand_1.Switch_to_energy_prices" from="Switch_to_energy_prices"/>
 				<connect to="Transportation_energy_demand_1.Total_yearly_demand_1" from="Transportation_Energy_Demand.behaviour_driven_total_yearly_demand"/>
@@ -6721,7 +6869,7 @@ Lorem ipsum dolor sit amet</text_box>
 				<units>dmnl</units>
 			</aux>
 			<aux name="Switch to couple investments supply and demand in new energy" access="output" isee:autocreated="true">
-				<eqn>1</eqn>
+				<eqn>0</eqn>
 				<format precision="1"/>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
@@ -6885,19 +7033,26 @@ Lorem ipsum dolor sit amet</text_box>
 				<eqn>0.3</eqn>
 				<units>dmnl</units>
 			</aux>
-			<aux name="TFP Ramp" access="input">
-				<dimensions>
-					<dim name="Run"/>
-				</dimensions>
-				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
-				<units>zJ/Year</units>
-			</aux>
 			<aux name="TFP in 1980" access="input">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
 				<eqn>0.141258869</eqn>
 				<units>zJ/Year</units>
+			</aux>
+			<aux name="TFP Max" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>0.17</eqn>
+				<units>zJ/Year</units>
+			</aux>
+			<aux name="Initial share of investment to direct use" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>0.8</eqn>
+				<units>dmnl</units>
 			</aux>
 		</variables>
 		<views>
@@ -6948,7 +7103,7 @@ Lorem ipsum dolor sit amet</text_box>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="8" isee:page_rows="8" isee:scroll_x="1889.17" isee:scroll_y="935" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="8" isee:page_rows="8" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="9pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -7219,7 +7374,7 @@ Fossil Fuel Extraction for Electricity</text_box>
 							<entity name="Energy_supply_1.Nuclear_Energy_Output_Share[1]"/>
 						</plot>
 						<plot color="#00D900" isee:keep_zero_visible="true" pen_width="1" index="5" show_y_axis="true">
-							<entity name="Energy_supply_1.Bio_Energy_Output_Share[1]"/>
+							<entity name="Energy_supply_1.Bio_fuel_energy_Output_Share[1]"/>
 						</plot>
 						<plot color="#FEEA6C" isee:keep_zero_visible="true" pen_width="1" index="6" show_y_axis="true">
 							<entity name="Energy_supply_1.Solar_Energy_Output_Share[1]"/>
@@ -7337,6 +7492,7 @@ Fossil Fuel Extraction for Electricity</text_box>
 					<graph width="350" height="250" comparative="true" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Electricity_investments.Coal_Investments_Allocated_to_Capacity_Construction_in_Fossil_Energy_Capital[1]"/>
+							<scale max="50000000000"/>
 						</plot>
 					</graph>
 				</stacked_container>
@@ -7344,6 +7500,7 @@ Fossil Fuel Extraction for Electricity</text_box>
 					<graph width="350" height="250" comparative="true" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Electricity_investments.Oil_Gross_Investments_in_Fossil_Energy_Capital[1]"/>
+							<scale max="150000000000"/>
 						</plot>
 					</graph>
 				</stacked_container>
@@ -7358,6 +7515,7 @@ Fossil Fuel Extraction for Electricity</text_box>
 					<graph width="350" height="250" comparative="true" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Electricity_investments.Gas_Gross_Investments_in_Fossil_Energy_Capital[1]"/>
+							<scale max="150000000000"/>
 						</plot>
 					</graph>
 				</stacked_container>
@@ -7654,11 +7812,11 @@ Fossil Fuel Extraction for Electricity</text_box>
 							<entity name="Fossil_energy_coal_1.TFP_Ramp[1]"/>
 							<scale min="0.14"/>
 						</plot>
-						<plot color="#BE8D59" isee:keep_zero_visible="true" pen_width="2" index="1" show_y_axis="true">
-							<entity name="Fossil_energy_gas_1.TFP_Ramp[1]"/>
-						</plot>
-						<plot color="#704B27" isee:keep_zero_visible="true" pen_width="2" index="2" show_y_axis="true">
+						<plot color="#916033" isee:keep_zero_visible="true" pen_width="2" index="1" show_y_axis="true">
 							<entity name="Fossil_energy_oil_1.TFP_Ramp[1]"/>
+						</plot>
+						<plot color="#BE8D59" isee:keep_zero_visible="true" pen_width="2" index="2" show_y_axis="true">
+							<entity name="Fossil_energy_gas_1.TFP_Ramp[1]"/>
 						</plot>
 					</graph>
 				</stacked_container>
@@ -7818,6 +7976,7 @@ Fossil Fuel Extraction for Electricity</text_box>
 					<graph width="350" height="250" comparative="true" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Global_Investments.Investments_Allocated_to_Capacity_Construction_in_Fossil_Energy_Capital_oil_and_gas[1]"/>
+							<scale max="150000000000"/>
 						</plot>
 					</graph>
 				</stacked_container>
@@ -7857,43 +8016,43 @@ Fossil Fuel Extraction</text_box>
 					<from>Energy_supply_1</from>
 					<to>Primary_Fossil_Energy_Scaling_Parameter_1</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="5138" y="3375" name="Fossil Energy Capital Scaling Parameter 1"/>
-				<connector uid="253" angle="351.173" isee:autocreated="true">
+				<aux font_style="italic" font_weight="bold" x="5151" y="3364" name="Fossil Energy Capital Scaling Parameter 1"/>
+				<connector uid="253" angle="351.34" isee:autocreated="true">
 					<from>Energy_supply_1</from>
 					<to>Fossil_Energy_Capital_Scaling_Parameter_1</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="5301" y="3369" name="Primary Fossil Energy\nScaling Parameter 2"/>
-				<connector uid="254" angle="352.126" isee:autocreated="true">
+				<aux font_style="italic" font_weight="bold" x="5321.71" y="3367" name="Primary Fossil Energy\nScaling Parameter 2"/>
+				<connector uid="254" angle="352.254" isee:autocreated="true">
 					<from>Energy_supply_1</from>
 					<to>Primary_Fossil_Energy_Scaling_Parameter_2</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="5438" y="3364" name="Fossil Energy Capital Scaling Parameter 2"/>
-				<connector uid="255" angle="352.893" isee:autocreated="true">
+				<aux font_style="italic" font_weight="bold" x="5493" y="3364" name="Fossil Energy Capital Scaling Parameter 2"/>
+				<connector uid="255" angle="353.176" isee:autocreated="true">
 					<from>Energy_supply_1</from>
 					<to>Fossil_Energy_Capital_Scaling_Parameter_2</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="4769" y="3450" name="share of primary energy\nin fossil energy"/>
-				<connector uid="256" angle="348.313" isee:autocreated="true">
+				<aux font_style="italic" font_weight="bold" x="4774" y="3421.43" name="share of primary energy\nin fossil energy"/>
+				<connector uid="256" angle="348.59" isee:autocreated="true">
 					<from>Energy_supply_1</from>
 					<to>share_of_primary_energy_in_fossil_energy</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="4813" y="3306" name="Elasticity of Substitution\nin Fossil Energy Output"/>
-				<connector uid="257" angle="349.841" isee:autocreated="true">
+				<aux font_style="italic" font_weight="bold" x="4778.29" y="3306" name="Elasticity of Substitution\nin Fossil Energy Output"/>
+				<connector uid="257" angle="349.624" isee:autocreated="true">
 					<from>Energy_supply_1</from>
 					<to>Elasticity_of_Substitution_in_Fossil_Energy_Output</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="5058" y="3450" name="share of primary energy\nin fossil energy 1"/>
-				<connector uid="258" angle="350.08" isee:autocreated="true">
+				<aux font_style="italic" font_weight="bold" x="5081.14" y="3421.43" name="share of primary energy\nin fossil energy 1"/>
+				<connector uid="258" angle="350.455" isee:autocreated="true">
 					<from>Energy_supply_1</from>
 					<to>share_of_primary_energy_in_fossil_energy_1</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="5114" y="3306" name="Elasticity of Substitution\nin Fossil Energy Output 1"/>
-				<connector uid="259" angle="351.626" isee:autocreated="true">
+				<aux font_style="italic" font_weight="bold" x="5081.14" y="3306" name="Elasticity of Substitution\nin Fossil Energy Output 1"/>
+				<connector uid="259" angle="351.402" isee:autocreated="true">
 					<from>Energy_supply_1</from>
 					<to>Elasticity_of_Substitution_in_Fossil_Energy_Output_1</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="5368" y="3443" name="share of primary energy\nin fossil energy 2"/>
-				<connector uid="260" angle="351.874" isee:autocreated="true">
+				<aux font_style="italic" font_weight="bold" x="5405" y="3421.43" name="share of primary energy\nin fossil energy 2"/>
+				<connector uid="260" angle="352.248" isee:autocreated="true">
 					<from>Energy_supply_1</from>
 					<to>share_of_primary_energy_in_fossil_energy_2</to>
 				</connector>
@@ -7902,8 +8061,8 @@ Fossil Fuel Extraction</text_box>
 					<from>Energy_supply_1</from>
 					<to>Elasticity_of_Substitution_in_Fossil_Energy_Output_2</to>
 				</connector>
-				<stacked_container uid="263" x="2614.67" y="1235.65" width="361.25" height="354.167">
-					<graph width="361.25" height="354.167" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+				<stacked_container uid="263" x="2614.67" y="1256.65" width="361.25" height="253.16">
+					<graph width="361.25" height="253.16" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="#552A00" pen_style="dashed" isee:keep_zero_visible="true" pen_width="2" index="0" show_y_axis="true">
 							<entity name="Fossil_energy_oil_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit[1]"/>
 						</plot>
@@ -7912,18 +8071,37 @@ Fossil Fuel Extraction</text_box>
 						</plot>
 					</graph>
 				</stacked_container>
-				<aux font_style="italic" font_weight="bold" x="3607" y="2102.5" name="TFP Ramp"/>
-				<connector uid="264" angle="354.391" isee:autocreated="true">
-					<from>Energy_supply_1</from>
-					<to>TFP_Ramp</to>
-				</connector>
 				<aux font_style="italic" font_weight="bold" x="3607" y="2150" name="TFP in 1980"/>
 				<connector uid="265" angle="353.753" isee:autocreated="true">
 					<from>Energy_supply_1</from>
 					<to>TFP_in_1980</to>
 				</connector>
+				<aux font_style="italic" font_weight="bold" x="3607" y="2076.25" name="TFP Max"/>
+				<connector uid="267" angle="354.747" isee:autocreated="true">
+					<from>Energy_supply_1</from>
+					<to>TFP_Max</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" x="3105" y="1868.75" name="Initial share of investment to direct use"/>
+				<connector uid="268" angle="353.384" isee:autocreated="true">
+					<from>Energy_supply_1</from>
+					<to>Initial_share_of_investment_to_direct_use</to>
+				</connector>
+				<connector uid="270" isee:thickness="2" angle="115" isee:autocreated="true">
+					<from>Energy_supply_vs_demand_1</from>
+					<to>Energy_supply_1</to>
+				</connector>
+				<connector uid="271" isee:thickness="2" angle="295" isee:autocreated="true">
+					<from>Energy_supply_1</from>
+					<to>Energy_demand_1</to>
+				</connector>
 				<alias font_style="italic" font_weight="bold" uid="262" x="2851.67" y="1793.33" width="18" height="18">
 					<of>initial_fossil_energy_capital_1</of>
+				</alias>
+				<alias font_style="italic" font_weight="bold" uid="266" x="2822.67" y="1672.67" width="18" height="18">
+					<of>Fossil_Energy_Capital_Scaling_Parameter_1</of>
+				</alias>
+				<alias font_style="italic" font_weight="bold" uid="269" x="2719.25" y="1623.67" width="18" height="18">
+					<of>Primary_Fossil_Energy_Scaling_Parameter_1</of>
 				</alias>
 			</view>
 		</views>
@@ -7954,7 +8132,7 @@ https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=chart&amp;coun
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>(Direct_use_Gas_demand+Direct_use_Liquid_fuel_demand+Direct_use_Coal_demand)+Total_Electricity_demand+Direct_use_Other_demand</eqn>
+				<eqn>(Direct_use_Gas_demand+Direct_use_Liquid_fuel_demand+Direct_use_Coal_demand)+Total_Electricity_demand+Direct_use_Bioenergy_Waste_and_Heat_demand_without_Biofuel</eqn>
 				<units>TWh/year</units>
 			</aux>
 			<aux name="per person use of energy policy" access="input">
@@ -8052,7 +8230,9 @@ ELSE
 				</dimensions>
 				<eqn>IF NonEleEnergyCarriers = NonEleEnergyCarriers.Coal THEN 
 cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit[Run]
-ELSE IF NonEleEnergyCarriers = NonEleEnergyCarriers.Oil THEN Liquid_fuel_Cost_of_Extra_Energy_Output_through_Capital_per_Unit[Run]
+ELSE IF NonEleEnergyCarriers = NonEleEnergyCarriers.Oil THEN cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_2[Run]
+ELSE IF NonEleEnergyCarriers = NonEleEnergyCarriers.Biofuel THEN
+&quot;Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs&quot;[Run]
 ELSE IF NonEleEnergyCarriers = NonEleEnergyCarriers.Gas THEN 
 cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_1[Run]
 ELSE 1</eqn>
@@ -8212,6 +8392,8 @@ ELSE 1</eqn>
 			</aux>
 			<module name="Industry and Other\nenergy demand 1" isee:label="">
 				<format scale_by="auto"/>
+				<connect to="Energy_demand_1.Other_1" from="Industry_and_Other_energy_demand_1.Bioenergy_Waste_and_Heat_demand_without_Biofuel"/>
+				<connect2 to="Other_1" from="Industry_and_Other_energy_demand_1.Bioenergy_Waste_and_Heat_demand_without_Biofuel"/>
 				<connect to="Energy_demand_1.Biofuel_1" from="Industry_and_Other_energy_demand_1.Biofuel"/>
 				<connect2 to="Biofuel_1" from="Industry_and_Other_energy_demand_1.Biofuel"/>
 				<connect to="Energy_demand_1.Fossil_coal_in_transportation_1" from="Industry_and_Other_energy_demand_1.Coal"/>
@@ -8236,8 +8418,6 @@ ELSE 1</eqn>
 				<connect2 to="normal_per_sector_energy_demand_for_Industry_and_Other" from="Industry_and_Other_energy_demand_1.normal_per_sector_energy_demand_for_Industry_and_Other"/>
 				<connect to="Energy_demand_1.Fossil_oil_1" from="Industry_and_Other_energy_demand_1.Oil"/>
 				<connect2 to="Fossil_oil_1" from="Industry_and_Other_energy_demand_1.Oil"/>
-				<connect to="Energy_demand_1.Other_1" from="Industry_and_Other_energy_demand_1.Other"/>
-				<connect2 to="Other_1" from="Industry_and_Other_energy_demand_1.Other"/>
 				<connect to="Energy_demand_1.priority_spread_1" from="Industry_and_Other_energy_demand_1.priority_spread"/>
 				<connect2 to="priority_spread_1" from="Industry_and_Other_energy_demand_1.priority_spread"/>
 				<connect to="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_electrification_share_for_Industry_and_Other" from="Industry_and_Other_energy_demand_1.sensitivity_of_effect_of_energy_prices_on_electrification_share_for_Industry_and_Other"/>
@@ -8327,6 +8507,8 @@ ELSE
 			</aux>
 			<module name="Transportation energy demand 1" isee:label="">
 				<format scale_by="auto"/>
+				<connect to="Energy_demand_1.Other" from="Transportation_energy_demand_1.Bioenergy_and_Waste_demand_without_Biofuel"/>
+				<connect2 to="Other" from="Transportation_energy_demand_1.Bioenergy_and_Waste_demand_without_Biofuel"/>
 				<connect to="Energy_demand_1.Biofuel" from="Transportation_energy_demand_1.Biofuel"/>
 				<connect2 to="Biofuel" from="Transportation_energy_demand_1.Biofuel"/>
 				<connect to="Energy_demand_1.Fossil_coal_in_transportation" from="Transportation_energy_demand_1.Coal"/>
@@ -8345,14 +8527,12 @@ ELSE
 				<connect2 to="normal_electrification_share_for_fordustry_and_Other_2" from="Transportation_energy_demand_1.normal_electrification_share_for_fordustry_and_Other"/>
 				<connect to="Energy_demand_1.Fossil_oil" from="Transportation_energy_demand_1.Oil"/>
 				<connect2 to="Fossil_oil" from="Transportation_energy_demand_1.Oil"/>
-				<connect to="Energy_demand_1.Other" from="Transportation_energy_demand_1.Other"/>
-				<connect2 to="Other" from="Transportation_energy_demand_1.Other"/>
 				<connect to="Energy_demand_1.priority_spread_2" from="Transportation_energy_demand_1.priority_spread"/>
 				<connect2 to="priority_spread_2" from="Transportation_energy_demand_1.priority_spread"/>
 				<connect to="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_electrification_share_for_Transportation" from="Transportation_energy_demand_1.sensitivity_of_effect_of_energy_prices_on_electrification_share_for_Transportation"/>
 				<connect2 to="sensitivity_of_effect_of_energy_prices_on_electrification_share_for_Transportation" from="Transportation_energy_demand_1.sensitivity_of_effect_of_energy_prices_on_electrification_share_for_Transportation"/>
-				<connect to="Energy_investments_1.share_of_biofuel_in_other_1" from="Transportation_energy_demand_1.share_of_biofuel_in_other"/>
-				<connect2 to="Energy_investments_1.share_of_biofuel_in_other_1" from="Transportation_energy_demand_1.share_of_biofuel_in_other"/>
+				<connect to="Energy_investments_1.share_of_biofuel_in_other_1" from="Transportation_energy_demand_1.share_of_biofuel_in_Biofuel_and_Waste"/>
+				<connect2 to="Energy_investments_1.share_of_biofuel_in_other_1" from="Transportation_energy_demand_1.share_of_biofuel_in_Biofuel_and_Waste"/>
 				<connect to="Energy_demand_1.suitability_cost_adjustment_2" from="Transportation_energy_demand_1.suitability_cost_adjustment"/>
 				<connect2 to="suitability_cost_adjustment_2" from="Transportation_energy_demand_1.suitability_cost_adjustment"/>
 				<connect to="Energy_demand_1.total_energy_demand_for_Industry_and_Other_1" from="Transportation_energy_demand_1.total_energy_demand_for_Transportation"/>
@@ -8370,6 +8550,8 @@ ELSE
 			</module>
 			<module name="Buildings\nenergy demand 1" isee:label="">
 				<format scale_by="auto"/>
+				<connect to="Energy_demand_1.Other_2" from="Buildings_energy_demand_1.Bioenergy_Waste_and_Heat_demand_without_Biofuel"/>
+				<connect2 to="Other_2" from="Buildings_energy_demand_1.Bioenergy_Waste_and_Heat_demand_without_Biofuel"/>
 				<connect to="Energy_demand_1.Biofuel_2" from="Buildings_energy_demand_1.Biofuel"/>
 				<connect2 to="Biofuel_2" from="Buildings_energy_demand_1.Biofuel"/>
 				<connect to="Energy_demand_1.Fossil_coal_in_transportation_2" from="Buildings_energy_demand_1.Coal"/>
@@ -8394,8 +8576,6 @@ ELSE
 				<connect2 to="normal_per_sector_energy_demand_for_Buildings" from="Buildings_energy_demand_1.normal_per_sector_energy_demand_for_Buildings"/>
 				<connect to="Energy_demand_1.Fossil_oil_2" from="Buildings_energy_demand_1.Oil"/>
 				<connect2 to="Fossil_oil_2" from="Buildings_energy_demand_1.Oil"/>
-				<connect to="Energy_demand_1.Other_2" from="Buildings_energy_demand_1.Other"/>
-				<connect2 to="Other_2" from="Buildings_energy_demand_1.Other"/>
 				<connect to="Energy_demand_1.priority_spread" from="Buildings_energy_demand_1.priority_spread"/>
 				<connect2 to="priority_spread" from="Buildings_energy_demand_1.priority_spread"/>
 				<connect to="Energy_demand_1.sensitivity_of_effect_of_energy_prices_on_electrification_share_for_Buildings" from="Buildings_energy_demand_1.sensitivity_of_effect_of_energy_prices_on_electrification_share_for_Buildings"/>
@@ -9062,7 +9242,7 @@ ELSE
 					<dim name="Run"/>
 				</dimensions>
 				<eqn>IF Switch_to_couple_investments_supply_and_demand_in_new_energy = 1 THEN 
-Direct_use_Other_demand*UNIT_TWh_to_zJ_1
+Direct_use_Bioenergy_Waste_and_Heat_demand_without_Biofuel*UNIT_TWh_to_zJ_1
 ELSE
 0.03</eqn>
 				<units>zJ/Year</units>
@@ -9071,15 +9251,36 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>Direct_use_Other_demand/Total_demand_for_energy</eqn>
+				<eqn>Direct_use_Bioenergy_Waste_and_Heat_demand_without_Biofuel/Total_demand_for_energy</eqn>
 				<units>dmnl</units>
 			</aux>
-			<aux name="Direct use Other demand" access="output" isee:autocreated="true">
+			<aux name="Direct use Bioenergy Waste and Heat demand without\nBiofuel" access="output" isee:autocreated="true">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
 				<eqn>Other+Other_1+Other_2</eqn>
 				<units>TWh/year</units>
+			</aux>
+			<aux name="Total Usable Secondary Energy output\nfrom direct use" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>TWh/Year</units>
+			</aux>
+			<aux name="Total demand for energy\nin secondary energy units" access="output" isee:autocreated="true">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>Total_Electricity_demand+Usable_Secondary_Energy_output_from_direct_use_of_Gas_1+Total_Usable_Secondary_Energy_output_from_direct_use</eqn>
+				<units>TWh/Year</units>
+			</aux>
+			<aux name="Usable Secondary Energy output\nfrom direct use of Gas 1" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>TWh/Year</units>
 			</aux>
 		</variables>
 		<views>
@@ -9130,7 +9331,7 @@ ELSE
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="10" isee:page_rows="7" zoom="80" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="10" isee:page_rows="7" isee:scroll_x="4132" isee:scroll_y="103" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -9234,10 +9435,6 @@ ELSE
 				</connector>
 				<aux x="3697.01" y="763.972" name="cost to build\nper unit"/>
 				<aux x="3885.51" y="763.972" name="Liquid fuel Cost of Extra Energy Output\nthrough Capital per Unit"/>
-				<connector uid="512" angle="180">
-					<from>Liquid_fuel_Cost_of_Extra_Energy_Output_through_Capital_per_Unit</from>
-					<to>cost_to_build_per_unit</to>
-				</connector>
 				<aux background="white" font_style="italic" font_weight="bold" x="1609.83" y="288.131" name="Fossil coal in transportation"/>
 				<aux font_style="italic" font_weight="bold" x="1968.59" y="287.76" name="Liquid fuel in transportation"/>
 				<aux background="white" font_style="italic" font_weight="bold" x="2353.01" y="289.76" name="Fossil Gas in transportation"/>
@@ -9345,18 +9542,18 @@ ELSE
 					<to>Share_of_Gas_demand_for_Buildings</to>
 				</connector>
 				<aux x="3302.13" y="776.271" name="relative global\nreal GDP in 2021"/>
-				<module x="3060.04" y="738.695" name="Industry and Other\nenergy demand 1"/>
-				<connector uid="552" angle="171.177">
+				<module x="3060.04" y="739.771" name="Industry and Other\nenergy demand 1"/>
+				<connector uid="552" angle="171.426">
 					<from>relative_global_real_GDP_in_2021</from>
 					<to>Industry_and_Other_energy_demand_1</to>
 				</connector>
 				<module x="3633.28" y="762.701" name="Energy margins"/>
-				<connector uid="555" isee:thickness="2" angle="177.602">
+				<connector uid="555" isee:thickness="2" angle="177.709">
 					<from>Energy_margins</from>
 					<to>Industry_and_Other_energy_demand_1</to>
 				</connector>
 				<aux background="white" label_side="bottom" x="2562.2" y="740.362" name="Electricity demand for\nindustry and other 1"/>
-				<connector uid="561" angle="180.192" isee:autocreated="true">
+				<connector uid="561" angle="180.068" isee:autocreated="true">
 					<from>Industry_and_Other_energy_demand_1</from>
 					<to>Electricity_demand_for_industry_and_other_1</to>
 				</connector>
@@ -9414,7 +9611,7 @@ ELSE
 					<to>Liquid_fuel_Cost_of_Extra_Energy_Output_through_Capital_per_Unit</to>
 				</connector>
 				<aux font_style="italic" font_weight="bold" label_side="right" x="4032.44" y="676.702" name="bio fuel primary energy"/>
-				<connector uid="582" angle="210.709">
+				<connector uid="582" angle="210.708">
 					<from>bio_fuel_primary_energy</from>
 					<to>Liquid_fuel_Cost_of_Extra_Energy_Output_through_Capital_per_Unit</to>
 				</connector>
@@ -9486,11 +9683,11 @@ ELSE
 				<aux background="#FFAAFF" label_side="bottom" x="2560.53" y="170.43" name="Share of electricity demand for\nTransportation"/>
 				<aux background="#FFAAFF" label_side="bottom" x="2562.2" y="1293.13" name="Share of electricity demand for\nBuildings"/>
 				<aux background="#FFAAFF" label_side="bottom" x="2562.2" y="643.694" name="Share of electricity demand for\nIndustry and Other"/>
-				<connector uid="600" angle="27.0371">
+				<connector uid="600" angle="27.037">
 					<from>Total_Electricity_demand</from>
 					<to>Share_of_electricity_demand_for_Transportation</to>
 				</connector>
-				<connector uid="601" angle="5.02191">
+				<connector uid="601" angle="5.02189">
 					<from>Total_Electricity_demand</from>
 					<to>Share_of_electricity_demand_for_Industry_and_Other</to>
 				</connector>
@@ -9507,7 +9704,7 @@ ELSE
 					<to>Total_demand_for_energy</to>
 				</connector>
 				<aux background="white" font_style="italic" font_weight="bold" label_side="bottom" x="2930.68" y="737.798" name="total energy demand for\nIndustry and Other"/>
-				<connector uid="615" angle="179.603" isee:autocreated="true">
+				<connector uid="615" angle="179.126" isee:autocreated="true">
 					<from>Industry_and_Other_energy_demand_1</from>
 					<to>total_energy_demand_for_Industry_and_Other</to>
 				</connector>
@@ -9777,7 +9974,7 @@ ELSE
 					</graph>
 				</stacked_container>
 				<text_box text_align="center" font_size="28pt" uid="714" x="6668.17" y="1652.27" width="260" height="58">Buildings</text_box>
-				<stacked_container uid="721" x="5287.64" y="1076.08">
+				<stacked_container uid="721" x="5294.64" y="1076.08">
 					<graph width="350" height="250" comparative="true" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" to="2024" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Share_of_Coal_demand_for_Buildings[1]"/>
@@ -9791,7 +9988,7 @@ ELSE
 						</plot>
 					</graph>
 				</stacked_container>
-				<stacked_container uid="724" x="4542.23" y="1078.58">
+				<stacked_container uid="724" x="4538.9" y="1076.08">
 					<graph width="350" height="250" comparative="true" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" to="2024" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="Share_of_Coal_demand_for_Transportation[1]"/>
@@ -9958,7 +10155,7 @@ ELSE
 				<text_box text_align="center" font_size="28pt" uid="772" x="8520.29" y="1851.49" width="283.831" height="50.2222">Total Energy demand</text_box>
 				<text_box text_align="center" font_size="28pt" uid="773" x="8970.29" y="1857.05" width="283.831" height="50.2222">Eletrification</text_box>
 				<aux font_style="italic" font_weight="bold" x="8978.34" y="1450.83" name="effect of GDP on\nelectrification\nshare for fordustry and Other alpha 1"/>
-				<connector uid="774" angle="18.1386" isee:autocreated="true">
+				<connector uid="774" angle="18.1489" isee:autocreated="true">
 					<from>Industry_and_Other_energy_demand_1</from>
 					<to>effect_of_GDP_on_electrification_share_for_fordustry_and_Other_alpha_1</to>
 				</connector>
@@ -10023,27 +10220,27 @@ ELSE
 					<from>Electricity_demand_for_industry_and_other_3</from>
 					<to>Share_of_Transportation_energy_demand_for_electricity</to>
 				</connector>
-				<connector uid="794" angle="177.728">
+				<connector uid="794" angle="177.824">
 					<from>cost_to_build_per_unit</from>
 					<to>Industry_and_Other_energy_demand_1</to>
 				</connector>
-				<connector uid="795" angle="180.066">
+				<connector uid="795" angle="180.023">
 					<from>Industry_and_Other_energy_demand_1</from>
 					<to>Fossil_coal_in_transportation_1</to>
 				</connector>
-				<connector uid="796" angle="179.874">
+				<connector uid="796" angle="179.818">
 					<from>Industry_and_Other_energy_demand_1</from>
 					<to>Liquid_fuel_in_transportation_1</to>
 				</connector>
-				<connector uid="797" angle="180.136">
+				<connector uid="797" angle="180.048">
 					<from>Industry_and_Other_energy_demand_1</from>
 					<to>Fossil_Gas_in_transportation_1</to>
 				</connector>
-				<connector uid="798" angle="180.212">
+				<connector uid="798" angle="180.163">
 					<from>Industry_and_Other_energy_demand_1</from>
 					<to>Biofuel_1</to>
 				</connector>
-				<connector uid="799" angle="180.105">
+				<connector uid="799" angle="180.037">
 					<from>Industry_and_Other_energy_demand_1</from>
 					<to>Fossil_oil_1</to>
 				</connector>
@@ -10241,32 +10438,32 @@ ELSE
 					</graph>
 				</stacked_container>
 				<aux font_style="italic" font_weight="bold" x="8645.43" y="1325.83" name="normal per sector\nenergy demand\nfor Industry and Other"/>
-				<connector uid="851" angle="18.999" isee:autocreated="true">
+				<connector uid="851" angle="19.0099" isee:autocreated="true">
 					<from>Industry_and_Other_energy_demand_1</from>
 					<to>normal_per_sector_energy_demand_for_Industry_and_Other</to>
 				</connector>
 				<aux font_style="italic" font_weight="bold" x="8525.43" y="1453.33" name="effect of GDP on energy\ndemand for Industry and Other alpha"/>
-				<connector uid="852" angle="17.5505" isee:autocreated="true">
+				<connector uid="852" angle="17.5616" isee:autocreated="true">
 					<from>Industry_and_Other_energy_demand_1</from>
 					<to>effect_of_GDP_on_energy_demand_for_Industry_and_Other_alpha</to>
 				</connector>
 				<aux font_style="italic" font_weight="bold" x="8737.51" y="1453.33" name="effect of GDP on energy\ndemand for Industry and Other beta"/>
-				<connector uid="853" angle="17.8257" isee:autocreated="true">
+				<connector uid="853" angle="17.8364" isee:autocreated="true">
 					<from>Industry_and_Other_energy_demand_1</from>
 					<to>effect_of_GDP_on_energy_demand_for_Industry_and_Other_beta</to>
 				</connector>
 				<aux font_style="italic" font_weight="bold" x="9068.34" y="1330.83" name="normal electrification\nshare for fordustry\nand Other 1"/>
-				<connector uid="854" angle="19.3715" isee:autocreated="true">
+				<connector uid="854" angle="19.3817" isee:autocreated="true">
 					<from>Industry_and_Other_energy_demand_1</from>
 					<to>normal_electrification_share_for_fordustry_and_Other_1</to>
 				</connector>
 				<aux font_style="italic" font_weight="bold" x="9192.09" y="1450.83" name="effect of GDP on\nelectrification\nshare for fordustry and Other beta 1"/>
-				<connector uid="855" angle="18.3757" isee:autocreated="true">
+				<connector uid="855" angle="18.3856" isee:autocreated="true">
 					<from>Industry_and_Other_energy_demand_1</from>
 					<to>effect_of_GDP_on_electrification_share_for_fordustry_and_Other_beta_1</to>
 				</connector>
 				<aux font_style="italic" font_weight="bold" x="8953.34" y="1251.66" name="sensitivity of effect\nof energy prices on electrification\nshare for Industry and Other"/>
-				<connector uid="856" angle="20.0254" isee:autocreated="true">
+				<connector uid="856" angle="20.0358" isee:autocreated="true">
 					<from>Industry_and_Other_energy_demand_1</from>
 					<to>sensitivity_of_effect_of_energy_prices_on_electrification_share_for_Industry_and_Other</to>
 				</connector>
@@ -10305,12 +10502,12 @@ ELSE
 					<to>priority_spread</to>
 				</connector>
 				<aux font_style="italic" font_weight="bold" x="8352.84" y="1345.33" name="priority spread 1"/>
-				<connector uid="866" angle="18.4616" isee:autocreated="true">
+				<connector uid="866" angle="18.4731" isee:autocreated="true">
 					<from>Industry_and_Other_energy_demand_1</from>
 					<to>priority_spread_1</to>
 				</connector>
 				<aux font_style="italic" font_weight="bold" x="8308.51" y="1441.82" name="suitability cost adjustment 1"/>
-				<connector uid="867" angle="17.3695" isee:autocreated="true">
+				<connector uid="867" angle="17.381" isee:autocreated="true">
 					<from>Industry_and_Other_energy_demand_1</from>
 					<to>suitability_cost_adjustment_1</to>
 				</connector>
@@ -10330,7 +10527,7 @@ ELSE
 					<to>Other</to>
 				</connector>
 				<aux background="white" font_style="italic" font_weight="bold" x="2767.03" y="737.798" name="Other 1"/>
-				<connector uid="873" angle="179.825" isee:autocreated="true">
+				<connector uid="873" angle="179.614" isee:autocreated="true">
 					<from>Industry_and_Other_energy_demand_1</from>
 					<to>Other_1</to>
 				</connector>
@@ -10342,21 +10539,21 @@ ELSE
 				<stacked_container uid="878" x="7959.7" y="2162.33">
 					<graph width="350" height="250" comparative="true" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" to="2024" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Buildings_energy_demand_1.Other[1]"/>
+							<entity name="Buildings_energy_demand_1.Bioenergy_Waste_and_Heat_demand_without_Biofuel[1]"/>
 						</plot>
 					</graph>
 				</stacked_container>
 				<stacked_container uid="879" x="7980.04" y="806.084">
 					<graph width="350" height="250" comparative="true" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" to="2024" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Transportation_energy_demand_1.Other[1]"/>
+							<entity name="Transportation_energy_demand_1.Bioenergy_and_Waste_demand_without_Biofuel[1]"/>
 						</plot>
 					</graph>
 				</stacked_container>
 				<stacked_container uid="880" x="7970.2" y="1477.66">
 					<graph width="350" height="250" comparative="true" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" to="2024" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
-							<entity name="Industry_and_Other_energy_demand_1.Other[1]"/>
+							<entity name="Industry_and_Other_energy_demand_1.Bioenergy_Waste_and_Heat_demand_without_Biofuel[1]"/>
 						</plot>
 					</graph>
 				</stacked_container>
@@ -10490,26 +10687,26 @@ ELSE
 				</connector>
 				<aux background="white" x="1279.77" y="680.393" name="Direct use Other demand in zJ 1"/>
 				<aux background="white" x="1279.77" y="827.381" name="Other Share"/>
-				<aux background="#FFAAFF" x="1279.77" y="744.936" name="Direct use Other demand"/>
+				<aux background="white" x="1279.77" y="744.936" name="Direct use Bioenergy Waste and Heat demand without\nBiofuel"/>
 				<connector uid="908" angle="90">
-					<from>Direct_use_Other_demand</from>
+					<from>Direct_use_Bioenergy_Waste_and_Heat_demand_without_Biofuel</from>
 					<to>Direct_use_Other_demand_in_zJ_1</to>
 				</connector>
 				<connector uid="909" angle="270">
-					<from>Direct_use_Other_demand</from>
+					<from>Direct_use_Bioenergy_Waste_and_Heat_demand_without_Biofuel</from>
 					<to>Other_Share</to>
 				</connector>
 				<connector uid="910" angle="200.485">
 					<from>Other</from>
-					<to>Direct_use_Other_demand</to>
+					<to>Direct_use_Bioenergy_Waste_and_Heat_demand_without_Biofuel</to>
 				</connector>
 				<connector uid="911" angle="179.097">
 					<from>Other_1</from>
-					<to>Direct_use_Other_demand</to>
+					<to>Direct_use_Bioenergy_Waste_and_Heat_demand_without_Biofuel</to>
 				</connector>
 				<connector uid="912" angle="156.342">
 					<from>Other_2</from>
-					<to>Direct_use_Other_demand</to>
+					<to>Direct_use_Bioenergy_Waste_and_Heat_demand_without_Biofuel</to>
 				</connector>
 				<connector uid="913" angle="340.443">
 					<from>Switch_to_couple_investments_supply_and_demand_in_new_energy</from>
@@ -10524,8 +10721,31 @@ ELSE
 					<to>Other_Share</to>
 				</connector>
 				<connector uid="917" angle="176.934">
-					<from>Direct_use_Other_demand</from>
+					<from>Direct_use_Bioenergy_Waste_and_Heat_demand_without_Biofuel</from>
 					<to>Total_demand_for_energy</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" x="628.571" y="951.636" name="Total Usable Secondary Energy output\nfrom direct use"/>
+				<aux x="394.849" y="953.035" name="Total demand for energy\nin secondary energy units"/>
+				<connector uid="920" angle="191.4">
+					<from>Total_Electricity_demand</from>
+					<to>Total_demand_for_energy_in_secondary_energy_units</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" x="628.571" y="1017.14" name="Usable Secondary Energy output\nfrom direct use of Gas 1"/>
+				<connector uid="921" angle="157.051">
+					<from>Usable_Secondary_Energy_output_from_direct_use_of_Gas_1</from>
+					<to>Total_demand_for_energy_in_secondary_energy_units</to>
+				</connector>
+				<connector uid="922" angle="175.412">
+					<from>Total_Usable_Secondary_Energy_output_from_direct_use</from>
+					<to>Total_demand_for_energy_in_secondary_energy_units</to>
+				</connector>
+				<connector uid="925" angle="169.655">
+					<from>cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit_2</from>
+					<to>cost_to_build_per_unit</to>
+				</connector>
+				<connector uid="926" angle="179.225">
+					<from>&quot;Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs&quot;</from>
+					<to>cost_to_build_per_unit</to>
 				</connector>
 				<alias background="white" font_style="italic" uid="685" x="3464.88" y="776.296" width="18" height="18">
 					<of>Total_demand_for_energy</of>
@@ -10546,7 +10766,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.121332111499911</eqn>
+				<eqn>0.113833358937439</eqn>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
 			</aux>
@@ -10563,7 +10783,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.16825546220087</eqn>
+				<eqn>0.191759540739381</eqn>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
 			</aux>
@@ -10594,7 +10814,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>16058.1204493281</eqn>
+				<eqn>16066.9693039665</eqn>
 				<range min="10000" max="25000"/>
 				<units>TWh/year</units>
 			</aux>
@@ -10604,7 +10824,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1.31225797585093</eqn>
+				<eqn>1.02116298661453</eqn>
 				<range min="0" max="3"/>
 				<units>dmnl</units>
 			</aux>
@@ -10621,7 +10841,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.29255031272461</eqn>
+				<eqn>0.275309683178827</eqn>
 				<range min="0" max="2"/>
 				<units>dmnl</units>
 			</aux>
@@ -10638,7 +10858,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1.46924252598871</eqn>
+				<eqn>1.5472828603498</eqn>
 				<range min="0" max="3"/>
 				<units>dmnl</units>
 			</aux>
@@ -10648,7 +10868,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.445522527607885</eqn>
+				<eqn>0.504074077537092</eqn>
 				<range min="0" max="2"/>
 				<units>dmnl</units>
 			</aux>
@@ -10863,7 +11083,7 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>110.126454057936</eqn>
+				<eqn>109.584819170379</eqn>
 				<range min="1" max="1000"/>
 				<units>kWh/(c$*Years)</units>
 			</aux>
@@ -10901,6 +11121,9 @@ ELSE
 				</element>
 				<element subscript="1, Other">
 					<eqn>63.2911747691084</eqn>
+				</element>
+				<element subscript="1, Biofuel">
+					<eqn>10</eqn>
 				</element>
 				<range min="1e-12" max="400"/>
 				<units>dmnl</units>
@@ -10960,14 +11183,14 @@ ELSE
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.6</eqn>
+				<eqn>Biofuel/Bioenergy_Waste_and_Heat</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="Biofuel" access="output">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>share_of_biofuel_in_other*Other</eqn>
+				<eqn>non_electricity_demand_allocator_per_energy_carrier[Run,Biofuel]</eqn>
 				<units>TWh/year</units>
 			</aux>
 			<aux name="effect\nof energy prices on\nBuildings demand" access="input">
@@ -10981,7 +11204,14 @@ ELSE
 				<eqn>1000000</eqn>
 				<units>MWh/TWh</units>
 			</aux>
-			<aux name="Other" access="output" isee:autocreated="true">
+			<aux name="Bioenergy\nWaste and Heat">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>Biofuel+Bioenergy_Waste_and_Heat_demand_without_Biofuel</eqn>
+				<units>TWh/Year</units>
+			</aux>
+			<aux name="Bioenergy Waste and Heat demand without\nBiofuel" access="output">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
@@ -11037,7 +11267,7 @@ ELSE
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="313.182" isee:scroll_y="674.091" zoom="220" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="972.273" isee:scroll_y="81.8182" zoom="220" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="9pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -11382,8 +11612,8 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 					<to>non_electricity_demand_allocator_per_energy_carrier</to>
 				</connector>
 				<aux background="#FFAAFF" x="1229.18" y="279.116" name="Oil"/>
-				<aux x="1518.33" y="120.303" name="share of biofuel\nin other"/>
-				<aux x="1518.33" y="200.78" name="Biofuel"/>
+				<aux x="1457.97" y="197.325" name="share of biofuel\nin other"/>
+				<aux x="1500.33" y="279.116" name="Biofuel"/>
 				<connector uid="142" angle="44.5457">
 					<from>Non_Electricity_demand_for_Buildings</from>
 					<to>non_electricity_demand_allocator_per_energy_carrier</to>
@@ -11403,11 +11633,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 					<from>UNIT_TWh_to_MWh</from>
 					<to>total_energy_demand_for_Buildings</to>
 				</connector>
-				<aux background="#FFAAFF" x="1518.33" y="279.116" name="Other"/>
-				<connector uid="148" angle="22.6406">
-					<from>non_electricity_demand_allocator_per_energy_carrier</from>
-					<to>Other</to>
-				</connector>
+				<aux background="#FFAAFF" x="1554.7" y="197.325" name="Bioenergy\nWaste and Heat"/>
 				<connector uid="149" angle="120.929">
 					<from>non_electricity_demand_allocator_per_energy_carrier</from>
 					<to>Oil</to>
@@ -11416,17 +11642,34 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 					<from>Oil</from>
 					<to>Liquid_fuel</to>
 				</connector>
-				<connector uid="151" angle="90">
-					<from>Other</from>
-					<to>Biofuel</to>
-				</connector>
-				<connector uid="152" angle="180">
+				<connector uid="152" angle="163.886">
 					<from>Biofuel</from>
 					<to>Liquid_fuel</to>
 				</connector>
-				<connector uid="153" angle="270.504">
-					<from>share_of_biofuel_in_other</from>
+				<aux x="1620.18" y="279.116" name="Bioenergy Waste and Heat demand without\nBiofuel"/>
+				<connector uid="156" angle="11.6242">
+					<from>non_electricity_demand_allocator_per_energy_carrier</from>
+					<to>Bioenergy_Waste_and_Heat_demand_without_Biofuel</to>
+				</connector>
+				<connector uid="157" angle="36.553">
+					<from>non_electricity_demand_allocator_per_energy_carrier</from>
 					<to>Biofuel</to>
+				</connector>
+				<connector uid="158" angle="54.9901">
+					<from>Biofuel</from>
+					<to>Bioenergy_Waste_and_Heat</to>
+				</connector>
+				<connector uid="159" angle="132.345">
+					<from>Bioenergy_Waste_and_Heat_demand_without_Biofuel</from>
+					<to>Bioenergy_Waste_and_Heat</to>
+				</connector>
+				<connector uid="160" angle="118.389">
+					<from>Biofuel</from>
+					<to>share_of_biofuel_in_other</to>
+				</connector>
+				<connector uid="161" angle="184.666">
+					<from>Bioenergy_Waste_and_Heat</from>
+					<to>share_of_biofuel_in_other</to>
 				</connector>
 			</view>
 		</views>
@@ -11825,7 +12068,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:scroll_y="14.4444" zoom="180" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -12889,7 +13132,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.116658456947306</eqn>
+				<eqn>0.148259535814246</eqn>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
 			</aux>
@@ -12906,7 +13149,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.150615808840725</eqn>
+				<eqn>0.0998019405328989</eqn>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
 			</aux>
@@ -12937,7 +13180,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>27060.7715754942</eqn>
+				<eqn>27057.4529945396</eqn>
 				<range min="5000" max="50000"/>
 				<units>TWh/year</units>
 			</aux>
@@ -12947,7 +13190,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1.06049066089623</eqn>
+				<eqn>0.662848990461295</eqn>
 				<range min="0" max="3"/>
 				<units>dmnl</units>
 			</aux>
@@ -12964,7 +13207,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.65491307934634</eqn>
+				<eqn>0.594643922937842</eqn>
 				<range min="0" max="2"/>
 				<units>dmnl</units>
 			</aux>
@@ -12991,7 +13234,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.324355949719614</eqn>
+				<eqn>0.425859879735935</eqn>
 				<range min="0" max="2"/>
 				<units>dmnl</units>
 			</aux>
@@ -13026,7 +13269,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>157.551162823728</eqn>
+				<eqn>157.52703900428</eqn>
 				<range min="5" max="1000"/>
 				<units>kWh/(c$*Years)</units>
 			</aux>
@@ -13064,6 +13307,9 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				</element>
 				<element subscript="1, Other">
 					<eqn>2.69424929044762</eqn>
+				</element>
+				<element subscript="1, Biofuel">
+					<eqn>1</eqn>
 				</element>
 				<range min="1e-12" max="400"/>
 				<units>dmnl</units>
@@ -13116,7 +13362,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>Other*share_of_biofuel_in_other</eqn>
+				<eqn>non_electricity_demand_allocator_per_energy_carrier[Run,Biofuel]</eqn>
 				<units>TWh/year</units>
 			</aux>
 			<aux name="effect\nof energy prices on\nIndustry and Other demand" access="input">
@@ -13126,11 +13372,11 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
 				<units>dmnl</units>
 			</aux>
-			<aux name="Other" access="output" isee:autocreated="true">
+			<aux name="Bioenergy\nWaste and Heat">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>non_electricity_demand_allocator_per_energy_carrier[Run,Other]</eqn>
+				<eqn>Biofuel+Bioenergy_Waste_and_Heat_demand_without_Biofuel</eqn>
 				<units>TWh/Year</units>
 			</aux>
 			<aux name="Liquid fuel" access="output">
@@ -13144,8 +13390,15 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.6</eqn>
+				<eqn>Biofuel/Bioenergy_Waste_and_Heat</eqn>
 				<units>dmnl</units>
+			</aux>
+			<aux name="Bioenergy Waste and Heat demand without\nBiofuel" access="output">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>non_electricity_demand_allocator_per_energy_carrier[Run,Other]</eqn>
+				<units>TWh/Year</units>
 			</aux>
 		</variables>
 		<views>
@@ -13196,7 +13449,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="2" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="772.778" zoom="180" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="9pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -13347,12 +13600,12 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 					<to>priority_by_source</to>
 				</connector>
 				<aux background="#FFAAFF" x="896.199" y="218.472" name="Coal"/>
-				<aux background="#FFAAFF" x="1201" y="218.472" name="Gas"/>
+				<aux background="#FFAAFF" x="1157.11" y="223.139" name="Gas"/>
 				<connector uid="38" angle="150.531">
 					<from>non_electricity_demand_allocator_per_energy_carrier</from>
 					<to>Coal</to>
 				</connector>
-				<connector uid="40" angle="50.0584">
+				<connector uid="40" angle="64.3034">
 					<from>non_electricity_demand_allocator_per_energy_carrier</from>
 					<to>Gas</to>
 				</connector>
@@ -13371,7 +13624,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 					<to>non_electricity_demand_allocator_per_energy_carrier</to>
 				</connector>
 				<aux background="#FFAAFF" x="1041.89" y="223.139" name="Oil"/>
-				<aux x="1215.35" y="165.638" name="Biofuel"/>
+				<aux x="1246.53" y="223.139" name="Biofuel"/>
 				<connector uid="48" angle="37.6846">
 					<from>Non_Electricity_demand_for_industry_and_other</from>
 					<to>non_electricity_demand_allocator_per_energy_carrier</to>
@@ -13385,32 +13638,45 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 					<from>effect_of_energy_prices_on_Industry_and_Other_demand</from>
 					<to>total_energy_demand_for_Industry_and_Other</to>
 				</connector>
-				<aux background="#FFAAFF" x="1313.75" y="218.472" name="Other"/>
-				<connector uid="51" angle="29.0303">
-					<from>non_electricity_demand_allocator_per_energy_carrier</from>
-					<to>Other</to>
-				</connector>
-				<aux x="1103.1" y="136.527" name="Liquid fuel"/>
-				<aux x="1319.63" y="110.972" name="share of biofuel\nin other"/>
+				<aux background="#FFAAFF" x="1329.53" y="137.86" name="Bioenergy\nWaste and Heat"/>
+				<aux x="1121.1" y="137.86" name="Liquid fuel"/>
+				<aux x="1246.53" y="91.5276" name="share of biofuel\nin other"/>
 				<connector uid="59" angle="118.606">
 					<from>non_electricity_demand_allocator_per_energy_carrier</from>
 					<to>Oil</to>
 				</connector>
-				<connector uid="60" angle="54.7491">
+				<connector uid="60" angle="47.1129">
 					<from>Oil</from>
 					<to>Liquid_fuel</to>
 				</connector>
-				<connector uid="61" angle="151.767">
-					<from>Other</from>
-					<to>Biofuel</to>
-				</connector>
-				<connector uid="62" angle="165.461">
+				<connector uid="62" angle="145.788">
 					<from>Biofuel</from>
 					<to>Liquid_fuel</to>
 				</connector>
-				<connector uid="63" angle="207.664">
-					<from>share_of_biofuel_in_other</from>
+				<aux background="white" x="1368.89" y="218.472" name="Bioenergy Waste and Heat demand without\nBiofuel"/>
+				<connector uid="71" angle="31.9704">
+					<from>non_electricity_demand_allocator_per_energy_carrier</from>
 					<to>Biofuel</to>
+				</connector>
+				<connector uid="72" angle="90">
+					<from>Biofuel</from>
+					<to>share_of_biofuel_in_other</to>
+				</connector>
+				<connector uid="74" angle="26.1815">
+					<from>non_electricity_demand_allocator_per_energy_carrier</from>
+					<to>Bioenergy_Waste_and_Heat_demand_without_Biofuel</to>
+				</connector>
+				<connector uid="75" angle="50.4277">
+					<from>Biofuel</from>
+					<to>Bioenergy_Waste_and_Heat</to>
+				</connector>
+				<connector uid="76" angle="122.545">
+					<from>Bioenergy_Waste_and_Heat_demand_without_Biofuel</from>
+					<to>Bioenergy_Waste_and_Heat</to>
+				</connector>
+				<connector uid="77" angle="150.51">
+					<from>Bioenergy_Waste_and_Heat</from>
+					<to>share_of_biofuel_in_other</to>
 				</connector>
 			</view>
 		</views>
@@ -13428,7 +13694,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.0057675125402271</eqn>
+				<eqn>0.00584396246257087</eqn>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
 			</aux>
@@ -13445,7 +13711,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.902630121625908</eqn>
+				<eqn>0.811658139452506</eqn>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
 			</aux>
@@ -13476,7 +13742,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1.65516482690388</eqn>
+				<eqn>1.38986086344831</eqn>
 				<range min="0" max="3"/>
 				<units>dmnl</units>
 			</aux>
@@ -13486,7 +13752,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.0214852353906317</eqn>
+				<eqn>0.00893738675424911</eqn>
 				<range min="0" max="2"/>
 				<units>dmnl</units>
 			</aux>
@@ -13528,7 +13794,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>217.22271682568</eqn>
+				<eqn>216.254218200708</eqn>
 				<range min="1" max="1000"/>
 				<units>kWh/(c$*Years)</units>
 			</aux>
@@ -13562,10 +13828,13 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 					<eqn>215.276417364739</eqn>
 				</element>
 				<element subscript="1, Gas">
-					<eqn>68.5298600051959</eqn>
+					<eqn>81</eqn>
 				</element>
 				<element subscript="1, Other">
 					<eqn>191.971001998509</eqn>
+				</element>
+				<element subscript="1, Biofuel">
+					<eqn>200</eqn>
 				</element>
 				<range min="1e-12" max="400"/>
 				<units>dmnl</units>
@@ -13621,25 +13890,25 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<eqn>Total_yearly_demand_1</eqn>
 				<units>TWh/year</units>
 			</aux>
-			<aux name="Other" access="output" isee:autocreated="true">
+			<aux name="Bioenergy\nWaste and Heat">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>non_electricity_demand_allocator_per_energy_carrier[Run,Other]</eqn>
+				<eqn>Biofuel+Bioenergy_and_Waste_demand_without_Biofuel</eqn>
 				<units>TWh/Year</units>
 			</aux>
-			<aux name="share of biofuel\nin other" access="output" isee:autocreated="true">
+			<aux name="share of biofuel\nin Biofuel and Waste" access="output" isee:autocreated="true">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.9</eqn>
+				<eqn>Biofuel/Bioenergy_Waste_and_Heat</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="Biofuel" access="output">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>Other*share_of_biofuel_in_other</eqn>
+				<eqn>non_electricity_demand_allocator_per_energy_carrier[Run,Biofuel]</eqn>
 				<units>TWh/year</units>
 			</aux>
 			<aux name="Liquid fuel" access="output">
@@ -13648,6 +13917,20 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				</dimensions>
 				<eqn>Biofuel+Oil</eqn>
 				<units>TWh/year</units>
+			</aux>
+			<aux name="Share of biofuels in\ntransport energy consumption">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>Biofuel/total_energy_demand_for_Transportation</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="Bioenergy and Waste demand without\nBiofuel" access="output">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>non_electricity_demand_allocator_per_energy_carrier[Run,Other]</eqn>
+				<units>TWh/Year</units>
 			</aux>
 		</variables>
 		<views>
@@ -13698,7 +13981,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="337.778" isee:scroll_y="112.778" zoom="180" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="986.5" isee:scroll_y="30" zoom="200" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="9pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -13817,12 +14100,12 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 					<to>priority_by_source</to>
 				</connector>
 				<aux background="#FFAAFF" x="1135.81" y="254.69" name="Coal"/>
-				<aux background="#FFAAFF" x="1440.25" y="254.69" name="Gas"/>
+				<aux background="#FFAAFF" x="1423.25" y="254.69" name="Gas"/>
 				<connector uid="52" angle="153.736">
 					<from>non_electricity_demand_allocator_per_energy_carrier</from>
 					<to>Coal</to>
 				</connector>
-				<connector uid="54" angle="60.5384">
+				<connector uid="54" angle="67.2098">
 					<from>non_electricity_demand_allocator_per_energy_carrier</from>
 					<to>Gas</to>
 				</connector>
@@ -13862,33 +14145,55 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 					<from>total_energy_demand_for_Transportation</from>
 					<to>Electricity_demand_for_Transportation</to>
 				</connector>
-				<aux background="#FFAAFF" x="1544.85" y="254.69" name="Other"/>
-				<connector uid="76" angle="38.2443">
-					<from>non_electricity_demand_allocator_per_energy_carrier</from>
-					<to>Other</to>
-				</connector>
+				<aux background="#FFAAFF" x="1591.85" y="173.308" name="Bioenergy\nWaste and Heat"/>
 				<connector uid="77" angle="129.968">
 					<from>non_electricity_demand_allocator_per_energy_carrier</from>
 					<to>Oil</to>
 				</connector>
-				<aux background="white" x="1494.58" y="128.28" name="share of biofuel\nin other"/>
-				<aux x="1494.58" y="190.808" name="Biofuel"/>
-				<connector uid="80" angle="270">
-					<from>share_of_biofuel_in_other</from>
-					<to>Biofuel</to>
-				</connector>
-				<connector uid="79" angle="128.202">
-					<from>Other</from>
-					<to>Biofuel</to>
-				</connector>
-				<aux x="1279.48" y="190.808" name="Liquid fuel"/>
+				<aux background="white" x="1531.58" y="126.78" name="share of biofuel\nin Biofuel and Waste"/>
+				<aux x="1531.58" y="254.69" name="Biofuel"/>
+				<aux x="1279.48" y="144.78" name="Liquid fuel"/>
 				<connector uid="78" angle="90">
 					<from>Oil</from>
 					<to>Liquid_fuel</to>
 				</connector>
-				<connector uid="81" angle="180">
+				<connector uid="81" angle="156.444">
 					<from>Biofuel</from>
 					<to>Liquid_fuel</to>
+				</connector>
+				<aux background="#FFAAFF" x="1388.04" y="135.28" name="Share of biofuels in\ntransport energy consumption"/>
+				<connector uid="82" angle="42.5503">
+					<from>total_energy_demand_for_Transportation</from>
+					<to>Share_of_biofuels_in_transport_energy_consumption</to>
+				</connector>
+				<connector uid="83" angle="140.243">
+					<from>Biofuel</from>
+					<to>Share_of_biofuels_in_transport_energy_consumption</to>
+				</connector>
+				<aux x="1647" y="254.69" name="Bioenergy and Waste demand without\nBiofuel"/>
+				<connector uid="86" angle="23.2751">
+					<from>non_electricity_demand_allocator_per_energy_carrier</from>
+					<to>Bioenergy_and_Waste_demand_without_Biofuel</to>
+				</connector>
+				<connector uid="87" angle="31.5901">
+					<from>non_electricity_demand_allocator_per_energy_carrier</from>
+					<to>Biofuel</to>
+				</connector>
+				<connector uid="88" angle="53.477">
+					<from>Biofuel</from>
+					<to>Bioenergy_Waste_and_Heat</to>
+				</connector>
+				<connector uid="89" angle="124.124">
+					<from>Bioenergy_and_Waste_demand_without_Biofuel</from>
+					<to>Bioenergy_Waste_and_Heat</to>
+				</connector>
+				<connector uid="90" angle="90">
+					<from>Biofuel</from>
+					<to>share_of_biofuel_in_Biofuel_and_Waste</to>
+				</connector>
+				<connector uid="91" angle="142.332">
+					<from>Bioenergy_Waste_and_Heat</from>
+					<to>share_of_biofuel_in_Biofuel_and_Waste</to>
 				</connector>
 			</view>
 		</views>
@@ -15320,7 +15625,7 @@ This affects the energy use per CCD, energy use per HDD variables. Any change in
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="11" isee:page_rows="6" zoom="160" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="11" isee:page_rows="6" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -16378,7 +16683,7 @@ Negative values of P causes compensation of differences, positive values would c
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0</eqn>
+				<eqn>-12</eqn>
 				<range min="-50" max="0"/>
 				<units>dmnl</units>
 			</aux>
@@ -16427,7 +16732,7 @@ Negative values of P causes compensation of differences, positive values would c
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0</eqn>
+				<eqn>-2</eqn>
 				<range min="-7" max="0"/>
 				<units>dmnl</units>
 			</aux>
@@ -16549,7 +16854,7 @@ cost_to_build_per_unit_1</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>33.4346914588317</eqn>
+				<eqn>28</eqn>
 				<range min="1" max="500"/>
 				<units>kWh/(c$*Years)</units>
 			</aux>
@@ -17537,7 +17842,7 @@ expenditure_on_subsidies_for_investments_in_coal_energy_conversion[Run]</eqn>
 				<units>dmnl</units>
 			</aux>
 			<aux name="Baseline investment to Electricity" access="output" isee:autocreated="true">
-				<eqn>85722800000{ + RAMP(2.5e10)</eqn>
+				<eqn>334905370250.639{ + RAMP(2.5e10)</eqn>
 				<units>c$/Year</units>
 			</aux>
 			<aux name="Relative Energy\nSupply Missmatch 1" access="input">
@@ -17703,7 +18008,7 @@ ELSE NAN</eqn>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="6" isee:page_rows="5" zoom="80" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="6" isee:page_rows="5" isee:scroll_x="320.714" isee:scroll_y="52.8571" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -18910,7 +19215,7 @@ https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_c
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="8" isee:page_rows="3" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="8" isee:page_rows="3" isee:scroll_x="100" isee:scroll_y="10.2941" zoom="340" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -19267,7 +19572,7 @@ adaptive_energy_investments_differntiating_factor * Differentiating_Relative_Ene
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="3" isee:scroll_x="103.889" isee:scroll_y="573.889" zoom="180" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="3" isee:scroll_y="109.286" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -19789,7 +20094,7 @@ Relative_Energy_Supply_Missmatch-Relative_Energy_Supply_Mismatch_Buffer_3</eqn>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="3" isee:scroll_y="55" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="3" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -20511,7 +20816,7 @@ ELSE
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="3" isee:page_rows="3" isee:scroll_x="292" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="3" isee:page_rows="3" isee:scroll_x="214.167" isee:scroll_y="343.333" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -21391,7 +21696,7 @@ share_of_GDP_invested_in_bio_power[Run]</eqn>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="4" isee:page_rows="3" isee:scroll_x="442.857" isee:scroll_y="758.571" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="4" isee:page_rows="3" isee:scroll_x="2155.71" isee:scroll_y="667.857" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -22069,26 +22374,30 @@ ELSE
 				<connect2 to="Energy_investments_1.bio_fuel_secondary_energy_output" from="Bio_fuel_energy_1.bio_fuel_electricity_output"/>
 				<connect to="Energy_supply_1.bio_fuel_secondary_energy_output" from="Bio_fuel_energy_1.bio_fuel_electricity_output"/>
 				<connect2 to="bio_fuel_secondary_energy_output" from="Bio_fuel_energy_1.bio_fuel_electricity_output"/>
+				<connect to="Energy_supply_1.bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
+				<connect2 to="bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
+				<connect to="Liquid_fuel_supply_vs_demand.bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
+				<connect2 to="Liquid_fuel_supply_vs_demand.bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
 				<connect to="Energy_investments_1.bio_fuel_primary_energy" from="Bio_fuel_energy_1.bio_fuel_primary_energy"/>
 				<connect2 to="Energy_investments_1.bio_fuel_primary_energy" from="Bio_fuel_energy_1.bio_fuel_primary_energy"/>
 				<connect to="Fossil_energy_oil_1.bio_fuel_energy_output" from="Bio_fuel_energy_1.bio_fuel_primary_energy"/>
 				<connect2 to="Fossil_energy_oil_1.bio_fuel_energy_output" from="Bio_fuel_energy_1.bio_fuel_primary_energy"/>
 				<connect to="Fossil_energy_oil_1.bio_fuel_primary_energy_for_electricity" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_electricity"/>
 				<connect2 to="Fossil_energy_oil_1.bio_fuel_primary_energy_for_electricity" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_electricity"/>
-				<connect to="Energy_supply_1.bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
-				<connect2 to="bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
-				<connect to="Liquid_fuel_supply_vs_demand.bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
-				<connect2 to="Liquid_fuel_supply_vs_demand.bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
 				<connect to="Energy_investments_1.bio_fuel_production" from="Bio_fuel_energy_1.bio_fuel_production"/>
 				<connect2 to="Energy_investments_1.bio_fuel_production" from="Bio_fuel_energy_1.bio_fuel_production"/>
 				<connect to="Electricity_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_15" from='Bio_fuel_energy_1."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
 				<connect2 to="Electricity_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_15" from='Bio_fuel_energy_1."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
 				<connect to="Liquid_fuel_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_8" from='Bio_fuel_energy_1."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
 				<connect2 to="Liquid_fuel_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_8" from='Bio_fuel_energy_1."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
+				<connect to="Energy_demand_1.Usable_Secondary_Energy_output_from_direct_use_of_Gas_1" from="Bio_fuel_energy_1.Usable_Secondary_Energy_output_from_direct_use_of_Biofuel"/>
+				<connect2 to="Energy_demand_1.Usable_Secondary_Energy_output_from_direct_use_of_Gas_1" from="Bio_fuel_energy_1.Usable_Secondary_Energy_output_from_direct_use_of_Biofuel"/>
 				<connect to="Bio_fuel_energy_1.biofuels_CO2e_emissions_tax_reduction_share" from="Government_Regulations.biofuels_CO2e_emissions_tax_reduction_share"/>
 				<connect2 to="Bio_fuel_energy_1.biofuels_CO2e_emissions_tax_reduction_share" from="Government_Regulations.biofuels_CO2e_emissions_tax_reduction_share"/>
 				<connect to="Bio_fuel_energy_1.biofuels_SO2_emissions_tax_reduction_share" from="Government_Regulations.biofuels_SO2_emissions_tax_reduction_share"/>
 				<connect2 to="Bio_fuel_energy_1.biofuels_SO2_emissions_tax_reduction_share" from="Government_Regulations.biofuels_SO2_emissions_tax_reduction_share"/>
+				<connect to="Bio_fuel_energy_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy" from="Fossil_energy_oil_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy"/>
+				<connect2 to="Bio_fuel_energy_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy" from="Fossil_energy_oil_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy"/>
 				<connect to="Bio_fuel_energy_1.Converter_1" from="Global_Investments.Investments_Allocated_to_Capacity_Construction_in_Biofuel_Capacity"/>
 				<connect2 to="Bio_fuel_energy_1.Converter_1" from="Global_Investments.Investments_Allocated_to_Capacity_Construction_in_Biofuel_Capacity"/>
 				<connect to="Bio_fuel_energy_1.cost_of_capturing_CO2_per_unit_with_BECC" from="CCS.cost_of_capturing_CO2_per_unit_with_BECC"/>
@@ -22153,6 +22462,8 @@ ELSE
 				<connect2 to="Bio_fuel_energy_1.TWh_to_kWh" from="Energy_Units_1.UNIT_TWh_to_kWh"/>
 				<connect to="Bio_fuel_energy_1.UNIT_ton_to_Mton" from="CCS.UNIT_ton_to_Mton"/>
 				<connect2 to="Bio_fuel_energy_1.UNIT_ton_to_Mton" from="CCS.UNIT_ton_to_Mton"/>
+				<connect to="Bio_fuel_energy_1.UNIT_zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
+				<connect2 to="Bio_fuel_energy_1.UNIT_zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
 				<connect to="Electricity_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_13" from="Hydropower_energy_1.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect2 to="Electricity_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_13" from="Hydropower_energy_1.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect to="Energy_investments_1.Hydropower_Installation_Costs" from="Hydropower_energy_1.Hydropower_Installation_Costs"/>
@@ -22288,6 +22599,8 @@ ELSE
 			</module>
 			<module name="Fossil energy 1" isee:label="">
 				<format scale_by="auto"/>
+				<connect to="Energy_demand_1.Total_Usable_Secondary_Energy_output_from_direct_use" from="Fossil_energy_1.Total_Usable_Secondary_Energy_output_from_direct_use"/>
+				<connect2 to="Energy_demand_1.Total_Usable_Secondary_Energy_output_from_direct_use" from="Fossil_energy_1.Total_Usable_Secondary_Energy_output_from_direct_use"/>
 				<connect to="Fossil_energy_1.UNIT_zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
 				<connect2 to="Fossil_energy_1.UNIT_zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
 				<connect to="Electricity_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_10" from="Fossil_energy_coal_1.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
@@ -22480,6 +22793,8 @@ ELSE
 				<connect2 to="Fossil_energy_gas_1.UNIT_ton_to_Mton" from="CCS.UNIT_ton_to_Mton"/>
 				<connect to="Fossil_energy_gas_1.zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
 				<connect2 to="Fossil_energy_gas_1.zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
+				<connect to="Bio_fuel_energy_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy" from="Fossil_energy_oil_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy"/>
+				<connect2 to="Bio_fuel_energy_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy" from="Fossil_energy_oil_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy"/>
 				<connect to="Electricity_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_12" from="Fossil_energy_oil_1.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect2 to="Electricity_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_12" from="Fossil_energy_oil_1.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
 				<connect to="Electricity_investments.cost_of_extra_energy_output_through_fuel_extraction_per_unit_5" from="Fossil_energy_oil_1.cost_net_of_taxes_of_extra_energy_output_through_fuel_extraction_per_unit"/>
@@ -22504,6 +22819,8 @@ ELSE
 				<connect2 to="New_Energy.initial_fossil_energy_capital_1" from="Fossil_energy_oil_1.initial_fossil_energy_capital"/>
 				<connect to="Energy_investments_1.Initial_share_of_investment_to_direct_use_4" from="Fossil_energy_oil_1.Initial_share_of_investment_to_direct_use"/>
 				<connect2 to="Energy_investments_1.Initial_share_of_investment_to_direct_use_4" from="Fossil_energy_oil_1.Initial_share_of_investment_to_direct_use"/>
+				<connect to="New_Energy.Initial_share_of_investment_to_direct_use" from="Fossil_energy_oil_1.Initial_share_of_investment_to_direct_use"/>
+				<connect2 to="New_Energy.Initial_share_of_investment_to_direct_use" from="Fossil_energy_oil_1.Initial_share_of_investment_to_direct_use"/>
 				<connect to="Energy_investments_1.Primary_Fossil_Energy_FUEL_for_Electricity_1" from="Fossil_energy_oil_1.Primary_Fossil_Energy_FUEL_for_Electricity"/>
 				<connect2 to="Energy_investments_1.Primary_Fossil_Energy_FUEL_for_Electricity_1" from="Fossil_energy_oil_1.Primary_Fossil_Energy_FUEL_for_Electricity"/>
 				<connect to="Energy_investments_1.Primary_Fossil_Energy_FUEL_for_Fuel_1" from="Fossil_energy_oil_1.Primary_Fossil_Energy_FUEL_for_Fuel"/>
@@ -22524,8 +22841,8 @@ ELSE
 				<connect2 to="Stranded_Capital.stranded_capital_2" from="Fossil_energy_oil_1.stranded_capital"/>
 				<connect to="New_Energy.TFP_in_1980" from="Fossil_energy_oil_1.TFP_in_1980"/>
 				<connect2 to="New_Energy.TFP_in_1980" from="Fossil_energy_oil_1.TFP_in_1980"/>
-				<connect to="New_Energy.TFP_Ramp" from="Fossil_energy_oil_1.TFP_Ramp"/>
-				<connect2 to="New_Energy.TFP_Ramp" from="Fossil_energy_oil_1.TFP_Ramp"/>
+				<connect to="New_Energy.TFP_Max" from="Fossil_energy_oil_1.TFP_Max"/>
+				<connect2 to="New_Energy.TFP_Max" from="Fossil_energy_oil_1.TFP_Max"/>
 				<connect to="Fossil_energy_oil_1.bio_fuel_energy_output" from="Bio_fuel_energy_1.bio_fuel_primary_energy"/>
 				<connect2 to="Fossil_energy_oil_1.bio_fuel_energy_output" from="Bio_fuel_energy_1.bio_fuel_primary_energy"/>
 				<connect to="Fossil_energy_oil_1.bio_fuel_primary_energy_for_electricity" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_electricity"/>
@@ -22639,7 +22956,7 @@ This is total energy production of both fossil and renewable</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>Energy_output_electricity+Direct_use_gas_Energy_output+Direct_use_liquid_fuel_Energy_output+Direct_use_coal_Energy_output</eqn>
+				<eqn>Energy_output_electricity+Direct_use_gas_Energy_output+Direct_use_liquid_fuel_Energy_output+Direct_use_coal_Energy_output+Non_Biofuel_Other_energy_demand</eqn>
 				<units>TWh/Year</units>
 			</aux>
 			<aux name="Renewable Energy\nOutput" access="input">
@@ -22720,7 +23037,7 @@ Arbitrary unit of energy used to calculate the differentials of cost to produce 
 				<connect to="Efficiency_reduction_in_power_plants_1.today" from="Climate.climate_impact_stoptime"/>
 				<connect2 to="Efficiency_reduction_in_power_plants_1.today" from="Climate.climate_impact_stoptime"/>
 			</module>
-			<aux name="Bio Energy\nOutput Share">
+			<aux name="Bio fuel energy\nOutput Share">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
@@ -22955,6 +23272,13 @@ Arbitrary unit of energy used to calculate the differentials of cost to produce 
 				<eqn>bio_fuel_secondary_energy_output/Energy_output_electricity</eqn>
 				<units>dmnl</units>
 			</aux>
+			<aux name="Non Biofuel Other energy demand" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>TWh/Year</units>
+			</aux>
 		</variables>
 		<views>
 			<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
@@ -23004,7 +23328,7 @@ Arbitrary unit of energy used to calculate the differentials of cost to produce 
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="3" isee:page_rows="3" isee:scroll_y="300" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1090" page_height="761" isee:page_cols="3" isee:page_rows="3" isee:scroll_x="140" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -23131,10 +23455,10 @@ Arbitrary unit of energy used to calculate the differentials of cost to produce 
 					<from>Efficiency_reduction_in_power_plants_1</from>
 					<to>Renewable_energy_1</to>
 				</connector>
-				<aux x="1699.7" y="771.551" name="Bio Energy\nOutput Share"/>
+				<aux x="1699.7" y="771.551" name="Bio fuel energy\nOutput Share"/>
 				<connector uid="37" angle="1.57963">
 					<from>Total_Energy_Output</from>
-					<to>Bio_Energy_Output_Share</to>
+					<to>Bio_fuel_energy_Output_Share</to>
 				</connector>
 				<connector uid="38" isee:thickness="2" angle="179.454" isee:autocreated="true">
 					<from>Renewable_energy_1</from>
@@ -23151,7 +23475,7 @@ Arbitrary unit of energy used to calculate the differentials of cost to produce 
 				</connector>
 				<connector uid="41" angle="270">
 					<from>bio_fuel_secondary_energy_output</from>
-					<to>Bio_Energy_Output_Share</to>
+					<to>Bio_fuel_energy_Output_Share</to>
 				</connector>
 				<aux font_style="italic" font_weight="bold" label_side="bottom" x="1080.8" y="709.518" name="Solar Energy Output"/>
 				<connector uid="45" angle="261.104" isee:autocreated="true">
@@ -23452,6 +23776,11 @@ Arbitrary unit of energy used to calculate the differentials of cost to produce 
 				<connector uid="181" angle="27.2491">
 					<from>Energy_output_electricity</from>
 					<to>Biofuel_Energy_share_in_electricity</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" x="710.833" y="1047.5" name="Non Biofuel Other energy demand"/>
+				<connector uid="182" angle="21.404">
+					<from>Non_Biofuel_Other_energy_demand</from>
+					<to>Total_Energy_Output</to>
 				</connector>
 			</view>
 		</views>
@@ -24145,6 +24474,8 @@ ELSE
 			</module>
 			<module name="Fossil energy oil 1" isee:label="">
 				<format scale_by="auto"/>
+				<connect to="Bio_fuel_energy_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy" from="Fossil_energy_oil_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy"/>
+				<connect2 to="Bio_fuel_energy_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy" from="Fossil_energy_oil_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy"/>
 				<connect to="Fossil_energy_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_1" from="Fossil_energy_oil_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy"/>
 				<connect2 to="conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_1" from="Fossil_energy_oil_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy"/>
 				<connect to="Electricity_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_12" from="Fossil_energy_oil_1.Cost_net_of_taxes_of_Extra_Energy_Output_through_Capital_per_Unit"/>
@@ -24173,6 +24504,8 @@ ELSE
 				<connect2 to="New_Energy.initial_fossil_energy_capital_1" from="Fossil_energy_oil_1.initial_fossil_energy_capital"/>
 				<connect to="Energy_investments_1.Initial_share_of_investment_to_direct_use_4" from="Fossil_energy_oil_1.Initial_share_of_investment_to_direct_use"/>
 				<connect2 to="Energy_investments_1.Initial_share_of_investment_to_direct_use_4" from="Fossil_energy_oil_1.Initial_share_of_investment_to_direct_use"/>
+				<connect to="New_Energy.Initial_share_of_investment_to_direct_use" from="Fossil_energy_oil_1.Initial_share_of_investment_to_direct_use"/>
+				<connect2 to="New_Energy.Initial_share_of_investment_to_direct_use" from="Fossil_energy_oil_1.Initial_share_of_investment_to_direct_use"/>
 				<connect to="Energy_investments_1.Primary_Fossil_Energy_FUEL_for_Electricity_1" from="Fossil_energy_oil_1.Primary_Fossil_Energy_FUEL_for_Electricity"/>
 				<connect2 to="Energy_investments_1.Primary_Fossil_Energy_FUEL_for_Electricity_1" from="Fossil_energy_oil_1.Primary_Fossil_Energy_FUEL_for_Electricity"/>
 				<connect to="Fossil_energy_1.Primary_Fossil_Energy_FUEL_for_Electricity_2" from="Fossil_energy_oil_1.Primary_Fossil_Energy_FUEL_for_Electricity"/>
@@ -24201,8 +24534,8 @@ ELSE
 				<connect2 to="Fossil_energy_gas_1.Switch_to_couple_investments_supply_and_demand_in_new_energy" from="Fossil_energy_oil_1.Switch_to_couple_investments_supply_and_demand_in_new_energy"/>
 				<connect to="New_Energy.TFP_in_1980" from="Fossil_energy_oil_1.TFP_in_1980"/>
 				<connect2 to="New_Energy.TFP_in_1980" from="Fossil_energy_oil_1.TFP_in_1980"/>
-				<connect to="New_Energy.TFP_Ramp" from="Fossil_energy_oil_1.TFP_Ramp"/>
-				<connect2 to="New_Energy.TFP_Ramp" from="Fossil_energy_oil_1.TFP_Ramp"/>
+				<connect to="New_Energy.TFP_Max" from="Fossil_energy_oil_1.TFP_Max"/>
+				<connect2 to="New_Energy.TFP_Max" from="Fossil_energy_oil_1.TFP_Max"/>
 				<connect to="Fossil_energy_oil_1.bio_fuel_energy_output" from="Bio_fuel_energy_1.bio_fuel_primary_energy"/>
 				<connect2 to="Fossil_energy_oil_1.bio_fuel_energy_output" from="Bio_fuel_energy_1.bio_fuel_primary_energy"/>
 				<connect to="Fossil_energy_oil_1.bio_fuel_primary_energy_for_electricity" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_electricity"/>
@@ -24409,21 +24742,21 @@ ELSE
 				<eqn>Secondary_Fossil_Energy_Output_3+Secondary_Fossil_Energy_Output_1+Secondary_Fossil_Energy_Output_2</eqn>
 				<units>TWh/Year</units>
 			</aux>
-			<aux name="conversion efficiency of fossil fuels to secondary fossil energy 3" access="input">
+			<aux name="conversion efficiency of fossil fuels to secondary fossil energy 3" access="output" throughput="true" isee:autocreated="true">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
 				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
 				<units>dmnl</units>
 			</aux>
-			<aux name="conversion efficiency\nof fossil fuels to\nsecondary fossil energy 1" access="input">
+			<aux name="conversion efficiency\nof fossil fuels to\nsecondary fossil energy 1" access="output" throughput="true" isee:autocreated="true">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
 				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
 				<units>dmnl</units>
 			</aux>
-			<aux name="conversion efficiency\nof fossil fuels to\nsecondary fossil energy 2" access="input">
+			<aux name="conversion efficiency\nof fossil fuels to\nsecondary fossil energy 2" access="output" throughput="true" isee:autocreated="true">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
@@ -24529,6 +24862,47 @@ ELSE
 				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
 				<units>zJ/Year</units>
 			</aux>
+			<aux name="average conversion efficiency" access="output" isee:autocreated="true">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>(conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_3*Primary_Fossil_Energy_FUEL_for_Fuel+
+conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_1*Primary_Fossil_Energy_FUEL_for_Fuel_1+
+conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_2*Primary_Fossil_Energy_FUEL_for_Fuel_2)
+/
+(Primary_Fossil_Energy_FUEL_for_Fuel+
+Primary_Fossil_Energy_FUEL_for_Fuel_1+
+Primary_Fossil_Energy_FUEL_for_Fuel_2)</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="Usable Secondary Energy output\nfrom direct use of Coal">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>Primary_Fossil_Energy_FUEL_for_Fuel*conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_3*UNIT_zJ_to_TWh</eqn>
+				<units>TWh/Year</units>
+			</aux>
+			<aux name="Usable Secondary Energy output\nfrom direct use of Oil">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>Primary_Fossil_Energy_FUEL_for_Fuel_1*conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_1*UNIT_zJ_to_TWh</eqn>
+				<units>TWh/Year</units>
+			</aux>
+			<aux name="Usable Secondary Energy output\nfrom direct use of Gas" access="output" isee:autocreated="true">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>Primary_Fossil_Energy_FUEL_for_Fuel_2*conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_2*UNIT_zJ_to_TWh</eqn>
+				<units>TWh/Year</units>
+			</aux>
+			<aux name="Total Usable Secondary Energy output\nfrom direct use" access="output" isee:autocreated="true">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>Usable_Secondary_Energy_output_from_direct_use_of_Coal + Usable_Secondary_Energy_output_from_direct_use_of_Oil + Usable_Secondary_Energy_output_from_direct_use_of_Gas</eqn>
+				<units>TWh/Year</units>
+			</aux>
 		</variables>
 		<views>
 			<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
@@ -24578,7 +24952,7 @@ ELSE
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="6" isee:page_rows="4" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1097" page_height="767" isee:page_cols="6" isee:page_rows="4" isee:scroll_y="117.857" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -24635,16 +25009,16 @@ ELSE
 					<from>Fossil_energy_gas_1</from>
 					<to>Secondary_Fossil_Energy_Output_2</to>
 				</connector>
-				<aux background="#FFAAFF" x="359.5" y="707" name="Secondary Fossil Energy Output"/>
-				<connector uid="4" angle="308.179">
+				<aux background="#FFAAFF" x="353.929" y="897.714" name="Secondary Fossil Energy Output"/>
+				<connector uid="4" angle="295.428">
 					<from>Secondary_Fossil_Energy_Output_3</from>
 					<to>Secondary_Fossil_Energy_Output</to>
 				</connector>
-				<connector uid="5" angle="275.189">
+				<connector uid="5" angle="272.642">
 					<from>Secondary_Fossil_Energy_Output_1</from>
 					<to>Secondary_Fossil_Energy_Output</to>
 				</connector>
-				<connector uid="6" angle="237.458">
+				<connector uid="6" angle="247.633">
 					<from>Secondary_Fossil_Energy_Output_2</from>
 					<to>Secondary_Fossil_Energy_Output</to>
 				</connector>
@@ -24663,13 +25037,13 @@ ELSE
 					<from>Fossil_energy_gas_1</from>
 					<to>conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_2</to>
 				</connector>
-				<aux background="#FFAAFF" x="558" y="616" name="conversion efficiency of fossil\nfuels to secondary\nfossil energy"/>
-				<aux background="white" x="362.5" y="565" name="Primary Fossil Energy\nFUEL for Electricity"/>
-				<connector uid="14" angle="345.379">
+				<aux background="#FFAAFF" x="549.429" y="786.714" name="conversion efficiency of fossil\nfuels to secondary\nfossil energy"/>
+				<aux background="white" x="353.929" y="702.857" name="Primary Fossil Energy\nFUEL for Electricity"/>
+				<connector uid="14" angle="336.784">
 					<from>Primary_Fossil_Energy_FUEL_for_Electricity</from>
 					<to>conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy</to>
 				</connector>
-				<connector uid="15" angle="21.1613">
+				<connector uid="15" angle="29.5868">
 					<from>Secondary_Fossil_Energy_Output</from>
 					<to>conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy</to>
 				</connector>
@@ -24797,7 +25171,7 @@ ELSE
 						</plot>
 					</graph>
 				</stacked_container>
-				<aux font_style="italic" font_weight="bold" x="688.5" y="593.818" name="UNIT zJ to TWh"/>
+				<aux font_style="italic" font_weight="bold" x="679.929" y="764.532" name="UNIT zJ to TWh"/>
 				<connector uid="38" angle="189.647">
 					<from>UNIT_zJ_to_TWh</from>
 					<to>conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy</to>
@@ -24835,7 +25209,7 @@ ELSE
 					<from>Fossil_energy_coal_1</from>
 					<to>Primary_Fossil_Energy_FUEL_for_Electricity_1</to>
 				</connector>
-				<connector uid="50" angle="317.153">
+				<connector uid="50" angle="302.989">
 					<from>Primary_Fossil_Energy_FUEL_for_Electricity_1</from>
 					<to>Primary_Fossil_Energy_FUEL_for_Electricity</to>
 				</connector>
@@ -24844,7 +25218,7 @@ ELSE
 					<from>Fossil_energy_oil_1</from>
 					<to>Primary_Fossil_Energy_FUEL_for_Electricity_2</to>
 				</connector>
-				<connector uid="52" angle="290.603">
+				<connector uid="52" angle="286.983">
 					<from>Primary_Fossil_Energy_FUEL_for_Electricity_2</from>
 					<to>Primary_Fossil_Energy_FUEL_for_Electricity</to>
 				</connector>
@@ -24853,11 +25227,11 @@ ELSE
 					<from>Fossil_energy_gas_1</from>
 					<to>Primary_Fossil_Energy_FUEL_for_Electricity_3</to>
 				</connector>
-				<connector uid="54" angle="226.114">
+				<connector uid="54" angle="238.409">
 					<from>Primary_Fossil_Energy_FUEL_for_Electricity_3</from>
 					<to>Primary_Fossil_Energy_FUEL_for_Electricity</to>
 				</connector>
-				<aux background="#FFAAFF" x="362.5" y="477.714" name="Primary Fossil Energy\nFUEL"/>
+				<aux background="#FFAAFF" x="353.929" y="615.571" name="Primary Fossil Energy\nFUEL"/>
 				<connector uid="56" angle="90">
 					<from>Primary_Fossil_Energy_FUEL_for_Electricity</from>
 					<to>Primary_Fossil_Energy_FUEL</to>
@@ -24877,15 +25251,15 @@ ELSE
 					<from>Fossil_energy_gas_1</from>
 					<to>Primary_Fossil_Energy_FUEL_for_Fuel_2</to>
 				</connector>
-				<connector uid="60" angle="324.607">
+				<connector uid="60" angle="304.846">
 					<from>Primary_Fossil_Energy_FUEL_for_Fuel</from>
 					<to>Primary_Fossil_Energy_FUEL</to>
 				</connector>
-				<connector uid="61" angle="301.34">
+				<connector uid="61" angle="297.107">
 					<from>Primary_Fossil_Energy_FUEL_for_Fuel_1</from>
 					<to>Primary_Fossil_Energy_FUEL</to>
 				</connector>
-				<connector uid="62" angle="226.752">
+				<connector uid="62" angle="235.702">
 					<from>Primary_Fossil_Energy_FUEL_for_Fuel_2</from>
 					<to>Primary_Fossil_Energy_FUEL</to>
 				</connector>
@@ -24896,6 +25270,83 @@ ELSE
 				<connector uid="63" isee:thickness="2" angle="24.1134" isee:autocreated="true">
 					<from>Fossil_energy_coal_1</from>
 					<to>Fossil_energy_oil_1</to>
+				</connector>
+				<aux x="470" y="580" name="average conversion efficiency"/>
+				<connector uid="65" angle="301.695">
+					<from>conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_3</from>
+					<to>average_conversion_efficiency</to>
+				</connector>
+				<connector uid="66" angle="270">
+					<from>conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_1</from>
+					<to>average_conversion_efficiency</to>
+				</connector>
+				<connector uid="67" angle="237.28">
+					<from>conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_2</from>
+					<to>average_conversion_efficiency</to>
+				</connector>
+				<connector uid="68" angle="319.147">
+					<from>Primary_Fossil_Energy_FUEL_for_Fuel</from>
+					<to>average_conversion_efficiency</to>
+				</connector>
+				<connector uid="69" angle="293.397">
+					<from>Primary_Fossil_Energy_FUEL_for_Fuel_1</from>
+					<to>average_conversion_efficiency</to>
+				</connector>
+				<connector uid="70" angle="249.688">
+					<from>Primary_Fossil_Energy_FUEL_for_Fuel_2</from>
+					<to>average_conversion_efficiency</to>
+				</connector>
+				<aux x="116.071" y="477.714" name="Usable Secondary Energy output\nfrom direct use of Coal"/>
+				<connector uid="71" angle="244.122">
+					<from>conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_3</from>
+					<to>Usable_Secondary_Energy_output_from_direct_use_of_Coal</to>
+				</connector>
+				<connector uid="72" angle="270">
+					<from>Primary_Fossil_Energy_FUEL_for_Fuel</from>
+					<to>Usable_Secondary_Energy_output_from_direct_use_of_Coal</to>
+				</connector>
+				<aux x="326.429" y="477.714" name="Usable Secondary Energy output\nfrom direct use of Oil"/>
+				<connector uid="73" angle="241.435">
+					<from>conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_1</from>
+					<to>Usable_Secondary_Energy_output_from_direct_use_of_Oil</to>
+				</connector>
+				<connector uid="74" angle="266.87">
+					<from>Primary_Fossil_Energy_FUEL_for_Fuel_1</from>
+					<to>Usable_Secondary_Energy_output_from_direct_use_of_Oil</to>
+				</connector>
+				<aux x="567.429" y="477.714" name="Usable Secondary Energy output\nfrom direct use of Gas"/>
+				<connector uid="75" angle="266.572">
+					<from>Primary_Fossil_Energy_FUEL_for_Fuel_2</from>
+					<to>Usable_Secondary_Energy_output_from_direct_use_of_Gas</to>
+				</connector>
+				<connector uid="76" angle="242.305">
+					<from>conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy_2</from>
+					<to>Usable_Secondary_Energy_output_from_direct_use_of_Gas</to>
+				</connector>
+				<aux x="353.929" y="792.428" name="Total Usable Secondary Energy output\nfrom direct use"/>
+				<connector uid="77" angle="313.661">
+					<from>Usable_Secondary_Energy_output_from_direct_use_of_Coal</from>
+					<to>Total_Usable_Secondary_Energy_output_from_direct_use</to>
+				</connector>
+				<connector uid="78" angle="274.621">
+					<from>Usable_Secondary_Energy_output_from_direct_use_of_Oil</from>
+					<to>Total_Usable_Secondary_Energy_output_from_direct_use</to>
+				</connector>
+				<connector uid="79" angle="235.763">
+					<from>Usable_Secondary_Energy_output_from_direct_use_of_Gas</from>
+					<to>Total_Usable_Secondary_Energy_output_from_direct_use</to>
+				</connector>
+				<connector uid="80" angle="108.607">
+					<from>UNIT_zJ_to_TWh</from>
+					<to>Usable_Secondary_Energy_output_from_direct_use_of_Gas</to>
+				</connector>
+				<connector uid="81" angle="141.627">
+					<from>UNIT_zJ_to_TWh</from>
+					<to>Usable_Secondary_Energy_output_from_direct_use_of_Oil</to>
+				</connector>
+				<connector uid="82" angle="149.842">
+					<from>UNIT_zJ_to_TWh</from>
+					<to>Usable_Secondary_Energy_output_from_direct_use_of_Coal</to>
 				</connector>
 			</view>
 		</views>
@@ -25997,7 +26448,7 @@ https://www.eea.europa.eu/en/analysis/publications/emep-eea-guidebook-2023</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.5</eqn>
+				<eqn>0.50373819638699</eqn>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
 			</aux>
@@ -26078,7 +26529,7 @@ https://www.eea.europa.eu/en/analysis/publications/emep-eea-guidebook-2023</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="4" isee:page_rows="4" isee:scroll_x="1136.73" isee:scroll_y="381.154" zoom="520" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="4" isee:page_rows="4" isee:scroll_x="93.125" isee:scroll_y="139.375" zoom="160" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -29376,7 +29827,7 @@ MIND code 0.18750</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>1.999999587</eqn>
+				<eqn>1.28510752066627</eqn>
 				<range min="0.001" max="2.99999958734975"/>
 				<units>Year/zJ</units>
 			</aux>
@@ -29548,7 +29999,7 @@ MIND Code: 1</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.400423072253559
+				<eqn>0.0868575135514663
 {0.103899025073386</eqn>
 				<range min="0.001" max="2"/>
 				<units>1/c$</units>
@@ -29559,7 +30010,7 @@ MIND 2005 paper lists 6 trillion USD as the initial value for 1995</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>214636768839.892</eqn>
+				<eqn>55593491855.9081</eqn>
 				<range min="1000000000" max="5000000000000"/>
 				<units>c$</units>
 			</aux>
@@ -29806,17 +30257,17 @@ LOGISTICBOUND(TFP_in_1980, TFP_Max, TIME, TFP_Max_Ramp_Year, TFP_Ramp_Speed, TFP
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.141258869</eqn>
+				<eqn>0.219356875775164</eqn>
 				<range min="0.12" max="0.4"/>
 				<units>zJ/Year</units>
 			</aux>
-			<aux name="TFP Max">
+			<aux name="TFP Max" access="output" isee:autocreated="true">
 				<doc>${Assumption,Internal Calibration Parameter}
 </doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.17</eqn>
+				<eqn>0.27</eqn>
 				<range min="0.1" max="0.4"/>
 				<units>zJ/Year</units>
 			</aux>
@@ -30431,7 +30882,7 @@ https://www.eea.europa.eu/en/analysis/publications/emep-eea-guidebook-2023</doc>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.8</eqn>
+				<eqn>0.95</eqn>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
 			</aux>
@@ -30526,7 +30977,7 @@ https://www.eea.europa.eu/en/analysis/publications/emep-eea-guidebook-2023</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="4" isee:page_rows="4" isee:scroll_x="1094" isee:scroll_y="230" zoom="300" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1097" page_height="767" isee:page_cols="4" isee:page_rows="4" isee:scroll_x="948" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -32321,16 +32772,16 @@ Wind_Energy_Output+
 				<connect2 to="Energy_supply_1.bio_fuel_secondary_energy_output" from="Bio_fuel_energy_1.bio_fuel_electricity_output"/>
 				<connect to="Renewable_energy_1.bio_fuel_secondary_energy_output" from="Bio_fuel_energy_1.bio_fuel_electricity_output"/>
 				<connect2 to="bio_fuel_secondary_energy_output" from="Bio_fuel_energy_1.bio_fuel_electricity_output"/>
+				<connect to="Energy_supply_1.bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
+				<connect2 to="Energy_supply_1.bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
+				<connect to="Liquid_fuel_supply_vs_demand.bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
+				<connect2 to="Liquid_fuel_supply_vs_demand.bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
 				<connect to="Energy_investments_1.bio_fuel_primary_energy" from="Bio_fuel_energy_1.bio_fuel_primary_energy"/>
 				<connect2 to="Energy_investments_1.bio_fuel_primary_energy" from="Bio_fuel_energy_1.bio_fuel_primary_energy"/>
 				<connect to="Fossil_energy_oil_1.bio_fuel_energy_output" from="Bio_fuel_energy_1.bio_fuel_primary_energy"/>
 				<connect2 to="Fossil_energy_oil_1.bio_fuel_energy_output" from="Bio_fuel_energy_1.bio_fuel_primary_energy"/>
 				<connect to="Fossil_energy_oil_1.bio_fuel_primary_energy_for_electricity" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_electricity"/>
 				<connect2 to="Fossil_energy_oil_1.bio_fuel_primary_energy_for_electricity" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_electricity"/>
-				<connect to="Energy_supply_1.bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
-				<connect2 to="Energy_supply_1.bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
-				<connect to="Liquid_fuel_supply_vs_demand.bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
-				<connect2 to="Liquid_fuel_supply_vs_demand.bio_fuel_primary_energy_for_direct_use" from="Bio_fuel_energy_1.bio_fuel_primary_energy_for_direct_use"/>
 				<connect to="Energy_investments_1.bio_fuel_production" from="Bio_fuel_energy_1.bio_fuel_production"/>
 				<connect2 to="Energy_investments_1.bio_fuel_production" from="Bio_fuel_energy_1.bio_fuel_production"/>
 				<connect to="Electricity_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_15" from='Bio_fuel_energy_1."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
@@ -32339,10 +32790,14 @@ Wind_Energy_Output+
 				<connect2 to="Liquid_fuel_investments.Cost_of_Extra_Energy_Output_through_Capital_per_Unit_8" from='Bio_fuel_energy_1."Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit_net_of_subsidies,_taxes_and_storage_costs"'/>
 				<connect to="Hydropower_energy_1.Switch_to_couple_investments_supply_and_demand_in_new_energy" from="Bio_fuel_energy_1.Switch_to_couple_investments_supply_and_demand_in_new_energy"/>
 				<connect2 to="Hydropower_energy_1.Switch_to_couple_investments_supply_and_demand_in_new_energy" from="Bio_fuel_energy_1.Switch_to_couple_investments_supply_and_demand_in_new_energy"/>
+				<connect to="Energy_demand_1.Usable_Secondary_Energy_output_from_direct_use_of_Gas_1" from="Bio_fuel_energy_1.Usable_Secondary_Energy_output_from_direct_use_of_Biofuel"/>
+				<connect2 to="Energy_demand_1.Usable_Secondary_Energy_output_from_direct_use_of_Gas_1" from="Bio_fuel_energy_1.Usable_Secondary_Energy_output_from_direct_use_of_Biofuel"/>
 				<connect to="Bio_fuel_energy_1.biofuels_CO2e_emissions_tax_reduction_share" from="Government_Regulations.biofuels_CO2e_emissions_tax_reduction_share"/>
 				<connect2 to="Bio_fuel_energy_1.biofuels_CO2e_emissions_tax_reduction_share" from="Government_Regulations.biofuels_CO2e_emissions_tax_reduction_share"/>
 				<connect to="Bio_fuel_energy_1.biofuels_SO2_emissions_tax_reduction_share" from="Government_Regulations.biofuels_SO2_emissions_tax_reduction_share"/>
 				<connect2 to="Bio_fuel_energy_1.biofuels_SO2_emissions_tax_reduction_share" from="Government_Regulations.biofuels_SO2_emissions_tax_reduction_share"/>
+				<connect to="Bio_fuel_energy_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy" from="Fossil_energy_oil_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy"/>
+				<connect2 to="Bio_fuel_energy_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy" from="Fossil_energy_oil_1.conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy"/>
 				<connect to="Bio_fuel_energy_1.Converter_1" from="Global_Investments.Investments_Allocated_to_Capacity_Construction_in_Biofuel_Capacity"/>
 				<connect2 to="Bio_fuel_energy_1.Converter_1" from="Global_Investments.Investments_Allocated_to_Capacity_Construction_in_Biofuel_Capacity"/>
 				<connect to="Bio_fuel_energy_1.cost_of_capturing_CO2_per_unit_with_BECC" from="CCS.cost_of_capturing_CO2_per_unit_with_BECC"/>
@@ -32409,6 +32864,8 @@ Wind_Energy_Output+
 				<connect2 to="Bio_fuel_energy_1.TWh_to_kWh" from="Energy_Units_1.UNIT_TWh_to_kWh"/>
 				<connect to="Bio_fuel_energy_1.UNIT_ton_to_Mton" from="CCS.UNIT_ton_to_Mton"/>
 				<connect2 to="Bio_fuel_energy_1.UNIT_ton_to_Mton" from="CCS.UNIT_ton_to_Mton"/>
+				<connect to="Bio_fuel_energy_1.UNIT_zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
+				<connect2 to="Bio_fuel_energy_1.UNIT_zJ_to_TWh" from="Energy_Units_1.UNIT_zJ_to_TWh"/>
 			</module>
 			<aux name="bio fuel secondary energy output" access="input">
 				<dimensions>
@@ -33397,7 +33854,7 @@ GtC_to_MtCO2</eqn>
 				</dimensions>
 				<units>c$/Year</units>
 			</aux>
-			<aux name="bio fuel primary energy for direct use" access="output" isee:autocreated="true">
+			<aux name="bio fuel primary\nenergy for direct use" access="output" isee:autocreated="true">
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
@@ -33422,7 +33879,7 @@ GtC_to_MtCO2</eqn>
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>0.95</eqn>
+				<eqn>0.989368763467539</eqn>
 				<range min="0" max="1"/>
 				<units>dmnl</units>
 			</aux>
@@ -33444,6 +33901,24 @@ GtC_to_MtCO2</eqn>
 				</dimensions>
 				<eqn>bio_fuel_production/potential_fuel_production</eqn>
 				<units>dmnl</units>
+			</aux>
+			<aux name="conversion efficiency\nof fossil fuels to\nsecondary fossil energy" access="input">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
+				<units>dmnl</units>
+			</aux>
+			<aux name="Usable Secondary Energy output\nfrom direct use of Biofuel" access="output" isee:autocreated="true">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>bio_fuel_primary_energy_for_direct_use*conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy*UNIT_zJ_to_TWh</eqn>
+				<units>TWh/Year</units>
+			</aux>
+			<aux name="UNIT zJ to TWh" access="input">
+				<eqn>277777.7778</eqn>
+				<units>TWh/zJ</units>
 			</aux>
 		</variables>
 		<views>
@@ -33494,7 +33969,7 @@ GtC_to_MtCO2</eqn>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="3" isee:page_rows="3" isee:scroll_x="266" isee:scroll_y="439.667" zoom="300" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="3" isee:page_rows="3" isee:scroll_x="224.375" isee:scroll_y="606.875" zoom="160" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -34084,7 +34559,7 @@ GtC_to_MtCO2</eqn>
 					<from>Converter_1</from>
 					<to>Installation_of_bio_Capacity</to>
 				</connector>
-				<aux x="549.444" y="566.481" name="bio fuel primary energy for direct use"/>
+				<aux x="549.444" y="566.481" name="bio fuel primary\nenergy for direct use"/>
 				<connector uid="111" angle="250.8">
 					<from>bio_fuel_primary_energy</from>
 					<to>bio_fuel_primary_energy_for_direct_use</to>
@@ -34130,6 +34605,21 @@ GtC_to_MtCO2</eqn>
 				<connector uid="126" angle="309.968">
 					<from>ratio_of_actual_fuel_supply_over_potential</from>
 					<to>Cost_of_Extra_Energy_Output_through_bio_fuel_production_capacity_per_Unit</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" x="234.375" y="694.375" name="conversion efficiency\nof fossil fuels to\nsecondary fossil energy"/>
+				<aux x="216.375" y="819.089" name="Usable Secondary Energy output\nfrom direct use of Biofuel"/>
+				<connector uid="127" angle="215.692">
+					<from>bio_fuel_primary_energy_for_direct_use</from>
+					<to>Usable_Secondary_Energy_output_from_direct_use_of_Biofuel</to>
+				</connector>
+				<connector uid="128" angle="262.147">
+					<from>conversion_efficiency_of_fossil_fuels_to_secondary_fossil_energy</from>
+					<to>Usable_Secondary_Energy_output_from_direct_use_of_Biofuel</to>
+				</connector>
+				<aux font_style="italic" font_weight="bold" x="126.875" y="896.25" name="UNIT zJ to TWh"/>
+				<connector uid="129" angle="98.7462">
+					<from>UNIT_zJ_to_TWh</from>
+					<to>Usable_Secondary_Energy_output_from_direct_use_of_Biofuel</to>
 				</connector>
 			</view>
 		</views>
@@ -36598,10 +37088,12 @@ if  the global temperature has increased on average by 0.34 °C/10 a from 1989 t
 				<format scale_by="auto"/>
 				<connect to="Transportation_Energy_Demand.Energy_Balance_1" from="Total_energy_supply_vs_demand.Energy_Balance"/>
 				<connect2 to="Transportation_Energy_Demand.Energy_Balance_1" from="Total_energy_supply_vs_demand.Energy_Balance"/>
+				<connect to="Energy_supply_1.Non_Biofuel_Other_energy_demand" from="Total_energy_supply_vs_demand.Non_Biofuel_Other_energy_demand"/>
+				<connect2 to="Energy_supply_1.Non_Biofuel_Other_energy_demand" from="Total_energy_supply_vs_demand.Non_Biofuel_Other_energy_demand"/>
 				<connect to="Total_energy_supply_vs_demand.Direct_use_Biofuel_demand" from="Energy_demand_1.Direct_use_Biofuel_demand"/>
 				<connect2 to="Total_energy_supply_vs_demand.Direct_use_Biofuel_demand" from="Energy_demand_1.Direct_use_Biofuel_demand"/>
-				<connect to="Total_energy_supply_vs_demand.Direct_use_Other_demand" from="Energy_demand_1.Direct_use_Other_demand"/>
-				<connect2 to="Total_energy_supply_vs_demand.Direct_use_Other_demand" from="Energy_demand_1.Direct_use_Other_demand"/>
+				<connect to="Total_energy_supply_vs_demand.Direct_use_Other_demand" from="Energy_demand_1.Direct_use_Bioenergy_Waste_and_Heat_demand_without_Biofuel"/>
+				<connect2 to="Total_energy_supply_vs_demand.Direct_use_Other_demand" from="Energy_demand_1.Direct_use_Bioenergy_Waste_and_Heat_demand_without_Biofuel"/>
 				<connect to="Total_energy_supply_vs_demand.Total_demand_for_energy" from="Energy_demand_1.Total_demand_for_energy"/>
 				<connect2 to="Total_energy_supply_vs_demand.Total_demand_for_energy" from="Energy_demand_1.Total_demand_for_energy"/>
 				<connect to="Total_energy_supply_vs_demand.Total_Energy_Output" from="Energy_supply_1.Total_Energy_Output"/>
@@ -36656,7 +37148,7 @@ if  the global temperature has increased on average by 0.34 °C/10 a from 1989 t
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="2" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="136" zoom="200" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -36820,7 +37312,7 @@ if  the global temperature has increased on average by 0.34 °C/10 a from 1989 t
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" zoom="160" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:scroll_y="33.3333" zoom="300" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -37463,7 +37955,7 @@ if  the global temperature has increased on average by 0.34 °C/10 a from 1989 t
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="2" isee:scroll_y="149.286" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_cols="2" isee:page_rows="2" isee:scroll_y="148.571" zoom="140" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -37648,7 +38140,7 @@ if  the global temperature has increased on average by 0.34 °C/10 a from 1989 t
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn>Total_demand_for_energy-Direct_use_Other_demand+Direct_use_Biofuel_demand</eqn>
+				<eqn>Total_demand_for_energy-Non_Biofuel_Other_energy_demand</eqn>
 				<units>TWh/year</units>
 			</aux>
 			<aux name="Direct use Biofuel demand" access="input">
@@ -37657,6 +38149,13 @@ if  the global temperature has increased on average by 0.34 °C/10 a from 1989 t
 				</dimensions>
 				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
 				<units>TWh/year</units>
+			</aux>
+			<aux name="Non Biofuel Other energy demand" access="output" isee:autocreated="true">
+				<dimensions>
+					<dim name="Run"/>
+				</dimensions>
+				<eqn>Direct_use_Other_demand-Direct_use_Biofuel_demand</eqn>
+				<units>TWh/Year</units>
 			</aux>
 		</variables>
 		<views>
@@ -37707,7 +38206,7 @@ if  the global temperature has increased on average by 0.34 °C/10 a from 1989 t
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_rows="2" isee:scroll_y="86.1111" zoom="180" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1024" page_height="784" isee:page_rows="2" isee:scroll_x="140.556" isee:scroll_y="275.556" zoom="180" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -37783,21 +38282,13 @@ if  the global temperature has increased on average by 0.34 °C/10 a from 1989 t
 					<from>Total_Energy_Output</from>
 					<to>Energy_Balance</to>
 				</connector>
-				<aux font_style="italic" font_weight="bold" x="436.111" y="654.444" name="Direct use Other demand"/>
+				<aux font_style="italic" font_weight="bold" x="527.637" y="702.777" name="Direct use Other demand"/>
 				<aux x="430.723" y="535.444" width="16.8889" height="16.8889" name="Categorized Energy demand"/>
 				<connector uid="24" angle="30.9177">
 					<from>Total_demand_for_energy</from>
 					<to>Categorized_Energy_demand</to>
 				</connector>
-				<connector uid="25" angle="88.4167">
-					<from>Direct_use_Other_demand</from>
-					<to>Categorized_Energy_demand</to>
-				</connector>
-				<aux font_style="italic" font_weight="bold" x="550" y="604.778" name="Direct use Biofuel demand"/>
-				<connector uid="26" angle="151.217">
-					<from>Direct_use_Biofuel_demand</from>
-					<to>Categorized_Energy_demand</to>
-				</connector>
+				<aux font_style="italic" font_weight="bold" x="655.783" y="637" name="Direct use Biofuel demand"/>
 				<connector uid="27" angle="118.384">
 					<from>Categorized_Energy_demand</from>
 					<to>Energy_Supply_Missmatch</to>
@@ -37805,6 +38296,19 @@ if  the global temperature has increased on average by 0.34 °C/10 a from 1989 t
 				<connector uid="28" angle="63.8187">
 					<from>Categorized_Energy_demand</from>
 					<to>Energy_Balance</to>
+				</connector>
+				<aux x="486.111" y="600" name="Non Biofuel Other energy demand"/>
+				<connector uid="29" angle="129.916">
+					<from>Non_Biofuel_Other_energy_demand</from>
+					<to>Categorized_Energy_demand</to>
+				</connector>
+				<connector uid="30" angle="112">
+					<from>Direct_use_Other_demand</from>
+					<to>Non_Biofuel_Other_energy_demand</to>
+				</connector>
+				<connector uid="31" angle="163.539">
+					<from>Direct_use_Biofuel_demand</from>
+					<to>Non_Biofuel_Other_energy_demand</to>
 				</connector>
 			</view>
 		</views>
@@ -37987,16 +38491,6 @@ https://en.wikipedia.org/wiki/British_thermal_unit</doc>
 			</view>
 		</views>
 	</model>
-	<isee:controls>
-		<isee:control priority="interactive" name="Bio_fuel_energy_1.Initial_share_of_investment_to_direct_use[1]" value="0.989368763467539"/>
-		<isee:control priority="interactive" name="Electricity_investments.adaptive_energy_investments_integrating_factor[1]" value="-2"/>
-		<isee:control priority="interactive" name="Electricity_investments.adaptive_energy_investments_proportional_factor[1]" value="-12"/>
-		<isee:control priority="interactive" name="Electricity_investments.priority_spread[1]" value="10"/>
-		<isee:control priority="interactive" name="Fossil_energy_coal_1.Initial_share_of_investment_to_direct_use[1]" value="0.50373819638699"/>
-		<isee:control priority="interactive" name="Fossil_energy_oil_1.Initial_share_of_investment_to_direct_use[1]" value="0.808713694943461"/>
-		<isee:control priority="interactive" name="Fossil_energy_oil_1.TFP_in_1980[1]" value="0.2"/>
-		<isee:control priority="interactive" name="Fossil_energy_oil_1.initial_fossil_energy_capital[1]" value="50000000000"/>
-	</isee:controls>
 	<isee:user_controlled>
 		<ent name="Simulation End" preserve="true" lock="false"/>
 		<ent name="Government Regulations.tax on CO2e emissions" preserve="true" lock="false"/>
@@ -38011,14 +38505,6 @@ https://en.wikipedia.org/wiki/British_thermal_unit</doc>
 		<ent name="Government Regulations.Maximum investment into CCS as share of private investment" preserve="true" lock="false"/>
 		<ent name="CCS.stepping on toes parameter end of pipe capture[1]" preserve="true" lock="false"/>
 		<ent name="Government Regulations.Moratorium on fossil energy year" preserve="true" lock="false"/>
-		<ent name="Electricity investments.adaptive energy investments proportional factor[1]" preserve="false" lock="false"/>
-		<ent name="Electricity investments.adaptive energy investments integrating factor[1]" preserve="false" lock="false"/>
-		<ent name="Electricity investments.priority spread[1]" preserve="false" lock="false"/>
-		<ent name="Fossil energy oil 1.initial fossil energy capital[1]" preserve="false" lock="false"/>
-		<ent name="Fossil energy oil 1.Initial share of investment to direct use[1]" preserve="false" lock="false"/>
-		<ent name="Fossil energy coal 1.Initial share of investment to direct use[1]" preserve="false" lock="false"/>
-		<ent name="Bio fuel energy 1.Initial share of investment to direct use[1]" preserve="false" lock="false"/>
-		<ent name="Fossil energy oil 1.TFP in 1980[1]" preserve="false" lock="false"/>
 	</isee:user_controlled>
 	<macro name="INFLATION_IMPACT_GROWTH_RATE">
 		<eqn>trend in input</eqn>
